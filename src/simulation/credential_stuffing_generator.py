@@ -1,4 +1,5 @@
 from pathlib import Path
+from datetime import datetime, timedelta
 import argparse
 import random
 import duckdb
@@ -386,6 +387,7 @@ def select_campaign_target_users(config):
 # MAP SYNTHETIC CREDENTIAL IDENTITIES TO LOCAL USERS
 # =========================================================
 
+
 def build_credential_mapping(
     config,
     selected_targets
@@ -418,7 +420,6 @@ def build_credential_mapping(
         org: []
         for org in targeted_orgs
     }
-
 
     # -----------------------------------------------------
     # Reused credentials
@@ -455,7 +456,6 @@ def build_credential_mapping(
                         True,
                 }
             )
-
 
     # -----------------------------------------------------
     # Organization-specific credentials
@@ -496,7 +496,6 @@ def build_credential_mapping(
 
             next_credential_number += 1
 
-
     # -----------------------------------------------------
     # Integrity check
     # -----------------------------------------------------
@@ -522,6 +521,7 @@ def build_credential_mapping(
 # =========================================================
 # VERIFY CREDENTIAL MAPPING
 # =========================================================
+
 
 def verify_credential_mapping(
     config,
@@ -554,7 +554,6 @@ def verify_credential_mapping(
                 credential_id
             ].add(org)
 
-
     total_unique_credentials = len(
         credential_to_orgs
     )
@@ -564,7 +563,6 @@ def verify_credential_mapping(
         for orgs in credential_to_orgs.values()
         if len(orgs) > 1
     )
-
 
     if config["Sorg"] == 1:
 
@@ -576,7 +574,6 @@ def verify_credential_mapping(
             reused_credentials
             / total_unique_credentials
         )
-
 
     print()
     print("=" * 60)
@@ -627,10 +624,340 @@ def verify_credential_mapping(
                 ]
             )
 
+# =========================================================
+# GENERATE SYNTHETIC ATTACKER IP ADDRESS
+# =========================================================
+
+
+def create_synthetic_ip(index):
+
+    # 198.18.0.0/15 is reserved for testing/benchmarking.
+    # We use these addresses only inside the offline simulation.
+
+    third_octet = index // 254
+    fourth_octet = (index % 254) + 1
+
+    if third_octet > 255:
+        raise ValueError(
+            "Too many synthetic attacker IPs requested."
+        )
+
+    return (
+        f"198.18.{third_octet}.{fourth_octet}"
+    )
+
+
+# =========================================================
+# GENERATE SYNTHETIC AUTHENTICATION EVENTS
+# =========================================================
+
+def generate_synthetic_events(
+    config,
+    credential_mapping
+):
+
+    if "campaign_start" not in config:
+        raise ValueError(
+            "campaign_start is not defined. "
+            "Use --pilot for the current test."
+        )
+
+    rng = random.Random(
+        config["seed"] + 500000
+    )
+
+    campaign_start = datetime.fromisoformat(
+        config["campaign_start"]
+    )
+
+    campaign_end = (
+        campaign_start
+        + timedelta(
+            minutes=config[
+                "campaign_duration_minutes"
+            ]
+        )
+    )
+
+    events = []
+
+    # -----------------------------------------------------
+    # Create event shells
+    # -----------------------------------------------------
+
+    for organization, mappings in (
+        credential_mapping.items()
+    ):
+
+        for mapping in mappings:
+
+            number_of_attempts = rng.randint(
+                config[
+                    "min_attempts_per_account"
+                ],
+                config[
+                    "max_attempts_per_account"
+                ]
+            )
+
+            for _ in range(number_of_attempts):
+
+                offset_seconds = rng.uniform(
+                    0,
+                    config[
+                        "campaign_duration_minutes"
+                    ] * 60
+                )
+
+                timestamp = (
+                    campaign_start
+                    + timedelta(
+                        seconds=offset_seconds
+                    )
+                )
+
+                login_successful = (
+                    rng.random()
+                    < config[
+                        "success_probability"
+                    ]
+                )
+
+                events.append(
+                    {
+                        "organization":
+                            organization,
+
+                        "User ID":
+                            mapping["User ID"],
+
+                        "Login Timestamp":
+                            timestamp,
+
+                        "LoginSuccessful":
+                            login_successful,
+
+                        "synthetic_credential_id":
+                            mapping[
+                                "synthetic_credential_id"
+                            ],
+
+                        "is_reused_credential":
+                            mapping[
+                                "is_reused_credential"
+                            ],
+
+                        "is_synthetic":
+                            True,
+
+                        "credential_stuffing_label":
+                            1,
+
+                        "scenario_id":
+                            config["scenario_id"],
+
+                        "campaign_id":
+                            config["campaign_id"],
+                    }
+                )
+
+    # -----------------------------------------------------
+    # Determine number of attacker IPs
+    # -----------------------------------------------------
+
+    total_attempts = len(events)
+
+    number_of_unique_ips = round(
+        total_attempts
+        * config["RIP_target"]
+    )
+
+    number_of_unique_ips = max(
+        1,
+        min(
+            number_of_unique_ips,
+            total_attempts
+        )
+    )
+
+    attacker_ips = [
+        create_synthetic_ip(i)
+        for i in range(
+            number_of_unique_ips
+        )
+    ]
+
+    # Guarantee every generated attacker IP
+    # appears at least once.
+    ip_assignments = attacker_ips.copy()
+
+    while len(ip_assignments) < total_attempts:
+
+        ip_assignments.append(
+            rng.choice(attacker_ips)
+        )
+
+    rng.shuffle(ip_assignments)
+
+    # -----------------------------------------------------
+    # Attach IPs and unique event IDs
+    # -----------------------------------------------------
+
+    for index, event in enumerate(events):
+
+        event["IP Address"] = (
+            ip_assignments[index]
+        )
+
+        event["campaign_event_id"] = (
+            f'{config["campaign_id"]}'
+            f'_EVT_{index + 1:05d}'
+        )
+
+    # Keep output ordered by timestamp
+    events.sort(
+        key=lambda event:
+            event["Login Timestamp"]
+    )
+
+    return events, campaign_start, campaign_end
+
+
+# =========================================================
+# VERIFY SYNTHETIC EVENTS
+# =========================================================
+
+def verify_synthetic_events(
+    config,
+    events,
+    campaign_start,
+    campaign_end
+):
+
+    total_attempts = len(events)
+
+    unique_ips = {
+        event["IP Address"]
+        for event in events
+    }
+
+    successful_attempts = sum(
+        1
+        for event in events
+        if event["LoginSuccessful"]
+    )
+
+    failed_attempts = (
+        total_attempts
+        - successful_attempts
+    )
+
+    rip_actual = (
+        len(unique_ips)
+        / total_attempts
+    )
+
+    icampaign = (
+        total_attempts
+        / config[
+            "campaign_duration_minutes"
+        ]
+    )
+
+    print()
+    print("=" * 60)
+    print("SYNTHETIC EVENT VERIFICATION")
+    print("=" * 60)
+
+    print(
+        "Campaign start:",
+        campaign_start
+    )
+
+    print(
+        "Campaign end:",
+        campaign_end
+    )
+
+    print(
+        "Total synthetic attempts:",
+        total_attempts
+    )
+
+    print(
+        "Unique attacker IPs:",
+        len(unique_ips)
+    )
+
+    print(
+        "RIP target:",
+        config["RIP_target"]
+    )
+
+    print(
+        "RIP actual:",
+        round(rip_actual, 4)
+    )
+
+    print(
+        "Successful attempts:",
+        successful_attempts
+    )
+
+    print(
+        "Failed attempts:",
+        failed_attempts
+    )
+
+    print(
+        "Campaign intensity:",
+        round(icampaign, 4),
+        "attempts per minute"
+    )
+
+    print()
+
+    for organization in (
+        config["targeted_organizations"]
+    ):
+
+        org_events = [
+            event
+            for event in events
+            if event["organization"]
+            == organization
+        ]
+
+        print(
+            f"{organization}: "
+            f"{len(org_events)} synthetic events"
+        )
+
+    print()
+    print("First 5 generated events:")
+
+    for event in events[:5]:
+
+        print(
+            event[
+                "campaign_event_id"
+            ],
+            "|",
+            event["organization"],
+            "| User:",
+            event["User ID"],
+            "| IP:",
+            event["IP Address"],
+            "| Time:",
+            event["Login Timestamp"],
+            "| Success:",
+            event["LoginSuccessful"]
+        )
 
 # =========================================================
 # DISPLAY CONFIGURATION
 # =========================================================
+
 
 def print_campaign_config(config):
 
@@ -799,4 +1126,18 @@ if __name__ == "__main__":
     verify_credential_mapping(
         campaign_config,
         credential_mapping
+    )
+
+    synthetic_events, campaign_start, campaign_end = (
+        generate_synthetic_events(
+            campaign_config,
+            credential_mapping
+        )
+    )
+
+    verify_synthetic_events(
+        campaign_config,
+        synthetic_events,
+        campaign_start,
+        campaign_end
     )
