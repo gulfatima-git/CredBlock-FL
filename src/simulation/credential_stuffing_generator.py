@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import argparse
 import random
 import duckdb
-
+import pandas as pd
 
 # =========================================================
 # PROJECT PATHS
@@ -955,6 +955,70 @@ def verify_synthetic_events(
         )
 
 # =========================================================
+# SAVE SYNTHETIC EVENTS
+# =========================================================
+
+
+def save_synthetic_events(
+    config,
+    events
+):
+
+    output_dir = (
+        SYNTHETIC_EVENTS_DIR
+        / config["campaign_id"]
+    )
+
+    output_dir.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    for organization in (
+        config["targeted_organizations"]
+    ):
+
+        org_events = [
+            event
+            for event in events
+            if event["organization"]
+            == organization
+        ]
+
+        df = pd.DataFrame(
+            org_events
+        )
+
+        output_path = (
+            output_dir
+            / f"{organization}.parquet"
+        )
+
+        duckdb.register(
+            "synthetic_df",
+            df
+        )
+
+        duckdb.sql(
+            f"""
+            COPY synthetic_df
+            TO '{output_path.as_posix()}'
+            (FORMAT PARQUET)
+            """
+        )
+
+        duckdb.unregister(
+            "synthetic_df"
+        )
+
+        print(
+            f"Saved {len(df)} events -> "
+            f"{output_path}"
+        )
+
+    return output_dir
+
+# =========================================================
 # DISPLAY CONFIGURATION
 # =========================================================
 
@@ -1140,4 +1204,15 @@ if __name__ == "__main__":
         synthetic_events,
         campaign_start,
         campaign_end
+    )
+
+    output_dir = save_synthetic_events(
+        campaign_config,
+        synthetic_events
+    )
+
+    print()
+    print(
+        "Campaign saved to:",
+        output_dir
     )
