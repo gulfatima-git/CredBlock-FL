@@ -69,6 +69,10 @@ MAX_ATTEMPTS_PER_ACCOUNT = 3
 
 SUCCESS_PROBABILITY = 0.05
 
+# Small campaign used only for testing the generator
+PILOT_NUM_CREDENTIAL_IDENTITIES = 10
+PILOT_CAMPAIGN_START = "2020-08-01 12:00:00"
+
 
 # =========================================================
 # 12 CAMPAIGN SCENARIO FAMILIES
@@ -731,12 +735,32 @@ if __name__ == "__main__":
         help="Fixed random seed."
     )
 
+    parser.add_argument(
+        "--pilot",
+        action="store_true",
+        help="Run a small pilot campaign."
+    )
+
     args = parser.parse_args()
 
     campaign_config = build_campaign_config(
         args.scenario,
         args.seed
     )
+
+    if args.pilot:
+        campaign_config["num_credential_identities"] = (
+            PILOT_NUM_CREDENTIAL_IDENTITIES
+        )
+
+        campaign_config["campaign_start"] = (
+            PILOT_CAMPAIGN_START
+        )
+
+        campaign_config["campaign_id"] = (
+            campaign_config["campaign_id"]
+            + "_PILOT"
+        )
 
     print_campaign_config(
         campaign_config
