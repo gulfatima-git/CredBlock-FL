@@ -1,6 +1,7 @@
 from pathlib import Path
 import argparse
 import random
+import duckdb
 
 
 # =========================================================
@@ -236,6 +237,392 @@ def build_campaign_config(
 
     return config
 
+# =========================================================
+# CALCULATE NUMBER OF LOCAL TARGET USERS
+# =========================================================
+
+
+def calculate_local_target_counts(config):
+
+    targeted_orgs = config["targeted_organizations"]
+
+    total_credentials = (
+        config["num_credential_identities"]
+    )
+
+    raccount_target = (
+        config["Raccount_target"]
+    )
+
+    # Single-organization control scenario
+    if config["Sorg"] == 1:
+
+        return {
+            targeted_orgs[0]: total_credentials
+        }
+
+    # Number of credentials reused across organizations
+    reused_credentials = round(
+        total_credentials * raccount_target
+    )
+
+    # Credentials appearing in only one organization
+    nonreused_credentials = (
+        total_credentials - reused_credentials
+    )
+
+    # Divide non-reused credentials as evenly as possible
+    base_count = (
+        nonreused_credentials
+        // len(targeted_orgs)
+    )
+
+    remainder = (
+        nonreused_credentials
+        % len(targeted_orgs)
+    )
+
+    local_target_counts = {}
+
+    for index, org in enumerate(targeted_orgs):
+
+        extra = 1 if index < remainder else 0
+
+        local_target_counts[org] = (
+            reused_credentials
+            + base_count
+            + extra
+        )
+
+    return local_target_counts
+
+
+# =========================================================
+# SELECT LOCAL USERS DETERMINISTICALLY
+# =========================================================
+
+def select_local_users(
+    organization: str,
+    number_of_users: int,
+    seed: int
+):
+
+    parquet_path = (
+        ORGANIZATIONS_DIR
+        / f"organization={organization}"
+        / "data_0.parquet"
+    )
+
+    if not parquet_path.exists():
+
+        raise FileNotFoundError(
+            f"Organization dataset not found: "
+            f"{parquet_path}"
+        )
+
+    query = f"""
+        SELECT DISTINCT "User ID"
+        FROM read_parquet('{parquet_path.as_posix()}')
+        WHERE "User ID" IS NOT NULL
+        ORDER BY hash(
+            CAST("User ID" AS VARCHAR)
+            || ':{seed}:{organization}'
+        )
+        LIMIT {number_of_users}
+    """
+
+    selected_users = (
+        duckdb.sql(query)
+        .fetchall()
+    )
+
+    selected_users = [
+        row[0]
+        for row in selected_users
+    ]
+
+    if len(selected_users) != number_of_users:
+
+        raise ValueError(
+            f"{organization}: requested "
+            f"{number_of_users} users but only "
+            f"{len(selected_users)} were selected."
+        )
+
+    return selected_users
+
+
+# =========================================================
+# SELECT TARGET USERS FOR ALL PARTICIPATING ORGANIZATIONS
+# =========================================================
+
+def select_campaign_target_users(config):
+
+    local_target_counts = (
+        calculate_local_target_counts(config)
+    )
+
+    selected_targets = {}
+
+    for organization, count in (
+        local_target_counts.items()
+    ):
+
+        selected_targets[organization] = (
+            select_local_users(
+                organization=organization,
+                number_of_users=count,
+                seed=config["seed"]
+            )
+        )
+
+    return selected_targets
+
+# =========================================================
+# MAP SYNTHETIC CREDENTIAL IDENTITIES TO LOCAL USERS
+# =========================================================
+
+def build_credential_mapping(
+    config,
+    selected_targets
+):
+
+    total_credentials = (
+        config["num_credential_identities"]
+    )
+
+    targeted_orgs = (
+        config["targeted_organizations"]
+    )
+
+    # Single-organization campaigns have no
+    # cross-organizational credential reuse.
+    if config["Sorg"] == 1:
+
+        reused_credentials = 0
+
+    else:
+
+        reused_credentials = round(
+            total_credentials
+            * config["Raccount_target"]
+        )
+
+    campaign_id = config["campaign_id"]
+
+    credential_mapping = {
+        org: []
+        for org in targeted_orgs
+    }
+
+
+    # -----------------------------------------------------
+    # Reused credentials
+    # -----------------------------------------------------
+
+    reused_credential_ids = [
+        f"{campaign_id}_CRED_{i:03d}"
+        for i in range(
+            1,
+            reused_credentials + 1
+        )
+    ]
+
+    # Same hidden credential identity appears
+    # in every targeted organization, but maps
+    # to a different local User ID.
+    for org in targeted_orgs:
+
+        local_users = selected_targets[org]
+
+        for index, credential_id in enumerate(
+            reused_credential_ids
+        ):
+
+            credential_mapping[org].append(
+                {
+                    "synthetic_credential_id":
+                        credential_id,
+
+                    "User ID":
+                        local_users[index],
+
+                    "is_reused_credential":
+                        True,
+                }
+            )
+
+
+    # -----------------------------------------------------
+    # Organization-specific credentials
+    # -----------------------------------------------------
+
+    next_credential_number = (
+        reused_credentials + 1
+    )
+
+    for org in targeted_orgs:
+
+        local_users = selected_targets[org]
+
+        # Users after the reused-credential users
+        unique_local_users = (
+            local_users[reused_credentials:]
+        )
+
+        for user_id in unique_local_users:
+
+            credential_id = (
+                f"{campaign_id}_CRED_"
+                f"{next_credential_number:03d}"
+            )
+
+            credential_mapping[org].append(
+                {
+                    "synthetic_credential_id":
+                        credential_id,
+
+                    "User ID":
+                        user_id,
+
+                    "is_reused_credential":
+                        False,
+                }
+            )
+
+            next_credential_number += 1
+
+
+    # -----------------------------------------------------
+    # Integrity check
+    # -----------------------------------------------------
+
+    generated_unique_credentials = (
+        next_credential_number - 1
+    )
+
+    if (
+        generated_unique_credentials
+        != total_credentials
+    ):
+
+        raise ValueError(
+            "Credential mapping integrity error: "
+            f"expected {total_credentials} "
+            "credential identities but generated "
+            f"{generated_unique_credentials}."
+        )
+
+    return credential_mapping
+
+# =========================================================
+# VERIFY CREDENTIAL MAPPING
+# =========================================================
+
+def verify_credential_mapping(
+    config,
+    credential_mapping
+):
+
+    credential_to_orgs = {}
+
+    for org, mappings in (
+        credential_mapping.items()
+    ):
+
+        for mapping in mappings:
+
+            credential_id = (
+                mapping[
+                    "synthetic_credential_id"
+                ]
+            )
+
+            if credential_id not in (
+                credential_to_orgs
+            ):
+
+                credential_to_orgs[
+                    credential_id
+                ] = set()
+
+            credential_to_orgs[
+                credential_id
+            ].add(org)
+
+
+    total_unique_credentials = len(
+        credential_to_orgs
+    )
+
+    reused_credentials = sum(
+        1
+        for orgs in credential_to_orgs.values()
+        if len(orgs) > 1
+    )
+
+
+    if config["Sorg"] == 1:
+
+        raccount_actual = None
+
+    else:
+
+        raccount_actual = (
+            reused_credentials
+            / total_unique_credentials
+        )
+
+
+    print()
+    print("=" * 60)
+    print("CREDENTIAL MAPPING VERIFICATION")
+    print("=" * 60)
+
+    print(
+        "Total unique credential identities:",
+        total_unique_credentials
+    )
+
+    print(
+        "Credentials reused across organizations:",
+        reused_credentials
+    )
+
+    print(
+        "Raccount actual:",
+        raccount_actual
+    )
+
+    for org, mappings in (
+        credential_mapping.items()
+    ):
+
+        print()
+        print(
+            f"{org}: "
+            f"{len(mappings)} credential-to-user mappings"
+        )
+
+        print(
+            "First 5 mappings:"
+        )
+
+        for mapping in mappings[:5]:
+
+            print(
+                " ",
+                mapping[
+                    "synthetic_credential_id"
+                ],
+                "-> User ID",
+                mapping["User ID"],
+                "| reused =",
+                mapping[
+                    "is_reused_credential"
+                ]
+            )
+
 
 # =========================================================
 # DISPLAY CONFIGURATION
@@ -353,4 +740,39 @@ if __name__ == "__main__":
 
     print_campaign_config(
         campaign_config
+    )
+
+    target_users = (
+        select_campaign_target_users(
+            campaign_config
+        )
+    )
+
+    print()
+    print("=" * 60)
+    print("LOCAL TARGET USER SELECTION")
+    print("=" * 60)
+
+    for organization, users in target_users.items():
+
+        print(
+            f"{organization}: "
+            f"{len(users)} local target users"
+        )
+
+        print(
+            "First 5 selected User IDs:",
+            users[:5]
+        )
+
+    credential_mapping = (
+        build_credential_mapping(
+            campaign_config,
+            target_users
+        )
+    )
+
+    verify_credential_mapping(
+        campaign_config,
+        credential_mapping
     )
