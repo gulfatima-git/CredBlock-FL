@@ -1132,6 +1132,12 @@ if __name__ == "__main__":
         help="Run a small pilot campaign."
     )
 
+    parser.add_argument(
+    "--start",
+    type=str,
+    help="Campaign start timestamp (YYYY-MM-DDTHH:MM:SS)."
+    )
+
     args = parser.parse_args()
 
     campaign_config = build_campaign_config(
@@ -1152,6 +1158,23 @@ if __name__ == "__main__":
             campaign_config["campaign_id"]
             + "_PILOT"
         )
+
+    else:
+        if not args.start:
+            parser.error(
+                "--start is required for a full campaign."
+            )
+
+        try:
+            campaign_start = datetime.fromisoformat(args.start)
+        except ValueError:
+            parser.error(
+                "Invalid start timestamp. Use YYYY-MM-DDTHH:MM:SS."
+            )
+
+        campaign_config["campaign_start"] = (
+            campaign_start.isoformat()
+    )
 
     print_campaign_config(
         campaign_config
