@@ -1,15 +1,17 @@
 import argparse
 from pathlib import Path
+
 import duckdb
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
 def load_organization(org_id):
     org_name = f"Org{org_id}"
 
-    project_root = Path(__file__).resolve().parents[2]
-
     data_path = (
-        project_root
+        PROJECT_ROOT
         / "data"
         / "organizations"
         / f"organization={org_name}"
@@ -19,22 +21,46 @@ def load_organization(org_id):
     return org_name, data_path
 
 
+
+def resolve_login_success_column(data_path):
+    """Support both schema spellings seen in the project datasets."""
+    parquet_path = data_path.as_posix()
+
+    columns = {
+        row[0]
+        for row in duckdb.sql(
+            f"DESCRIBE SELECT * FROM read_parquet('{parquet_path}')"
+        ).fetchall()
+    }
+
+    for candidate in ("LoginSuccessful", "Login Successful"):
+        if candidate in columns:
+            return candidate
+
+    raise ValueError(
+        "Could not find a login-success column. Expected "
+        "'LoginSuccessful' or 'Login Successful'."
+    )
+
+
+
 def show_local_statistics(org_name, data_path):
+    parquet_path = data_path.as_posix()
+    success_column = resolve_login_success_column(data_path)
 
-    data_path = data_path.as_posix()
-
-    result = duckdb.sql(f"""
+    result = duckdb.sql(
+        f"""
         SELECT
             COUNT(*) AS login_records,
             COUNT(DISTINCT "User ID") AS unique_users,
 
             SUM(
-                CASE WHEN "Login Successful" = TRUE
+                CASE WHEN "{success_column}" = TRUE
                 THEN 1 ELSE 0 END
             ) AS successful_logins,
 
             SUM(
-                CASE WHEN "Login Successful" = FALSE
+                CASE WHEN "{success_column}" = FALSE
                 THEN 1 ELSE 0 END
             ) AS failed_logins,
 
@@ -48,8 +74,9 @@ def show_local_statistics(org_name, data_path):
                 THEN 1 ELSE 0 END
             ) AS account_takeover_logins
 
-        FROM read_parquet('{data_path}')
-    """).fetchone()
+        FROM read_parquet('{parquet_path}')
+        """
+    ).fetchone()
 
     print(f"\n--- {org_name} LOCAL DATA ---")
     print(f"Login records: {result[0]:,}")
@@ -58,10 +85,11 @@ def show_local_statistics(org_name, data_path):
     print(f"Failed logins: {result[3]:,}")
     print(f"Attack-IP logins: {result[4]:,}")
     print(f"Account-takeover logins: {result[5]:,}")
+    print(f"Resolved login-success column: {success_column}")
+
 
 
 def main():
-
     parser = argparse.ArgumentParser(
         description="CredBlock-FL Organization Client"
     )
@@ -70,7 +98,7 @@ def main():
         "--org-id",
         type=int,
         required=True,
-        choices=[1, 2, 3, 4, 5]
+        choices=[1, 2, 3, 4, 5],
     )
 
     args = parser.parse_args()
