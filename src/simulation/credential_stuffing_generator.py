@@ -154,6 +154,47 @@ SCENARIOS = {
     },
 }
 
+# =========================================================
+# FULL FACTORIAL EXTENSION: CS_013 THROUGH CS_030
+# Preserve all original CS_001 through CS_012 definitions.
+# =========================================================
+
+ADDITIONAL_SCENARIOS = {
+    # Scenario ID: (organization spread, IP rotation, credential reuse)
+
+    "CS_013": (2, "Low", "Medium"),
+    "CS_014": (2, "Low", "High"),
+    "CS_015": (2, "Medium", "Low"),
+    "CS_016": (2, "Medium", "High"),
+    "CS_017": (2, "High", "Low"),
+    "CS_018": (2, "High", "Medium"),
+
+    "CS_019": (3, "Low", "Low"),
+    "CS_020": (3, "Low", "High"),
+    "CS_021": (3, "Medium", "Low"),
+    "CS_022": (3, "Medium", "Medium"),
+    "CS_023": (3, "High", "Medium"),
+    "CS_024": (3, "High", "High"),
+
+    "CS_025": (5, "Low", "Low"),
+    "CS_026": (5, "Low", "Medium"),
+    "CS_027": (5, "Medium", "Medium"),
+    "CS_028": (5, "Medium", "High"),
+    "CS_029": (5, "High", "Low"),
+    "CS_030": (5, "High", "High"),
+}
+
+for scenario_id, (org_spread, rotation, reuse) in ADDITIONAL_SCENARIOS.items():
+    if scenario_id in SCENARIOS:
+        raise ValueError(f"Duplicate scenario: {scenario_id}")
+
+    SCENARIOS[scenario_id] = {
+        "rotation_level": rotation,
+        "org_spread": org_spread,
+        "account_reuse_level": reuse,
+    }
+
+assert len(SCENARIOS) == 30, "Expected exactly 30 scenario families"
 
 # =========================================================
 # CREATE CONFIGURATION FOR ONE CAMPAIGN REALIZATION
