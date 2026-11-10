@@ -676,8 +676,6 @@ def verify_credential_mapping(
 # Historical campaigns: preserve original assignments.
 IP_NETWORK = ipaddress.ip_network("198.18.0.0/15")
 
-# New chronological split-specific campaigns.
-SPLIT_IP_NETWORK = ipaddress.ip_network("10.0.0.0/8")
 
 IP_BLOCK_SIZE = 1024
 EXPERIMENT_SEEDS = (1001, 1002, 1003)
@@ -691,12 +689,82 @@ CAMPAIGN_SLOTS = {
     )
 }
 
-SPLIT_OFFSETS = {
-    "TRAIN": 0,
-    "VAL": 90,
-    "TEST": 180,
-}
 
+# =========================================================
+# VARIABLE-SIZED ALLOCATIONS FOR CHRONOLOGICAL SPLITS
+# =========================================================
+
+def build_split_ip_allocations():
+    """
+    Reserve a deterministic, non-overlapping IP range
+    for each TRAIN, VAL, and TEST campaign.
+
+    The first 1024 benchmarking addresses are reserved
+    for existing historical campaign files.
+    """
+
+    allocations = {}
+
+    # Historical files currently occupy addresses
+    # below this offset.
+    next_offset = IP_BLOCK_SIZE
+
+    for split in ("TRAIN", "VAL", "TEST"):
+
+        for base_id, slot in sorted(
+            CAMPAIGN_SLOTS.items(),
+            key=lambda item: item[1]
+        ):
+
+            scenario_id = base_id.split("_SEED")[0]
+            scenario = SCENARIOS[scenario_id]
+
+            spread = scenario["org_spread"]
+
+            if spread == 1:
+                reused = 0
+            else:
+                reused = round(
+                    NUM_CREDENTIAL_IDENTITIES
+                    * ACCOUNT_REUSE_LEVELS[
+                        scenario["account_reuse_level"]
+                    ]
+                )
+
+            local_mappings = (
+                NUM_CREDENTIAL_IDENTITIES
+                + (spread - 1) * reused
+            )
+
+            max_attempts = (
+                local_mappings
+                * MAX_ATTEMPTS_PER_ACCOUNT
+            )
+
+            capacity = round(
+                max_attempts
+                * ROTATION_LEVELS[
+                    scenario["rotation_level"]
+                ]
+            )
+
+            campaign_id = f"{base_id}_{split}"
+
+            allocations[campaign_id] = (
+                next_offset,
+                capacity
+            )
+
+            next_offset += capacity
+
+    if next_offset > IP_NETWORK.num_addresses:
+        raise ValueError(
+            "Split IP allocations exceed benchmarking range."
+        )
+
+    return allocations
+
+SPLIT_IP_ALLOCATIONS = build_split_ip_allocations()
 
 def create_synthetic_ip(index, campaign_id, required_ips):
     """
@@ -709,12 +777,15 @@ def create_synthetic_ip(index, campaign_id, required_ips):
     if not 0 <= index < required_ips:
         raise ValueError("Synthetic IP index is out of range.")
 
-    if required_ips > IP_BLOCK_SIZE:
+    if (
+        campaign_id in CAMPAIGN_SLOTS
+        or campaign_id.endswith("_PILOT")
+    ) and required_ips > IP_BLOCK_SIZE:
         raise ValueError(
             f"Campaign requires {required_ips} unique IPs, "
-            f"but its allocated block holds {IP_BLOCK_SIZE}."
+            f"but its historical block holds {IP_BLOCK_SIZE}."
         )
-
+    
     if campaign_id in CAMPAIGN_SLOTS:
         network = IP_NETWORK
         slot = CAMPAIGN_SLOTS[campaign_id]
@@ -731,37 +802,27 @@ def create_synthetic_ip(index, campaign_id, required_ips):
         slot = CAMPAIGN_SLOTS[base_id]
 
     else:
-        network = SPLIT_IP_NETWORK
+        network = IP_NETWORK
 
-        split = next(
-            (
-                name
-                for name in SPLIT_OFFSETS
-                if campaign_id.endswith(f"_{name}")
-            ),
-            None
-        )
-
-        if split is None:
+        if campaign_id not in SPLIT_IP_ALLOCATIONS:
             raise ValueError(
-                f"Unknown campaign ID: {campaign_id}"
+                f"Unknown split campaign ID: {campaign_id}"
             )
 
-        base_id = campaign_id[
-            :-(len(split) + 1)
-        ]
-
-        if base_id not in CAMPAIGN_SLOTS:
-            raise ValueError(
-                f"Unknown base campaign ID: {base_id}"
-            )
-
-        slot = (
-            SPLIT_OFFSETS[split]
-            + CAMPAIGN_SLOTS[base_id]
+        start_offset, capacity = (
+            SPLIT_IP_ALLOCATIONS[campaign_id]
         )
 
-    address_offset = slot * IP_BLOCK_SIZE + index
+        if required_ips > capacity:
+            raise ValueError(
+                f"Campaign requires {required_ips} IPs, "
+                f"but its allocation holds {capacity}."
+            )
+
+        address_offset = start_offset + index
+
+    if campaign_id in CAMPAIGN_SLOTS or campaign_id.endswith("_PILOT"):
+        address_offset = slot * IP_BLOCK_SIZE + index
 
     if address_offset >= network.num_addresses:
         raise ValueError(
@@ -1090,6 +1151,23 @@ def save_synthetic_events(
     events
 ):
 
+    # Prevent direct Python calls from saving
+    # new unsplit campaigns.
+    campaign_id = config["campaign_id"]
+
+    is_split_campaign = campaign_id in SPLIT_IP_ALLOCATIONS
+
+    is_valid_pilot = (
+        campaign_id.endswith("_PILOT")
+        and campaign_id.removesuffix("_PILOT") in CAMPAIGN_SLOTS
+    )
+
+    if not (is_split_campaign or is_valid_pilot):
+        raise ValueError(
+            "Only split campaigns or development pilots "
+            "can be saved. Unsplit full campaigns are blocked."
+        )
+
     output_dir = (
         SYNTHETIC_EVENTS_DIR
         / config["campaign_id"]
@@ -1382,6 +1460,13 @@ if __name__ == "__main__":
             "--pilot and --split cannot be used together. "
             "Pilot campaigns are development-only."
     )
+
+    if not args.pilot and args.split is None:
+        parser.error(
+            "--split is required for new full campaigns. "
+            "Unsplit historical campaign IDs are preserved "
+            "for existing research data."
+        )
 
     campaign_config = build_campaign_config(
         args.scenario,
