@@ -65,6 +65,14 @@ ACCOUNT_REUSE_LEVELS = {
 # =========================================================
 
 CAMPAIGN_DURATION_MINUTES = 60
+
+# Chronological split boundaries (end-exclusive)
+CHRONOLOGICAL_SPLITS = {
+    "train": ("2020-02-03", "2020-10-01"),
+    "val": ("2020-10-01", "2020-12-01"),
+    "test": ("2020-12-01", "2021-03-01"),
+}
+
 NUM_CREDENTIAL_IDENTITIES = 100
 
 MIN_ATTEMPTS_PER_ACCOUNT = 1
@@ -785,7 +793,7 @@ def create_synthetic_ip(index, campaign_id, required_ips):
             f"Campaign requires {required_ips} unique IPs, "
             f"but its historical block holds {IP_BLOCK_SIZE}."
         )
-    
+
     if campaign_id in CAMPAIGN_SLOTS:
         network = IP_NETWORK
         slot = CAMPAIGN_SLOTS[campaign_id]
@@ -865,6 +873,45 @@ def generate_synthetic_events(
             ]
         )
     )
+
+    # Prevent campaigns from crossing chronological splits
+    split = config.get("split")
+
+    if (
+        config.get("campaign_id", "").endswith(
+            ("_TRAIN", "_VAL", "_TEST")
+        )
+        and split is None
+    ):
+        raise ValueError(
+            "Split campaign is missing its chronological split."
+        )
+
+    # Ensure the campaign ID matches its chronological split
+    if split is not None:
+        expected_suffix = f"_{split.upper()}"
+
+        if not config.get("campaign_id", "").endswith(
+            expected_suffix
+        ):
+            raise ValueError(
+                "Campaign ID and chronological split do not match."
+            )
+
+    if split is not None:
+        if split not in CHRONOLOGICAL_SPLITS:
+            raise ValueError(f"Unknown chronological split: {split}")
+
+        start_date, end_date = CHRONOLOGICAL_SPLITS[split]
+
+        split_start = datetime.fromisoformat(start_date)
+        split_end = datetime.fromisoformat(end_date)
+
+        if not (split_start <= campaign_start < campaign_end <= split_end):
+            raise ValueError(
+                f"Campaign {config['campaign_id']} falls outside "
+                f"its {split.upper()} chronological window."
+            )
 
     events = []
 
@@ -1264,7 +1311,7 @@ def save_campaign_manifest(
     unique_attacker_ips = {
         event["IP Address"]
         for event in events
-    }   
+    }
 
     rip_actual = (
         len(unique_attacker_ips) / len(events)
@@ -1509,6 +1556,32 @@ if __name__ == "__main__":
         campaign_config["campaign_start"] = (
             campaign_start.isoformat()
         )
+
+    # Validate split dates before selecting target users
+    if args.split is not None:
+        split_start, split_end = (
+            CHRONOLOGICAL_SPLITS[args.split]
+        )
+
+        start = datetime.fromisoformat(
+            campaign_config["campaign_start"]
+        )
+
+        end = start + timedelta(
+            minutes=campaign_config[
+                "campaign_duration_minutes"
+            ]
+        )
+
+        if not (
+            datetime.fromisoformat(split_start)
+            <= start < end
+            <= datetime.fromisoformat(split_end)
+        ):
+            parser.error(
+                f"Campaign falls outside the "
+                f"{args.split.upper()} chronological window."
+            )
 
     print_campaign_config(
         campaign_config
