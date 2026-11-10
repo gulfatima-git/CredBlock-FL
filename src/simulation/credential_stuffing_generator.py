@@ -73,6 +73,13 @@ CHRONOLOGICAL_SPLITS = {
     "test": ("2020-12-01", "2021-03-01"),
 }
 
+# Deterministic offsets for independent split realizations
+SPLIT_SEED_OFFSETS = {
+    "train": 0,
+    "val": 1000000,
+    "test": 2000000,
+}
+
 NUM_CREDENTIAL_IDENTITIES = 100
 
 MIN_ATTEMPTS_PER_ACCOUNT = 1
@@ -429,7 +436,10 @@ def select_campaign_target_users(config):
             select_local_users(
                 organization=organization,
                 number_of_users=count,
-                seed=config["seed"]
+                seed=(
+                    config["seed"]
+                    + SPLIT_SEED_OFFSETS.get(config.get("split"), 0)
+                )
             )
         )
 
@@ -858,7 +868,9 @@ def generate_synthetic_events(
         )
 
     rng = random.Random(
-        config["seed"] + 500000
+        config["seed"]
+        + 500000
+        + SPLIT_SEED_OFFSETS.get(config.get("split"), 0)
     )
 
     campaign_start = datetime.fromisoformat(
