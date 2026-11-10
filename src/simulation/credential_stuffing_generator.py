@@ -2,6 +2,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 import argparse
 import random
+import ipaddress
 import duckdb
 import pandas as pd
 
@@ -199,6 +200,7 @@ assert len(SCENARIOS) == 30, "Expected exactly 30 scenario families"
 # =========================================================
 # CREATE CONFIGURATION FOR ONE CAMPAIGN REALIZATION
 # =========================================================
+
 
 def build_campaign_config(
     scenario_id: str,
@@ -666,25 +668,56 @@ def verify_credential_mapping(
             )
 
 # =========================================================
-# GENERATE SYNTHETIC ATTACKER IP ADDRESS
+# DETERMINISTIC CAMPAIGN-SPECIFIC SYNTHETIC IP ALLOCATION
 # =========================================================
 
+IP_NETWORK = ipaddress.ip_network("198.18.0.0/15")
+IP_BLOCK_SIZE = 1024
 
-def create_synthetic_ip(index):
+EXPERIMENT_SEEDS = (1001, 1002, 1003)
 
-    # 198.18.0.0/15 is reserved for testing/benchmarking.
-    # We use these addresses only inside the offline simulation.
+CAMPAIGN_SLOTS = {
+    f"CS_{scenario:03d}_SEED{seed}": slot
+    for slot, (scenario, seed) in enumerate(
+        (scenario, seed)
+        for scenario in range(1, 31)
+        for seed in EXPERIMENT_SEEDS
+    )
+}
 
-    third_octet = index // 254
-    fourth_octet = (index % 254) + 1
 
-    if third_octet > 255:
+def create_synthetic_ip(index, campaign_id, required_ips):
+    """
+    Allocate unique synthetic IP addresses to each campaign.
+
+    Addresses are used only for offline simulation.
+    """
+
+    if campaign_id not in CAMPAIGN_SLOTS:
         raise ValueError(
-            "Too many synthetic attacker IPs requested."
+            f"Campaign has no allocated IP block: {campaign_id}"
         )
 
-    return (
-        f"198.18.{third_octet}.{fourth_octet}"
+    if not 0 <= index < required_ips:
+        raise ValueError("Synthetic IP index is out of range.")
+
+    if required_ips > IP_BLOCK_SIZE:
+        raise ValueError(
+            f"Campaign requires {required_ips} unique IPs, "
+            f"but its allocated block holds {IP_BLOCK_SIZE}."
+        )
+
+    slot = CAMPAIGN_SLOTS[campaign_id]
+
+    address_offset = slot * IP_BLOCK_SIZE + index
+
+    if address_offset >= IP_NETWORK.num_addresses:
+        raise ValueError(
+            "Synthetic IP allocation exceeds the reserved network."
+        )
+
+    return str(
+        IP_NETWORK.network_address + address_offset
     )
 
 
@@ -822,7 +855,7 @@ def generate_synthetic_events(
     )
 
     attacker_ips = [
-        create_synthetic_ip(i)
+        create_synthetic_ip(i, config["campaign_id"], number_of_unique_ips)
         for i in range(
             number_of_unique_ips
         )
@@ -863,7 +896,7 @@ def generate_synthetic_events(
 
     return events, campaign_start, campaign_end
 
-
+# =========================================================
 # =========================================================
 # VERIFY SYNTHETIC EVENTS
 # =========================================================
@@ -1010,9 +1043,17 @@ def save_synthetic_events(
         / config["campaign_id"]
     )
 
+    # Never overwrite an existing campaign directory.
+    if output_dir.exists():
+        raise FileExistsError(
+            f"Campaign output already exists: {output_dir}\n"
+            "Existing campaign data will not be overwritten. "
+            "Use a new campaign realization ID."
+        )
+
     output_dir.mkdir(
         parents=True,
-        exist_ok=True
+        exist_ok=False
     )
 
     for organization in (
@@ -1174,9 +1215,9 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-    "--start",
-    type=str,
-    help="Campaign start timestamp (YYYY-MM-DDTHH:MM:SS)."
+        "--start",
+        type=str,
+        help="Campaign start timestamp (YYYY-MM-DDTHH:MM:SS)."
     )
 
     args = parser.parse_args()
@@ -1215,7 +1256,7 @@ if __name__ == "__main__":
 
         campaign_config["campaign_start"] = (
             campaign_start.isoformat()
-    )
+        )
 
     print_campaign_config(
         campaign_config
