@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 import argparse
 import random
 import ipaddress
+import json
 import duckdb
 import pandas as pd
 
@@ -667,13 +668,18 @@ def verify_credential_mapping(
                 ]
             )
 
+
 # =========================================================
-# DETERMINISTIC CAMPAIGN-SPECIFIC SYNTHETIC IP ALLOCATION
+# DETERMINISTIC SYNTHETIC IP ALLOCATION
 # =========================================================
 
+# Historical campaigns: preserve original assignments.
 IP_NETWORK = ipaddress.ip_network("198.18.0.0/15")
-IP_BLOCK_SIZE = 1024
 
+# New chronological split-specific campaigns.
+SPLIT_IP_NETWORK = ipaddress.ip_network("10.0.0.0/8")
+
+IP_BLOCK_SIZE = 1024
 EXPERIMENT_SEEDS = (1001, 1002, 1003)
 
 CAMPAIGN_SLOTS = {
@@ -685,18 +691,20 @@ CAMPAIGN_SLOTS = {
     )
 }
 
+SPLIT_OFFSETS = {
+    "TRAIN": 0,
+    "VAL": 90,
+    "TEST": 180,
+}
+
 
 def create_synthetic_ip(index, campaign_id, required_ips):
     """
-    Allocate unique synthetic IP addresses to each campaign.
+    Allocate deterministic synthetic IPs for offline experiments.
 
-    Addresses are used only for offline simulation.
+    Historical campaign allocations remain unchanged.
+    Split-specific campaigns use disjoint blocks.
     """
-
-    if campaign_id not in CAMPAIGN_SLOTS:
-        raise ValueError(
-            f"Campaign has no allocated IP block: {campaign_id}"
-        )
 
     if not 0 <= index < required_ips:
         raise ValueError("Synthetic IP index is out of range.")
@@ -707,17 +715,61 @@ def create_synthetic_ip(index, campaign_id, required_ips):
             f"but its allocated block holds {IP_BLOCK_SIZE}."
         )
 
-    slot = CAMPAIGN_SLOTS[campaign_id]
+    if campaign_id in CAMPAIGN_SLOTS:
+        network = IP_NETWORK
+        slot = CAMPAIGN_SLOTS[campaign_id]
+
+    elif campaign_id.endswith("_PILOT"):
+        base_id = campaign_id.removesuffix("_PILOT")
+
+        if base_id not in CAMPAIGN_SLOTS:
+            raise ValueError(
+                f"Unknown pilot campaign ID: {campaign_id}"
+            )
+
+        network = IP_NETWORK
+        slot = CAMPAIGN_SLOTS[base_id]
+
+    else:
+        network = SPLIT_IP_NETWORK
+
+        split = next(
+            (
+                name
+                for name in SPLIT_OFFSETS
+                if campaign_id.endswith(f"_{name}")
+            ),
+            None
+        )
+
+        if split is None:
+            raise ValueError(
+                f"Unknown campaign ID: {campaign_id}"
+            )
+
+        base_id = campaign_id[
+            :-(len(split) + 1)
+        ]
+
+        if base_id not in CAMPAIGN_SLOTS:
+            raise ValueError(
+                f"Unknown base campaign ID: {base_id}"
+            )
+
+        slot = (
+            SPLIT_OFFSETS[split]
+            + CAMPAIGN_SLOTS[base_id]
+        )
 
     address_offset = slot * IP_BLOCK_SIZE + index
 
-    if address_offset >= IP_NETWORK.num_addresses:
+    if address_offset >= network.num_addresses:
         raise ValueError(
-            "Synthetic IP allocation exceeds the reserved network."
+            "Synthetic IP allocation exceeds reserved network."
         )
 
     return str(
-        IP_NETWORK.network_address + address_offset
+        network.network_address + address_offset
     )
 
 
@@ -1100,6 +1152,102 @@ def save_synthetic_events(
 
     return output_dir
 
+def save_campaign_manifest(
+    config,
+    events,
+    campaign_start,
+    campaign_end,
+    output_dir
+):
+    """
+    Save a reproducibility manifest for a synthetic campaign.
+    """
+
+    manifest_path = output_dir / "manifest.json"
+
+    if manifest_path.exists():
+        raise FileExistsError(
+            f"Campaign manifest already exists: {manifest_path}"
+        )
+
+    organization_counts = {
+        org: sum(
+            event["organization"] == org
+            for event in events
+        )
+        for org in config["targeted_organizations"]
+    }
+
+    sorg_actual = sum(
+        count > 0
+        for count in organization_counts.values()
+    )
+
+    unique_attacker_ips = {
+        event["IP Address"]
+        for event in events
+    }   
+
+    rip_actual = (
+        len(unique_attacker_ips) / len(events)
+        if events
+        else 0.0
+    )
+
+    credential_organizations = {}
+
+    for event in events:
+        credential_id = event["synthetic_credential_id"]
+        organization = event["organization"]
+
+        credential_organizations.setdefault(
+            credential_id, set()
+        ).add(organization)
+
+    total_unique_credentials = len(credential_organizations)
+
+    reused_credential_count = sum(
+        len(organizations) > 1
+        for organizations in credential_organizations.values()
+    )
+
+    raccount_actual = (
+        reused_credential_count / total_unique_credentials
+        if config["Sorg"] > 1 and total_unique_credentials > 0
+        else None
+    )
+
+    manifest = {
+        "campaign_id": config["campaign_id"],
+        "scenario_id": config["scenario_id"],
+        "seed": config["seed"],
+        "split": config.get("split", "development"),
+        "campaign_start": campaign_start.isoformat(),
+        "campaign_end": campaign_end.isoformat(),
+        "duration_minutes": config["campaign_duration_minutes"],
+        "targeted_organizations": config["targeted_organizations"],
+        "RIP_target": config["RIP_target"],
+        "RIP_actual": rip_actual,
+        "Sorg_target": config["Sorg"],
+        "Sorg_actual": sorg_actual,
+        "Raccount_target": config["Raccount_target"],
+        "Raccount_actual": raccount_actual,
+        "reused_credential_count": reused_credential_count,
+        "credential_identities": config["num_credential_identities"],
+        "min_attempts_per_account": config["min_attempts_per_account"],
+        "max_attempts_per_account": config["max_attempts_per_account"],
+        "success_probability": config["success_probability"],
+        "total_events": len(events),
+        "events_per_organization": organization_counts,
+    }
+
+    with manifest_path.open("x", encoding="utf-8") as file:
+        json.dump(manifest, file, indent=4)
+
+    print(f"Campaign manifest saved: {manifest_path}")
+
+    return manifest_path
+
 # =========================================================
 # DISPLAY CONFIGURATION
 # =========================================================
@@ -1220,12 +1368,31 @@ if __name__ == "__main__":
         help="Campaign start timestamp (YYYY-MM-DDTHH:MM:SS)."
     )
 
+    parser.add_argument(
+        "--split",
+        choices=["train", "val", "test"],
+        default=None,
+        help="Chronological dataset split."
+    )
+
     args = parser.parse_args()
+
+    if args.pilot and args.split is not None:
+        parser.error(
+            "--pilot and --split cannot be used together. "
+            "Pilot campaigns are development-only."
+    )
 
     campaign_config = build_campaign_config(
         args.scenario,
         args.seed
     )
+
+    if args.split is not None:
+        campaign_config["split"] = args.split
+        campaign_config["campaign_id"] += (
+            f"_{args.split.upper()}"
+        )
 
     if args.pilot:
         campaign_config["num_credential_identities"] = (
@@ -1314,6 +1481,14 @@ if __name__ == "__main__":
     output_dir = save_synthetic_events(
         campaign_config,
         synthetic_events
+    )
+
+    save_campaign_manifest(
+        campaign_config,
+        synthetic_events,
+        campaign_start,
+        campaign_end,
+        output_dir
     )
 
     print()
