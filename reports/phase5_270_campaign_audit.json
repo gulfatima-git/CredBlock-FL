@@ -1,0 +1,6033 @@
+{
+  "expected_campaigns": 270,
+  "audited_campaign_records": 270,
+  "campaign_status_counts": {
+    "FAIL": 3,
+    "PASS": 1,
+    "NOT_GENERATED": 266
+  },
+  "check_status_counts": {
+    "PASS": 335,
+    "FAIL": 3
+  },
+  "unexpected_campaign_directories": [],
+  "reports_are_read_only": true,
+  "campaigns": [
+    {
+      "campaign_id": "CS_001_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_001",
+      "status": "FAIL",
+      "event_count": 206,
+      "scheduled_start": "2020-02-04T00:00:00",
+      "manifest_start": "2020-03-01T12:00:00",
+      "observed_event_start": "2020-03-01T12:00:11.466806",
+      "observed_event_end": "2020-03-01T12:59:52.719948",
+      "ip_min_offset": 1024,
+      "ip_max_offset": 1064,
+      "failed_checks": [
+        "manifest_start_matches_schedule"
+      ],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-04T00:00:00"
+        },
+        {
+          "check": "manifest_exists",
+          "status": "PASS",
+          "detail": "manifest.json"
+        },
+        {
+          "check": "manifest_campaign_id",
+          "status": "PASS",
+          "detail": "CS_001_SEED1001_TRAIN"
+        },
+        {
+          "check": "manifest_split",
+          "status": "PASS",
+          "detail": "train"
+        },
+        {
+          "check": "manifest_scenario",
+          "status": "PASS",
+          "detail": "CS_001"
+        },
+        {
+          "check": "manifest_start_matches_schedule",
+          "status": "FAIL",
+          "detail": "manifest=2020-03-01T12:00:00, scheduled=2020-02-04T00:00:00"
+        },
+        {
+          "check": "manifest_duration",
+          "status": "PASS",
+          "detail": "actual=1:00:00, expected=1:00:00"
+        },
+        {
+          "check": "manifest_within_chronological_split",
+          "status": "PASS",
+          "detail": "2020-03-01T12:00:00 to 2020-03-01T13:00:00"
+        },
+        {
+          "check": "manifest_required_measurements",
+          "status": "PASS",
+          "detail": "[]"
+        },
+        {
+          "check": "manifest_org_spread_matches_scenario",
+          "status": "PASS",
+          "detail": "actual=1, expected=1"
+        },
+        {
+          "check": "manifest_rip_measurement_consistent",
+          "status": "PASS",
+          "detail": "target=0.2, actual=0.19902912621359223, tolerance=0.004854369032038834"
+        },
+        {
+          "check": "parquet_files_present",
+          "status": "PASS",
+          "detail": "1 files"
+        },
+        {
+          "check": "actual_ips_within_reserved_range",
+          "status": "PASS",
+          "detail": "observed offsets=1024..1064; reservation=1024..1083"
+        },
+        {
+          "check": "event_campaign_ids_consistent",
+          "status": "PASS",
+          "detail": "['CS_001_SEED1001_TRAIN']"
+        },
+        {
+          "check": "event_timestamps_within_manifest_window",
+          "status": "PASS",
+          "detail": "observed=2020-03-01T12:00:11.466806..2020-03-01T12:59:52.719948"
+        },
+        {
+          "check": "event_ids_unique_within_campaign",
+          "status": "PASS",
+          "detail": "duplicates=0"
+        },
+        {
+          "check": "event_count_matches_manifest",
+          "status": "PASS",
+          "detail": "events=206, manifest=206"
+        },
+        {
+          "check": "parquet_read_errors",
+          "status": "PASS",
+          "detail": "[]"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_001_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_001",
+      "status": "PASS",
+      "event_count": 194,
+      "scheduled_start": "2020-02-05T09:00:00",
+      "manifest_start": "2020-02-05T09:00:00",
+      "observed_event_start": "2020-02-05T09:00:27.118204",
+      "observed_event_end": "2020-02-05T09:59:14.018113",
+      "ip_min_offset": 1084,
+      "ip_max_offset": 1122,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-05T09:00:00"
+        },
+        {
+          "check": "manifest_exists",
+          "status": "PASS",
+          "detail": "manifest.json"
+        },
+        {
+          "check": "manifest_campaign_id",
+          "status": "PASS",
+          "detail": "CS_001_SEED1002_TRAIN"
+        },
+        {
+          "check": "manifest_split",
+          "status": "PASS",
+          "detail": "train"
+        },
+        {
+          "check": "manifest_scenario",
+          "status": "PASS",
+          "detail": "CS_001"
+        },
+        {
+          "check": "manifest_start_matches_schedule",
+          "status": "PASS",
+          "detail": "manifest=2020-02-05T09:00:00, scheduled=2020-02-05T09:00:00"
+        },
+        {
+          "check": "manifest_duration",
+          "status": "PASS",
+          "detail": "actual=1:00:00, expected=1:00:00"
+        },
+        {
+          "check": "manifest_within_chronological_split",
+          "status": "PASS",
+          "detail": "2020-02-05T09:00:00 to 2020-02-05T10:00:00"
+        },
+        {
+          "check": "manifest_required_measurements",
+          "status": "PASS",
+          "detail": "[]"
+        },
+        {
+          "check": "manifest_org_spread_matches_scenario",
+          "status": "PASS",
+          "detail": "actual=1, expected=1"
+        },
+        {
+          "check": "manifest_rip_measurement_consistent",
+          "status": "PASS",
+          "detail": "target=0.2, actual=0.20103092783505155, tolerance=0.0051546392752577315"
+        },
+        {
+          "check": "parquet_files_present",
+          "status": "PASS",
+          "detail": "1 files"
+        },
+        {
+          "check": "actual_ips_within_reserved_range",
+          "status": "PASS",
+          "detail": "observed offsets=1084..1122; reservation=1084..1143"
+        },
+        {
+          "check": "event_campaign_ids_consistent",
+          "status": "PASS",
+          "detail": "['CS_001_SEED1002_TRAIN']"
+        },
+        {
+          "check": "event_timestamps_within_manifest_window",
+          "status": "PASS",
+          "detail": "observed=2020-02-05T09:00:27.118204..2020-02-05T09:59:14.018113"
+        },
+        {
+          "check": "event_ids_unique_within_campaign",
+          "status": "PASS",
+          "detail": "duplicates=0"
+        },
+        {
+          "check": "event_count_matches_manifest",
+          "status": "PASS",
+          "detail": "events=194, manifest=194"
+        },
+        {
+          "check": "parquet_read_errors",
+          "status": "PASS",
+          "detail": "[]"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_001_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_001",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-02-05T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-05T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-02-05T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-05T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-02-09T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-09T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-02-13T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-13T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-02-17T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-17T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-02-27T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-27T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-02-29T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-02-29T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-01T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-01T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-02T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-02T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-03T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-03T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-05T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-05T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-12T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-12T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-12T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-12T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-14T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-14T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-14T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-14T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-19T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-19T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-27T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-27T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-28T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-28T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-03-30T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-03-30T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-03T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-03T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-04T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-04T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-05T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-05T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-06T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-06T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-07T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-07T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-10T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-10T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-12T04:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-12T04:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-15T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-15T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-17T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-17T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-19T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-19T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-20T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-20T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-22T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-22T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-23T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-23T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-24T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-24T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-26T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-26T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-04-29T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-04-29T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-05-07T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-05-07T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-05-10T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-05-10T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-05-16T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-05-16T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-05-17T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-05-17T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-05-20T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-05-20T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-05-25T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-05-25T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-05-27T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-05-27T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-04T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-04T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-07T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-07T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-16T10:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-16T10:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-17T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-17T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-17T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-17T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-22T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-22T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-23T04:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-23T04:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-26T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-26T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-29T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-29T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-30T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-30T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-06-30T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-06-30T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-03T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-03T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-05T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-05T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-08T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-08T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-09T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-09T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-09T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-09T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-09T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-09T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-11T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-11T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-13T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-13T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-15T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-15T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-17T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-17T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-18T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-18T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-18T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-18T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-24T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-24T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-07-29T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-07-29T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-03T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-03T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-09T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-09T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-10T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-10T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-14T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-14T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-18T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-18T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-18T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-18T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-20T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-20T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-23T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-23T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-23T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-23T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-08-29T07:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-08-29T07:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-02T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-02T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-04T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-04T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-06T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-06T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-07T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-07T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-08T14:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-08T14:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-13T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-13T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-16T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-16T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-18T07:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-18T07:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1001_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-20T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-20T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1002_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-21T04:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-21T04:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1003_TRAIN",
+      "split": "TRAIN",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-09-28T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-09-28T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_001_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_001",
+      "status": "FAIL",
+      "event_count": 206,
+      "scheduled_start": "2020-10-01T07:00:00",
+      "manifest_start": "2020-11-01T12:00:00",
+      "observed_event_start": "2020-11-01T12:00:11.466806",
+      "observed_event_end": "2020-11-01T12:59:52.719948",
+      "ip_min_offset": 28699,
+      "ip_max_offset": 28739,
+      "failed_checks": [
+        "manifest_start_matches_schedule"
+      ],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-01T07:00:00"
+        },
+        {
+          "check": "manifest_exists",
+          "status": "PASS",
+          "detail": "manifest.json"
+        },
+        {
+          "check": "manifest_campaign_id",
+          "status": "PASS",
+          "detail": "CS_001_SEED1001_VAL"
+        },
+        {
+          "check": "manifest_split",
+          "status": "PASS",
+          "detail": "val"
+        },
+        {
+          "check": "manifest_scenario",
+          "status": "PASS",
+          "detail": "CS_001"
+        },
+        {
+          "check": "manifest_start_matches_schedule",
+          "status": "FAIL",
+          "detail": "manifest=2020-11-01T12:00:00, scheduled=2020-10-01T07:00:00"
+        },
+        {
+          "check": "manifest_duration",
+          "status": "PASS",
+          "detail": "actual=1:00:00, expected=1:00:00"
+        },
+        {
+          "check": "manifest_within_chronological_split",
+          "status": "PASS",
+          "detail": "2020-11-01T12:00:00 to 2020-11-01T13:00:00"
+        },
+        {
+          "check": "manifest_required_measurements",
+          "status": "PASS",
+          "detail": "[]"
+        },
+        {
+          "check": "manifest_org_spread_matches_scenario",
+          "status": "PASS",
+          "detail": "actual=1, expected=1"
+        },
+        {
+          "check": "manifest_rip_measurement_consistent",
+          "status": "PASS",
+          "detail": "target=0.2, actual=0.19902912621359223, tolerance=0.004854369032038834"
+        },
+        {
+          "check": "parquet_files_present",
+          "status": "PASS",
+          "detail": "1 files"
+        },
+        {
+          "check": "actual_ips_within_reserved_range",
+          "status": "PASS",
+          "detail": "observed offsets=28699..28739; reservation=28699..28758"
+        },
+        {
+          "check": "event_campaign_ids_consistent",
+          "status": "PASS",
+          "detail": "['CS_001_SEED1001_VAL']"
+        },
+        {
+          "check": "event_timestamps_within_manifest_window",
+          "status": "PASS",
+          "detail": "observed=2020-11-01T12:00:11.466806..2020-11-01T12:59:52.719948"
+        },
+        {
+          "check": "event_ids_unique_within_campaign",
+          "status": "PASS",
+          "detail": "duplicates=0"
+        },
+        {
+          "check": "event_count_matches_manifest",
+          "status": "PASS",
+          "detail": "events=206, manifest=206"
+        },
+        {
+          "check": "parquet_read_errors",
+          "status": "PASS",
+          "detail": "[]"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_001_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_001",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-01T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-01T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_001_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_001",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-02T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-02T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-02T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-02T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-02T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-02T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-02T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-02T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-03T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-03T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-03T10:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-03T10:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-03T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-03T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-06T07:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-06T07:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-06T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-06T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-06T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-06T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-07T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-07T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-07T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-07T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-08T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-08T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-08T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-08T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-09T10:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-09T10:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-10T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-10T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-11T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-11T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-11T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-11T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-11T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-11T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-11T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-11T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-11T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-11T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-12T04:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-12T04:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-12T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-12T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-13T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-13T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-13T07:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-13T07:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-14T10:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-14T10:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-15T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-15T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-15T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-15T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-21T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-21T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-21T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-21T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-22T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-22T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-22T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-22T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-23T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-23T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-24T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-24T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-24T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-24T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-25T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-25T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-25T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-25T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-26T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-26T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-28T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-28T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-28T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-28T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-28T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-28T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-10-29T10:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-10-29T10:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-01T04:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-01T04:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-01T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-02T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-02T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-03T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-03T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-03T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-03T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-04T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-04T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-04T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-04T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-05T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-05T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-06T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-06T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-06T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-06T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-07T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-07T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-08T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-08T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-08T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-08T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-08T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-08T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-10T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-10T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-10T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-10T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-10T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-10T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-12T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-12T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-12T10:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-12T10:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-14T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-14T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-14T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-14T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-15T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-15T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-15T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-15T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-17T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-17T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-18T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-18T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-18T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-18T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-19T07:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-19T07:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-20T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-20T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-21T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-21T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-21T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-21T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-22T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-22T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-22T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-22T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-22T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-22T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-22T14:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-22T14:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-22T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-22T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-22T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-22T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-25T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-25T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-25T14:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-25T14:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-26T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-26T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-26T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-26T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-26T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-26T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-26T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-26T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-27T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-27T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1001_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-28T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-28T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1002_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-29T14:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-29T14:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1003_VAL",
+      "split": "VAL",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-11-29T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-11-29T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_001_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_001",
+      "status": "FAIL",
+      "event_count": 206,
+      "scheduled_start": "2020-12-01T06:00:00",
+      "manifest_start": "2021-01-15T12:00:00",
+      "observed_event_start": "2021-01-15T12:00:11.466806",
+      "observed_event_end": "2021-01-15T12:59:52.719948",
+      "ip_min_offset": 56374,
+      "ip_max_offset": 56414,
+      "failed_checks": [
+        "manifest_start_matches_schedule"
+      ],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-01T06:00:00"
+        },
+        {
+          "check": "manifest_exists",
+          "status": "PASS",
+          "detail": "manifest.json"
+        },
+        {
+          "check": "manifest_campaign_id",
+          "status": "PASS",
+          "detail": "CS_001_SEED1001_TEST"
+        },
+        {
+          "check": "manifest_split",
+          "status": "PASS",
+          "detail": "test"
+        },
+        {
+          "check": "manifest_scenario",
+          "status": "PASS",
+          "detail": "CS_001"
+        },
+        {
+          "check": "manifest_start_matches_schedule",
+          "status": "FAIL",
+          "detail": "manifest=2021-01-15T12:00:00, scheduled=2020-12-01T06:00:00"
+        },
+        {
+          "check": "manifest_duration",
+          "status": "PASS",
+          "detail": "actual=1:00:00, expected=1:00:00"
+        },
+        {
+          "check": "manifest_within_chronological_split",
+          "status": "PASS",
+          "detail": "2021-01-15T12:00:00 to 2021-01-15T13:00:00"
+        },
+        {
+          "check": "manifest_required_measurements",
+          "status": "PASS",
+          "detail": "[]"
+        },
+        {
+          "check": "manifest_org_spread_matches_scenario",
+          "status": "PASS",
+          "detail": "actual=1, expected=1"
+        },
+        {
+          "check": "manifest_rip_measurement_consistent",
+          "status": "PASS",
+          "detail": "target=0.2, actual=0.19902912621359223, tolerance=0.004854369032038834"
+        },
+        {
+          "check": "parquet_files_present",
+          "status": "PASS",
+          "detail": "1 files"
+        },
+        {
+          "check": "actual_ips_within_reserved_range",
+          "status": "PASS",
+          "detail": "observed offsets=56374..56414; reservation=56374..56433"
+        },
+        {
+          "check": "event_campaign_ids_consistent",
+          "status": "PASS",
+          "detail": "['CS_001_SEED1001_TEST']"
+        },
+        {
+          "check": "event_timestamps_within_manifest_window",
+          "status": "PASS",
+          "detail": "observed=2021-01-15T12:00:11.466806..2021-01-15T12:59:52.719948"
+        },
+        {
+          "check": "event_ids_unique_within_campaign",
+          "status": "PASS",
+          "detail": "duplicates=0"
+        },
+        {
+          "check": "event_count_matches_manifest",
+          "status": "PASS",
+          "detail": "events=206, manifest=206"
+        },
+        {
+          "check": "parquet_read_errors",
+          "status": "PASS",
+          "detail": "[]"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_001_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_001",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-01T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-01T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_001_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_001",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-03T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-03T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-04T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-04T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-05T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-05T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_002_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_002",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-06T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-06T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-10T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-10T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-11T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-11T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_003_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_003",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-11T20:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-11T20:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-12T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-12T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-12T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-12T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_004_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_004",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-13T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-13T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-14T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-14T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-15T04:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-15T04:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_005_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_005",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-16T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-16T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-20T10:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-20T10:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-22T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-22T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_006_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_006",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-22T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-22T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-24T07:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-24T07:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-24T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-24T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_007_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_007",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-28T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-28T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2020-12-31T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2020-12-31T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-01T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-01T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_008_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_008",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-01T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-01T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-01T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-01T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-02T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-02T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_009_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_009",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-02T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-02T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-03T14:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-03T14:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-03T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-03T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_010_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_010",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-05T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-05T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-05T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-05T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-06T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-06T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_011_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_011",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-06T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-06T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-07T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-07T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-08T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-08T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_012_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_012",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-08T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-08T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-10T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-10T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-11T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-11T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_013_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_013",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-12T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-12T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-12T04:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-12T04:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-12T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-12T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_014_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_014",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-14T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-14T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-15T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-15T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-16T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-16T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_015_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_015",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-16T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-16T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-16T11:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-16T11:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-16T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-16T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_016_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_016",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-16T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-16T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-18T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-18T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-18T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-18T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_017_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_017",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-19T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-19T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-21T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-21T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-23T18:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-23T18:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_018_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_018",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-24T00:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-24T00:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-24T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-24T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-24T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-24T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_019_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_019",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-26T12:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-26T12:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-28T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-28T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-28T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-28T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_020_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_020",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-29T06:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-29T06:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-29T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-29T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-30T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-30T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_021_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_021",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-01-31T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-01-31T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-01T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-01T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-06T05:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-06T05:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_022_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_022",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-07T09:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-07T09:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-09T23:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-09T23:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-10T02:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-10T02:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_023_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_023",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-10T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-10T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-11T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-11T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-12T16:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-12T16:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_024_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_024",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-12T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-12T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-13T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-13T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-14T03:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-14T03:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_025_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_025",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-14T17:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-14T17:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-15T14:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-15T14:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-16T01:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-16T01:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_026_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_026",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-16T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-16T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-17T13:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-17T13:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-18T14:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-18T14:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_027_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_027",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-18T21:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-18T21:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-19T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-19T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-20T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-20T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_028_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_028",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-21T22:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-21T22:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-23T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-23T15:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-24T14:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-24T14:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_029_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_029",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-25T04:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-25T04:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1001_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-25T08:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-25T08:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1002_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-26T19:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-26T19:00:00"
+        }
+      ]
+    },
+    {
+      "campaign_id": "CS_030_SEED1003_TEST",
+      "split": "TEST",
+      "scenario_id": "CS_030",
+      "status": "NOT_GENERATED",
+      "event_count": null,
+      "scheduled_start": "2021-02-28T15:00:00",
+      "manifest_start": null,
+      "observed_event_start": null,
+      "observed_event_end": null,
+      "ip_min_offset": null,
+      "ip_max_offset": null,
+      "failed_checks": [],
+      "checks": [
+        {
+          "check": "schedule_entry_exists",
+          "status": "PASS",
+          "detail": "2021-02-28T15:00:00"
+        }
+      ]
+    }
+  ]
+}
