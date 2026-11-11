@@ -1,0 +1,602 @@
+[
+  {
+    "campaign_id": "CS_017_SEED1003_TEST",
+    "scheduled_start": "2021-01-19T21:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_018_SEED1001_TEST",
+    "scheduled_start": "2021-01-21T23:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_018_SEED1002_TEST",
+    "scheduled_start": "2021-01-23T18:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_018_SEED1003_TEST",
+    "scheduled_start": "2021-01-24T00:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_019_SEED1001_TEST",
+    "scheduled_start": "2021-01-24T12:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_019_SEED1002_TEST",
+    "scheduled_start": "2021-01-24T15:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_019_SEED1003_TEST",
+    "scheduled_start": "2021-01-26T12:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_020_SEED1001_TEST",
+    "scheduled_start": "2021-01-28T05:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_020_SEED1002_TEST",
+    "scheduled_start": "2021-01-28T06:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_020_SEED1003_TEST",
+    "scheduled_start": "2021-01-29T06:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_021_SEED1001_TEST",
+    "scheduled_start": "2021-01-29T08:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_021_SEED1002_TEST",
+    "scheduled_start": "2021-01-30T16:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_021_SEED1003_TEST",
+    "scheduled_start": "2021-01-31T09:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_022_SEED1001_TEST",
+    "scheduled_start": "2021-02-01T05:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_022_SEED1002_TEST",
+    "scheduled_start": "2021-02-06T05:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_022_SEED1003_TEST",
+    "scheduled_start": "2021-02-07T09:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_023_SEED1001_TEST",
+    "scheduled_start": "2021-02-09T23:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_023_SEED1002_TEST",
+    "scheduled_start": "2021-02-10T02:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_023_SEED1003_TEST",
+    "scheduled_start": "2021-02-10T22:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_024_SEED1001_TEST",
+    "scheduled_start": "2021-02-11T13:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_024_SEED1002_TEST",
+    "scheduled_start": "2021-02-12T16:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_024_SEED1003_TEST",
+    "scheduled_start": "2021-02-12T17:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_025_SEED1001_TEST",
+    "scheduled_start": "2021-02-13T21:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_025_SEED1002_TEST",
+    "scheduled_start": "2021-02-14T03:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_025_SEED1003_TEST",
+    "scheduled_start": "2021-02-14T17:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_026_SEED1001_TEST",
+    "scheduled_start": "2021-02-15T14:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_026_SEED1002_TEST",
+    "scheduled_start": "2021-02-16T01:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_026_SEED1003_TEST",
+    "scheduled_start": "2021-02-16T15:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_027_SEED1001_TEST",
+    "scheduled_start": "2021-02-17T13:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_027_SEED1002_TEST",
+    "scheduled_start": "2021-02-18T14:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_027_SEED1003_TEST",
+    "scheduled_start": "2021-02-18T21:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_028_SEED1001_TEST",
+    "scheduled_start": "2021-02-19T08:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_028_SEED1002_TEST",
+    "scheduled_start": "2021-02-20T22:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_028_SEED1003_TEST",
+    "scheduled_start": "2021-02-21T22:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_029_SEED1001_TEST",
+    "scheduled_start": "2021-02-23T15:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_029_SEED1002_TEST",
+    "scheduled_start": "2021-02-24T14:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_029_SEED1003_TEST",
+    "scheduled_start": "2021-02-25T04:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_030_SEED1001_TEST",
+    "scheduled_start": "2021-02-25T08:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_030_SEED1002_TEST",
+    "scheduled_start": "2021-02-26T19:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  },
+  {
+    "campaign_id": "CS_030_SEED1003_TEST",
+    "scheduled_start": "2021-02-28T15:00:00",
+    "return_code": 0,
+    "status": "PASS",
+    "checks": {
+      "campaign_id": true,
+      "split": true,
+      "campaign_start": true,
+      "duration_minutes": true,
+      "scenario_id": true,
+      "seed": true,
+      "parquet_present": true
+    }
+  }
+]

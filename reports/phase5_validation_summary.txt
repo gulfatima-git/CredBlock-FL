@@ -1,0 +1,20 @@
+CRED BLOCK-FL PHASE 5 VALIDATION SUMMARY
+================================================
+Overall status: PASS
+Campaign records audited: 270
+Existing audit statuses: {'PASS': 270}
+Additional checks: {'PASS': 2974}
+
+Split statistics:
+TEST: campaigns=90, events=36138, successes=1515, failures=34623, success_rate=0.04192262991864519
+TRAIN: campaigns=90, events=36600, successes=1947, failures=34653, success_rate=0.05319672131147541
+VAL: campaigns=90, events=37413, successes=1941, failures=35472, success_rate=0.051880362440862804
+
+Reports:
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_validation_report.json
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_statistics.json
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_campaign_statistics.csv
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_validation_checks.csv
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_validation_summary.txt
+
+Campaign data was not modified.

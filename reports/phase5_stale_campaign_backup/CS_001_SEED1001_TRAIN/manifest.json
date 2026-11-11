@@ -1,0 +1,27 @@
+{
+    "campaign_id": "CS_001_SEED1001_TRAIN",
+    "scenario_id": "CS_001",
+    "seed": 1001,
+    "split": "train",
+    "campaign_start": "2020-03-01T12:00:00",
+    "campaign_end": "2020-03-01T13:00:00",
+    "duration_minutes": 60,
+    "targeted_organizations": [
+        "Org1"
+    ],
+    "RIP_target": 0.2,
+    "RIP_actual": 0.19902912621359223,
+    "Sorg_target": 1,
+    "Sorg_actual": 1,
+    "Raccount_target": null,
+    "Raccount_actual": null,
+    "reused_credential_count": 0,
+    "credential_identities": 100,
+    "min_attempts_per_account": 1,
+    "max_attempts_per_account": 3,
+    "success_probability": 0.05,
+    "total_events": 206,
+    "events_per_organization": {
+        "Org1": 206
+    }
+}
