@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_RA_CS_020_SEED1001_VAL",
+  "family": "Raccount_fixed_per_org_attempts",
+  "recipe_id": "RA_VAL_SEED1001_S3_RIP0.20",
+  "source_campaign_id": "CS_020_SEED1001_VAL",
+  "split": "VAL",
+  "seed": 1001,
+  "Sorg_target": 3,
+  "Raccount_target": 0.8,
+  "RIP_target": 0.2,
+  "RIP_actual": 0.2,
+  "total_events": 260,
+  "campaign_start": "2020-10-06T07:00:00",
+  "campaign_end": "2020-10-06T08:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "b36d41e4322318c969eef6f60d222a0fddfd0c9b725c8b8e07630322822db864",
+  "successful_events": 13,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org2",
+    "Org5"
+  ],
+  "events_per_organization": {
+    "Org1": 87,
+    "Org2": 87,
+    "Org5": 86
+  },
+  "target_users_per_organization": {
+    "Org1": 87,
+    "Org2": 87,
+    "Org5": 86
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 80,
+  "original_campaign_start": "2020-11-08T23:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 58309,
+      "replay_background_event_count": 478
+    },
+    "Org2": {
+      "history_event_count": 62211,
+      "replay_background_event_count": 467
+    },
+    "Org5": {
+      "history_event_count": 71533,
+      "replay_background_event_count": 569
+    }
+  },
+  "source_manifest_sha256": "61c3862ba0d368def78a2b2a8f9320fcc7715eec1b6d5c604690420931399d2b",
+  "output_parquet_sha256": {
+    "Org1": "458a068e910b5e7b673989dffb48588ee977cee6a9dcce185a2173a9d96ddcd0",
+    "Org2": "f7949304b5a9a0016ca81af702dfb4ecf17928b5fc130770a676d5c12009f829",
+    "Org5": "14b69b089b3d990717c75293cd72478324db9dca02f0da8653cbe9262b292563"
+  }
+}

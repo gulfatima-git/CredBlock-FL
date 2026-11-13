@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_SO_CS_021_SEED1001_VAL",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_VAL_SEED1001_RIP0.50_RA0.20",
+  "source_campaign_id": "CS_021_SEED1001_VAL",
+  "split": "VAL",
+  "seed": 1001,
+  "Sorg_target": 3,
+  "Raccount_target": 0.2,
+  "RIP_target": 0.5,
+  "RIP_actual": 0.5,
+  "total_events": 300,
+  "campaign_start": "2020-10-06T07:00:00",
+  "campaign_end": "2020-10-06T08:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "a04583b8c932ec8b730c2c878c8faaf402d7c8e43be8a330049940b957b55ce1",
+  "successful_events": 10,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org2",
+    "Org5"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org2": 100,
+    "Org5": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 47,
+    "Org2": 47,
+    "Org5": 46
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 20,
+  "original_campaign_start": "2020-11-10T06:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 58309,
+      "replay_background_event_count": 478
+    },
+    "Org2": {
+      "history_event_count": 62211,
+      "replay_background_event_count": 467
+    },
+    "Org5": {
+      "history_event_count": 71533,
+      "replay_background_event_count": 569
+    }
+  },
+  "source_manifest_sha256": "26e1a88b51c4cf43718d3c8489a307dd562adf3477354bff83c29036544d7d91",
+  "output_parquet_sha256": {
+    "Org1": "077328f5ef102509f60790108a6501d8ee1c7c53015dbe25dd76c91b0cd67a40",
+    "Org2": "cdaeb9532c452022a959a7bd594c43dfcb2e33b61aab819e7273b675090549d7",
+    "Org5": "22e90edee3ec2bfc7407353ff345001e4692409351d165277191719c6e010660"
+  }
+}

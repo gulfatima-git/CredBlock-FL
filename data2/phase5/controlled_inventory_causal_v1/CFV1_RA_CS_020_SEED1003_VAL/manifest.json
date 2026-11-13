@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_RA_CS_020_SEED1003_VAL",
+  "family": "Raccount_fixed_per_org_attempts",
+  "recipe_id": "RA_VAL_SEED1003_S3_RIP0.20",
+  "source_campaign_id": "CS_020_SEED1003_VAL",
+  "split": "VAL",
+  "seed": 1003,
+  "Sorg_target": 3,
+  "Raccount_target": 0.8,
+  "RIP_target": 0.2,
+  "RIP_actual": 0.2,
+  "total_events": 260,
+  "campaign_start": "2020-10-06T23:00:00",
+  "campaign_end": "2020-10-07T00:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "e21795fe7381696ee287482a8057ba25eda14136855da0b69d5883b47d797695",
+  "successful_events": 14,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org3",
+    "Org4"
+  ],
+  "events_per_organization": {
+    "Org1": 87,
+    "Org3": 87,
+    "Org4": 86
+  },
+  "target_users_per_organization": {
+    "Org1": 87,
+    "Org3": 87,
+    "Org4": 86
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 80,
+  "original_campaign_start": "2020-11-10T05:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 57770,
+      "replay_background_event_count": 60
+    },
+    "Org3": {
+      "history_event_count": 66887,
+      "replay_background_event_count": 78
+    },
+    "Org4": {
+      "history_event_count": 68162,
+      "replay_background_event_count": 93
+    }
+  },
+  "source_manifest_sha256": "073d4ad0f2ad0b0ef8c67e4553f02ed31396348418ffc84a798aaeb4b4a3c08f",
+  "output_parquet_sha256": {
+    "Org1": "0ac11c737fb29bab259526b7d6809d46da54a53f59b361fda57732e8d647e5d5",
+    "Org3": "92f37d5b77f9c9e88f74164be81a1c9054d51c85d95b0f216d3cd3ce0d93a9b4",
+    "Org4": "7d792f43e3f5da4adae6d5d09dd3af5782e71e883b13422440bba3a4414ee410"
+  }
+}

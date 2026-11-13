@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_SO_CS_023_SEED1003_TRAIN",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_TRAIN_SEED1003_RIP0.80_RA0.50",
+  "source_campaign_id": "CS_023_SEED1003_TRAIN",
+  "split": "TRAIN",
+  "seed": 1003,
+  "Sorg_target": 3,
+  "Raccount_target": 0.5,
+  "RIP_target": 0.8,
+  "RIP_actual": 0.8,
+  "total_events": 300,
+  "campaign_start": "2020-03-03T21:00:00",
+  "campaign_end": "2020-03-03T22:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "a60467befe075e06210e47f74e76d9597b3e51b0a32b470356c51ef712e80c94",
+  "successful_events": 10,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org3",
+    "Org4"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org3": 100,
+    "Org4": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 67,
+    "Org3": 67,
+    "Org4": 66
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 50,
+  "original_campaign_start": "2020-07-29T02:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 60488,
+      "replay_background_event_count": 280
+    },
+    "Org3": {
+      "history_event_count": 67808,
+      "replay_background_event_count": 381
+    },
+    "Org4": {
+      "history_event_count": 71410,
+      "replay_background_event_count": 339
+    }
+  },
+  "source_manifest_sha256": "81c29a47759fcefeb64f0207f040e5b515f13501b1434bcc5e145ecf8b27e821",
+  "output_parquet_sha256": {
+    "Org1": "ecf9b79a8a07c22f4ae15907c1bfff09a030ae48203ee446408944dfb6536127",
+    "Org3": "a8e359522b8f95f1bb767e5c33d66d321aa7080c5d5219676327fc4f6383afff",
+    "Org4": "95dfdefd7320904a3361a2b904de4901a8d328172b1e355f0fe28c792470a379"
+  }
+}

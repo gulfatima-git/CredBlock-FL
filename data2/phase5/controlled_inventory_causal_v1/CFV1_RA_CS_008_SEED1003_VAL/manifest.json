@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_RA_CS_008_SEED1003_VAL",
+  "family": "Raccount_fixed_per_org_attempts",
+  "recipe_id": "RA_VAL_SEED1003_S3_RIP0.50",
+  "source_campaign_id": "CS_008_SEED1003_VAL",
+  "split": "VAL",
+  "seed": 1003,
+  "Sorg_target": 3,
+  "Raccount_target": 0.8,
+  "RIP_target": 0.5,
+  "RIP_actual": 0.5,
+  "total_events": 260,
+  "campaign_start": "2020-10-06T23:00:00",
+  "campaign_end": "2020-10-07T00:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "e21795fe7381696ee287482a8057ba25eda14136855da0b69d5883b47d797695",
+  "successful_events": 14,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org3",
+    "Org4"
+  ],
+  "events_per_organization": {
+    "Org1": 87,
+    "Org3": 87,
+    "Org4": 86
+  },
+  "target_users_per_organization": {
+    "Org1": 87,
+    "Org3": 87,
+    "Org4": 86
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 80,
+  "original_campaign_start": "2020-10-12T04:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 57770,
+      "replay_background_event_count": 60
+    },
+    "Org3": {
+      "history_event_count": 66887,
+      "replay_background_event_count": 78
+    },
+    "Org4": {
+      "history_event_count": 68162,
+      "replay_background_event_count": 93
+    }
+  },
+  "source_manifest_sha256": "be0379a27d469f6d15707c942f1781d4b354635f006772b44215598206ce62d4",
+  "output_parquet_sha256": {
+    "Org1": "e1082ba738f156588db51d9722b9af5d47f2374232349ada0fab7cf875db4f94",
+    "Org3": "ecbbd60af295fbb725fe0a79a3ee19d32a026b41a5204eff432bba70127ddfaf",
+    "Org4": "b05d3bf84668ba9933a4190e5f5e42e274936ca8c0f694a9ee3b6791f88036a6"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "variant_id": "CFV1_RA_CS_016_SEED1003_TEST",
+  "family": "Raccount_fixed_per_org_attempts",
+  "recipe_id": "RA_TEST_SEED1003_S2_RIP0.50",
+  "source_campaign_id": "CS_016_SEED1003_TEST",
+  "split": "TEST",
+  "seed": 1003,
+  "Sorg_target": 2,
+  "Raccount_target": 0.8,
+  "RIP_target": 0.5,
+  "RIP_actual": 0.5,
+  "total_events": 180,
+  "campaign_start": "2020-12-13T17:00:00",
+  "campaign_end": "2020-12-13T18:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "24e8e9b177994b4b7ac8c5dd89b9d7efa714afdd447cab2e60317d605bbce894",
+  "successful_events": 15,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org3",
+    "Org4"
+  ],
+  "events_per_organization": {
+    "Org3": 90,
+    "Org4": 90
+  },
+  "target_users_per_organization": {
+    "Org3": 90,
+    "Org4": 90
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 80,
+  "original_campaign_start": "2021-01-16T21:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org3": {
+      "history_event_count": 66871,
+      "replay_background_event_count": 561
+    },
+    "Org4": {
+      "history_event_count": 68751,
+      "replay_background_event_count": 559
+    }
+  },
+  "source_manifest_sha256": "4f1379ad75c4866b00434a1a34ea4b2a8616cd4de1e21e3c83d88f9fb9241dc6",
+  "output_parquet_sha256": {
+    "Org3": "80a2336d103fa0167ff1f6d4c1d640d4c0adb8ea5d0314a1308250df952dca08",
+    "Org4": "48b13c1ab19fa9e958a7c575116e418a5f0f04b4a89e08a1c624ec369b12d9a2"
+  }
+}

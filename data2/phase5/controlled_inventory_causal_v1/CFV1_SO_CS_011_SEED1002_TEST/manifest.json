@@ -1,0 +1,78 @@
+{
+  "variant_id": "CFV1_SO_CS_011_SEED1002_TEST",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_TEST_SEED1002_RIP0.50_RA0.20",
+  "source_campaign_id": "CS_011_SEED1002_TEST",
+  "split": "TEST",
+  "seed": 1002,
+  "Sorg_target": 5,
+  "Raccount_target": 0.2,
+  "RIP_target": 0.5,
+  "RIP_actual": 0.5,
+  "total_events": 500,
+  "campaign_start": "2020-12-12T21:00:00",
+  "campaign_end": "2020-12-12T22:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "a35923c0f89e40d8796bc9a7bdc968a27d36daf5c1dccc6dc599789bf0fc8fe1",
+  "successful_events": 23,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org2",
+    "Org3",
+    "Org4",
+    "Org5"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org2": 100,
+    "Org3": 100,
+    "Org4": 100,
+    "Org5": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 36,
+    "Org2": 36,
+    "Org3": 36,
+    "Org4": 36,
+    "Org5": 36
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 20,
+  "original_campaign_start": "2021-01-06T18:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 59211,
+      "replay_background_event_count": 200
+    },
+    "Org2": {
+      "history_event_count": 61722,
+      "replay_background_event_count": 217
+    },
+    "Org3": {
+      "history_event_count": 66950,
+      "replay_background_event_count": 291
+    },
+    "Org4": {
+      "history_event_count": 68668,
+      "replay_background_event_count": 242
+    },
+    "Org5": {
+      "history_event_count": 71715,
+      "replay_background_event_count": 281
+    }
+  },
+  "source_manifest_sha256": "d5435b5985697f8807df34505ed4c333c637cf0318bed970341fe1664217d519",
+  "output_parquet_sha256": {
+    "Org1": "45ae428d4dd1d8541a8bd85f12cfeca9fcddea92e43dc69ffbf03ee0cf73d997",
+    "Org2": "77c994a24230f52e595e6522a93b78c7490fa7085a7c4ad0c53b867ec6f36afe",
+    "Org3": "8a8ff2c745d9fd0b803d3e0eabd5285ac8b8ab8b7755f0ce78eb27ab31f20ae5",
+    "Org4": "c05e84b6ffceca71b175db1bba58dc51066c154ae4a59a6f922822c6961eb924",
+    "Org5": "82b338b9afa048ae362af69db70210785b9e386cc1a9a60c9f75f87e5c2d7ab5"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "version": "controlled-inventory-causal-v1",
+  "instances": 513,
+  "controlled_variants": 486,
+  "descriptive_references": 27,
+  "organization_branches": 1647,
+  "anchors": [
+    {
+      "split": "TRAIN",
+      "seed": 1001,
+      "anchor": "2020-03-01T13:00:00"
+    },
+    {
+      "split": "TRAIN",
+      "seed": 1002,
+      "anchor": "2020-03-02T09:00:00"
+    },
+    {
+      "split": "TRAIN",
+      "seed": 1003,
+      "anchor": "2020-03-03T21:00:00"
+    },
+    {
+      "split": "VAL",
+      "seed": 1001,
+      "anchor": "2020-10-06T07:00:00"
+    },
+    {
+      "split": "VAL",
+      "seed": 1002,
+      "anchor": "2020-10-06T19:00:00"
+    },
+    {
+      "split": "VAL",
+      "seed": 1003,
+      "anchor": "2020-10-06T23:00:00"
+    },
+    {
+      "split": "TEST",
+      "seed": 1001,
+      "anchor": "2020-12-12T06:00:00"
+    },
+    {
+      "split": "TEST",
+      "seed": 1002,
+      "anchor": "2020-12-12T21:00:00"
+    },
+    {
+      "split": "TEST",
+      "seed": 1003,
+      "anchor": "2020-12-13T17:00:00"
+    }
+  ],
+  "anchor_policy": "Source CS_004 start per split/seed; common across isolated factor branches",
+  "target_policy": "Strictly pre-anchor observed User IDs, scoped per organization",
+  "cohort_matching": "Common org+credential ordinal mapping within each split/seed block",
+  "ip_policy": "Unoccupied benchmark IPv4 addresses, disjoint between groups/splits; nested prefixes only within controlled RIP counterparts",
+  "new_distinct_ip_addresses_reserved": 42838,
+  "existing_distinct_addresses_checked": 55860,
+  "replay_required": true,
+  "model_training_performed": false
+}

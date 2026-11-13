@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_RA_CS_007_SEED1003_TEST",
+  "family": "Raccount_fixed_per_org_attempts",
+  "recipe_id": "RA_TEST_SEED1003_S3_RIP0.20",
+  "source_campaign_id": "CS_007_SEED1003_TEST",
+  "split": "TEST",
+  "seed": 1003,
+  "Sorg_target": 3,
+  "Raccount_target": 0.5,
+  "RIP_target": 0.2,
+  "RIP_actual": 0.2,
+  "total_events": 260,
+  "campaign_start": "2020-12-13T17:00:00",
+  "campaign_end": "2020-12-13T18:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "2e676b98a403b3e7fe2ee011f0822ea93f93827ff08e3f1e4236b1729c7c9a26",
+  "successful_events": 13,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org3",
+    "Org4"
+  ],
+  "events_per_organization": {
+    "Org1": 87,
+    "Org3": 87,
+    "Org4": 86
+  },
+  "target_users_per_organization": {
+    "Org1": 67,
+    "Org3": 67,
+    "Org4": 66
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 50,
+  "original_campaign_start": "2020-12-28T09:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 59055,
+      "replay_background_event_count": 474
+    },
+    "Org3": {
+      "history_event_count": 66871,
+      "replay_background_event_count": 561
+    },
+    "Org4": {
+      "history_event_count": 68751,
+      "replay_background_event_count": 559
+    }
+  },
+  "source_manifest_sha256": "82ff67e2850c2c7ed2127a6b4b0986c26f1f91ed0570e9ce21456a17865e3d35",
+  "output_parquet_sha256": {
+    "Org1": "f30e08d73f55677c04944ee42cf5286b86a5bb46b32f36173ad9a02b761fc9b2",
+    "Org3": "1b23227738e059f17c45472183ced1d00201496d32411eab66d8441e93eb224a",
+    "Org4": "2aca16faea02a52d7a7c1bd83211a9d6807500e7e1b8c9ff5d787b8ff9108902"
+  }
+}

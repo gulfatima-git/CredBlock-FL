@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_SO_CS_022_SEED1003_VAL",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_VAL_SEED1003_RIP0.50_RA0.50",
+  "source_campaign_id": "CS_022_SEED1003_VAL",
+  "split": "VAL",
+  "seed": 1003,
+  "Sorg_target": 3,
+  "Raccount_target": 0.5,
+  "RIP_target": 0.5,
+  "RIP_actual": 0.5,
+  "total_events": 300,
+  "campaign_start": "2020-10-06T23:00:00",
+  "campaign_end": "2020-10-07T00:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "53e2512231f9b9a94e611237ff5139b883e74d791b384a8750578ea28a47b348",
+  "successful_events": 13,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org3",
+    "Org4"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org3": 100,
+    "Org4": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 67,
+    "Org3": 67,
+    "Org4": 66
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 50,
+  "original_campaign_start": "2020-11-15T09:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 57770,
+      "replay_background_event_count": 60
+    },
+    "Org3": {
+      "history_event_count": 66887,
+      "replay_background_event_count": 78
+    },
+    "Org4": {
+      "history_event_count": 68162,
+      "replay_background_event_count": 93
+    }
+  },
+  "source_manifest_sha256": "6a5945598fefd66f3c3ec072e8215c5ec95b73e62063980bfaa8ce8bd3c9d0ef",
+  "output_parquet_sha256": {
+    "Org1": "63e5567960eaa1a28fc4c85791cd49de2187477b9115e0cbcd22dc0cefe0c579",
+    "Org3": "9c6b3949961b7217b7adb9448a4d280c91a2629f376752c88d84deab475c89d7",
+    "Org4": "13de02f3098d4174d45fd6e5e6dd3660dde9d211c412280454780583ce7bf180"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_RA_CS_022_SEED1001_TEST",
+  "family": "Raccount_fixed_per_org_attempts",
+  "recipe_id": "RA_TEST_SEED1001_S3_RIP0.50",
+  "source_campaign_id": "CS_022_SEED1001_TEST",
+  "split": "TEST",
+  "seed": 1001,
+  "Sorg_target": 3,
+  "Raccount_target": 0.5,
+  "RIP_target": 0.5,
+  "RIP_actual": 0.5,
+  "total_events": 260,
+  "campaign_start": "2020-12-12T06:00:00",
+  "campaign_end": "2020-12-12T07:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "455d197f7d427a3cead23139a090150096e34737141826b6b413182013af1267",
+  "successful_events": 19,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org2",
+    "Org5"
+  ],
+  "events_per_organization": {
+    "Org1": 87,
+    "Org2": 87,
+    "Org5": 86
+  },
+  "target_users_per_organization": {
+    "Org1": 67,
+    "Org2": 67,
+    "Org5": 66
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 50,
+  "original_campaign_start": "2021-02-01T05:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 59057,
+      "replay_background_event_count": 192
+    },
+    "Org2": {
+      "history_event_count": 61404,
+      "replay_background_event_count": 237
+    },
+    "Org5": {
+      "history_event_count": 71264,
+      "replay_background_event_count": 245
+    }
+  },
+  "source_manifest_sha256": "fbd529d81d1f111ddc33d341b9e386d3359c216bf3413f7836dc778838bafe15",
+  "output_parquet_sha256": {
+    "Org1": "6da1bac070ad3610a464dc34fa3a165747cc25927e1e1d8d2dfb0fb873929c25",
+    "Org2": "68fb2355c6c91512ee8ef35de8c6f727bf010d3bae13a7735284ede4b352caa6",
+    "Org5": "31e3c6c5a8b06094917c7eef50d5c5d1f1894677b3db0c872abacc0f89bbef23"
+  }
+}

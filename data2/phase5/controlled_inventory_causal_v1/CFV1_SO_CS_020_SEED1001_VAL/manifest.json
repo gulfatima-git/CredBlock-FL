@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_SO_CS_020_SEED1001_VAL",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_VAL_SEED1001_RIP0.20_RA0.80",
+  "source_campaign_id": "CS_020_SEED1001_VAL",
+  "split": "VAL",
+  "seed": 1001,
+  "Sorg_target": 3,
+  "Raccount_target": 0.8,
+  "RIP_target": 0.2,
+  "RIP_actual": 0.2,
+  "total_events": 300,
+  "campaign_start": "2020-10-06T07:00:00",
+  "campaign_end": "2020-10-06T08:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "39ac32af4b65a15ca3307b06c4edcdc6ce8ebc1faf7b69529641eb1351266d92",
+  "successful_events": 19,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org2",
+    "Org5"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org2": 100,
+    "Org5": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 87,
+    "Org2": 87,
+    "Org5": 86
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 80,
+  "original_campaign_start": "2020-11-08T23:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 58309,
+      "replay_background_event_count": 478
+    },
+    "Org2": {
+      "history_event_count": 62211,
+      "replay_background_event_count": 467
+    },
+    "Org5": {
+      "history_event_count": 71533,
+      "replay_background_event_count": 569
+    }
+  },
+  "source_manifest_sha256": "61c3862ba0d368def78a2b2a8f9320fcc7715eec1b6d5c604690420931399d2b",
+  "output_parquet_sha256": {
+    "Org1": "1901a9c9d806170f7ed75e64f2e34b2141d1c97734f3ea573e7fd607f8551dfa",
+    "Org2": "c7c3339d10d0825538f765cca706146a853192037ec42749b861ba6c2ae8b23b",
+    "Org5": "ded0065d8a4d0d529696efa1aaef259840acbac787cd3abef993a7191caf65ee"
+  }
+}

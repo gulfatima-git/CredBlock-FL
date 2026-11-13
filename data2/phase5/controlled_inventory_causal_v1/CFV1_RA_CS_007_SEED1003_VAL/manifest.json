@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_RA_CS_007_SEED1003_VAL",
+  "family": "Raccount_fixed_per_org_attempts",
+  "recipe_id": "RA_VAL_SEED1003_S3_RIP0.20",
+  "source_campaign_id": "CS_007_SEED1003_VAL",
+  "split": "VAL",
+  "seed": 1003,
+  "Sorg_target": 3,
+  "Raccount_target": 0.5,
+  "RIP_target": 0.2,
+  "RIP_actual": 0.2,
+  "total_events": 260,
+  "campaign_start": "2020-10-06T23:00:00",
+  "campaign_end": "2020-10-07T00:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "0488039aa5b9cdb5377c0110e7e2daf70f1791b2d363ed3f3ee7da0860c59cb4",
+  "successful_events": 16,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org3",
+    "Org4"
+  ],
+  "events_per_organization": {
+    "Org1": 87,
+    "Org3": 87,
+    "Org4": 86
+  },
+  "target_users_per_organization": {
+    "Org1": 67,
+    "Org3": 67,
+    "Org4": 66
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 50,
+  "original_campaign_start": "2020-10-11T12:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 57770,
+      "replay_background_event_count": 60
+    },
+    "Org3": {
+      "history_event_count": 66887,
+      "replay_background_event_count": 78
+    },
+    "Org4": {
+      "history_event_count": 68162,
+      "replay_background_event_count": 93
+    }
+  },
+  "source_manifest_sha256": "868788e69f6dd2b714a43ee9787cbea9aff3c55adb09d8a1c8edd2509b6f231f",
+  "output_parquet_sha256": {
+    "Org1": "769d7460c4a6d7fdc343f38da8c9e14a93b7ad08755e6d688df252b9681ed791",
+    "Org3": "0cafc8d770c785b5413cf3fd75d6f75306cec9da61ad8b5552e4b0b23ac75e55",
+    "Org4": "54944f7596fa8aaceeff311fd30b2d5ee8721def2ccf82d71b60fa48c6e2bce0"
+  }
+}

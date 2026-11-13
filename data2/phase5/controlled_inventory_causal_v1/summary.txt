@@ -1,0 +1,5 @@
+PASS_FULL_CONTROLLED_CAUSAL_GENERATION_ONLY
+513 instances (486 controlled + 27 descriptive); 1647 organization branches.
+155988 synthetic events; all target occurrences observed before anchor.
+Previous input hashes unchanged. No replay, labels, features, or training performed.
+Phase 5 remains incomplete.

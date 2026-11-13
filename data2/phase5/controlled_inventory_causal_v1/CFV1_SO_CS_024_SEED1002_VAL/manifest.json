@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_SO_CS_024_SEED1002_VAL",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_VAL_SEED1002_RIP0.80_RA0.80",
+  "source_campaign_id": "CS_024_SEED1002_VAL",
+  "split": "VAL",
+  "seed": 1002,
+  "Sorg_target": 3,
+  "Raccount_target": 0.8,
+  "RIP_target": 0.8,
+  "RIP_actual": 0.8,
+  "total_events": 300,
+  "campaign_start": "2020-10-06T19:00:00",
+  "campaign_end": "2020-10-06T20:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "77ad6c02a3904df2e82aa384f6f6bd9ef70377caacc00f73b2a26a05fae431f8",
+  "successful_events": 17,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org4",
+    "Org5"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org4": 100,
+    "Org5": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 87,
+    "Org4": 87,
+    "Org5": 86
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 80,
+  "original_campaign_start": "2020-11-19T07:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 58049,
+      "replay_background_event_count": 412
+    },
+    "Org4": {
+      "history_event_count": 68472,
+      "replay_background_event_count": 432
+    },
+    "Org5": {
+      "history_event_count": 71331,
+      "replay_background_event_count": 514
+    }
+  },
+  "source_manifest_sha256": "adb7c58b62b05309eb68adcfe5f680efd63a7b15e2f27768f482b9e0e8fc9cb5",
+  "output_parquet_sha256": {
+    "Org1": "487ab6b613dd4901f8e169863ded4c3c22c8f854bd919cac00373d97d62fdec8",
+    "Org4": "33d1b3be684c8b4fd49a0b96927e0a947bb4fd0fb21213ccf094d568e26838d4",
+    "Org5": "0aa07d76e5eff6bbc653e78dabd96c6b68baf3033a6ff6152378257866a677d0"
+  }
+}

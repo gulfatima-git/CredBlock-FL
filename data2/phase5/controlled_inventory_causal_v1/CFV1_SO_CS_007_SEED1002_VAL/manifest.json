@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_SO_CS_007_SEED1002_VAL",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_VAL_SEED1002_RIP0.20_RA0.50",
+  "source_campaign_id": "CS_007_SEED1002_VAL",
+  "split": "VAL",
+  "seed": 1002,
+  "Sorg_target": 3,
+  "Raccount_target": 0.5,
+  "RIP_target": 0.2,
+  "RIP_actual": 0.2,
+  "total_events": 300,
+  "campaign_start": "2020-10-06T19:00:00",
+  "campaign_end": "2020-10-06T20:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "4dd2503736f438f97d7b1e49bf34d85532e5c6c7234920bb839ff50f6d07d76e",
+  "successful_events": 16,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org4",
+    "Org5"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org4": 100,
+    "Org5": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 67,
+    "Org4": 67,
+    "Org5": 66
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 50,
+  "original_campaign_start": "2020-10-11T01:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 58049,
+      "replay_background_event_count": 412
+    },
+    "Org4": {
+      "history_event_count": 68472,
+      "replay_background_event_count": 432
+    },
+    "Org5": {
+      "history_event_count": 71331,
+      "replay_background_event_count": 514
+    }
+  },
+  "source_manifest_sha256": "717a8879b621802c69ea583fa566a270b314e799c64c24a156cb2ec6955fc2d8",
+  "output_parquet_sha256": {
+    "Org1": "54cfadb89c5633ba66a59cb55d6e74e50569c173d93dbd6ea2003c6cc15944b4",
+    "Org4": "af4d6d8f8d6205e4ac321ba1ccdef4eaeb32aafcf9bc75c46ba1558273fb8894",
+    "Org5": "bc4da1dd515fec72817d103aaede21a23246e127715a5c4b9627521cd07f204a"
+  }
+}

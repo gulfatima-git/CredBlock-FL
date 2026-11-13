@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_SO_CS_008_SEED1001_TEST",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_TEST_SEED1001_RIP0.50_RA0.80",
+  "source_campaign_id": "CS_008_SEED1001_TEST",
+  "split": "TEST",
+  "seed": 1001,
+  "Sorg_target": 3,
+  "Raccount_target": 0.8,
+  "RIP_target": 0.5,
+  "RIP_actual": 0.5,
+  "total_events": 300,
+  "campaign_start": "2020-12-12T06:00:00",
+  "campaign_end": "2020-12-12T07:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "389037281f981773fe2c0bd2bcff95493256de2618b01ce2a59076e2e20bde15",
+  "successful_events": 11,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org2",
+    "Org5"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org2": 100,
+    "Org5": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 87,
+    "Org2": 87,
+    "Org5": 86
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 80,
+  "original_campaign_start": "2020-12-31T17:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 59057,
+      "replay_background_event_count": 192
+    },
+    "Org2": {
+      "history_event_count": 61404,
+      "replay_background_event_count": 237
+    },
+    "Org5": {
+      "history_event_count": 71264,
+      "replay_background_event_count": 245
+    }
+  },
+  "source_manifest_sha256": "b5cb00d38e397aed3abffd5cc87e4078495d4c289cd8bbb820312cd101b9071b",
+  "output_parquet_sha256": {
+    "Org1": "2c7bef4d3357989f7504a948c8e18162cf652f349e454e714c50e49f1a1df45e",
+    "Org2": "b71c72752d2cdc2d0677a37cbaf04da632f24952fc1b500015b339d1482e430a",
+    "Org5": "59d20b1fdd10f3f95f0bbee8b264a2f0c3fe4b0e42941f26e5d7cc2998b67bdf"
+  }
+}

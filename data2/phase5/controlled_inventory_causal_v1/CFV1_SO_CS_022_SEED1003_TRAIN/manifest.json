@@ -1,0 +1,62 @@
+{
+  "variant_id": "CFV1_SO_CS_022_SEED1003_TRAIN",
+  "family": "Sorg_fixed_per_org_attempts",
+  "recipe_id": "SO_TRAIN_SEED1003_RIP0.50_RA0.50",
+  "source_campaign_id": "CS_022_SEED1003_TRAIN",
+  "split": "TRAIN",
+  "seed": 1003,
+  "Sorg_target": 3,
+  "Raccount_target": 0.5,
+  "RIP_target": 0.5,
+  "RIP_actual": 0.5,
+  "total_events": 300,
+  "campaign_start": "2020-03-03T21:00:00",
+  "campaign_end": "2020-03-03T22:00:00",
+  "reference_only": false,
+  "behavior_sha256_without_ip_or_campaign_metadata": "a60467befe075e06210e47f74e76d9597b3e51b0a32b470356c51ef712e80c94",
+  "successful_events": 10,
+  "status": "PASS_SYNTHETIC_CAUSAL_GENERATION",
+  "schema_version": "controlled-inventory-causal-v1",
+  "targeted_organizations": [
+    "Org1",
+    "Org3",
+    "Org4"
+  ],
+  "events_per_organization": {
+    "Org1": 100,
+    "Org3": 100,
+    "Org4": 100
+  },
+  "target_users_per_organization": {
+    "Org1": 67,
+    "Org3": 67,
+    "Org4": 66
+  },
+  "credential_identities": 100,
+  "reused_credential_count": 50,
+  "original_campaign_start": "2020-07-18T12:00:00",
+  "target_selection_policy": "STRICTLY_PRE_ANCHOR_OBSERVED_IDS_FROM_SOURCE_AUTHENTICATION",
+  "causal_target_selection_corrected": true,
+  "background_replayed": false,
+  "anchor_status": "SOURCE_AVAILABILITY_CHECKED_NOT_REPLAY_VALIDATED",
+  "source_availability": {
+    "Org1": {
+      "history_event_count": 60488,
+      "replay_background_event_count": 280
+    },
+    "Org3": {
+      "history_event_count": 67808,
+      "replay_background_event_count": 381
+    },
+    "Org4": {
+      "history_event_count": 71410,
+      "replay_background_event_count": 339
+    }
+  },
+  "source_manifest_sha256": "42a581d860ff3478498507e5f4d4385abe84ce5c3e04d0cad002f566c4b1e59d",
+  "output_parquet_sha256": {
+    "Org1": "cea4e209322077eca760f053e80255adb4aee0db5ae7245ce5794933b1fe1ae9",
+    "Org3": "d051cfa2fb87c0fd10922a4f89cb10b0c896f3da0a820a801238dcc7d1ca915b",
+    "Org4": "ace4a5606f812fcd0877b8f58e5831f650a62a4285d0f19a5311b5cf0d4d63b5"
+  }
+}
