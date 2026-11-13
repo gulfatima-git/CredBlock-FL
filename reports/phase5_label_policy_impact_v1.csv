@@ -1,0 +1,21 @@
+﻿organization,split,events,is_attack_ip_true,is_account_takeover_true,either_flag_true,both_flags_true,is_attack_ip_null,is_account_takeover_null,either_flag_fraction,min_timestamp,max_timestamp,warning,earliest_7day_required,latest_campaign_end,covers_earliest_history,note
+Org1,TRAIN,1901254,130992,23,131000,15,0,0,0.0689018931715594,2020-02-03T12:43:59,2020-09-30T23:59:24,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org1,VAL,482578,35479,5,35481,3,0,0,0.07352386557199043,2020-10-01T00:00:39,2020-11-30T23:58:32,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org1,TEST,696318,65006,0,65006,0,0,0,0.09335677090065171,2020-12-01T00:00:09,2021-02-28T23:58:18,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org1,SOURCE_COVERAGE,,,,,,,,,2020-02-03T12:43:59,2021-02-28T23:58:18,,2020-01-28T00:00:00,2021-02-28T16:00:00,False,Source min/max bounding coverage is not proof of complete event coverage
+Org2,TRAIN,2009762,146398,25,146409,14,0,0,0.07284892440000358,2020-02-03T12:44:24,2020-09-30T23:57:55,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org2,VAL,509010,39347,4,39348,3,0,0,0.07730299994106206,2020-10-01T00:00:19,2020-11-30T23:58:55,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org2,TEST,732073,72801,0,72801,0,0,0,0.09944500070348175,2020-12-01T00:00:11,2021-02-28T23:59:58,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org2,SOURCE_COVERAGE,,,,,,,,,2020-02-03T12:44:24,2021-02-28T23:59:58,,2020-02-23T13:00:00,2021-02-28T16:00:00,True,Source min/max bounding coverage is not proof of complete event coverage
+Org3,TRAIN,2181041,163504,27,163519,12,0,0,0.07497291431018491,2020-02-03T12:43:55,2020-09-30T23:59:20,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org3,VAL,557521,47888,1,47888,1,0,0,0.08589452235879905,2020-10-01T00:01:45,2020-11-30T23:59:50,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org3,TEST,782079,83051,0,83051,0,0,0,0.1061925969115652,2020-12-01T00:00:20,2021-02-28T23:58:55,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org3,SOURCE_COVERAGE,,,,,,,,,2020-02-03T12:43:55,2021-02-28T23:58:55,,2020-02-25T21:00:00,2021-02-28T16:00:00,True,Source min/max bounding coverage is not proof of complete event coverage
+Org4,TRAIN,2230091,178878,21,178888,11,0,0,0.08021556071030285,2020-02-03T12:44:07,2020-09-30T23:59:50,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org4,VAL,566270,48190,7,48195,2,0,0,0.08510957670369258,2020-10-01T00:00:32,2020-11-30T23:59:50,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org4,TEST,814727,89683,0,89683,0,0,0,0.11007736333765789,2020-12-01T00:00:19,2021-02-28T23:58:49,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org4,SOURCE_COVERAGE,,,,,,,,,2020-02-03T12:44:07,2021-02-28T23:58:49,,2020-01-29T11:00:00,2021-02-28T16:00:00,False,Source min/max bounding coverage is not proof of complete event coverage
+Org5,TRAIN,2341904,195907,23,195917,13,0,0,0.08365714393075037,2020-02-03T12:44:30,2020-09-30T23:58:39,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org5,VAL,592877,53040,5,53042,3,0,0,0.08946543718174259,2020-10-01T00:01:35,2020-11-30T23:59:33,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org5,TEST,845860,96186,0,96186,0,0,0,0.11371385335634739,2020-12-01T00:01:03,2021-02-28T23:59:46,Source flags are NOT synthetic credential-stuffing ground truth,,,,
+Org5,SOURCE_COVERAGE,,,,,,,,,2020-02-03T12:44:30,2021-02-28T23:59:46,,2020-01-29T09:00:00,2021-02-28T16:00:00,False,Source min/max bounding coverage is not proof of complete event coverage

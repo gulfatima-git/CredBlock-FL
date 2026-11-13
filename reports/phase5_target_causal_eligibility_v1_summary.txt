@@ -1,0 +1,14 @@
+CRED BLOCK-FL — PHASE 5 CAUSAL TARGET ELIGIBILITY AUDIT V1
+===================================================================
+STATUS: FUTURE_INFORMED_SELECTION_POOL_CONFIRMED_REQUIRES_CORRECTION
+Source review: FULL_PERIOD_USER_POOL_IN_GENERATOR_SOURCE
+Generator finding: select_campaign_target_users calls select_local_users, which selects distinct User IDs from the full organization Parquet without a timestamp cutoff. This is a future-informed *selection pool* design risk; the audit measures actual selected IDs with no pre-anchor observations separately.
+Variants: 6 | local org branches: 16
+Target occurrences: 890
+Observed within preceding seven days: 47
+Observed earlier than preceding seven days: 717
+First observed on/after anchor: 126
+Never observed in source: 0
+These are authentication observations, not account creation records.
+Causally selected target cohorts are NOT established by this audit.
+Original campaigns, controlled variants, and replay branches not modified.

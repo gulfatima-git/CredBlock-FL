@@ -1,0 +1,12 @@
+CRED BLOCK-FL — PHASE 5 CONTROLLED PILOT V1
+==========================================================
+STATUS: PASS_SYNTHETIC_PILOT_ONLY
+Generated: 6 variants (3 Raccount + 3 Sorg)
+Original synthetic campaign IP inventories checked: 270/270
+Original campaigns modified: 0
+Candidate common anchor: 2020-12-12T06:00:00 (NOT REPLAY VALIDATED)
+No background replay, labels, graph features, or causal effects validated.
+Files:
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\data\phase5\controlled_pilot_v1
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_controlled_pilot_v1_summary.json
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_controlled_pilot_v1_variants.csv

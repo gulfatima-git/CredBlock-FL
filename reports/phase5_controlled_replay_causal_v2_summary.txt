@@ -1,0 +1,15 @@
+CRED BLOCK-FL — PHASE 5 SHARED-BACKGROUND REPLAY PILOT V2
+===================================================================
+STATUS: PASS_CAUSAL_V2_REPLAY_MECHANICS_ONLY
+Six variants replayed: 6; local organization branches: 16
+Anchor: 2020-12-12T06:00:00; 7-day history starts: 2020-12-05T06:00:00
+Total source background event copies across branches: 3,590
+Total synthetic event copies: 1,540
+Seven-day cold-start targeted account occurrences: 841
+All replay integrity checks: PASS
+All corrected target IDs observed before anchor: PASS
+Background parity with validated v1 replay: PASS
+Verified: every corrected target User ID is present in pre-anchor authentication records.
+IMPORTANT: Label/masking/graph-feature temporal leakage is NOT yet validated.
+All original campaigns, v1 pilots/replays, and v2 pilot sources modified: 0
+Output: C:\Users\Gulso\Documents\Gul\CredBlock-FL\data\phase5\controlled_replay_causal_v2

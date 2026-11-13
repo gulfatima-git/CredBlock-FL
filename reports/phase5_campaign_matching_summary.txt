@@ -1,0 +1,10 @@
+CRED BLOCK-FL PHASE 5 — CAMPAIGN MATCHING AUDIT
+=======================================================
+Campaigns loaded: 270
+Loading errors: 0
+One-factor comparison candidates: 513
+Factors: {'RIP': 270, 'Raccount': 243}
+Pair statuses: {'UNMATCHED': 513}
+Condition failures: {'same_start': 513, 'target_cohorts_match': 243, 'total_intensity_within_5pct': 243, 'per_org_intensity_within_5pct': 243}
+Background match: NOT VERIFIED (requires source background/replay evidence)
+Only provisional comparison candidates can pass this screen; do not infer causal isolation.

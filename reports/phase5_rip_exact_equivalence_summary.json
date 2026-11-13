@@ -1,0 +1,22 @@
+{
+  "audit": "Phase 5 exact synthetic RIP counterpart-equivalence",
+  "expected_campaigns": 270,
+  "campaigns_loaded": 270,
+  "inventory_errors": [],
+  "expected_rip_pairs": 270,
+  "rip_pairs_found": 270,
+  "statuses": {
+    "PASS_SYNTHETIC_RIP_EQUIVALENCE": 270
+  },
+  "reason_counts": {},
+  "source_read_errors": {},
+  "note": "PASS is limited to synthetic event equivalence except attacker IPs; background matching/replay/labels/leakage are NOT verified.",
+  "criteria": {
+    "RIP_pair_grouping": "same seed, split, Sorg, Raccount, targeted organizations; RIP differs",
+    "timestamp_comparison": "exact microsecond offsets relative to each original campaign start",
+    "metadata_normalization": "strip campaign_id prefix from synthetic_credential_id and campaign_event_id",
+    "behavioral_comparison": "organization, user, event index, credential identity, reuse flag, offset, login outcome, and any additional non-IP columns",
+    "IP_condition": "unique IP counts agree with round(total_attempts*RIP), IP allocation differs and campaign IP sets are disjoint"
+  },
+  "output_warning": "Never use simulated labels/IDs as model inputs. Do not modify the 270 original campaigns."
+}

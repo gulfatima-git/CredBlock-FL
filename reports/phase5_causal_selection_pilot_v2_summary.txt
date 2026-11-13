@@ -1,0 +1,12 @@
+CRED BLOCK-FL — PHASE 5 CAUSAL SELECTION PILOT V2
+==============================================================
+STATUS: PASS_CAUSAL_SELECTION_PILOT_ONLY
+New attack-only variants: 6; local org branches: 16
+Anchor: 2020-12-12T06:00:00; eligible pool: all local User IDs observed earlier
+Original pilot target occurrences observed before anchor: 764/890
+Original pilot target occurrences without prior observation: 126/890
+Corrected target occurrences observed before anchor: 890/890
+Corrected target occurrences cold in prior seven days: 841/890
+Event behavior, attack time, factor settings, outcomes, credentials and IPs preserved.
+All input sources untouched. New data not yet replayed; no label/feature leakage validation.
+Output: C:\Users\Gulso\Documents\Gul\CredBlock-FL\data\phase5\controlled_pilot_causal_v2

@@ -1,0 +1,92 @@
+{
+  "version": "controlled-pilot-v1",
+  "status": "PASS_SYNTHETIC_PILOT_ONLY",
+  "variants_generated": 6,
+  "raccount_variants": 3,
+  "sorg_variants": 3,
+  "original_campaigns_scanned_for_ip_collisions": 270,
+  "original_campaigns_modified": 0,
+  "shared_anchor_candidate": "2020-12-12T06:00:00",
+  "anchor_ready_for_replay": false,
+  "background_replayed": false,
+  "labels_and_feature_leakage_verified": false,
+  "source_recipe_sha256": "079bc43cd00b06edbdf0e1894b65da1903ff53460055241102c262bfcfee042b",
+  "source_plan_sha256": "57f2dbf9f6184a424f5cc2b68e0f3052723be6a628dacff8a888368a2ebfbe34",
+  "source_RIP_audit_sha256": "ddca478cf79b0dead38a115162eea88134be86e293e3ad9ff1534359f14a32d8",
+  "output_folder": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\data\\phase5\\controlled_pilot_v1",
+  "results": [
+    {
+      "variant_id": "CPV1_RA_CS_004_SEED1001_TEST",
+      "family": "Raccount_fixed_per_org_attempts",
+      "source_campaign": "CS_004_SEED1001_TEST",
+      "events": 180,
+      "orgs": 2,
+      "rip_actual": 0.2,
+      "raccount_actual": 0.2,
+      "status": "PASS_SYNTHETIC_GENERATION",
+      "anchor": "CANDIDATE_ONLY"
+    },
+    {
+      "variant_id": "CPV1_RA_CS_013_SEED1001_TEST",
+      "family": "Raccount_fixed_per_org_attempts",
+      "source_campaign": "CS_013_SEED1001_TEST",
+      "events": 180,
+      "orgs": 2,
+      "rip_actual": 0.2,
+      "raccount_actual": 0.5,
+      "status": "PASS_SYNTHETIC_GENERATION",
+      "anchor": "CANDIDATE_ONLY"
+    },
+    {
+      "variant_id": "CPV1_RA_CS_014_SEED1001_TEST",
+      "family": "Raccount_fixed_per_org_attempts",
+      "source_campaign": "CS_014_SEED1001_TEST",
+      "events": 180,
+      "orgs": 2,
+      "rip_actual": 0.2,
+      "raccount_actual": 0.8,
+      "status": "PASS_SYNTHETIC_GENERATION",
+      "anchor": "CANDIDATE_ONLY"
+    },
+    {
+      "variant_id": "CPV1_SO_CS_004_SEED1001_TEST",
+      "family": "Sorg_fixed_per_org_attempts",
+      "source_campaign": "CS_004_SEED1001_TEST",
+      "events": 200,
+      "orgs": 2,
+      "rip_actual": 0.2,
+      "raccount_actual": 0.2,
+      "status": "PASS_SYNTHETIC_GENERATION",
+      "anchor": "CANDIDATE_ONLY"
+    },
+    {
+      "variant_id": "CPV1_SO_CS_019_SEED1001_TEST",
+      "family": "Sorg_fixed_per_org_attempts",
+      "source_campaign": "CS_019_SEED1001_TEST",
+      "events": 300,
+      "orgs": 3,
+      "rip_actual": 0.2,
+      "raccount_actual": 0.2,
+      "status": "PASS_SYNTHETIC_GENERATION",
+      "anchor": "CANDIDATE_ONLY"
+    },
+    {
+      "variant_id": "CPV1_SO_CS_025_SEED1001_TEST",
+      "family": "Sorg_fixed_per_org_attempts",
+      "source_campaign": "CS_025_SEED1001_TEST",
+      "events": 500,
+      "orgs": 5,
+      "rip_actual": 0.2,
+      "raccount_actual": 0.2,
+      "status": "PASS_SYNTHETIC_GENERATION",
+      "anchor": "CANDIDATE_ONLY"
+    }
+  ],
+  "limitations": [
+    "Existing source target-user cohorts may reflect full-period selection; verify causal eligibility before final replay",
+    "No real background merged or validated at candidate anchor",
+    "Raccount changes target-user coverage and per-user attack rate",
+    "Sorg changes organization composition and total attempts",
+    "Do not train GraphSAGE on synthetic metadata, labels or credential identifiers"
+  ]
+}

@@ -1,0 +1,28 @@
+CRED BLOCK-FL — PHASE 5 BACKGROUND FEASIBILITY AUDIT
+==========================================================
+Campaigns loaded: 270/270; loading errors: 0
+Targeted organization windows: 837
+Window statuses: {'MEASURED': 837}
+One-factor comparison candidates: 513
+Comparison statuses: {'SIMILAR_VOLUME_ONLY': 75, 'REVIEW_REQUIRED': 438}
+Comparison issue counts: {'BACKGROUND_VOLUME_GAP': 438}
+Split boundary violations: 0
+Background zero-event windows: 0
+Seven-day history zero-event windows: 0
+Full 168-hour history activity coverage: 832
+Partial seven-day hourly coverage: 5
+Background outcome measurements unavailable: 0
+Target-cohort measurements unverified: 0
+
+Organization sources:
+ - Org1: MEASURED (1 Parquet files)
+ - Org2: MEASURED (1 Parquet files)
+ - Org3: MEASURED (1 Parquet files)
+ - Org4: MEASURED (1 Parquet files)
+ - Org5: MEASURED (1 Parquet files)
+
+Warnings:
+ - None
+
+IMPORTANT: This audit does not prove matched background, label validity,
+graph retention, replay correctness, absence of leakage, or final Phase 5 completion.

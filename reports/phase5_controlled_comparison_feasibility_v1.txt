@@ -1,0 +1,32 @@
+CRED BLOCK-FL — PHASE 5 CONTROLLED-COMPARISON PLANNING AUDIT
+====================================================================
+Campaigns loaded: 270/270
+Background windows: 837/837
+One-factor pairs: 513
+Pair classifications: {'RIP:INSUFFICIENT_EVIDENCE': 270, 'Raccount:NEEDS_CONTROLLED_VARIANT': 243}
+Existing background anchor candidates (provisional): 265/270
+Background source flag measurement errors: 0
+Raccount budget feasibility (attempt counts, NOT cohort equality):
+  Sorg=2: fixed total feasible=True; fixed per-org feasible=True; illustrative per-org budget=[90, 90]
+  Sorg=3: fixed total feasible=True; fixed per-org feasible=True; illustrative per-org budget=[87, 87, 86]
+  Sorg=5: fixed total feasible=True; fixed per-org feasible=True; illustrative per-org budget=[84, 84, 84, 84, 84]
+Open issues:
+  - NO_EXISTING_ELIGIBLE_ANCHOR: 2
+  - RACCOUNT_TARGET_COHORT_CHANGE_BY_DESIGN: 243
+
+Interpretation and cautions:
+  - Dry-run only: no campaign rewrites, new events, or replay branches created.
+  - Same source background is planned, NOT yet instantiated or independently replay validated.
+  - RIP pairs need explicit per-org cohort, timestamps and event equivalence checks.
+  - Raccount fixed attempt budgets do NOT fix changed target user populations.
+  - Active-hours=168 only shows at least one event per hour, not source-data completeness.
+  - Original Is Attack IP / Is Account Takeover flags are not credential-stuffing ground truth.
+  - Sorg evaluation needs an independent fixed-per-org policy and sensitivity analysis.
+  - Source min/max timestamps alone cannot prove full seven-day history coverage.
+  - Do not claim READY_FOR_DERIVED_REPLAY or Phase 5 completion from this report.
+
+Reports:
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_controlled_comparison_plan_v1.json
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_controlled_comparison_pairs_v1.csv
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_label_policy_impact_v1.csv
+C:\Users\Gulso\Documents\Gul\CredBlock-FL\reports\phase5_controlled_comparison_feasibility_v1.txt

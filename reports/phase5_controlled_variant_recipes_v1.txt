@@ -1,0 +1,15 @@
+CRED BLOCK-FL — PHASE 5 CONTROLLED VARIANT RECIPE DESIGN
+=================================================================
+STATUS: PROPOSED ONLY — no attack events, replays or model data generated
+Original campaigns preserved: 270
+Raccount matched-budget group recipes: 81
+Sorg fixed-per-org group recipes: 81
+Sorg=1 descriptive references: 27
+Planning-level anchors: {'CANDIDATE_ONLY': 81, 'REQUIRES_MULTI_ORG_SHARED_ANCHOR_VALIDATION': 81}
+Raccount per-org fixed minimum budgets: Sorg2=[90,90], Sorg3=[87,87,86], Sorg5=[84,84,84,84,84]
+Sorg primary: 100 attempts per targeted organization; total grows with Sorg
+Sorg fixed-total sensitivity: per-level budget intervals calculated, NOT generated
+CRITICAL: Raccount alters target cohorts; equal attempts cannot isolate reuse alone.
+CRITICAL: Sorg1 Raccount is N/A; use as descriptive reference, not an equal-reuse cell.
+CRITICAL: anchors are candidates only, not replay-validated.
+Next: review/freeze protocol; implement strictly versioned variant generator + replay.

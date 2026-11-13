@@ -1,0 +1,11 @@
+CRED BLOCK-FL — PHASE 5 CONSOLIDATED DATA LABEL & LEAKAGE AUDIT
+======================================================================
+STATUS: PASS_DATA_LEVEL_PHASE6_GATES_OPEN
+Branches passing data-level checks: 16/16
+Event copies: 5,130 (synthetic 1,540; background 3,590)
+Clean-negative background candidates: 2,998
+Ambiguous background copies (must not be treated as clean negatives): 592
+NOTE: Background credential label=0 does NOT certify benign source ground truth.
+NOT VERIFIED: node-label timing, GraphSAGE feature timing/allowlist, train-only preprocessing, TEST usage.
+SOURCE INPUTS: unchanged; no source Parquet, manifests, or replay data modified.
+PHASE 5 COMPLETE: NO; accept only within checked data-level scope.
