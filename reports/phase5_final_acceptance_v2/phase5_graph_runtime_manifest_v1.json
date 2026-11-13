@@ -1,0 +1,22 @@
+{
+  "version": "phase5-graph-runtime-manifest-v1",
+  "entrypoint": "src.organization.rolling_graph_v1.OrganizationGraphRuntime",
+  "legacy_cumulative_builder_and_updater_accepted_for_new_training": false,
+  "code_sha256": {
+    "src/organization/rolling_graph_v1.py": "b36ce245190ffbfe3322157a325e44485262b8b66450027f4f80a5e6113c1bd3",
+    "validate_phase5_graph_retention_v1.py": "d5dfe351e09ec0789c5a9d99a381cb224a84de55f0e8c0f0da5ed60b32f61b0e"
+  },
+  "dataset_freeze_manifest_sha256": "643ef6b88f9c2d0b6242b057a3e501f07455d406b19320e03f2e900cf5812749",
+  "feature_schema": [
+    "total_logins",
+    "successful_logins",
+    "failed_logins",
+    "failure_ratio",
+    "distinct_neighbors",
+    "recent_logins_10min",
+    "recent_distinct_neighbors_10min",
+    "node_type"
+  ],
+  "schema_count_scope": "retained7d_recent10m",
+  "installation": "Add new files; retain old modules for historical reproduction"
+}

@@ -1,0 +1,89 @@
+{
+  "version": "phase5-dataset-freeze-v1",
+  "status": "PASS_DATASET_FREEZE_GRAPH_INTEGRATION_OPEN",
+  "dataset_frozen": true,
+  "phase5_full_signoff": false,
+  "ready_for_model_training": false,
+  "instances": 513,
+  "organization_branches": 2565,
+  "registered_source_files": 5,
+  "accepted_output_hashes_verified": 10426,
+  "frozen_file_count": 10436,
+  "all_three_split_infrastructure_pairs_disjoint": true,
+  "synthetic_events": 155988,
+  "synthetic_successes": 7788,
+  "replay_event_copies": 1230837,
+  "oracle_checked_label_states": 3454398,
+  "source_generation_status": "PASS_FULL_CONTROLLED_CAUSAL_GENERATION_ONLY",
+  "source_replay_status": "PASS_FULL_CONTROLLED_REPLAY_AND_TEMPORAL_LABELS",
+  "data_closeout_deliverables_complete": true,
+  "full_phase5_completion_gate_remaining": {
+    "status": "OPEN_REQUIRES_IMPLEMENTATION_AND_INTEGRATION_TESTS",
+    "component": "src\\organization\\temporal_graph_updater.py",
+    "source_sha256": "d238474bf6dca03b0c0d1449455fdadeb8b98091f9eb75a1c0360446c5f5fc80",
+    "observation": "The expiration function removes recent-window counters, while structural edges are accumulated and exported without seven-day eviction.",
+    "evidence": [
+      {
+        "line": 342,
+        "text": "def expire_events(threshold: datetime) -> None:"
+      },
+      {
+        "line": 410,
+        "text": "expire_events((timestamp - pd.Timedelta(minutes=window_minutes)).to_pydatetime())"
+      },
+      {
+        "line": 418,
+        "text": "structural_edge_set.add(key)"
+      },
+      {
+        "line": 578,
+        "text": "sorted(structural_edge_set),"
+      }
+    ],
+    "required_resolution": [
+      "Expire retained event history at the rolling seven-day cutoff.",
+      "Remove structural User-IP edges when no retained event remains.",
+      "Recompute retained/recent counts and define orphan-node handling.",
+      "Use the accepted event-time User supervision instead of persistent attack flags.",
+      "Test repeated edges, exact cutoffs, simultaneous events and all five organizations.",
+      "Verify actual as-of feature export and label/provenance exclusion before training."
+    ]
+  },
+  "requirements": [
+    {
+      "requirement": "Factorial coverage and controlled comparison documentation",
+      "status": "PASS_DATASET_SCOPE",
+      "evidence": "513 instances; two controlled families plus Sorg1 references; limitations preserved"
+    },
+    {
+      "requirement": "Stored campaign parameters and mappings",
+      "status": "PASS",
+      "evidence": "Independent stored-event measurements plus accepted generator/mapping checks"
+    },
+    {
+      "requirement": "Chronological splits and synthetic infrastructure disjointness",
+      "status": "PASS_DATASET_SCOPE",
+      "evidence": "Three zero-intersection IP/credential-ID split checks; accepted pre-anchor and label timing checks"
+    },
+    {
+      "requirement": "Replay, labels and seven-day graph behavior",
+      "status": "PARTIAL_GRAPH_INTEGRATION_OPEN",
+      "evidence": "All 2565 replay/label branches pass; historical views and User counts pass; legacy structural-edge eviction remains open"
+    },
+    {
+      "requirement": "Consolidated register and manifests",
+      "status": "PASS_LOCAL_EXPORT",
+      "evidence": "Campaign/organization registers, measurements and freeze manifest saved; external Google Sheet not updated"
+    }
+  ],
+  "builder_sha256": "c4a61f38dfb60a08c9550603aff3a62583e5eeebc00c7803a971d4e83ad28779",
+  "external_google_sheet_updated": false,
+  "limitations": [
+    "Clean-negative candidates are not confirmed benign.",
+    "Replayed copies and sparse states are not independent natural observations.",
+    "Raccount changes target coverage and per-user intensity; Sorg changes composition and volume.",
+    "Optional fixed-total Sorg sensitivity dataset has not been generated.",
+    "Three temporal blocks per split constrain external validity.",
+    "No claim of sub-threshold behavior, federation benefit, DP, robustness, ledger operation or model performance is made."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "rolling-user-ip-graph-v1",
+  "active_entrypoint": "src.organization.rolling_graph_v1.OrganizationGraphRuntime",
+  "legacy_modules_used": false,
+  "history_interval": "(t-7 days,t]",
+  "recent_interval": "(t-10 minutes,t]",
+  "features": [
+    "total_logins",
+    "successful_logins",
+    "failed_logins",
+    "failure_ratio",
+    "distinct_neighbors",
+    "recent_logins_10min",
+    "recent_distinct_neighbors_10min",
+    "node_type"
+  ],
+  "count_feature_scope": "retained seven-day history, not lifetime",
+  "orphan_policy": "Remove inactive nodes and edges; dense tensor indices are per-view; private entity keys remain the identity",
+  "dedup_policy": "Reject late batches and duplicate retained ingestion tokens; token memory expires with history",
+  "preprocessing": "Fixed log1p for counts; no fitted statistics",
+  "supervision": "Separate evaluator join; no labels/masks/metadata in model Data",
+  "shared_state": "training_view and detection_view export the same persistent graph state",
+  "checkpoint": "Hashed JSON/GZIP retained observable events and clock; no truth flags",
+  "code_sha256": {
+    "src/organization/rolling_graph_v1.py": "b36ce245190ffbfe3322157a325e44485262b8b66450027f4f80a5e6113c1bd3",
+    "validate_phase5_graph_retention_v1.py": "d5dfe351e09ec0789c5a9d99a381cb224a84de55f0e8c0f0da5ed60b32f61b0e"
+  }
+}

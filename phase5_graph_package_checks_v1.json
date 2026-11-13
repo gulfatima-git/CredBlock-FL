@@ -1,0 +1,40 @@
+{
+  "saved_graph_artifacts": [
+    {
+      "organization": "Org1",
+      "nodes": 67226,
+      "directed_edges": 79480,
+      "positive_users": 18,
+      "status": "PASS"
+    },
+    {
+      "organization": "Org2",
+      "nodes": 70926,
+      "directed_edges": 84244,
+      "positive_users": 18,
+      "status": "PASS"
+    },
+    {
+      "organization": "Org3",
+      "nodes": 74886,
+      "directed_edges": 89314,
+      "positive_users": 19,
+      "status": "PASS"
+    },
+    {
+      "organization": "Org4",
+      "nodes": 77660,
+      "directed_edges": 92994,
+      "positive_users": 21,
+      "status": "PASS"
+    },
+    {
+      "organization": "Org5",
+      "nodes": 81375,
+      "directed_edges": 98014,
+      "positive_users": 14,
+      "status": "PASS"
+    }
+  ],
+  "all_five_passed": true
+}
