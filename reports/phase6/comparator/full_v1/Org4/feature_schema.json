@@ -1,0 +1,15 @@
+{
+  "feature_names": [
+    "total_logins",
+    "successful_logins",
+    "failed_logins",
+    "failure_ratio",
+    "distinct_neighbors",
+    "recent_logins_10min",
+    "recent_distinct_neighbors_10min"
+  ],
+  "root_only": true,
+  "accepted_schema_sha256": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+  "preprocessing": "No learned normalization; same fixed accepted log1p counts and failure ratio as GraphSAGE",
+  "feature_policy": "Unchanged accepted float32 root User features; User node_type is constant and omitted. Distinct-neighbor features mean this User's own observed distinct IP counts, computable from its login history. No other node's attributes, shared-IP user counts, edges, adjacency, message passing, embeddings, IDs, provenance or ground truth enter the model."
+}

@@ -1,0 +1,13 @@
+{
+ "status":"PASS",
+ "recorded_on_local_date":"2026-11-14",
+ "phase6_regression":{"command":".venv/Scripts/python.exe -B -m pytest tests/phase6 -q -p no:cacheprovider -k 'not real_test_branch_cannot_be_opened_for_fitting'","passed":130,"deselected":1,"warnings":142,"duration_seconds":63.48,"exclusion":"Existing accepted test deliberately opens a TEST manifest. New and existing pre-I/O TEST rejection tests passed without opening TEST."},
+ "additional_independent_behavioral_oracles":{"command":".venv/Scripts/python.exe -B -m pytest tests/phase6/test_comparator_behavioral_features.py -q -p no:cacheprovider","passed":2,"duration_seconds":0.50,"reason_separate":"Added after regression collection; not counted in the 130 above"},
+ "accepted_runtime_synthetic_selftests":{"command":".venv/Scripts/python.exe -B validate_phase5_graph_retention_v1.py --self-test","passed":20,"duration_seconds":25.285,"test_data_access":false},
+ "total_distinct_tests_passed":152,
+ "new_subphase4_tests_passed":36,
+ "focused_comparator_preflight":{"passed":34,"duration_seconds":38.79,"already_counted_in_regression":true},
+ "warnings":"One existing TorchScript/Python3.14 warning and 141 PyG typing._eval_type deprecations; no test failures",
+ "representative_integration":{"organization":"Org1","mode":"representative","branch":"CFV1_SO_CS_027_SEED1001_{TRAIN,VAL}","max_epochs":3,"result":"PASS_REPRESENTATIVE_ONLY","exact_repeat":true,"evidence":"reports/phase6/comparator/representative_v1/Org1/summary.json","not_full_evidence":true},
+ "full_integration":"The finalizer must independently verify all five full components, paired GraphSAGE CSV identities and logits, safe checkpoint reloads, exact repeats and preservation before claiming PASS. Unit/smoke tests alone cannot satisfy this gate."
+}

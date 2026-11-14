@@ -1,0 +1,11 @@
+{
+  "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+  "organization": "Org5",
+  "split": "VAL",
+  "observations_sha256": "85138c3b1066863225e6d8a31707bb3724fc072aff1c85fe0ad3807647d68d94",
+  "history_reference_sha256": "683a5f41b0d5f7a2fa6f419fa0f940b1431acc08944103e7bcde79f62e8f834b",
+  "anchor": "2020-10-06T07:00:00",
+  "end_exclusive": "2020-10-06T08:00:00",
+  "events": 669,
+  "warmup_events": 71533
+}

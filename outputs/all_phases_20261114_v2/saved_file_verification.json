@@ -1,0 +1,19 @@
+{
+  "status": "PASS_INDEPENDENT_SAVED_XLSX_EDIT_CHECK",
+  "sheets": 23,
+  "original_cells_preserved_checked": 141757,
+  "allowed_updated_cells": 12,
+  "formula_count": 89,
+  "original_formulas_preserved": 79,
+  "native_tables_preserved": 33,
+  "new_tables": 2,
+  "new_source_rows": 8,
+  "original_source_unchanged": true,
+  "all_ten_thresholds_exact": true,
+  "formula_errors": 0,
+  "live_recalculation": "PASS; edited value restored",
+  "xlsx_sha256": "00a510444bc0b0fc6847b7dbcb151efacd2ba73ae728846fb70d6d245c8e0298",
+  "native_excel_application_recalculation": "Not exercised",
+  "exporter_exit_code": 1,
+  "exporter_note": "Exporter saved the workbook and exited 1 without an error message; ZIP, values, native features, formulas and caches independently verified."
+}

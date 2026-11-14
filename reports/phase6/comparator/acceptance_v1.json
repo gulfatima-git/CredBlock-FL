@@ -1,0 +1,12 @@
+{
+  "version": "phase6-subphase4-user-acceptance-v1",
+  "status": "USER_ACCEPTED",
+  "accepted_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "user_statement": "I accept Phase 6 Subphase 4 (6.2C): Non-Graph Local Comparator and Best-Local Selection, based on the reported complete TRAIN/VAL comparison and validation evidence.",
+  "evidence": "reports/phase6/comparator/final_v1/ACCEPTANCE_REPORT.md",
+  "summary_sha256": "bdfec3572dd7af57b4a33843dded79fbb588b4b6e7ecc598e3e397b1fa88eaa1",
+  "best_local": "GraphSAGE for Org1-Org5; locked before fixed-FPR calibration",
+  "preservation_manifest": "reports/phase6/calibration/accepted_inputs_before_subphase5_v1.json",
+  "authorized_next": "Subphase 5 (6.3) only"
+}

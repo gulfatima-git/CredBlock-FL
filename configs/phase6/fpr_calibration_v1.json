@@ -1,0 +1,20 @@
+{
+ "version":"phase6-fixed-fpr-calibration-v1",
+ "organizations":["Org1","Org2","Org3","Org4","Org5"],
+ "detectors":["graphsage","tabular_mlp"],
+ "calibration_split":"VAL",
+ "target_fpr":{"numerator":1,"denominator":100},
+ "negative_denominator":"Eligible y=0 local User-time/window examples on the unchanged ten-minute grid; ambiguous/masked, missing/context-only and IP nodes excluded; repeated alternative branches retained",
+ "budget":"Exact integer division N_negative // 100, never floating-point quantile interpolation",
+ "score_domain":"Saved model logit, parsed losslessly from accepted prediction CSV into binary64; probability column is not used for calibration or decisions",
+ "decision":"Promote scores to binary64 and compare score >= authoritative binary64 threshold; use the supplied frozen-threshold decision helper, not a scalar comparison that downcasts the threshold to float32",
+ "threshold_rule":"Sort eligible negative logits descending. The score at zero-based index budget is the first disallowed boundary. Set threshold to the immediate next representable binary64 value above it. This excludes the whole boundary tie group and is the most permissive binary64 threshold satisfying the budget. If no finite threshold qualifies, freeze an explicit no-alert sentinel.",
+ "no_negatives":"Fail calibration; never invent a denominator or threshold",
+ "insufficient_samples":"For 1 <= N_negative < 100, freeze a conservative zero-FP-budget threshold and flag the 1% target as unresolvable at resolution 1/N; do not claim an exact 1% achieved rate or population guarantee",
+ "undefined_metrics":"Precision null if no alerts; recall null if no eligible positives; F1 null if its denominator is zero. Report all confusion counts and denominators.",
+ "best_local":"Preserve the accepted GraphSAGE selection for Org1-Org5, regardless of calibrated recall or other threshold metrics",
+ "sensitivity":"None; no extra operating points",
+ "reproducibility":"Repeat negative-only calibration with reversed and deterministically permuted negatives; require identical threshold encoding and FP count. Reload sealed artifacts and reproduce decisions and metrics.",
+ "protocol_sha256":"9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+ "scope":"Subphase 5 only; no TEST outcomes, model changes/selection, continuous inference or later components"
+}

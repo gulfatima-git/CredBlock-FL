@@ -1,0 +1,19 @@
+{
+  "version": "phase6-subphase3-user-acceptance-v1",
+  "status": "USER_ACCEPTED",
+  "accepted_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "user_statement": "I accept Phase 6 Subphase 3 (6.2B): Five Independent Local GraphSAGE Models, based on the reported full TRAIN/VAL training and validation evidence.",
+  "evidence": "reports/phase6/training/final_v1/ACCEPTANCE_REPORT.md",
+  "summary_sha256": "c0f2b7add2f27d0317d9546f015dcea96cf816afe326fad6048b0c301b356c07",
+  "selected_checkpoints": {
+    "Org1.pt": "a325eff38f6ebdb3324e940436f4c34452c54a67d6a5cc60fb84117cc89aef66",
+    "Org2.pt": "54c28689cc4237f38238e6ce69ef2e24ab0030f1fa3291dd83dfd04c2d5ac351",
+    "Org3.pt": "9e8da418e8061663a057619e01424a7feecffc2af8269f550c8fc6648ce25a7e",
+    "Org4.pt": "d0ae07a8f2d32dda72288a659ae1f305cc5a2091eb516fc14ab3ebae40c1e309",
+    "Org5.pt": "dc3763b8688dfb0cea4daaa0f3a1bcf0d4cffc21cdeedb0acd01297bad420ed3"
+  },
+  "preservation_manifest": "reports/phase6/comparator/accepted_inputs_before_subphase4_v1.json",
+  "authorized_next": "Subphase 4 (6.2C) only",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b"
+}

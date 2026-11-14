@@ -1,0 +1,13 @@
+{
+ "status":"PASS",
+ "recorded_on_local_date":"2026-11-14",
+ "phase6_regression":{"command":".venv/Scripts/python.exe -B -m pytest tests/phase6 -q -p no:cacheprovider -k 'not real_test_branch_cannot_be_opened_for_fitting'","passed":196,"deselected":1,"warnings":742,"duration_seconds":93.21,"exclusion":"Existing real_test_branch_cannot_be_opened_for_fitting opens a TEST manifest; intentionally excluded. Pre-I/O TEST guards passed."},
+ "accepted_runtime_synthetic_selftests":{"command":".venv/Scripts/python.exe -B validate_phase5_graph_retention_v1.py --self-test","passed":20,"duration_seconds":30.509,"test_data_access":false},
+ "total_distinct_tests_passed":216,
+ "new_inference_tests_passed":24,
+ "focused_preflight":{"command":".venv/Scripts/python.exe -B -m pytest tests/phase6/test_continuous_inference.py -q -p no:cacheprovider","passed":24,"duration_seconds":24.76,"already_counted_in_regression":true},
+ "earlier_preflight":{"passed":23,"failures":0,"reason_for_followup":"Added explicit empty-batch failure logging and a real-run no-label/no-TEST input assertion before source/configuration freeze"},
+ "coverage":["Same persistent graph object and update-before-score","Observable two-hop affected Users without labels","Complete tied timestamp batches","Chronology and duplicate rejection before mutation","Ten-minute and seven-day exact lower-bound expiry","Original registry integrity and all-five bundle loading","Binary64 threshold equality versus one-ULP-below","Startup schema/model/threshold mismatch","Retain last usable bundle after invalid candidate","Journal recovery and input cursor","Scoring fault requires restart","Atomic storage failure leaves no partial commands/tokens/alerts","Checkpoint tampering","TEST adapter rejection before path access","Full-hour final microsecond flush"],
+ "real_integration_scope":"One complete predeclared VAL observation hour for each of Org1-Org5, plus an independent replay restarted mid-hour. All ten executions must finish and match canonical decisions and final graph hashes before final PASS. Not all 513 branches and not TEST evaluation.",
+ "warnings":"Existing TorchScript/Python3.14 compatibility warning and PyG typing._eval_type deprecations; no final test failures"
+}

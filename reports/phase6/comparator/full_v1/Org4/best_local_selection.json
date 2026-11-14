@@ -1,0 +1,100 @@
+{
+  "status": "FROZEN_VAL_BEST_LOCAL_SELECTION",
+  "organization": "Org4",
+  "detector": "graphsage",
+  "checkpoint": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\final_v1\\models\\Org4.pt",
+  "checkpoint_sha256": "d0ae07a8f2d32dda72288a659ae1f305cc5a2091eb516fc14ab3ebae40c1e309",
+  "selection_rule": {
+    "split": "VAL",
+    "primary": "maximum tied-score average precision",
+    "secondary": "minimum unweighted BCE",
+    "candidate_final_tie": "lexicographic candidate id",
+    "best_local_exact_tie": "GraphSAGE",
+    "epoch_selection": "AP improvement greater than 1e-6; otherwise retain earlier epoch; patience=3",
+    "scope": "independent per organization; never choose one organization model for another"
+  },
+  "graphsage_validation": {
+    "eligible": 57615,
+    "positive": 9621,
+    "negative": 47994,
+    "bce": 0.3792039555838817,
+    "average_precision": 0.7825572144257613,
+    "precision_at_0_5": 0.5959512101666773,
+    "recall_at_0_5": 0.9699615424592039,
+    "f1_at_0_5": 0.7382911392405064,
+    "masked_recent_roots": 2850,
+    "inductive_unseen_user": {
+      "eligible": 48948,
+      "positive": 8934,
+      "negative": 40014,
+      "bce": 0.38646517389620905,
+      "average_precision": 0.7814145720733099,
+      "precision_at_0_5": 0.6228965913993959,
+      "recall_at_0_5": 0.9695545108573987,
+      "f1_at_0_5": 0.7584938704028021
+    },
+    "inductive_unseen_ip_context": {
+      "eligible": 47754,
+      "positive": 9621,
+      "negative": 38133,
+      "bce": 0.41087329925548866,
+      "average_precision": 0.8011221706667834,
+      "precision_at_0_5": 0.6161362736035917,
+      "recall_at_0_5": 0.9699615424592039,
+      "f1_at_0_5": 0.7535833972624864
+    },
+    "inductive_unseen_user_and_ip": {
+      "eligible": 40968,
+      "positive": 8934,
+      "negative": 32034,
+      "bce": 0.41258713670148195,
+      "average_precision": 0.8012715609489369,
+      "precision_at_0_5": 0.6440148698884758,
+      "recall_at_0_5": 0.9695545108573987,
+      "f1_at_0_5": 0.7739456754824875
+    }
+  },
+  "comparator_validation": {
+    "eligible": 57615,
+    "positive": 9621,
+    "negative": 47994,
+    "bce": 0.45562632694466587,
+    "average_precision": 0.6659351668687303,
+    "precision_at_0_5": 0.5499381297507513,
+    "recall_at_0_5": 0.9700654817586529,
+    "f1_at_0_5": 0.7019404332129964,
+    "masked_recent_roots": 2850,
+    "inductive_unseen_user": {
+      "eligible": 48948,
+      "positive": 8934,
+      "negative": 40014,
+      "bce": 0.4865274547422364,
+      "average_precision": 0.6627946878066976,
+      "precision_at_0_5": 0.5566910913999229,
+      "recall_at_0_5": 0.9694425789120215,
+      "f1_at_0_5": 0.707251347378736
+    },
+    "inductive_unseen_ip_context": {
+      "eligible": 47754,
+      "positive": 9621,
+      "negative": 38133,
+      "bce": 0.40933629723649134,
+      "average_precision": 0.7353551301023543,
+      "precision_at_0_5": 0.6279773920064594,
+      "recall_at_0_5": 0.9700654817586529,
+      "f1_at_0_5": 0.7624065678225708
+    },
+    "inductive_unseen_user_and_ip": {
+      "eligible": 40968,
+      "positive": 8934,
+      "negative": 32034,
+      "bce": 0.4236736999357633,
+      "average_precision": 0.737754183522849,
+      "precision_at_0_5": 0.6412705464238116,
+      "recall_at_0_5": 0.9694425789120215,
+      "f1_at_0_5": 0.7719251336898396
+    }
+  },
+  "paired_identity_sha256": "1703c8e9d720436c6767799991260e60d1b086b3549e646fa6358b55c9a5ae33",
+  "calibrated_threshold": null
+}

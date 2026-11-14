@@ -1,0 +1,13 @@
+{
+ "status":"PASS",
+ "recorded_on_local_date":"2026-11-14",
+ "phase6_regression":{"command":".venv/Scripts/python.exe -B -m pytest tests/phase6 -q -p no:cacheprovider -k 'not real_test_branch_cannot_be_opened_for_fitting'","passed":172,"deselected":1,"warnings":142,"duration_seconds":80.77,"exclusion":"Existing accepted test opens a TEST manifest. Pre-I/O TEST rejection tests passed without opening any TEST input."},
+ "accepted_runtime_synthetic_selftests":{"command":".venv/Scripts/python.exe -B validate_phase5_graph_retention_v1.py --self-test","passed":20,"duration_seconds":25.941,"test_data_access":false},
+ "total_distinct_tests_passed":192,
+ "new_calibration_tests_passed":40,
+ "focused_preflight":{"command":".venv/Scripts/python.exe -B -m pytest tests/phase6/test_fpr_calibration.py -q -p no:cacheprovider","passed":40,"duration_seconds":17.24,"already_counted_in_regression":true},
+ "initial_preflight":{"passed":39,"failed":1,"reason":"Synthetic positive-outcome-invariance fixture used positive logit 100 below its own ~121 threshold; corrected to 1000 to exercise an actual recall change. No calibration code, real outcomes or accepted artifacts changed."},
+ "coverage":["Exact integer budgets and most-permissive boundary certificate","Whole-tie exclusion and unused budget","Binary32 score promotion to binary64","No finite threshold / no-alert sentinel","Empty eligible negatives fail","N<100 yields zero budget and resolution flag","No positives / no alerts produce explicit undefined metrics","Masked roots excluded","Order permutation and reverse invariance","Frozen artifact seals and model/config/org identity","Loader has no recalibration or TEST-data API","TRAIN and TEST rejection before I/O","Paired cohort identity","Existing output rejection before opening inputs"],
+ "full_integration":"The real calibration runner must verify all ten model/prediction pairs, exact eligible identities, FP budgets, reversed/permuted calibration, safe frozen-loader metrics, locked best-local records and all preservation hashes before producing a PASS report. Synthetic tests alone do not satisfy the gate.",
+ "warnings":"Existing TorchScript/Python3.14 warning and PyG typing._eval_type deprecations; no final test failures"
+}

@@ -1,0 +1,13 @@
+# Latency and recovery measurement definitions
+
+This note clarifies the frozen collector's measurement scope. It does not change models, thresholds, event selection, source/configuration hashes, replay data or the predeclared integration hour.
+
+`graph_update_seconds` measures the accepted graph's observation ingest or clock/expiry advance. `feature_and_sampler_seconds` covers view export plus CSR and root-index preparation. The field named `model_scoring_seconds` measures the scoring phase, including construction of sampled tensor batches and forward passes. It is **not isolated neural-kernel forward latency**. The per-User `inference_seconds` column repeats this shared timestamp-phase cost and must not be summed across Users as independent processing time.
+
+`elapsed_seconds` in the per-command latency records is the measured end-to-end command duration, including persistence and periodic checkpoint costs. Stage fields omit some validation, target-discovery, hashing, record construction and commit overhead; the end-to-end duration captures these costs. The mean per-input-event figure is amortized, not a separately timed event inside a tied timestamp batch. Heartbeat commands and event commands remain distinguishable by trigger and input-event count. There is no claim of a calibrated FPR for either operational unit.
+
+The primary mid-hour restart experiment closes and reconstructs the local service inside its replay process, restores a prior checkpoint and replays committed but uncheckpointed commands. This directly verifies source cursor, graph bytes and existing decision logs before continuing. Synthetic recovery tests construct fresh registries and test feature/storage failures. These are not physical power-loss tests.
+
+An additional `cold_start_v1/OrgN` audit launches a fresh Python process per organization, reloads and validates the original model/threshold/configuration bundle, and restores an organization-local copy of the completed SQLite state. It checks the complete final graph, clock, source cursor and decision digest without processing new observations or touching the original journal. This complements the mid-hour journal-recovery experiment without claiming an OS-kill at the exact mid-hour restart point or a hardware durability guarantee.
+
+The five real integrations are representative complete VAL hours, not full alternative-branch performance evidence. All private User identities, raw events and graph checkpoints stay inside their respective organization directories. Global reports and the Excel update contain aggregate counts and resource measurements only.

@@ -1,0 +1,206 @@
+{
+  "source": "C:/Users/Gulso/Documents/Gul/CredBlock-FL/outputs/all_phases_20261114_v1/CredBlock_FL_All_Phases_Research_Results_v1.xlsx",
+  "source_sha256": "6164b3750d3282d166b8f1672417ffd748587d6ae9168285b7cca81acd5560aa",
+  "destination": "C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/excel_all_phases_v1/outputs/all_phases_20261114_v2/CredBlock_FL_All_Phases_Research_Results_v2.xlsx",
+  "allowed_cells": [
+    {
+      "sheet": "Overview",
+      "cell": "A3"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "D11"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "E11"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "C26"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "D26"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "E26"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "C27"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "D27"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "E27"
+    },
+    {
+      "sheet": "P6 Calibration",
+      "cell": "A3"
+    },
+    {
+      "sheet": "P6 Tests",
+      "cell": "A3"
+    },
+    {
+      "sheet": "Methods and provenance",
+      "cell": "B16"
+    }
+  ],
+  "new_sheet": "P6 Inference",
+  "source_additions": [
+    [
+      "S086",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/inference/final_v1/summary.json",
+      "03343a23dab84b84128f399db8986c0241199446e7727d304135defd4d2ce004"
+    ],
+    [
+      "S087",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/inference/testing_results_v1.json",
+      "58cfc67269b277cdb84a9aabbce4dbd91eb731b9fe126c0a8f9297ca5fa1e61b"
+    ],
+    [
+      "S088",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/configs/phase6/continuous_inference_v1.json",
+      "749d8efa9bc8f0c97cf1bd43c0a89e0e0acb61846e66ee73567faaf6b96d338d"
+    ],
+    [
+      "S089",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/inference/preregistration_v1.json",
+      "331becdd66172317518c977034eead47df0700d5f96b4ba29b82eb558d18708c"
+    ],
+    [
+      "S090",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/calibration/acceptance_v1.json",
+      "e90f262f1f96df94fcebf7d4b007055c991fed60d32f304e634a5a719f099aa2"
+    ],
+    [
+      "S091",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/progress_v7.json",
+      "a051ae88d530b7201b082d5c41a2df6fa6dfc93ffb05fe1e14804b3c894e9f4b"
+    ],
+    [
+      "S092",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/inference/LATENCY_AND_RECOVERY_SCOPE_v1.md",
+      "f6eccf984e7d6f3b9514618636f99bd60861522b21e712ed5218f05aac905174"
+    ],
+    [
+      "S093",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/inference/delivery_audit_v1.json",
+      "2d10ae0d15f60b3a58a3b27ff31cf83340723f2d05b1fa22615d08cb2c7d5aab"
+    ]
+  ],
+  "operational_rows": [
+    [
+      "Org1",
+      578,
+      585,
+      4438,
+      122,
+      4316,
+      109,
+      859,
+      2.3766324799988063,
+      0.17358946000022116,
+      1.9965404599992322,
+      0.005714040000020758,
+      1.753152178200731,
+      0.5702623058585387,
+      471.3984375,
+      92,
+      true,
+      true,
+      "S086"
+    ],
+    [
+      "Org2",
+      567,
+      574,
+      4859,
+      468,
+      4391,
+      84,
+      781,
+      2.606036100000893,
+      0.1894898150010704,
+      2.1496828599994844,
+      0.006202715000290483,
+      1.9100741918871285,
+      0.5234194481275236,
+      475.62109375,
+      87,
+      true,
+      true,
+      "S086"
+    ],
+    [
+      "Org3",
+      617,
+      624,
+      5749,
+      482,
+      5267,
+      104,
+      1246,
+      2.6788820699992364,
+      0.18883061499764153,
+      2.230460779999157,
+      0.006940739999845392,
+      2.0800049126418827,
+      0.48066912746080837,
+      480.94921875,
+      12,
+      true,
+      true,
+      "S086"
+    ],
+    [
+      "Org4",
+      626,
+      633,
+      5862,
+      379,
+      5483,
+      112,
+      1153,
+      2.7997059399975113,
+      0.1948207799985539,
+      2.340917459998309,
+      0.006974280000576981,
+      2.1954406750798885,
+      0.4554008984479923,
+      483.84765625,
+      16,
+      true,
+      true,
+      "S086"
+    ],
+    [
+      "Org5",
+      669,
+      676,
+      5474,
+      615,
+      4859,
+      123,
+      1046,
+      2.8995785500028433,
+      0.20908207499905984,
+      2.4319449250006073,
+      0.007134499999665422,
+      2.279601746935705,
+      0.43859064936233333,
+      487.23828125,
+      38,
+      true,
+      true,
+      "S086"
+    ]
+  ],
+  "recalculation_test": "PASS; edited value restored"
+}

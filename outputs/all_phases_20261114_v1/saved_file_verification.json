@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SAVED_XLSX_RECONCILIATION",
+  "sheets": 22,
+  "formula_error_cells": 0,
+  "formula_count": 79,
+  "model_rows": 10,
+  "candidate_rows": 30,
+  "epoch_rows": 238,
+  "preserved_phase5_raw_cells_checked": 138348,
+  "thresholds_with_exact_text_and_hex": 10,
+  "source_files_unchanged": 85,
+  "xlsx_sha256": "6164b3750d3282d166b8f1672417ffd748587d6ae9168285b7cca81acd5560aa",
+  "recalculation_test": "PASS; source FP restored",
+  "native_excel_application_recalculation": "Not exercised; Artifact Tool live recalculation and saved formula caches verified",
+  "exporter_exit_code": 1,
+  "exporter_note": "Exporter saved a valid workbook and exited 1 without an error message; ZIP, values, formulas and caches independently verified"
+}

@@ -1,0 +1,184 @@
+{
+  "status": "PASS_SUBPHASE6_ADDITIONAL_DELIVERY_AUDIT_AWAITING_USER_ACCEPTANCE",
+  "recorded_on_local_date": "2026-11-14",
+  "all_five_replay_components_pass": true,
+  "independent_python_cold_start_audits": [
+    {
+      "status": "PASS_INDEPENDENT_PROCESS_COLD_START",
+      "organization": "Org1",
+      "input_offset": 578,
+      "final_clock": "2020-10-06T07:59:59.999999",
+      "decision_digest": "0c157d1052c310d093973c2dd2d221ddf2152111ea0b254b84a57d63b849d810",
+      "final_graph_checkpoint_sha256": "3b047b1efcd3bedd4b7a3b732666a7f4af7bb76601a41a8d3437cca576bb602c",
+      "bundle_fingerprint": "f9c54b534ad297e02c605eedd794e54ea61039976ba16a6a4bba0cc36b1e3ce4",
+      "startup_and_verify_seconds": 8.786657900000137,
+      "new_observations_scored": 0,
+      "scope": "Fresh Python process reloads original model and threshold and restores a private copy of completed durable state. Mid-hour uncheckpointed journal recovery is separately verified by the independent restart replay.",
+      "original_store_sha256": "ad81a802c72b15e48a9fdaf13f71c05c94730c9e18d8d0efa89c59a041092f91",
+      "source_module_sha256": "09c41f39e40ad4c594540fa063870401306a9bb8aac9bd95eed7469d7bb118fb",
+      "test_files_opened": 0
+    },
+    {
+      "status": "PASS_INDEPENDENT_PROCESS_COLD_START",
+      "organization": "Org2",
+      "input_offset": 567,
+      "final_clock": "2020-10-06T07:59:59.999999",
+      "decision_digest": "b232d646c12e96a3e85f46510f4d72a2fb464266f6ecb97a1748c88fd7ec627e",
+      "final_graph_checkpoint_sha256": "2fe5cf2aa4e87447f35366e3f1334ca72fbef6ea1aef5250abb2bcb2b33c1fdf",
+      "bundle_fingerprint": "a433f5537831f35daaec0a1a34823d74713807046c12961509f765bc58bf7d6d",
+      "startup_and_verify_seconds": 9.169409800000722,
+      "new_observations_scored": 0,
+      "scope": "Fresh Python process reloads original model and threshold and restores a private copy of completed durable state. Mid-hour uncheckpointed journal recovery is separately verified by the independent restart replay.",
+      "original_store_sha256": "d558e279c7ab30ac564453b5cac7bd6efa23e01f402e8cc26c3fbc9234392f54",
+      "source_module_sha256": "09c41f39e40ad4c594540fa063870401306a9bb8aac9bd95eed7469d7bb118fb",
+      "test_files_opened": 0
+    },
+    {
+      "status": "PASS_INDEPENDENT_PROCESS_COLD_START",
+      "organization": "Org3",
+      "input_offset": 617,
+      "final_clock": "2020-10-06T07:59:59.999999",
+      "decision_digest": "3c3d95176b86c0fd23a134cc606bd3ca69aee9d9f2cac9ad66dc0f588d0a9428",
+      "final_graph_checkpoint_sha256": "b38b069b11aa74237b8f7601472bc96745aae66b189311cd85c643325071199a",
+      "bundle_fingerprint": "46f06c934656a53a0aeedc7341770ecd1dde86c30fe36471161089e0e6a0509f",
+      "startup_and_verify_seconds": 9.509640399999626,
+      "new_observations_scored": 0,
+      "scope": "Fresh Python process reloads original model and threshold and restores a private copy of completed durable state. Mid-hour uncheckpointed journal recovery is separately verified by the independent restart replay.",
+      "original_store_sha256": "d941d18c469ef3f21896cd0ceae920fe04d3dd99f6b8d6ed8c775d5bbfc19c65",
+      "source_module_sha256": "09c41f39e40ad4c594540fa063870401306a9bb8aac9bd95eed7469d7bb118fb",
+      "test_files_opened": 0
+    },
+    {
+      "status": "PASS_INDEPENDENT_PROCESS_COLD_START",
+      "organization": "Org4",
+      "input_offset": 626,
+      "final_clock": "2020-10-06T07:59:59.999999",
+      "decision_digest": "94e28740630e81d2cfcfb79e8e79cbe1deafd6aeab48df81db78c142718d3f48",
+      "final_graph_checkpoint_sha256": "8444a9504009e1a88cdcc12c4b6e3380c7cdb084f58b8fca9a953a58ae2a0cfe",
+      "bundle_fingerprint": "bf30f66e9be9b18c105c8d27a53e1060eda4446b154c812d7cda4b369b9b6074",
+      "startup_and_verify_seconds": 8.854250899999897,
+      "new_observations_scored": 0,
+      "scope": "Fresh Python process reloads original model and threshold and restores a private copy of completed durable state. Mid-hour uncheckpointed journal recovery is separately verified by the independent restart replay.",
+      "original_store_sha256": "54b0058c5bfce149a5e77e993ea11167f8f885a05e6bd051a2a4a42e986b4d33",
+      "source_module_sha256": "09c41f39e40ad4c594540fa063870401306a9bb8aac9bd95eed7469d7bb118fb",
+      "test_files_opened": 0
+    },
+    {
+      "status": "PASS_INDEPENDENT_PROCESS_COLD_START",
+      "organization": "Org5",
+      "input_offset": 669,
+      "final_clock": "2020-10-06T07:59:59.999999",
+      "decision_digest": "b8b53f8a4ca8b391a85563cc568fbd632fa03aaaf3a3cf4140ace8df9477abbe",
+      "final_graph_checkpoint_sha256": "023088b5b752a25c46cf482cbee1ce5a5ab8a9c41d54c3cec98894a396abe590",
+      "bundle_fingerprint": "38fb18a83cc2470e6907334c364558f3c740d72a3b93e8dffd27b6333b5372bd",
+      "startup_and_verify_seconds": 9.004623299999366,
+      "new_observations_scored": 0,
+      "scope": "Fresh Python process reloads original model and threshold and restores a private copy of completed durable state. Mid-hour uncheckpointed journal recovery is separately verified by the independent restart replay.",
+      "original_store_sha256": "53d0bea8d886ce0c52ce2b6717f61a0c0de0b059b01e6fe70afd622a7b987fee",
+      "source_module_sha256": "09c41f39e40ad4c594540fa063870401306a9bb8aac9bd95eed7469d7bb118fb",
+      "test_files_opened": 0
+    }
+  ],
+  "independent_decision_audits": [
+    {
+      "organization": "Org1",
+      "run": "uninterrupted",
+      "binary64_logit_decisions_checked": 4438,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org1",
+      "run": "restarted",
+      "binary64_logit_decisions_checked": 4438,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org2",
+      "run": "uninterrupted",
+      "binary64_logit_decisions_checked": 4859,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org2",
+      "run": "restarted",
+      "binary64_logit_decisions_checked": 4859,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org3",
+      "run": "uninterrupted",
+      "binary64_logit_decisions_checked": 5749,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org3",
+      "run": "restarted",
+      "binary64_logit_decisions_checked": 5749,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org4",
+      "run": "uninterrupted",
+      "binary64_logit_decisions_checked": 5862,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org4",
+      "run": "restarted",
+      "binary64_logit_decisions_checked": 5862,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org5",
+      "run": "uninterrupted",
+      "binary64_logit_decisions_checked": 5474,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    },
+    {
+      "organization": "Org5",
+      "run": "restarted",
+      "binary64_logit_decisions_checked": 5474,
+      "status": "PASS_EXACT_SEALED_THRESHOLD_RULE",
+      "original_journal_unchanged": true
+    }
+  ],
+  "prior_files_unchanged": 11939,
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+    "logical_cpus": 12,
+    "physical_cpus": 10,
+    "physical_memory_bytes": 16858472448,
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.3",
+    "execution": "Five independent organization CLI processes overlapped on one research host; two intra-op Torch threads per process. Cold audits ran after each completed pair. No dedicated-host performance claim."
+  },
+  "source_sha256": {
+    "reports/phase6/inference/final_v1/summary.json": "03343a23dab84b84128f399db8986c0241199446e7727d304135defd4d2ce004",
+    "reports/phase6/inference/testing_results_v1.json": "58cfc67269b277cdb84a9aabbce4dbd91eb731b9fe126c0a8f9297ca5fa1e61b",
+    "reports/phase6/inference/preregistration_v1.json": "331becdd66172317518c977034eead47df0700d5f96b4ba29b82eb558d18708c",
+    "reports/phase6/inference/LATENCY_AND_RECOVERY_SCOPE_v1.md": "f6eccf984e7d6f3b9514618636f99bd60861522b21e712ed5218f05aac905174",
+    "configs/phase6/continuous_inference_v1.json": "749d8efa9bc8f0c97cf1bd43c0a89e0e0acb61846e66ee73567faaf6b96d338d",
+    "reports/phase6/calibration/acceptance_v1.json": "e90f262f1f96df94fcebf7d4b007055c991fed60d32f304e634a5a719f099aa2",
+    "reports/phase6/progress_v7.json": "a051ae88d530b7201b082d5c41a2df6fa6dfc93ffb05fe1e14804b3c894e9f4b",
+    "src/phase6/verify_inference_cold_start.py": "09c41f39e40ad4c594540fa063870401306a9bb8aac9bd95eed7469d7bb118fb",
+    "reports/phase6/inference/cold_start_v1/Org1/summary.json": "e4c49a88552585c66b99136464b546afb6ebac3ef2b28d4696a9ebed5b37d22c",
+    "reports/phase6/inference/cold_start_v1/Org2/summary.json": "a38f8f97fa218a4bc132b1710229fe0e3c2e98bfda7acee12ef24303ac04a10c",
+    "reports/phase6/inference/cold_start_v1/Org3/summary.json": "2741244af21a22554cfbd86742df315e09c8769ee90acef121b33498df4ac3a9",
+    "reports/phase6/inference/cold_start_v1/Org4/summary.json": "b2fd0352ca955c872ee25590e2fc33077a72f9bb75809d4739b18e8269930c10",
+    "reports/phase6/inference/cold_start_v1/Org5/summary.json": "da13f32f4f6b6e3f6b7bb6f25e856d9d5986fea45bee091ace357e86c2301f09"
+  },
+  "timer_definition": "model_scoring is sampled-batch construction plus forward pass; feature_and_sampler is view/CSR/root setup; elapsed_seconds is per-command end-to-end including durable persistence/checkpoints.",
+  "restart_scope": "Mid-hour service reconstruction with committed journal replay within replay process, plus fresh Python startup against private copies of completed stores. No OS-kill/power-loss experiment.",
+  "scientific_scope": "One predeclared complete VAL hour per organization plus repeat; no labels, TEST outcomes or arbitrary event FPR claim. Not all alternative worlds or production throughput.",
+  "next_action": "User review and explicit Subphase 6 acceptance. Subphase 7 NOT_STARTED."
+}

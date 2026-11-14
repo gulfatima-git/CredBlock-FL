@@ -1,0 +1,101 @@
+{
+  "status": "FROZEN_BEFORE_OPERATIONAL_REPLAY",
+  "recorded_on_local_date": "2026-11-14",
+  "configuration_sha256": "749d8efa9bc8f0c97cf1bd43c0a89e0e0acb61846e66ee73567faaf6b96d338d",
+  "source_sha256": {
+    "src/phase6/inference_registry.py": "20b7881d49e53874a6462fcad94accf6a05e1f77e9c0ea421a3477dc88433b6e",
+    "src/phase6/local_inference.py": "d822193b813a529b369bae823fff34a5e65f690002c6b9470be16476db2cffda",
+    "src/phase6/inference_replay.py": "b8cda2c5e4f6f4bc06475bff26bcb76748bd6c839973651292152c3cff191926",
+    "src/phase6/run_continuous_inference.py": "b821aba26ba6aa1d80e673ec48a10c07157bf7c54a2daebb369d699bd7ec8483"
+  },
+  "design_document_sha256": {
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_FL_Phase6_Implementation_Roadmap.md": "c86a5f36f4f9a5d68f6207d2b550cd4d8050adc7694e714cc51e2bc9d4a2a5a5",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_Implementation_Plan.pdf": "9484c67538d609e5c9ddd35efdb9987777603fbe2907436319d9502a7ee7de57",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL_Final_Framework_Explained.pdf": "79bff193055a5d82f000ae5d6e61b87918f38cfa32ab17fb4db316d059486c53",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-detection-mechanism (2).png": "b5a71f089392ea5c076082893a3581ad0b25e8b113dea835ade2ddcc5f724d08",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-workflow (1).png": "5efa4d2b38e6a356dd78d1aaa5ba4a5c6f4bb0c585e813e47a1ddbf4b5a63b9f"
+  },
+  "registry": {
+    "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+    "shared_sha256": {
+      "configs/phase6/split_protocol_v1.json": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+      "configs/phase6/feature_allowlist_v1.json": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+      "configs/phase6/neighbor_sampling_v1.json": "d4d1223a517de4f66201ec7f5938f4c3b6cadc31551edcd3fb74ca5984bd7bed",
+      "configs/phase6/local_training_v1.json": "40fc3d2a6729b7a53799a9986d8c401b1666bdac339ee8bf0b69b67e304f790e",
+      "configs/phase6/fpr_calibration_v1.json": "60a529c6c53d489956214d68133043fd3aaa35fba0114b4d1bf712422e13c02c",
+      "src/organization/rolling_graph_v1.py": "b36ce245190ffbfe3322157a325e44485262b8b66450027f4f80a5e6113c1bd3",
+      "src/phase6/local_graphsage.py": "d438f3c57d2539a3760b5ffc1d3fae85ab5ad292fc30d76b595b616d93bf6e55",
+      "src/phase6/input_pipeline.py": "59eee43209f81560e0883f032ef253cb490969133ccaaf1d4e810ad4b22e5740",
+      "src/phase6/fpr_calibration.py": "ad09919dc7588fe71b2002a00ad04e2a1f844b8a3f8e9248647ac809ac3c96a1"
+    },
+    "models": {
+      "Org1": {
+        "model_path": "reports\\phase6\\training\\final_v1\\models\\Org1.pt",
+        "model_sha256": "a325eff38f6ebdb3324e940436f4c34452c54a67d6a5cc60fb84117cc89aef66",
+        "threshold_path": "reports/phase6/calibration/v1/thresholds/Org1_graphsage.json",
+        "threshold_sha256": "a003c8b3fec3cc0d078c5d34539243302920e82b08b2a7df71ed7533063d7742"
+      },
+      "Org2": {
+        "model_path": "reports\\phase6\\training\\final_v1\\models\\Org2.pt",
+        "model_sha256": "54c28689cc4237f38238e6ce69ef2e24ab0030f1fa3291dd83dfd04c2d5ac351",
+        "threshold_path": "reports/phase6/calibration/v1/thresholds/Org2_graphsage.json",
+        "threshold_sha256": "decfaeb0bdbbd70e1ab8665b24f18749f221855c285f0328bcd02cbf9948969b"
+      },
+      "Org3": {
+        "model_path": "reports\\phase6\\training\\final_v1\\models\\Org3.pt",
+        "model_sha256": "9e8da418e8061663a057619e01424a7feecffc2af8269f550c8fc6648ce25a7e",
+        "threshold_path": "reports/phase6/calibration/v1/thresholds/Org3_graphsage.json",
+        "threshold_sha256": "cd5ffc64548b77c1652d5ddf7e5aa58ad1444bf416e9a376a7c90b4c336b60ca"
+      },
+      "Org4": {
+        "model_path": "reports\\phase6\\training\\final_v1\\models\\Org4.pt",
+        "model_sha256": "d0ae07a8f2d32dda72288a659ae1f305cc5a2091eb516fc14ab3ebae40c1e309",
+        "threshold_path": "reports/phase6/calibration/v1/thresholds/Org4_graphsage.json",
+        "threshold_sha256": "71867ec0cb6daaeb1cbc724c9acf477477f762b18fa9bd6e300aa1d89e844cd3"
+      },
+      "Org5": {
+        "model_path": "reports\\phase6\\training\\final_v1\\models\\Org5.pt",
+        "model_sha256": "dc3763b8688dfb0cea4daaa0f3a1bcf0d4cffc21cdeedb0acd01297bad420ed3",
+        "threshold_path": "reports/phase6/calibration/v1/thresholds/Org5_graphsage.json",
+        "threshold_sha256": "4c0989dd0a3f86156c3d89221f7c29f4ed41bf414305a61e852534d859a841e3"
+      }
+    }
+  },
+  "operating_policy": {
+    "version": "phase6-continuous-local-inference-v1",
+    "scope": "Subphase 6 (6.4) only; GraphSAGE Org1-Org5; no training, recalibration or model selection",
+    "organizations": [
+      "Org1",
+      "Org2",
+      "Org3",
+      "Org4",
+      "Org5"
+    ],
+    "demonstration": {
+      "split": "VAL",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+      "scope": "Representative real full-hour integration in all five organizations, not full 513-variant final evaluation",
+      "repeat": "Uninterrupted replay versus independent replay with a mid-hour close/restart and journal recovery",
+      "end": "Every observation in [anchor,end_exclusive), heartbeats at offsets 0,10,20,30,40,50 minutes plus end_exclusive minus 1 microsecond; do not stop at minute 50"
+    },
+    "event_contract": "Caller supplies a complete timestamp batch, observable columns only and stable local ingestion tokens. No within-timestamp partial decisions. Reject duplicate tokens or time <= closed graph clock. A watermark/complete-batch adapter is required for a real live producer.",
+    "scoring_policy": "After mutation, score surviving User nodes in the union of pre/post graph two-hop closures of changed event endpoints. Changed endpoints include incoming events and events expiring from ten-minute or seven-day windows. On heartbeat/final flush also score all observable recent User nodes. No labels, campaign membership or attacker metadata selects targets.",
+    "graph": "The accepted seven-day RollingGraph instance is updated in place. An additive adjacency index supports target discovery only; it never supplies model features. Accepted detection_view, TemporalNeighborSampler, schema, transforms, fanouts and seed are unchanged.",
+    "sampling_namespace": "Opaque local stream identifier is passed as the accepted sampler's branch namespace. Demonstration reuses the frozen variant identifier solely for reproducible sampling and source provenance, not target selection or features.",
+    "decision": "Reuse sealed GraphSAGE thresholds and the accepted binary64 decisions helper on unrounded logits. Probability is diagnostic only. No event-driven FPR guarantee follows from fixed-grid VAL calibration.",
+    "persistence": {
+      "engine": "Per-organization SQLite WAL with synchronous FULL",
+      "checkpoint_every_commits": 100,
+      "atomic_commit": "Input command, private event-token ledger, all score/alert records and view digest in one transaction. Periodic accepted-runtime checkpoint and sequence are committed consistently.",
+      "recovery": "Verify bundle/stream/org/source identities, restore the latest hashed graph checkpoint and replay only committed journal commands after it. Restore source offset; verify final view digest. Never replay uncommitted alerts.",
+      "failure": "Log rejected input without graph mutation. A feature/scoring/storage failure after mutation faults the client; refuse further processing until restart restores committed state. Never label processing failure as no-alert."
+    },
+    "registry": "Load the original hash-pinned accepted model/threshold/config/schema/protocol bundle. Reject invalid replacement candidates and retain the current usable bundle. No federated adoption or ledger verification implemented.",
+    "privacy": "Raw commands, local User IDs, graph checkpoints and decisions stay in separate organization-local stores. Export only aggregate evidence. Logical isolation on a single-user research host is not production tenant authorization.",
+    "evaluation": "Operational units are timestamp-triggered local User scores and heartbeat scores; separate from frozen primary fixed-grid eligible User-window metrics. No TEST files/outcomes, FPR/recall claim, campaign ground-truth join or re-selection in this subphase.",
+    "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+    "torch_threads": 2,
+    "future_components": "No indicator sharing, federation, differential privacy, blockchain or deployment service"
+  },
+  "research_boundary": "No TEST, labels, threshold/model selection or event-driven FPR claim; one representative full VAL hour per org plus exact restart repeat"
+}

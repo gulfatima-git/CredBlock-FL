@@ -1,0 +1,60 @@
+{
+  "organization": "Org3",
+  "candidate": {
+    "id": "hidden16",
+    "hidden_dim": 16
+  },
+  "seed": 64042,
+  "initial_state_digest": "be3e46528f4e866330a1a08c7e11b973cd2c42cf7376fb2af0c3904e67ba722d",
+  "selected_state_digest": "8ed7765617ec9371972a1fd2a43118c710a43b9ef5101c106539a54878ce2761",
+  "selected_epoch": 1,
+  "epochs_completed": 4,
+  "optimizer_updates": 4104,
+  "checkpoint": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org3\\models\\hidden16\\epoch_001.pt",
+  "validation": {
+    "eligible": 58005,
+    "positive": 6420,
+    "negative": 51585,
+    "bce": 0.5766339306412718,
+    "average_precision": 0.5279947471349469,
+    "precision_at_0_5": 0.33785994764397903,
+    "recall_at_0_5": 0.9649532710280374,
+    "f1_at_0_5": 0.5004847309743092,
+    "masked_recent_roots": 4275,
+    "inductive_unseen_user": {
+      "eligible": 49848,
+      "positive": 5901,
+      "negative": 43947,
+      "bce": 0.6200723016227263,
+      "average_precision": 0.5223308929186316,
+      "precision_at_0_5": 0.33874709976798145,
+      "recall_at_0_5": 0.9649211997966446,
+      "f1_at_0_5": 0.5014531043593131
+    },
+    "inductive_unseen_ip_context": {
+      "eligible": 46890,
+      "positive": 6420,
+      "negative": 40470,
+      "bce": 0.5252395191156989,
+      "average_precision": 0.625689572605004,
+      "precision_at_0_5": 0.40450538687561216,
+      "recall_at_0_5": 0.9649532710280374,
+      "f1_at_0_5": 0.5700483091787439
+    },
+    "inductive_unseen_user_and_ip": {
+      "eligible": 40671,
+      "positive": 5901,
+      "negative": 34770,
+      "bce": 0.5595789952119701,
+      "average_precision": 0.6210962151941174,
+      "precision_at_0_5": 0.40625,
+      "recall_at_0_5": 0.9649211997966446,
+      "f1_at_0_5": 0.5717728573580358
+    }
+  },
+  "positive_weight_train_only": 11.80129689671144,
+  "training_seconds": 33.50422939999953,
+  "process_cpu_seconds": 55.890625,
+  "observed_training_rss_peak_bytes": 428539904,
+  "parameters": 417
+}

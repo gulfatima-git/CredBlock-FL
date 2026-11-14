@@ -1,0 +1,60 @@
+{
+  "organization": "Org4",
+  "candidate": {
+    "id": "hidden16",
+    "hidden_dim": 16
+  },
+  "seed": 64043,
+  "initial_state_digest": "a7c0a71b18d95f1c642db262a607e1965fc994c94cd17ae01feff430d73c306b",
+  "selected_state_digest": "0ec53d0e17eab705964da85010f14645568e7ca7d0cb2979ecc1cb4510e19742",
+  "selected_epoch": 3,
+  "epochs_completed": 6,
+  "optimizer_updates": 6156,
+  "checkpoint": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org4\\models\\hidden16\\epoch_003.pt",
+  "validation": {
+    "eligible": 57615,
+    "positive": 9621,
+    "negative": 47994,
+    "bce": 0.45562632694466587,
+    "average_precision": 0.6659351668687303,
+    "precision_at_0_5": 0.5499381297507513,
+    "recall_at_0_5": 0.9700654817586529,
+    "f1_at_0_5": 0.7019404332129964,
+    "masked_recent_roots": 2850,
+    "inductive_unseen_user": {
+      "eligible": 48948,
+      "positive": 8934,
+      "negative": 40014,
+      "bce": 0.4865274547422364,
+      "average_precision": 0.6627946878066976,
+      "precision_at_0_5": 0.5566910913999229,
+      "recall_at_0_5": 0.9694425789120215,
+      "f1_at_0_5": 0.707251347378736
+    },
+    "inductive_unseen_ip_context": {
+      "eligible": 47754,
+      "positive": 9621,
+      "negative": 38133,
+      "bce": 0.40933629723649134,
+      "average_precision": 0.7353551301023543,
+      "precision_at_0_5": 0.6279773920064594,
+      "recall_at_0_5": 0.9700654817586529,
+      "f1_at_0_5": 0.7624065678225708
+    },
+    "inductive_unseen_user_and_ip": {
+      "eligible": 40968,
+      "positive": 8934,
+      "negative": 32034,
+      "bce": 0.4236736999357633,
+      "average_precision": 0.737754183522849,
+      "precision_at_0_5": 0.6412705464238116,
+      "recall_at_0_5": 0.9694425789120215,
+      "f1_at_0_5": 0.7719251336898396
+    }
+  },
+  "positive_weight_train_only": 8.128405887879737,
+  "training_seconds": 84.17243550000057,
+  "process_cpu_seconds": 126.71875,
+  "observed_training_rss_peak_bytes": 430776320,
+  "parameters": 417
+}

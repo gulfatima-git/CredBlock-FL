@@ -1,0 +1,72 @@
+{
+  "version": "phase6-split-protocol-v1",
+  "status": "FROZEN_FOR_SUBPHASE1_REVIEW",
+  "data_contract": "configs/phase6_data_contract_v1.json",
+  "data_contract_sha256": "c53d3ed6c310deeb2b260208e051b4722c326ef12c2b1b2c480d87f5c9022ee4",
+  "dataset_freeze_sha256": "643ef6b88f9c2d0b6242b057a3e501f07455d406b19320e03f2e900cf5812749",
+  "organizations": ["Org1", "Org2", "Org3", "Org4", "Org5"],
+  "splits_half_open": {
+    "TRAIN": ["2020-02-03T00:00:00", "2020-10-01T00:00:00"],
+    "VAL": ["2020-10-01T00:00:00", "2020-12-01T00:00:00"],
+    "TEST": ["2020-12-01T00:00:00", "2021-03-01T00:00:00"]
+  },
+  "per_organization_cutoffs": "Identical split bounds for all five organizations; only the manifest-listed replay hours are scored, not continuous coverage of the entire calendar split",
+  "source_time": "Timezone-naive microsecond timestamps; no conversion to the execution computer timezone",
+  "branch_key": ["variant_id", "organization"],
+  "assignment": "Reuse every frozen Phase 5 variant_id/split/seed/anchor/end_exclusive; no reshuffle, no combining alternative branches into one chronological stream",
+  "seeds": [1001, 1002, 1003],
+  "scoring": {
+    "primary_unit": "eligible local User-time at a fixed ten-minute grid snapshot (User-window)",
+    "key": ["variant_id", "organization", "User ID", "label_time"],
+    "grid_offsets_minutes": [0, 10, 20, 30, 40, 50],
+    "asof": "t=anchor+offset; consume entire tied timestamp batch at t before scoring; use only (t-7 days,t] history and (t-10 minutes,t] recent evidence",
+    "targets": "All active local User nodes on the fixed grid; do not select Users using labels or campaign membership; masked Users can be scored but do not enter supervised loss or primary metrics",
+    "label_queries": "Use exact grid_snapshot schedule rows at t; absent labels are context-only and masked; event/expiry rows are state transitions, not extra independent primary examples",
+    "last_interval": "Frozen grid excludes the exclusive hour end. The last ten minutes have no endpoint primary grid score; report this coverage limitation. Continuous event-driven alerts are a separate later evaluation, never mixed into the grid FPR denominator.",
+    "primary_training_examples": "Same fixed grid and eligibility as primary validation; history is graph context only. Future event/expiry labels never supervise earlier grid states. Sampling/weighting remains for Subphase 3 using TRAIN/VAL only."
+  },
+  "warmup": {
+    "duration_days": 7,
+    "source": "Frozen per-block/per-organization history references; load [anchor-7 days,anchor), then runtime excludes the exact lower bound at scoring t",
+    "branch_state": "Independent fork or fresh initialization per variant from shared observed background; never inherit synthetic events or labels from another variant",
+    "cross_split": "Earlier observed raw background may be causal context inside seven-day retention even across a boundary; no synthetic infrastructure or fitted state from VAL/TEST may enter TRAIN",
+    "checkpoint": "Reuse only matching organization, branch lineage and clock <= requested asof; representative endpoint checkpoints cannot initialize earlier training states"
+  },
+  "supervision": {
+    "policy": "Frozen temporal-user-labels-v1",
+    "eligible": "node_label in [0,1] and supervision_eligible=true",
+    "positive": "Recent synthetic targeting evidence; not attacker identity or account compromise",
+    "negative": "Clean-negative candidates only; source flags do not certify benignness",
+    "excluded": "Ambiguous/masked, missing labels, context-only and every IP node excluded from loss and primary FPR denominator",
+    "timing": "latest_positive_evidence <= label_time < positive_expires_at; evidence must be within the trailing ten minutes and strictly before the TRAIN end cutoff for training",
+    "reporting": "Report fixed-grid prevalence separately from full sparse schedule counts; both are dependent observations"
+  },
+  "preprocessing": {
+    "current": "Accepted fixed log1p/count ratios only; no learned state",
+    "fit_split": "TRAIN",
+    "selection_split": "VAL",
+    "reuse": "Persist any future learned encoder/scaler/imputer with organization, TRAIN cutoff, schema/hash and fit split; never refit on VAL or TEST"
+  },
+  "fpr": {
+    "target": 0.01,
+    "rationale": "Predeclared research budget of at most one false-positive decision per 100 eligible negative User-windows. Chosen before model results; balances a restrictive low-FPR comparison with finite validation counts. It is not a deployment SLA or a per-day probability.",
+    "definition": "FP / (FP+TN) on eligible y=0 fixed-grid User-time examples only",
+    "calibration": "Local threshold for each organization and detector using VAL only; retain the repeated-branch validation denominator and disclose dependence; calibrator implementation is Subphase 5",
+    "decision": "score >= threshold",
+    "ties_and_finite_samples": "Select the most permissive threshold with empirical FP <= floor(0.01*N_negative); never split equal-score ties or exceed the budget. If no finite threshold qualifies use a no-alert threshold; if no eligible negatives calibration fails. Report realized FPR, N and resolution 1/N. Detailed executable calibration belongs to Subphase 5.",
+    "sensitivity": "No additional operating points predeclared in v1; changes require a new protocol before TEST access"
+  },
+  "aggregation": {
+    "primary": "Per organization, plus equal-weight macro across the five organization metrics; report undefined metrics explicitly rather than dropping failed organizations",
+    "secondary": "Pooled eligible confusion counts across organizations; keep separate from macro",
+    "breakdowns": "Report split, campaign seed, organization and factor/family; distinguish training randomness from campaign seeds",
+    "dependence": "Alternative branches share background and three temporal blocks per split. Pooled counts are descriptive benchmark counts, not independent natural events. No naive IID confidence intervals over rows or branches; uncertainty requires predeclared temporal-block-aware analysis and remains limited by only three blocks.",
+    "user_counts": "Report graph User-node counts per grid, summed User-window exposures and distinct organization-local observed users; never deduplicate IDs across organizations"
+  },
+  "test_seal": {
+    "allowed_in_subphase1": "Read-only integrity, temporal/infrastructure audits and predeclared descriptive class counts; no predictions, scores, detector comparisons or data-driven protocol choices",
+    "forbidden": ["fit", "preprocessing_fit", "feature_selection", "hyperparameter_selection", "early_stopping", "model_selection", "comparator_selection", "threshold_calibration"],
+    "final_evaluation": "Only after explicit protocol acceptance, version-control commit of the frozen protocol and later model/threshold locking; no authorization granted by this file"
+  },
+  "later_work": "Sampler/input loader Subphase 2; model/training Subphase 3; comparator Subphase 4; calibration Subphase 5; continuous alerts Subphase 6; indicator comparator Subphase 7; campaign boundary/horizon Subphase 8. No such implementations here."
+}

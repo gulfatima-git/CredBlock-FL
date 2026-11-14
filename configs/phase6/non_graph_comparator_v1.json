@@ -1,0 +1,22 @@
+{
+  "version": "phase6-non-graph-comparator-v1",
+  "organizations": ["Org1", "Org2", "Org3", "Org4", "Org5"],
+  "family": "root-only two-hidden-layer tabular MLP",
+  "features": ["total_logins", "successful_logins", "failed_logins", "failure_ratio", "distinct_neighbors", "recent_logins_10min", "recent_distinct_neighbors_10min"],
+  "feature_indices": [0,1,2,3,4,5,6],
+  "feature_policy": "Unchanged accepted float32 root User features; User node_type is constant and omitted. Distinct-neighbor features mean this User's own observed distinct IP counts, computable from its login history. No other node's attributes, shared-IP user counts, edges, adjacency, message passing, embeddings, IDs, provenance or ground truth enter the model.",
+  "preprocessing": "No learned normalization; same fixed accepted log1p counts and failure ratio as GraphSAGE",
+  "model": {"num_hidden_layers":2,"activation":"ReLU","dropout":0.1,"output":"one User logit"},
+  "candidates": [{"id":"hidden16","hidden_dim":16},{"id":"hidden32","hidden_dim":32}],
+  "optimizer": {"name":"Adam","learning_rate":0.003,"weight_decay":0.0001},
+  "training": {"max_epochs":12,"early_stopping_patience":3,"min_ap_improvement":0.000001,"gradient_clip_norm":5.0,"initial_seed_base":64040,"torch_threads":2,"class_weight":"local TRAIN negative / positive","batch_order":"unchanged accepted chronological cached minibatches; no shuffle"},
+  "selection": {"split":"VAL","primary":"maximum tied-score average precision","secondary":"minimum unweighted BCE","candidate_final_tie":"lexicographic candidate id","best_local_exact_tie":"GraphSAGE","epoch_selection":"AP improvement greater than 1e-6; otherwise retain earlier epoch; patience=3","scope":"independent per organization; never choose one organization model for another"},
+  "metrics": "Reuse accepted classification_metrics; nominal 0.5 precision/recall/F1 are diagnostic only, not fixed-FPR outcomes",
+  "primary_fpr_target":0.01,
+  "threshold_calibration":"NOT_PERFORMED; Subphase 5 only",
+  "reproducibility":"Retrain selected candidate from same seed and compare exact model tensors, epoch and all VAL logits",
+  "full_scope": {"train_branches_per_organization":171,"validation_branches_per_organization":171,"grids_per_split":1026,"seeds_per_split":3},
+  "protocol_sha256":"9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "test_access":"FORBIDDEN before opening any path",
+  "search_budget_rationale":"Two widths, two hidden transformations, optimizer/loss/epoch limit/patience and eligible minibatches match accepted GraphSAGE. Parameter counts differ because neighborhood branches are deliberately removed; no extra comparator search after outcomes. One initialization per organization plus exact repeat, matching accepted evidence."
+}

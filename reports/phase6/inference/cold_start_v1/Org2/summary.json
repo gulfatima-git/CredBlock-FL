@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INDEPENDENT_PROCESS_COLD_START",
+  "organization": "Org2",
+  "input_offset": 567,
+  "final_clock": "2020-10-06T07:59:59.999999",
+  "decision_digest": "b232d646c12e96a3e85f46510f4d72a2fb464266f6ecb97a1748c88fd7ec627e",
+  "final_graph_checkpoint_sha256": "2fe5cf2aa4e87447f35366e3f1334ca72fbef6ea1aef5250abb2bcb2b33c1fdf",
+  "bundle_fingerprint": "a433f5537831f35daaec0a1a34823d74713807046c12961509f765bc58bf7d6d",
+  "startup_and_verify_seconds": 9.169409800000722,
+  "new_observations_scored": 0,
+  "scope": "Fresh Python process reloads original model and threshold and restores a private copy of completed durable state. Mid-hour uncheckpointed journal recovery is separately verified by the independent restart replay.",
+  "original_store_sha256": "d558e279c7ab30ac564453b5cac7bd6efa23e01f402e8cc26c3fbc9234392f54",
+  "source_module_sha256": "09c41f39e40ad4c594540fa063870401306a9bb8aac9bd95eed7469d7bb118fb",
+  "test_files_opened": 0
+}

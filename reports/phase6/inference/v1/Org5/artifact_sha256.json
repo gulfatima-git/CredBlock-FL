@@ -1,0 +1,11 @@
+{
+  "config_snapshot.json": "5caaac7d990b7485e5cd595b3b026cae3a73a2393d13bd1ac94e9dc4f129ff90",
+  "source_identity.json": "7e6b7afe0cea4b8977e8456320f37b2d9e5b2a45370abb94e55e65a2605d3612",
+  "summary.json": "eb8ad77f76f7bf4cd63d83687948520d6fb62b9c5ee48fb899d5224c1432cccf",
+  "restart_repeat/latency_records.json": "bab72ab0f51ceb77df7e39045c68f7071f2a2696368b89268a0c96962ed3d4f6",
+  "restart_repeat/summary.json": "f5c8eca4e74a0105d6162d6799068c61d918ffcc1abc37e304f3455a19898693",
+  "uninterrupted/latency_records.json": "bd0fe89ce43c83e0c37201fec866e70e74146d9f849e7e07b87c47a37023bfb6",
+  "uninterrupted/summary.json": "8faa831f914c76af0e6f7f8a0b05ba8af76c8c46eed2c0dd41777d86ce7c554d",
+  "uninterrupted/private/inference.sqlite": "f54c997d6540486e7ed9a1e27acdf45db8353205abe7f6b41c87fee876efd5fd",
+  "restart_repeat/private/inference.sqlite": "53d0bea8d886ce0c52ce2b6717f61a0c0de0b059b01e6fe70afd622a7b987fee"
+}

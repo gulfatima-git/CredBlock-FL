@@ -1,0 +1,34 @@
+{
+  "status": "FROZEN_BEFORE_COMPARATOR_TRAINING_OR_COMPARISON",
+  "recorded_on_local_date": "2026-11-14",
+  "config": "configs\\phase6\\non_graph_comparator_v1.json",
+  "config_sha256": "86143debebaabb8c18a712508df8f8ba63fcb87379dca5e6c5dd12cf24888fd2",
+  "source_sha256": {
+    "src/phase6/non_graph_comparator.py": "c8e05eb00b718336962ba2e9d67252786fe9ff0cb3e66d9cc8db28751120505e",
+    "src/phase6/comparator_data.py": "a2cea3f90e285a0feb3aa4c0bfe10c56fffc7eeb8379acdd433f9f9a305bf66f",
+    "src/phase6/run_local_comparator.py": "ba3bbafdb3adcfdf441d5a0d1b8e751e061fac944df11261f9dc9455ed7bc9ae"
+  },
+  "design_document_sha256": {
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_FL_Phase6_Implementation_Roadmap.md": "c86a5f36f4f9a5d68f6207d2b550cd4d8050adc7694e714cc51e2bc9d4a2a5a5",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_Implementation_Plan.pdf": "9484c67538d609e5c9ddd35efdb9987777603fbe2907436319d9502a7ee7de57",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL_Final_Framework_Explained.pdf": "79bff193055a5d82f000ae5d6e61b87918f38cfa32ab17fb4db316d059486c53",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-detection-mechanism (2).png": "b5a71f089392ea5c076082893a3581ad0b25e8b113dea835ade2ddcc5f724d08",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-workflow (1).png": "5efa4d2b38e6a356dd78d1aaa5ba4a5c6f4bb0c585e813e47a1ddbf4b5a63b9f"
+  },
+  "selection": {
+    "split": "VAL",
+    "primary": "maximum tied-score average precision",
+    "secondary": "minimum unweighted BCE",
+    "candidate_final_tie": "lexicographic candidate id",
+    "best_local_exact_tie": "GraphSAGE",
+    "epoch_selection": "AP improvement greater than 1e-6; otherwise retain earlier epoch; patience=3",
+    "scope": "independent per organization; never choose one organization model for another"
+  },
+  "no_comparison_outcomes_examined": true,
+  "primary_evaluation_unit": "eligible organization-local User-time/window on unchanged exact grid",
+  "primary_fpr_target": 0.01,
+  "test_access": false,
+  "final_threshold_calibration": false,
+  "prior_graphsage_validation_already_accepted": true,
+  "interpretation": "This preregisters a new comparator against already accepted GraphSAGE results, not a blind re-analysis of GraphSAGE. No post-outcome search or feature changes permitted without new version."
+}

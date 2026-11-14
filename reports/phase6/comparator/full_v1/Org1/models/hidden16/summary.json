@@ -1,0 +1,60 @@
+{
+  "organization": "Org1",
+  "candidate": {
+    "id": "hidden16",
+    "hidden_dim": 16
+  },
+  "seed": 64040,
+  "initial_state_digest": "9bf8a258a42fc4db3069bcc10b0f9fa5c970c1fddddd91cd98bbc0773c6f6da9",
+  "selected_state_digest": "f160f63b53bd9b2074d05177b76ff78e2ff5b2867ec48118d0933192563a4dc4",
+  "selected_epoch": 8,
+  "epochs_completed": 11,
+  "optimizer_updates": 11286,
+  "checkpoint": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org1\\models\\hidden16\\epoch_008.pt",
+  "validation": {
+    "eligible": 55386,
+    "positive": 9615,
+    "negative": 45771,
+    "bce": 0.37068900628621404,
+    "average_precision": 0.6642240114688366,
+    "precision_at_0_5": 0.5405119152691968,
+    "recall_at_0_5": 0.9553822152886116,
+    "f1_at_0_5": 0.6904171364148817,
+    "masked_recent_roots": 2451,
+    "inductive_unseen_user": {
+      "eligible": 46989,
+      "positive": 8970,
+      "negative": 38019,
+      "bce": 0.4011894041228598,
+      "average_precision": 0.6662393296366274,
+      "precision_at_0_5": 0.5441447159631863,
+      "recall_at_0_5": 0.9557413600891862,
+      "f1_at_0_5": 0.6934681496461071
+    },
+    "inductive_unseen_ip_context": {
+      "eligible": 45240,
+      "positive": 9615,
+      "negative": 35625,
+      "bce": 0.32167768893051063,
+      "average_precision": 0.7371504737988117,
+      "precision_at_0_5": 0.6416596814752724,
+      "recall_at_0_5": 0.9553822152886116,
+      "f1_at_0_5": 0.7677071580794785
+    },
+    "inductive_unseen_user_and_ip": {
+      "eligible": 38439,
+      "positive": 8970,
+      "negative": 29469,
+      "bce": 0.33908990347740603,
+      "average_precision": 0.7436941848965358,
+      "precision_at_0_5": 0.6527830655600396,
+      "recall_at_0_5": 0.9557413600891862,
+      "f1_at_0_5": 0.7757318011129711
+    }
+  },
+  "positive_weight_train_only": 6.902576995600252,
+  "training_seconds": 107.76726540000163,
+  "process_cpu_seconds": 175.171875,
+  "observed_training_rss_peak_bytes": 425664512,
+  "parameters": 417
+}

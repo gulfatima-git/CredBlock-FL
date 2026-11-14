@@ -1,0 +1,19 @@
+{
+  "ACCEPTANCE_REPORT.md": "2ff149c0cd7f085f3d9e01f93de78a91ce8c987d33fa38075782a8c6ab087be6",
+  "best_local_locked.json": "842ebd115ec6f0c7007ae95df5ba9c710aa75effe777bf3a0a556793553740ae",
+  "config_snapshot.json": "60a529c6c53d489956214d68133043fd3aaa35fba0114b4d1bf712422e13c02c",
+  "input_sha256.json": "3c8db646ae21eae5822cb0906e722105b054b6b3ab29742b862546a51c06f196",
+  "preregistration_snapshot.json": "db880851fd5059b9d39e10d1a8f9dcdb09298613771ade267db03af75253cb92",
+  "split_protocol.json": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "summary.json": "bbc9e94d92c16e03e40dab54e0b88ee93266554901169e2a53d2f73c65b58de6",
+  "thresholds/Org1_graphsage.json": "a003c8b3fec3cc0d078c5d34539243302920e82b08b2a7df71ed7533063d7742",
+  "thresholds/Org1_tabular_mlp.json": "ad64e8b7f610d2a367aa6ca9c595d93d6c00c60d5d36419b030643d18fe571a4",
+  "thresholds/Org2_graphsage.json": "decfaeb0bdbbd70e1ab8665b24f18749f221855c285f0328bcd02cbf9948969b",
+  "thresholds/Org2_tabular_mlp.json": "126787955ade53f1212a5716dabfcfe401abbea7c4d0d6de0682adc84e366e07",
+  "thresholds/Org3_graphsage.json": "cd5ffc64548b77c1652d5ddf7e5aa58ad1444bf416e9a376a7c90b4c336b60ca",
+  "thresholds/Org3_tabular_mlp.json": "004c57f7debdfa87a983da5b9d663fa240fa48191249e47d492be77b84ede22c",
+  "thresholds/Org4_graphsage.json": "71867ec0cb6daaeb1cbc724c9acf477477f762b18fa9bd6e300aa1d89e844cd3",
+  "thresholds/Org4_tabular_mlp.json": "b0abcda4a51ce8d85073274fe03ed2f0946a0a3766f5754792b4638378d1ae72",
+  "thresholds/Org5_graphsage.json": "4c0989dd0a3f86156c3d89221f7c29f4ed41bf414305a61e852534d859a841e3",
+  "thresholds/Org5_tabular_mlp.json": "b926b5cc2c6d8183759ce1b5fbee7b17949b8f801f586adc179050f33d53fab9"
+}

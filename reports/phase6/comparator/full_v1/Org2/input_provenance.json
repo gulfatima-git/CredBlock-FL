@@ -1,0 +1,31 @@
+{
+  "mode": "full",
+  "organization": "Org2",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "original_graph_checkpoint": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\final_v1\\models\\Org2.pt",
+  "original_graph_checkpoint_sha256": "54c28689cc4237f38238e6ce69ef2e24ab0030f1fa3291dd83dfd04c2d5ac351",
+  "cache_manifests": {
+    "TRAIN": "eb4257f5120e5d99703f4f2fb3c783e8a8bbf2059d729a3d7afd4dd2a55b1917",
+    "VAL": "ff7bd21056024f9bb2ae691eedb3844ee9a1f75a82ff45fd0079a0b2eb9ddf8d"
+  },
+  "cache_files_verified": 2046,
+  "train_identity_sha256": "e3d99623d75918704c4cab271851610016e4744b324cca51cb4ae4713eb8e734",
+  "validation_identity_sha256": "79bf36e9e50e36d1ba2a7ff6be998cff680fe4b8b82aa3307482eb0c229c4502",
+  "full_paired_graph_validation": {
+    "rows": 54630,
+    "eligible": 51267,
+    "masked": 3363,
+    "identity_sha256": "79bf36e9e50e36d1ba2a7ff6be998cff680fe4b8b82aa3307482eb0c229c4502",
+    "accepted_prediction_sha256": "786c22027e252e0909f13801bcad2d6fb2b0d4f9d53a10dec519445a15158c85",
+    "exact_checkpoint_scores": true,
+    "paired_keys_labels_masks_equal": true
+  },
+  "train_features_sha256": "5e417648e4c76ddfaaf07db5732f9388f90fc47ed106561a4a4eaf1faf5979a0",
+  "validation_features_sha256": "f545470f5cd07b7977eeaf7b50f763e20ca2977d576515465ef2e9b1d0bd9bd3",
+  "source_sha256": {
+    "src/phase6/non_graph_comparator.py": "c8e05eb00b718336962ba2e9d67252786fe9ff0cb3e66d9cc8db28751120505e",
+    "src/phase6/comparator_data.py": "a2cea3f90e285a0feb3aa4c0bfe10c56fffc7eeb8379acdd433f9f9a305bf66f",
+    "src/phase6/run_local_comparator.py": "ba3bbafdb3adcfdf441d5a0d1b8e751e061fac944df11261f9dc9455ed7bc9ae"
+  },
+  "test_inputs_opened": 0
+}

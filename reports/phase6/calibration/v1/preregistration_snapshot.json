@@ -1,0 +1,27 @@
+{
+  "status": "FROZEN_BEFORE_THRESHOLD_CALCULATION",
+  "recorded_on_local_date": "2026-11-14",
+  "configuration_sha256": "60a529c6c53d489956214d68133043fd3aaa35fba0114b4d1bf712422e13c02c",
+  "source_sha256": {
+    "src/phase6/fpr_calibration.py": "ad09919dc7588fe71b2002a00ad04e2a1f844b8a3f8e9248647ac809ac3c96a1",
+    "src/phase6/run_fpr_calibration.py": "67042724710aba58dc095d7115afd29dbdf5397c44eeb0b2cae35f62d4eb2579"
+  },
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "design_document_sha256": {
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_FL_Phase6_Implementation_Roadmap.md": "c86a5f36f4f9a5d68f6207d2b550cd4d8050adc7694e714cc51e2bc9d4a2a5a5",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_Implementation_Plan.pdf": "9484c67538d609e5c9ddd35efdb9987777603fbe2907436319d9502a7ee7de57",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL_Final_Framework_Explained.pdf": "79bff193055a5d82f000ae5d6e61b87918f38cfa32ab17fb4db316d059486c53",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-detection-mechanism (2).png": "b5a71f089392ea5c076082893a3581ad0b25e8b113dea835ade2ddcc5f724d08",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-workflow (1).png": "5efa4d2b38e6a356dd78d1aaa5ba4a5c6f4bb0c585e813e47a1ddbf4b5a63b9f"
+  },
+  "target": {
+    "numerator": 1,
+    "denominator": 100
+  },
+  "negative_only": true,
+  "score_domain": "binary64 logit",
+  "threshold_rule": "Sort eligible negative logits descending. The score at zero-based index budget is the first disallowed boundary. Set threshold to the immediate next representable binary64 value above it. This excludes the whole boundary tie group and is the most permissive binary64 threshold satisfying the budget. If no finite threshold qualifies, freeze an explicit no-alert sentinel.",
+  "changes_to_accepted_protocol": false,
+  "best_local_locked": "GraphSAGE Org1-Org5",
+  "test_access": false
+}

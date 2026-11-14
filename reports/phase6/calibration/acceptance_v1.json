@@ -1,0 +1,13 @@
+{
+  "version": "phase6-subphase5-user-acceptance-v1",
+  "status": "USER_ACCEPTED",
+  "accepted_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "user_statement": "I accept Phase 6 Subphase 5 (6.3): Fixed-FPR Threshold Calibration, based on the reported technical validation results.",
+  "evidence": "reports/phase6/calibration/v1/ACCEPTANCE_REPORT.md",
+  "summary_sha256": "bbc9e94d92c16e03e40dab54e0b88ee93266554901169e2a53d2f73c65b58de6",
+  "preservation_manifest": "reports/phase6/inference/accepted_inputs_before_subphase6_v1.json",
+  "authorized_next": "Subphase 6 (6.4) only",
+  "threshold_artifacts_preserved": 10,
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b"
+}

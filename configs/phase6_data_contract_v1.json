@@ -1,0 +1,65 @@
+{
+  "version": "phase6-data-contract-v1",
+  "scope": "Subphase 0 only; proposed contract awaiting explicit acceptance",
+  "organizations": ["Org1", "Org2", "Org3", "Org4", "Org5"],
+  "authority": "reports/phase5_final_acceptance_v2/summary.json",
+  "dataset_freeze": "reports/phase5_graph_retention_v1/dataset_freeze_reference/dataset_freeze_manifest.json",
+  "runtime": "src.organization.rolling_graph_v1.OrganizationGraphRuntime",
+  "paths": {
+    "branch_manifest": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/{variant_id}/replay_manifest.json",
+    "observations": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/{variant_id}/{organization}_observations.parquet",
+    "labels": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/{variant_id}/{organization}_labels.parquet",
+    "evaluator_events": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/{variant_id}/{organization}_replay.parquet",
+    "history": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/{split}_SEED{seed}/{organization}.json",
+    "campaign_register": "reports/phase5_final_acceptance_v2/campaign_register_v2.csv",
+    "representative_examples": "reports/phase5_graph_retention_v1/representative_graphs/{organization}"
+  },
+  "identity": {
+    "branch_key": ["variant_id", "organization"],
+    "node_key": ["organization", "node_type", "local_entity_key"],
+    "supervision_key": ["organization", "User ID", "label_time"],
+    "private_mapping": "Per-view ordered (U, integer User ID) or (I, IP string); dense rows may change after expiry; never align IDs across organizations",
+    "branch_isolation": "Do not pool replay variants as independent natural events or combine pilot and accepted versions"
+  },
+  "observable_columns": {"organization": "string", "Login Timestamp": "naive source datetime", "User ID": "int64 private key", "IP Address": "string private key", "LoginSuccessful": "bool"},
+  "features": [
+    {"name": "total_logins", "definition": "log1p retained attempts"},
+    {"name": "successful_logins", "definition": "log1p retained successes"},
+    {"name": "failed_logins", "definition": "log1p retained failures"},
+    {"name": "failure_ratio", "definition": "retained failures / retained attempts"},
+    {"name": "distinct_neighbors", "definition": "log1p retained distinct opposite-type neighbors"},
+    {"name": "recent_logins_10min", "definition": "log1p recent attempts"},
+    {"name": "recent_distinct_neighbors_10min", "definition": "log1p recent distinct opposite-type neighbors"},
+    {"name": "node_type", "definition": "User=0; IP=1"}
+  ],
+  "feature_dtype": "float32[N,8], finite; same ordered features for User and IP; no fitted statistics",
+  "model_packet_allowlist": ["x", "edge_index", "num_nodes"],
+  "edges": "int64[2,E] dense local indices; one aggregated User-IP relation plus reverse edge; retained timestamped events underpin adjacency; no edge timestamp tensor in model packet",
+  "time": {
+    "scoring": "Exact graph asof t after the complete atomic timestamp batch; advance idle state for expiry; monotonic naive source timestamps",
+    "history": "(t-7 days,t]",
+    "recent": "(t-10 minutes,t]",
+    "availability": "All features/edges use observations at or before t; labels require exact label_time=t; sparse label schedules must process expiry transitions, never carry positives indefinitely",
+    "missing": "Absent recent counts are zero; orphan nodes excluded; absent supervision is -1/masked"
+  },
+  "supervision": {
+    "dtype": "int64[N] y and bool[N] eligible mask, separate from model packet",
+    "positive": "1 when synthetic targeting evidence exists in (t-10 minutes,t]; positive takes precedence",
+    "clean_negative_candidate": "0 when recent evidence exists with no positive or ambiguous evidence; candidate does not certify benignness",
+    "ambiguous": "-1 when recent original-source attack/takeover flags are true or unknown and no positive evidence",
+    "context_only": "-1 when no recent evidence; IP nodes always masked",
+    "mask": "eligible = y != -1; masked states excluded from supervised loss and primary FPR",
+    "join": "Accepted GraphView.supervision checks exact org/time, duplicate Users, label domain and active supervised Users"
+  },
+  "phase5_split_bounds_half_open": {
+    "TRAIN": ["2020-02-03T00:00:00", "2020-10-01T00:00:00"],
+    "VAL": ["2020-10-01T00:00:00", "2020-12-01T00:00:00"],
+    "TEST": ["2020-12-01T00:00:00", "2021-03-01T00:00:00"]
+  },
+  "split_policy": "Reuse manifest split/seed/anchor/end; detailed cutoff audit, evaluation unit and FPR target are Subphase 1; TRAIN fits, VAL selects, TEST final locked evaluation only",
+  "evaluator_only": ["variant_id", "campaign_id", "scenario_id", "synthetic_credential_id", "is_synthetic", "credential_stuffing_label", "source_is_attack_ip", "source_is_account_takeover", "clean_negative_eligible", "replay_event_id", "node_label", "supervision_eligible", "reason", "query_kind", "latest_positive_evidence", "positive_expires_at", "targeted_organizations", "RIP", "Sorg", "Raccount"],
+  "leakage_policy": "Deny by default: only the eight enumerated observable features enter x; raw IDs, IP strings, tokens, labels, masks and all other metadata remain outside the model",
+  "checkpoint_policy": "Use accepted checksummed JSON/GZIP runtime state; verify org, time and branch provenance before reuse; representative TRAIN seed1001 endpoints are examples, never initial states for earlier scoring",
+  "versioning": "Dataset ID = freeze version plus SHA256 of freeze manifest; inventory ID = SHA256 of sorted manifest-path/hash map; reports refuse overwrite",
+  "architecture": "Five isolated local persistent bipartite graphs; User targets and IP context; no training in Subphase 0; no federation, DP, Fabric or cross-organization identity index"
+}
