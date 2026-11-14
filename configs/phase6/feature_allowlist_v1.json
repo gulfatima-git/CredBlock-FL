@@ -1,0 +1,27 @@
+{
+  "version": "phase6-feature-allowlist-v1",
+  "runtime": "src.organization.rolling_graph_v1.OrganizationGraphRuntime",
+  "runtime_sha256": "b36ce245190ffbfe3322157a325e44485262b8b66450027f4f80a5e6113c1bd3",
+  "features": [
+    {"name":"total_logins","definition":"log1p of retained attempts","sources":["Login Timestamp"],"window":"(t-7 days,t]"},
+    {"name":"successful_logins","definition":"log1p of retained successful attempts","sources":["Login Timestamp","LoginSuccessful"],"window":"(t-7 days,t]"},
+    {"name":"failed_logins","definition":"log1p of retained failed attempts","sources":["Login Timestamp","LoginSuccessful"],"window":"(t-7 days,t]"},
+    {"name":"failure_ratio","definition":"retained failures / retained attempts","sources":["Login Timestamp","LoginSuccessful"],"window":"(t-7 days,t]"},
+    {"name":"distinct_neighbors","definition":"log1p of retained distinct opposite-type neighbors","sources":["User ID","IP Address","Login Timestamp"],"window":"(t-7 days,t]"},
+    {"name":"recent_logins_10min","definition":"log1p of recent attempts","sources":["Login Timestamp"],"window":"(t-10 minutes,t]"},
+    {"name":"recent_distinct_neighbors_10min","definition":"log1p of recent distinct opposite-type neighbors","sources":["User ID","IP Address","Login Timestamp"],"window":"(t-10 minutes,t]"},
+    {"name":"node_type","definition":"User=0, IP=1","sources":["local node type"],"window":"active as-of t"}
+  ],
+  "all_feature_defaults": {
+    "dtype":"float32",
+    "applies_to":["User","IP"],
+    "grouping":"Organization-local User or IP key; identifiers are grouping keys only",
+    "availability":"Only complete timestamp batches at or before scoring time t; seven-day structural retention and ten-minute recency enforced by accepted runtime",
+    "missing":"No missing outcomes accepted; active nodes have nonzero retained attempts; absent recent counts are zero; orphan nodes omitted",
+    "inference_justification":"All values derive from observed local login timestamps, outcomes and local User-IP interactions; no future or evaluator information required"
+  },
+  "model_packet_allowlist":["x","edge_index","num_nodes"],
+  "preprocessing":{"kind":"fixed_log1p_counts_and_failure_ratio","learned":false,"fit_split":null,"state":"identity beyond accepted runtime transforms"},
+  "forbidden":"Deny all unlisted feature columns, labels, masks, campaign/credential IDs, source flags, raw local keys, ingestion tokens and future aggregates",
+  "layer_blocks":"Each layer packet has only x, edge_index, num_nodes. Destination-prefix counts and private mappings are separate routing metadata; root labels/masks are separate supervision. Later GraphSAGE uses source hidden states and destination prefix, never private identifiers."
+}

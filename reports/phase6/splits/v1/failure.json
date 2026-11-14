@@ -1,0 +1,9 @@
+{
+  "status": "FAILED_IMPLEMENTATION_ATTEMPT",
+  "stage": "Create DuckDB views after all branch manifest/hash checks",
+  "error": "Binder Error: Unexpected prepared parameter. This type of statement can't be prepared!",
+  "cause": "DuckDB CREATE VIEW cannot prepare a parameterized read_parquet file list",
+  "resolution": "Use DuckDB read_parquet relation API to create the view; regression test added; rerun in v2",
+  "test_predictions_or_selection": false,
+  "phase5_outputs_modified": false
+}

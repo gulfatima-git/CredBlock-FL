@@ -1,0 +1,9 @@
+{
+  "status":"STOPPED_DURING_CACHE_PREPARATION",
+  "reason":"Measured sequential preparation rate led to a memory-bounded two-worker execution plan",
+  "cache_branches_completed_at_last_journal":54,
+  "trained_models":0,
+  "scientific_training_evidence":false,
+  "preservation":"Partial development cache and journal retained; no accepted input or evidence changed",
+  "replacement":"Full parallel run v2; same dataset, model-selection protocol and accepted pipeline"
+}

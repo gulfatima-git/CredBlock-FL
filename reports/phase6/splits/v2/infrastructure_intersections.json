@@ -1,0 +1,14 @@
+{
+  "synthetic_ip_counts": {
+    "TRAIN": 14293,
+    "VAL": 14296,
+    "TEST": 14249
+  },
+  "cross_split_intersection_counts": {
+    "TRAIN__VAL": 0,
+    "TRAIN__TEST": 0,
+    "VAL__TEST": 0
+  },
+  "raw_ip_values_exported": false,
+  "scope": "Evaluator-only split audit; background IP overlap is allowed; no User or credential alignment"
+}

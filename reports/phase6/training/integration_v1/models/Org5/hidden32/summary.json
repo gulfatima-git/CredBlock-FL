@@ -1,0 +1,64 @@
+{
+  "organization": "Org5",
+  "candidate": {
+    "id": "hidden32",
+    "hidden_dim": 32
+  },
+  "initialization_seed": 63034,
+  "initial_state_digest": "404a411669876829406946a839a4d0e244c7e8fae4ed017c390e45af0796ba16",
+  "selected_state_digest": "979c56271f307d25532c7ef16eb591167f94560b7c9340583ad98b4cf854af0f",
+  "selected_epoch": 1,
+  "epochs_completed": 2,
+  "optimizer_updates": 12,
+  "positive_weight_train_only": 6.315789473684211,
+  "training_seconds": 0.7198735999409109,
+  "first_layer_gradient_updates": 12,
+  "process_cpu_seconds": 1.296875,
+  "observed_training_rss_peak_bytes": 442966016,
+  "process_peak_rss_bytes": 540717056,
+  "checkpoint": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\integration_v1\\models\\Org5\\hidden32\\epoch_001.pt",
+  "validation": {
+    "eligible": 520,
+    "positive": 75,
+    "negative": 445,
+    "bce": 0.5996204106979558,
+    "average_precision": 0.7336196903278821,
+    "precision_at_0_5": 1.0,
+    "recall_at_0_5": 0.09333333333333334,
+    "f1_at_0_5": 0.17073170731707318,
+    "masked_recent_roots": 35,
+    "inductive_unseen_user": {
+      "eligible": 468,
+      "positive": 71,
+      "negative": 397,
+      "bce": 0.6015156163676453,
+      "average_precision": 0.7395338389155034,
+      "precision_at_0_5": 1.0,
+      "recall_at_0_5": 0.09859154929577464,
+      "f1_at_0_5": 0.1794871794871795
+    },
+    "inductive_unseen_ip_context": {
+      "eligible": 409,
+      "positive": 75,
+      "negative": 334,
+      "bce": 0.6074757245310375,
+      "average_precision": 0.7865760643830102,
+      "precision_at_0_5": 1.0,
+      "recall_at_0_5": 0.09333333333333334,
+      "f1_at_0_5": 0.17073170731707318
+    },
+    "inductive_unseen_user_and_ip": {
+      "eligible": 371,
+      "positive": 71,
+      "negative": 300,
+      "bce": 0.6086644759586404,
+      "average_precision": 0.7931391854491362,
+      "precision_at_0_5": 1.0,
+      "recall_at_0_5": 0.09859154929577464,
+      "f1_at_0_5": 0.1794871794871795
+    }
+  },
+  "device": "cpu",
+  "early_stop_split": "VAL",
+  "selection_split": "VAL"
+}

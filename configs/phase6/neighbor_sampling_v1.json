@@ -1,0 +1,14 @@
+{
+  "version":"phase6-neighbor-sampling-v1",
+  "fanouts_model_order":[15,10],
+  "num_layers":2,
+  "batch_size":256,
+  "seed":60201,
+  "policy":"Uniform sampling without replacement; use every neighbor when degree <= fanout; no weighted or label-dependent sampling",
+  "determinism":"NumPy PCG64 seeded by SHA256 of organization, branch, asof, supplied seed, model-layer index and private local node key. Independent of call order, root batch partition and process hash randomization; record NumPy version.",
+  "temporal_policy":"All hops sample only the same immutable accepted graph view at root scoring t, with edges retained in (t-7 days,t]. This is as-of GraphSAGE sampling, not a temporal GNN or decreasing-time random walk.",
+  "block_policy":"Expand backwards from User roots in reverse model-layer order; return blocks in model execution order. Each destination set is the prefix of its source set. Only sampled neighbor-to-destination edges enter each block; GraphSAGE root transform supplies self information.",
+  "roots":"Every active User is a candidate; IP nodes are context only. Masks never affect neighbor choices. Default deterministic local User order; no event-time shuffle.",
+  "adjacency":"Sorted CSR over accepted bidirectional unique User-IP adjacency; O(N+E) structural memory; tensor batches bounded by fanouts and batch_size",
+  "tuning":"These are versioned input-pipeline smoke-test defaults, not validation-selected model architecture; any later sampler changes require a new sampler version and TRAIN/VAL-only selection. Frozen split/grid/FPR/evaluation-unit protocol remains unchanged."
+}

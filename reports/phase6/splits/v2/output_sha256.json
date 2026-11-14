@@ -1,0 +1,11 @@
+{
+  "frozen_branch_assignments.csv": "f384107cb3e9c3e15df74ee44dfec6c46b70a30c9f5006aaaf9d01df983a9a91",
+  "infrastructure_intersections.json": "fa9de7dc112fe6c9b60a68c2f69e7f4b337fb16478aa674f2e7c50867d6e3660",
+  "input_sha256.json": "c3b60bd095378d5ccd6de4cb02d00a28754e3a32c0a32174370bdedfdc6f8ceb",
+  "per_organization_prevalence.csv": "c829e635cdade24af4b4fdb2fe22158e7226b5150ca4a0f07918c5dd0c4bb59c",
+  "pooled_prevalence.csv": "bd14719ad8ad08e1176a27bc26a7bd312653351c4e9b42d370e36df1b131e06b",
+  "preregistration.json": "eb5a5c5fff7927aa138165891b568df68fec8d818ca3f0e71cbc4ceb431b0514",
+  "sparse_schedule_counts.csv": "bc7c971ec0912796063d542b75c66c337c1eb5267bca3172502b1ebdebdaedf7",
+  "summary.json": "997dc0ef630f02488933294cd9799f4d184bfb746f6df5580a6050bb9160a6b0",
+  "warmup_coverage.json": "f3c51549fc61ccf3a8d658333f1f07bfc27c19f264fcc68f35097c6753af717a"
+}

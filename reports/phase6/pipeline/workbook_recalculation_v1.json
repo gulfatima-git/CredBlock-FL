@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "engine": "Bundled Artifact Tool",
+  "saved_file_reopened": true,
+  "temporary_one_second_input_change_updates_mean_ms": 166.66666666666666,
+  "restored": true,
+  "original_xlsx_not_modified": true,
+  "native_excel_engine_tested": false
+}

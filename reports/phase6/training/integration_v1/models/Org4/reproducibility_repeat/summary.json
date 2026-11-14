@@ -1,0 +1,64 @@
+{
+  "organization": "Org4",
+  "candidate": {
+    "id": "hidden16",
+    "hidden_dim": 16
+  },
+  "initialization_seed": 63033,
+  "initial_state_digest": "f0b390a0bf410450874bf027c7ff02332323bcfeeb343e3a0bea0f36756af290",
+  "selected_state_digest": "91edfc42ead06dc88dbc6972ee3068e347d9182bcce0631b8dcc4a41e4cabb45",
+  "selected_epoch": 2,
+  "epochs_completed": 3,
+  "optimizer_updates": 18,
+  "positive_weight_train_only": 5.573333333333333,
+  "training_seconds": 1.173884900053963,
+  "first_layer_gradient_updates": 18,
+  "process_cpu_seconds": 1.671875,
+  "observed_training_rss_peak_bytes": 437436416,
+  "process_peak_rss_bytes": 540717056,
+  "checkpoint": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\integration_v1\\models\\Org4\\reproducibility_repeat\\epoch_002.pt",
+  "validation": {
+    "eligible": 481,
+    "positive": 73,
+    "negative": 408,
+    "bce": 0.5717976771122728,
+    "average_precision": 0.7071827216964454,
+    "precision_at_0_5": 0.6551724137931034,
+    "recall_at_0_5": 0.7808219178082192,
+    "f1_at_0_5": 0.7125,
+    "masked_recent_roots": 31,
+    "inductive_unseen_user": {
+      "eligible": 416,
+      "positive": 68,
+      "negative": 348,
+      "bce": 0.5757381090239294,
+      "average_precision": 0.7004198822443317,
+      "precision_at_0_5": 0.654320987654321,
+      "recall_at_0_5": 0.7794117647058824,
+      "f1_at_0_5": 0.7114093959731543
+    },
+    "inductive_unseen_ip_context": {
+      "eligible": 372,
+      "positive": 73,
+      "negative": 299,
+      "bce": 0.5848554217122711,
+      "average_precision": 0.7365335865877635,
+      "precision_at_0_5": 0.6867469879518072,
+      "recall_at_0_5": 0.7808219178082192,
+      "f1_at_0_5": 0.7307692307692307
+    },
+    "inductive_unseen_user_and_ip": {
+      "eligible": 328,
+      "positive": 68,
+      "negative": 260,
+      "bce": 0.5876920088880786,
+      "average_precision": 0.7322424794685815,
+      "precision_at_0_5": 0.6883116883116883,
+      "recall_at_0_5": 0.7794117647058824,
+      "f1_at_0_5": 0.7310344827586207
+    }
+  },
+  "device": "cpu",
+  "early_stop_split": "VAL",
+  "selection_split": "VAL"
+}

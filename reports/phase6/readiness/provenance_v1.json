@@ -1,0 +1,14 @@
+{
+  "roadmap_path": "C:/Users/Gulso/Downloads/CredBlock_FL_Phase6_Implementation_Roadmap.md",
+  "roadmap_sha256": "c86a5f36f4f9a5d68f6207d2b550cd4d8050adc7694e714cc51e2bc9d4a2a5a5",
+  "sha256": {
+    "configs/phase6_data_contract_v1.json": "c53d3ed6c310deeb2b260208e051b4722c326ef12c2b1b2c480d87f5c9022ee4",
+    "reports/phase5_graph_retention_v1/output_sha256.json": "cecda346605bcfa0963c4dc6dcbad86cb02ae70a12841dc8bcd78e293de353dc",
+    "reports/phase5_final_acceptance_v2/output_sha256.json": "4e911133de37531dccc14bc29c316a6baec4e6824edb203ca67795f1f386a779"
+  },
+  "graph_output_hashes_verified": 24,
+  "checkpoint_private_mappings_matched": 5,
+  "phase6_tests_passed": 33,
+  "accepted_runtime_self_tests_passed": 20,
+  "user_acceptance": "pending"
+}

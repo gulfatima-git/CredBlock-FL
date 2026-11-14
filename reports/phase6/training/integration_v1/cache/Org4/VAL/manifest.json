@@ -1,0 +1,80 @@
+{
+  "version": "phase6-training-cache-v1",
+  "organization": "Org4",
+  "split": "VAL",
+  "scope": "REPRESENTATIVE_INTEGRATION",
+  "variants": 1,
+  "grids": 6,
+  "positive": 73,
+  "negative": 408,
+  "masked_recent_roots": 31,
+  "older_context_only_roots_not_forwarded": 252085,
+  "seen_graph_users": 42361,
+  "seen_graph_ips": 37832,
+  "warmup_prototypes": 1,
+  "isolated_forks": 1,
+  "sampler_config_sha256": "d4d1223a517de4f66201ec7f5938f4c3b6cadc31551edcd3fb74ca5984bd7bed",
+  "feature_schema_sha256": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+  "files": [
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_VAL_grid0.pt",
+      "sha256": "cf1a58cefed22ed61296bb7498936e1ee68ac83272b66cdc693acad2c98eecff",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+      "asof": "2020-10-06T07:00:00",
+      "split": "VAL",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 64
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_VAL_grid1.pt",
+      "sha256": "1ae2105344113ec72dcba0e069d0a42ffc4ad07805efdc6e8810d4a80908bffa",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+      "asof": "2020-10-06T07:10:00",
+      "split": "VAL",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 89
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_VAL_grid2.pt",
+      "sha256": "6a52cacb98390b77a02e8fa4e72c2f6147f7cfedd8dc73a7b0714cd1ccde2869",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+      "asof": "2020-10-06T07:20:00",
+      "split": "VAL",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 87
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_VAL_grid3.pt",
+      "sha256": "0c4c1fcc22a43af8161d078d93c8e2fbc338094875dd293adeba235ab3f3d4c4",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+      "asof": "2020-10-06T07:30:00",
+      "split": "VAL",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 95
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_VAL_grid4.pt",
+      "sha256": "14f8a8ada6d06567e3cf5e11052c6ef610c364292125ba4ae999d09ff00f12a9",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+      "asof": "2020-10-06T07:40:00",
+      "split": "VAL",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 88
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_VAL_grid5.pt",
+      "sha256": "aa49754bd33fe52f91eeeb882171ce6ae6ddc711f6458454d3a35170dabd698c",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+      "asof": "2020-10-06T07:50:00",
+      "split": "VAL",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 89
+    }
+  ]
+}

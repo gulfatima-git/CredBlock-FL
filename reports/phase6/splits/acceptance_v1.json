@@ -1,0 +1,13 @@
+{
+  "version": "phase6-subphase1-user-acceptance-v1",
+  "status": "USER_ACCEPTED",
+  "accepted_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "user_statement": "I accept Phase 6 Subphase 1 (6.1): Chronological Train/Validation/Test Design, based on the reported technical validation results.",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "successful_audit": "reports/phase6/splits/v2/summary.json",
+  "preservation": "Append-only acceptance; frozen protocol and successful v2 audit are unchanged",
+  "amendment_policy": "Split assignments, scoring grid, 1% FPR and evaluation unit require an explicitly versioned protocol amendment before change",
+  "version_control_gate": "Frozen protocol must be recorded in version control before final TEST evaluation; no final TEST evaluation is authorized by Subphase 2",
+  "authorized_next": "Subphase 2 (6.2A) input/feature pipeline only; no model training"
+}

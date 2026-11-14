@@ -1,0 +1,36 @@
+{
+  "status": "PASS_SUBPHASE2_TECHNICAL_GATE_AWAITING_USER_ACCEPTANCE",
+  "organizations": 5,
+  "representative_branch": "CFV1_SO_CS_027_SEED1001_TRAIN",
+  "grid_checks": 30,
+  "independent_sql_feature_edge_checks": 30,
+  "separate_example_batches": 5,
+  "synthetic_scale_nodes": 1020000,
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "feature_schema_sha256": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+  "sampling_config_sha256": "d4d1223a517de4f66201ec7f5938f4c3b6cadc31551edcd3fb74ca5984bd7bed",
+  "accepted_evidence_hashes_preserved": 29,
+  "model_training_performed": false,
+  "test_outcome_access": false,
+  "preprocessing": {
+    "kind": "fixed_log1p_counts_and_failure_ratio",
+    "learned": false,
+    "fit_split": null,
+    "state": "identity beyond accepted runtime transforms"
+  },
+  "numpy_version": "2.5.3",
+  "torch_version": "2.14.1+cpu",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "fanouts_model_order": [
+    15,
+    10
+  ],
+  "seed": 60201,
+  "batch_size": 256,
+  "limitations": [
+    "Real validation covers one TRAIN branch and six grids per organization, not all 2565 branches.",
+    "Synthetic scale fixture has degree two; does not establish real million-node traffic throughput.",
+    "Input inductivity is tested without trained model predictions; predictive inductive performance remains Subphase 3.",
+    "Frozen protocol must be in version control before later final TEST evaluation."
+  ]
+}

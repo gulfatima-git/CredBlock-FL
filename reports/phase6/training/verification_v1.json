@@ -1,0 +1,21 @@
+{
+  "status": "PASS_DELIVERY_VERIFICATION",
+  "recorded_on_local_date": "2026-11-14",
+  "accepted_files_preserved": 92,
+  "final_manifest_files_verified": 7,
+  "full_training_gate": "PASS_SUBPHASE3_FULL_FIVE_LOCAL_TRAINING_AWAITING_USER_ACCEPTANCE",
+  "verified_cache_files": 10260,
+  "workbook": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\outputs\\phase6_subphase3_v1\\CredBlock_FL_Phase6_Local_Training_v1.xlsx",
+  "workbook_sha256": "3d0854fbbb6abcdd41a51dc2b47332e32bbf9ab5c6dc64429b5434857076f11f",
+  "xlsx_zip_integrity": "PASS",
+  "xlsx_model_values_match_final_summary": true,
+  "xlsx_error_cells": 0,
+  "xlsx_formula_caches_match": true,
+  "live_formula_dependency_test": "PASS in builder",
+  "workbook_export_process_exit_code": 1,
+  "export_anomaly": "Artifact Tool exported and saved the workbook but exited 1 without an error message; ZIP integrity, source values and formula caches independently verified.",
+  "optional_curve_plot": "Not generated: matplotlib is absent from both existing Python environments. Per-epoch curves remain available in original epochs.jsonl logs; no dependency was installed.",
+  "user_acceptance_subphase3": "PENDING",
+  "test_evaluation": "NOT_PERFORMED",
+  "final_artifact_manifest_sha256": "1a8a52a6810dbdec1633beea5a0de6687d4c6b1a871ef49a2e3e9ff3c771c95e"
+}

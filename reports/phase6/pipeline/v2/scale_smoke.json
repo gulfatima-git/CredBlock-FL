@@ -1,0 +1,22 @@
+{
+  "kind": "synthetic structural capacity smoke, not real graph or detector performance",
+  "nodes": 1020000,
+  "directed_edges": 2040000,
+  "fixture_build_seconds": 0.5472693000920117,
+  "csr_build_seconds": 0.6595864999108016,
+  "sample_256_seconds": 0.18150850012898445,
+  "full_tensor_bytes": 65280000,
+  "csr_bytes": 24480008,
+  "model_batch_tensor_bytes": 57504,
+  "sampled_source_nodes": [
+    515,
+    513
+  ],
+  "sampled_edges": [
+    1026,
+    512
+  ],
+  "rss_bytes": 720805888,
+  "process_peak_rss_bytes": 765566976,
+  "status": "PASS"
+}

@@ -1,0 +1,27 @@
+{
+  "version": "phase6-chronological-audit-v1",
+  "status": "PASS_TECHNICAL_GATE_AWAITING_USER_ACCEPTANCE",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "frozen_inputs_verified": 8772,
+  "instances": 513,
+  "organization_branches": 2565,
+  "grid_snapshots": 15390,
+  "sparse_label_states": 3454398,
+  "history_views": 45,
+  "synthetic_infrastructure_intersections": {
+    "TRAIN__VAL": 0,
+    "TRAIN__TEST": 0,
+    "VAL__TEST": 0
+  },
+  "all_five_organizations_valid": true,
+  "primary_unit": "eligible local User-time at a fixed ten-minute grid snapshot (User-window)",
+  "fpr_target": 0.01,
+  "test_policy": "Integrity/descriptive audits only; no predictions, fitting, tuning or selection",
+  "feature_asof_evidence": "Accepted runtime code hash and Phase 5 representative SQL graph oracle reused; new temporal prefix tests exercise future exclusion. Not a full 2565-branch feature replay.",
+  "runtime_training_preprocessing_isolation": "Policy guards tested; integration with future sampler/trainer remains Subphases 2/3",
+  "environment": {
+    "python": "3.14.4",
+    "duckdb": "1.5.6"
+  },
+  "version_control": "Protocol hash frozen for review; git commit required before later final TEST evaluation"
+}

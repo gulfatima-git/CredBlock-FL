@@ -1,0 +1,40 @@
+{
+  "frozen_inputs": {
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/replay_manifest.json": "168439ae654242f26f785b80c232348e0df77db4f5a7535e0161a02d73b8d4ba",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org1.json": "b8bf65665ff4659fbf435276be8185226e6b304c95fb36ccced7f7b8ba62a907",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org1_observations.parquet": "e58afc1b923c09f0d36d261a1e3513352d07475a065e6553a1e463ea8a1c308a",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org1_labels.parquet": "7a1b2a70c8c83243f7ed7c3882012a52215577c73d8ba6ee2a042b89c410ab18",
+    "data/organizations/organization=Org1/data_0.parquet": "a5025cde9c9798438d2e321ad0272b6c9e7de10c83553cf4ac56ad7f94cae081",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org2.json": "e6eb97e4db3af89fce41228089eb25a3245c4490cf11f47b18cd28bbb7c424f0",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org2_observations.parquet": "0455050d8a964f669ab8a82f4c1e10b760ca33751aa74f156e52399220d33f5e",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org2_labels.parquet": "883249aab8fc2112c772689788590d19c2b223800a2b3241cc94c12d5d050904",
+    "data/organizations/organization=Org2/data_0.parquet": "cdf696226689dcac9640d8bfedf409f3dd491f2dc63e873ac3a30efb7fe1f574",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org3.json": "233998249e48c86492c2609444974e90306a1dc03dbaa653d14278faccb062ae",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org3_observations.parquet": "3990834893ee42fb7646268b8fec7f9671654ec9f950dae60c577ed4aacf2bdb",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org3_labels.parquet": "78b9bcd9fc9016fc4487b34d66cc3f17412b00c4c81799483f1ef8b31279fcdb",
+    "data/organizations/organization=Org3/data_0.parquet": "bc745bab296e22904c09b4262a611883a3563da6825a82c55cd9bc13969400c2",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org4.json": "2b418643cd94c4a1bdccf220681f0b8caa5bbaa0e08284123b667b342535cbbb",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org4_observations.parquet": "cb35449ddfedb1e9f573d48eedfd18ee5ea4dc9f5fff24c4f18504d2734fb28d",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org4_labels.parquet": "cd189100640488e3693478e23f480ba3dcfd65ea624872be8fa0a87cd7b10f32",
+    "data/organizations/organization=Org4/data_0.parquet": "b73c1efab2fa96647d146bc5c012c9ade258259a46d0f57eacb6552d68dbe4f7",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org5.json": "d98c3414cc87c01d9833ec34d2223c33269e15d6f199f60f2fe5c3c8d58e2961",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org5_observations.parquet": "ff80f6157162283354a5ab96a3c8510315b63ed6040b11c98d67b7d0052d9642",
+    "data/phase5/controlled_replay_labels_all_orgs_causal_v1/CFV1_SO_CS_027_SEED1001_TRAIN/Org5_labels.parquet": "a42aa2a4092411f34d99b1322aa1a8cbfcfd9f95b8b1fb1619b6a927f3459906",
+    "data/organizations/organization=Org5/data_0.parquet": "6b3bd84f840494199f940891dc575f1e56d2f736250206e6db5ac04c60478ea2"
+  },
+  "configuration_hashes": {
+    "configs/phase6/feature_allowlist_v1.json": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+    "configs/phase6/neighbor_sampling_v1.json": "d4d1223a517de4f66201ec7f5938f4c3b6cadc31551edcd3fb74ca5984bd7bed",
+    "configs/phase6/split_protocol_v1.json": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+    "src/phase6/temporal_protocol.py": "c3d24242753e6164e35c44a45d55133ba884c61da1a3e235c20f2b06ec6d89c4",
+    "src/organization/rolling_graph_v1.py": "b36ce245190ffbfe3322157a325e44485262b8b66450027f4f80a5e6113c1bd3"
+  },
+  "architecture_sources": {
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_Implementation_Plan.pdf": "9484c67538d609e5c9ddd35efdb9987777603fbe2907436319d9502a7ee7de57",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL_Final_Framework_Explained.pdf": "79bff193055a5d82f000ae5d6e61b87918f38cfa32ab17fb4db316d059486c53",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-detection-mechanism.png": "1bdaa1f8185d1a42e1b83c8d3994783b23529c7901e1b5985d4d964cc9e98587",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-workflow.png": "5efa4d2b38e6a356dd78d1aaa5ba4a5c6f4bb0c585e813e47a1ddbf4b5a63b9f",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_FL_Phase6_Implementation_Roadmap.md": "c86a5f36f4f9a5d68f6207d2b550cd4d8050adc7694e714cc51e2bc9d4a2a5a5"
+  },
+  "accepted_evidence_hashes_preserved": 29
+}

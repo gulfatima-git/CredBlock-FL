@@ -1,0 +1,6 @@
+{"timestamp_local_host": "2026-11-14T02:28:53.231033", "elapsed_seconds": 0.046075700083747506, "event": "organization_job_started", "organization": "Org1", "pid": 26064, "free_ram_bytes": 769806336}
+{"timestamp_local_host": "2026-11-14T02:29:51.344456", "elapsed_seconds": 58.15947489999235, "event": "organization_job_started", "organization": "Org2", "pid": 11836, "free_ram_bytes": 876617728}
+{"timestamp_local_host": "2026-11-14T03:41:23.192701", "elapsed_seconds": 4350.007741200039, "event": "organization_job_finished", "organization": "Org1", "exit_code": 0}
+{"timestamp_local_host": "2026-11-14T03:41:25.250595", "elapsed_seconds": 4352.065594000043, "event": "organization_job_started", "organization": "Org3", "pid": 30260, "free_ram_bytes": 2418532352}
+{"timestamp_local_host": "2026-11-14T03:44:25.310103", "elapsed_seconds": 4532.125121599995, "event": "organization_job_finished", "organization": "Org2", "exit_code": 0}
+{"timestamp_local_host": "2026-11-14T03:44:27.361068", "elapsed_seconds": 4534.176076000091, "event": "organization_job_started", "organization": "Org4", "pid": 35472, "free_ram_bytes": 2574622720}

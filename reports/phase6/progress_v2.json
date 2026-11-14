@@ -1,0 +1,22 @@
+{
+  "version": "phase6-progress-v2",
+  "recorded_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "subphases": {
+    "0": {"status": "ACCEPTED", "evidence": "reports/phase6/readiness/acceptance_v1.json"},
+    "1": {"status": "TECHNICAL_GATE_PASS_AWAITING_USER_ACCEPTANCE", "evidence": "reports/phase6/splits/SUBPHASE1_REPORT_v1.md", "tests_passed_phase6_total": 65},
+    "2": {"status": "NOT_STARTED"},
+    "3": {"status": "NOT_STARTED"},
+    "4": {"status": "NOT_STARTED"},
+    "5": {"status": "NOT_STARTED"},
+    "6": {"status": "NOT_STARTED"},
+    "7": {"status": "NOT_STARTED"},
+    "8": {"status": "NOT_STARTED"},
+    "9": {"status": "NOT_STARTED"}
+  },
+  "phase5_outputs_preserved": true,
+  "model_training_performed": false,
+  "test_predictions_performed": false,
+  "pending": ["User review/acceptance of Subphase 1 protocol", "Version-control commit of frozen protocol before later final TEST evaluation"],
+  "next_after_acceptance": "Subphase 2 (6.2A) GraphSAGE input and feature pipeline"
+}

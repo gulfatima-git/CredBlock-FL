@@ -1,0 +1,13 @@
+{
+  "current_subphase":"Phase 6 Subphase 3 only",
+  "goal":"Complete and verify full TRAIN/VAL training for all five organizations before reporting PASS",
+  "accepted_preservation_baseline":"reports/phase6/training/accepted_inputs_before_subphase3_v1.json",
+  "execution_plan":"reports/phase6/training/execution_plan_v3.json",
+  "sessions":{"queued_supervisor":34819,"Org3":25021,"Org4":53863,"Org5":72366},
+  "monitor_command":".venv/Scripts/python.exe -B -m src.phase6.training_status",
+  "critical_supervisor_action":"When supervisor_primary_two_finished is true, send Ctrl-C via write_stdin to session 34819. This preserves its completed Org1/Org2 components and stops only redundant queued jobs. Do not interrupt standalone Org3/Org4/Org5 sessions.",
+  "final_gate_command":".venv/Scripts/python.exe -B -m src.phase6.finalize_local_training --output reports/phase6/training/final_v1",
+  "final_gate_requirements":"All five components full, 171 TRAIN and 171 VAL branches each; both candidates and exact selected repeat; matching source/config hashes; no TEST inputs; all cache and checkpoint hashes; real unseen User/IP validation; accepted baseline unchanged",
+  "remaining_after_gate":["Record complete test results", "Create acceptance report and progress_v4.json", "Create versioned research workbook with bundled Artifact Tool", "Verify final artifacts and deliver exact per-organization results"],
+  "notes":"Source/config files used by running jobs are hash-pinned; do not modify local_graphsage.py, training_data.py, local_training.py, run_local_training.py, or local_training_v1.json during active runs. Helpers/reporting files may be added without changing model behavior. No threshold calibration or later-subphase work."
+}

@@ -1,0 +1,16 @@
+{
+  "version":"phase6-training-execution-plan-v2",
+  "scope":"Execution scheduling only; no scientific protocol or accepted pipeline amendment",
+  "reason":"After warm-up query buffers were released, two active organization jobs left about 2294 MiB available RAM; a third independent CPU job was feasible",
+  "resources":{"maximum_active_organization_jobs":3,"torch_threads_per_job":2,"host_logical_cpus":12,"device":"cpu"},
+  "components":{
+    "Org1":"reports/phase6/training/full_v2/organizations/Org1",
+    "Org2":"reports/phase6/training/full_v2/organizations/Org2",
+    "Org3":"reports/phase6/training/full_v2/organizations/Org3",
+    "Org4":"reports/phase6/training/full_v2/organizations/Org4",
+    "Org5":"reports/phase6/training/full_org5_v1"
+  },
+  "supervisor":"Allow the queued supervisor to complete Org1-Org4, then stop its redundant Org5 job after all four completed component exit events; the separate Org5 run supplies that component",
+  "verification":"A final component-aware gate must verify all five full TRAIN/VAL inventories, checkpoints, source/config hashes, exact repeats and artifact manifests before reporting PASS",
+  "data_and_model_policy":"The same frozen local_training_v1 configuration, accepted sampler, split/grid/unit and 1% FPR protocol apply to every component. No weights are combined."
+}

@@ -1,0 +1,6 @@
+{"timestamp_local_host": "2026-11-14T03:44:43.574373", "elapsed_seconds": 0.013510500080883503, "event": "organization_started", "organization": "Org4", "mode": "full"}
+{"timestamp_local_host": "2026-11-14T03:45:18.800545", "elapsed_seconds": 35.239674400072545, "event": "cache_progress", "organization": "Org4", "split": "TRAIN", "branches_done": 6, "branches_total": 171, "eligible_so_far": 2508}
+{"timestamp_local_host": "2026-11-14T03:45:46.852687", "elapsed_seconds": 63.29181329999119, "event": "cache_progress", "organization": "Org4", "split": "TRAIN", "branches_done": 12, "branches_total": 171, "eligible_so_far": 5217}
+{"timestamp_local_host": "2026-11-14T03:46:11.997781", "elapsed_seconds": 88.43690770003013, "event": "cache_progress", "organization": "Org4", "split": "TRAIN", "branches_done": 18, "branches_total": 171, "eligible_so_far": 7725}
+{"timestamp_local_host": "2026-11-14T03:46:37.553080", "elapsed_seconds": 113.99220469989814, "event": "cache_progress", "organization": "Org4", "split": "TRAIN", "branches_done": 24, "branches_total": 171, "eligible_so_far": 10429}
+{"timestamp_local_host": "2026-11-14T03:47:03.974577", "elapsed_seconds": 140.41370050003752, "event": "cache_progress", "organization": "Org4", "split": "TRAIN", "branches_done": 30, "branches_total": 171, "eligible_so_far": 13143}

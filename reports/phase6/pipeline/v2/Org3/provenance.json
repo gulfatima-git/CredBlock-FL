@@ -1,0 +1,24 @@
+{
+  "organization": "Org3",
+  "variant_id": "CFV1_SO_CS_027_SEED1001_TRAIN",
+  "split": "TRAIN",
+  "asof": "2020-03-01T13:10:00",
+  "retained_interval": "(t-7 days,t]",
+  "recent_interval": "(t-10 minutes,t]",
+  "seed": 60201,
+  "fanouts_model_order": [
+    15,
+    10
+  ],
+  "numpy_version": "2.5.3",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "feature_schema_sha256": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+  "sampler_config_sha256": "d4d1223a517de4f66201ec7f5938f4c3b6cadc31551edcd3fb74ca5984bd7bed",
+  "preprocessing": {
+    "kind": "fixed_log1p_counts_and_failure_ratio",
+    "learned": false,
+    "fit_split": null,
+    "state": "identity beyond accepted runtime transforms"
+  },
+  "model_training_performed": false
+}

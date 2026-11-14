@@ -1,0 +1,11 @@
+{
+  "version": "phase6-subphase0-user-acceptance-v1",
+  "accepted_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "user_statement": "accepted. do i need to add anything to the folder?",
+  "status": "ACCEPTED",
+  "accepted_contract_sha256": "c53d3ed6c310deeb2b260208e051b4722c326ef12c2b1b2c480d87f5c9022ee4",
+  "accepted_inventory": "reports/phase6/readiness/v1/input_inventory_v1.json",
+  "record_policy": "Append-only acceptance record; original proposed contract and technical evidence preserved",
+  "next_subphase_authorization": "User subsequently said okay proceed; Subphase 1 only"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_OUTPUT_VERIFICATION",
+  "audit_output_hashes_verified": 9,
+  "phase6_tests": {
+    "passed": 65,
+    "warnings": 1,
+    "duration_seconds": 16.59,
+    "command": ".venv/Scripts/python.exe -B -m pytest tests/phase6 -q -p no:cacheprovider"
+  },
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "created_source_and_record_sha256": {
+    "configs/phase6/split_protocol_v1.json": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+    "src/phase6/temporal_protocol.py": "c3d24242753e6164e35c44a45d55133ba884c61da1a3e235c20f2b06ec6d89c4",
+    "src/phase6/audit_splits.py": "c50ef462e1a739b25948b6404f13746b80242bf0c8221da92060ede369e95321",
+    "tests/phase6/test_temporal_protocol.py": "ee4b620b2a8100f3fe42bd52f0c5d4c86ca62ba3dd1d3dc311914a7c8df9a6b0",
+    "tests/phase6/test_split_audit.py": "57bb28a5dff48c997a77aa75308e11ecb98d9ce4820bb1aef60d964856592a36",
+    "reports/phase6/splits/SUBPHASE1_REPORT_v1.md": "afa1b2a4ad4d9c7eaeae7f7e868ea68770b956ee14275b10de2b53b337d4fe1e",
+    "reports/phase6/splits/PROTOCOL_REVIEW_v1.md": "c794902b8d8b26a9544f78f96623e2568b992a77807287cd350b56fb3744d0eb",
+    "reports/phase6/progress_v2.json": "c0a10cbe5c577fc884f877d96de070e07e96b8929f4d97bc24966851880391c3",
+    "reports/phase6/readiness/acceptance_v1.json": "5aa3cc0223bc768db65ae75eb9c0cb759bb00a7d722be1c2553d366fab6a363e"
+  },
+  "successful_audit": "reports/phase6/splits/v2/summary.json",
+  "subphase1_user_acceptance": "pending",
+  "git_commit_before_final_test_evaluation": "pending"
+}

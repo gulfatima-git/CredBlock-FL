@@ -1,0 +1,452 @@
+[
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1001/Org1.json",
+    "organization": "Org1",
+    "split": "TEST",
+    "block": "TEST_SEED1001",
+    "history_start": "2020-12-05 06:00:00",
+    "history_end": "2020-12-12 06:00:00",
+    "history_event_count": 59057,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1001/Org2.json",
+    "organization": "Org2",
+    "split": "TEST",
+    "block": "TEST_SEED1001",
+    "history_start": "2020-12-05 06:00:00",
+    "history_end": "2020-12-12 06:00:00",
+    "history_event_count": 61404,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1001/Org3.json",
+    "organization": "Org3",
+    "split": "TEST",
+    "block": "TEST_SEED1001",
+    "history_start": "2020-12-05 06:00:00",
+    "history_end": "2020-12-12 06:00:00",
+    "history_event_count": 66910,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1001/Org4.json",
+    "organization": "Org4",
+    "split": "TEST",
+    "block": "TEST_SEED1001",
+    "history_start": "2020-12-05 06:00:00",
+    "history_end": "2020-12-12 06:00:00",
+    "history_event_count": 68526,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1001/Org5.json",
+    "organization": "Org5",
+    "split": "TEST",
+    "block": "TEST_SEED1001",
+    "history_start": "2020-12-05 06:00:00",
+    "history_end": "2020-12-12 06:00:00",
+    "history_event_count": 71264,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1002/Org1.json",
+    "organization": "Org1",
+    "split": "TEST",
+    "block": "TEST_SEED1002",
+    "history_start": "2020-12-05 21:00:00",
+    "history_end": "2020-12-12 21:00:00",
+    "history_event_count": 59211,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1002/Org2.json",
+    "organization": "Org2",
+    "split": "TEST",
+    "block": "TEST_SEED1002",
+    "history_start": "2020-12-05 21:00:00",
+    "history_end": "2020-12-12 21:00:00",
+    "history_event_count": 61722,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1002/Org3.json",
+    "organization": "Org3",
+    "split": "TEST",
+    "block": "TEST_SEED1002",
+    "history_start": "2020-12-05 21:00:00",
+    "history_end": "2020-12-12 21:00:00",
+    "history_event_count": 66950,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1002/Org4.json",
+    "organization": "Org4",
+    "split": "TEST",
+    "block": "TEST_SEED1002",
+    "history_start": "2020-12-05 21:00:00",
+    "history_end": "2020-12-12 21:00:00",
+    "history_event_count": 68668,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1002/Org5.json",
+    "organization": "Org5",
+    "split": "TEST",
+    "block": "TEST_SEED1002",
+    "history_start": "2020-12-05 21:00:00",
+    "history_end": "2020-12-12 21:00:00",
+    "history_event_count": 71715,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1003/Org1.json",
+    "organization": "Org1",
+    "split": "TEST",
+    "block": "TEST_SEED1003",
+    "history_start": "2020-12-06 17:00:00",
+    "history_end": "2020-12-13 17:00:00",
+    "history_event_count": 59055,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1003/Org2.json",
+    "organization": "Org2",
+    "split": "TEST",
+    "block": "TEST_SEED1003",
+    "history_start": "2020-12-06 17:00:00",
+    "history_end": "2020-12-13 17:00:00",
+    "history_event_count": 61870,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1003/Org3.json",
+    "organization": "Org3",
+    "split": "TEST",
+    "block": "TEST_SEED1003",
+    "history_start": "2020-12-06 17:00:00",
+    "history_end": "2020-12-13 17:00:00",
+    "history_event_count": 66871,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1003/Org4.json",
+    "organization": "Org4",
+    "split": "TEST",
+    "block": "TEST_SEED1003",
+    "history_start": "2020-12-06 17:00:00",
+    "history_end": "2020-12-13 17:00:00",
+    "history_event_count": 68751,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TEST_SEED1003/Org5.json",
+    "organization": "Org5",
+    "split": "TEST",
+    "block": "TEST_SEED1003",
+    "history_start": "2020-12-06 17:00:00",
+    "history_end": "2020-12-13 17:00:00",
+    "history_event_count": 71440,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org1.json",
+    "organization": "Org1",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1001",
+    "history_start": "2020-02-23 13:00:00",
+    "history_end": "2020-03-01 13:00:00",
+    "history_event_count": 60060,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org2.json",
+    "organization": "Org2",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1001",
+    "history_start": "2020-02-23 13:00:00",
+    "history_end": "2020-03-01 13:00:00",
+    "history_event_count": 63675,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org3.json",
+    "organization": "Org3",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1001",
+    "history_start": "2020-02-23 13:00:00",
+    "history_end": "2020-03-01 13:00:00",
+    "history_event_count": 67815,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org4.json",
+    "organization": "Org4",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1001",
+    "history_start": "2020-02-23 13:00:00",
+    "history_end": "2020-03-01 13:00:00",
+    "history_event_count": 71061,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1001/Org5.json",
+    "organization": "Org5",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1001",
+    "history_start": "2020-02-23 13:00:00",
+    "history_end": "2020-03-01 13:00:00",
+    "history_event_count": 74641,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1002/Org1.json",
+    "organization": "Org1",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1002",
+    "history_start": "2020-02-24 09:00:00",
+    "history_end": "2020-03-02 09:00:00",
+    "history_event_count": 60029,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1002/Org2.json",
+    "organization": "Org2",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1002",
+    "history_start": "2020-02-24 09:00:00",
+    "history_end": "2020-03-02 09:00:00",
+    "history_event_count": 63474,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1002/Org3.json",
+    "organization": "Org3",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1002",
+    "history_start": "2020-02-24 09:00:00",
+    "history_end": "2020-03-02 09:00:00",
+    "history_event_count": 67673,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1002/Org4.json",
+    "organization": "Org4",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1002",
+    "history_start": "2020-02-24 09:00:00",
+    "history_end": "2020-03-02 09:00:00",
+    "history_event_count": 71273,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1002/Org5.json",
+    "organization": "Org5",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1002",
+    "history_start": "2020-02-24 09:00:00",
+    "history_end": "2020-03-02 09:00:00",
+    "history_event_count": 74915,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1003/Org1.json",
+    "organization": "Org1",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1003",
+    "history_start": "2020-02-25 21:00:00",
+    "history_end": "2020-03-03 21:00:00",
+    "history_event_count": 60488,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1003/Org2.json",
+    "organization": "Org2",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1003",
+    "history_start": "2020-02-25 21:00:00",
+    "history_end": "2020-03-03 21:00:00",
+    "history_event_count": 63653,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1003/Org3.json",
+    "organization": "Org3",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1003",
+    "history_start": "2020-02-25 21:00:00",
+    "history_end": "2020-03-03 21:00:00",
+    "history_event_count": 67808,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1003/Org4.json",
+    "organization": "Org4",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1003",
+    "history_start": "2020-02-25 21:00:00",
+    "history_end": "2020-03-03 21:00:00",
+    "history_event_count": 71410,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/TRAIN_SEED1003/Org5.json",
+    "organization": "Org5",
+    "split": "TRAIN",
+    "block": "TRAIN_SEED1003",
+    "history_start": "2020-02-25 21:00:00",
+    "history_end": "2020-03-03 21:00:00",
+    "history_event_count": 75002,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1001/Org1.json",
+    "organization": "Org1",
+    "split": "VAL",
+    "block": "VAL_SEED1001",
+    "history_start": "2020-09-29 07:00:00",
+    "history_end": "2020-10-06 07:00:00",
+    "history_event_count": 58309,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1001/Org2.json",
+    "organization": "Org2",
+    "split": "VAL",
+    "block": "VAL_SEED1001",
+    "history_start": "2020-09-29 07:00:00",
+    "history_end": "2020-10-06 07:00:00",
+    "history_event_count": 62211,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1001/Org3.json",
+    "organization": "Org3",
+    "split": "VAL",
+    "block": "VAL_SEED1001",
+    "history_start": "2020-09-29 07:00:00",
+    "history_end": "2020-10-06 07:00:00",
+    "history_event_count": 66879,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1001/Org4.json",
+    "organization": "Org4",
+    "split": "VAL",
+    "block": "VAL_SEED1001",
+    "history_start": "2020-09-29 07:00:00",
+    "history_end": "2020-10-06 07:00:00",
+    "history_event_count": 68427,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1001/Org5.json",
+    "organization": "Org5",
+    "split": "VAL",
+    "block": "VAL_SEED1001",
+    "history_start": "2020-09-29 07:00:00",
+    "history_end": "2020-10-06 07:00:00",
+    "history_event_count": 71533,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1002/Org1.json",
+    "organization": "Org1",
+    "split": "VAL",
+    "block": "VAL_SEED1002",
+    "history_start": "2020-09-29 19:00:00",
+    "history_end": "2020-10-06 19:00:00",
+    "history_event_count": 58049,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1002/Org2.json",
+    "organization": "Org2",
+    "split": "VAL",
+    "block": "VAL_SEED1002",
+    "history_start": "2020-09-29 19:00:00",
+    "history_end": "2020-10-06 19:00:00",
+    "history_event_count": 62112,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1002/Org3.json",
+    "organization": "Org3",
+    "split": "VAL",
+    "block": "VAL_SEED1002",
+    "history_start": "2020-09-29 19:00:00",
+    "history_end": "2020-10-06 19:00:00",
+    "history_event_count": 67048,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1002/Org4.json",
+    "organization": "Org4",
+    "split": "VAL",
+    "block": "VAL_SEED1002",
+    "history_start": "2020-09-29 19:00:00",
+    "history_end": "2020-10-06 19:00:00",
+    "history_event_count": 68472,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1002/Org5.json",
+    "organization": "Org5",
+    "split": "VAL",
+    "block": "VAL_SEED1002",
+    "history_start": "2020-09-29 19:00:00",
+    "history_end": "2020-10-06 19:00:00",
+    "history_event_count": 71331,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1003/Org1.json",
+    "organization": "Org1",
+    "split": "VAL",
+    "block": "VAL_SEED1003",
+    "history_start": "2020-09-29 23:00:00",
+    "history_end": "2020-10-06 23:00:00",
+    "history_event_count": 57770,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1003/Org2.json",
+    "organization": "Org2",
+    "split": "VAL",
+    "block": "VAL_SEED1003",
+    "history_start": "2020-09-29 23:00:00",
+    "history_end": "2020-10-06 23:00:00",
+    "history_event_count": 61846,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1003/Org3.json",
+    "organization": "Org3",
+    "split": "VAL",
+    "block": "VAL_SEED1003",
+    "history_start": "2020-09-29 23:00:00",
+    "history_end": "2020-10-06 23:00:00",
+    "history_event_count": 66887,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1003/Org4.json",
+    "organization": "Org4",
+    "split": "VAL",
+    "block": "VAL_SEED1003",
+    "history_start": "2020-09-29 23:00:00",
+    "history_end": "2020-10-06 23:00:00",
+    "history_event_count": 68162,
+    "status": "PASS"
+  },
+  {
+    "reference": "data/phase5/controlled_replay_labels_all_orgs_causal_v1/history_references/VAL_SEED1003/Org5.json",
+    "organization": "Org5",
+    "split": "VAL",
+    "block": "VAL_SEED1003",
+    "history_start": "2020-09-29 23:00:00",
+    "history_end": "2020-10-06 23:00:00",
+    "history_event_count": 71196,
+    "status": "PASS"
+  }
+]

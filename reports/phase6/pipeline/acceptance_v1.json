@@ -1,0 +1,13 @@
+{
+  "version":"phase6-subphase2-user-acceptance-v1",
+  "status":"USER_ACCEPTED",
+  "accepted_on_local_date":"2026-11-14",
+  "timezone":"Asia/Karachi",
+  "user_statement":"I accept Phase 6 Subphase 2 (6.2A): GraphSAGE Input and Feature Pipeline, based on the reported technical validation evidence.",
+  "successful_benchmark":"reports/phase6/pipeline/v2/summary.json",
+  "verification":"reports/phase6/pipeline/verification_v1.json",
+  "protocol_sha256":"9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "preservation":"Append-only acceptance; accepted configurations, source, tests, hashes and Phase 5/6 evidence remain unchanged",
+  "authorized_next":"Subphase 3 (6.2B) five independent local GraphSAGE models only",
+  "excluded":"Threshold calibration, continuous inference, indicator sharing, federation, DP and blockchain"
+}

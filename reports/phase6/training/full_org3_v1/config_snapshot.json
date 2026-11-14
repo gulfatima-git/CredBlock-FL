@@ -1,0 +1,89 @@
+{
+  "version": "phase6-local-training-v1",
+  "scope": "Full five-organization local training; TRAIN and VAL only",
+  "organizations": [
+    "Org1",
+    "Org2",
+    "Org3",
+    "Org4",
+    "Org5"
+  ],
+  "dataset": {
+    "splits": [
+      "TRAIN",
+      "VAL"
+    ],
+    "variants_per_split_per_organization": 171,
+    "campaign_seeds": [
+      1001,
+      1002,
+      1003
+    ],
+    "scoring": "Unchanged accepted exact six-grid protocol",
+    "root_policy": "All observable recent User roots; covers every eligible fixed-grid target and retains ambiguous masks. Older context-only roots need no supervised forward pass, but remain available as sampled context.",
+    "cache": "Immutable sampled input batches on disk, using accepted sampler seed and fanouts unchanged across epochs; cache roots are selected by observable recent activity, not labels",
+    "ordering": "Chronological anchor, then variant identifier, then scoring grid, then deterministic local User order; alternative branches never share synthetic graph state"
+  },
+  "model": {
+    "implementation": "torch_geometric.nn.SAGEConv",
+    "num_layers": 2,
+    "aggregator": "mean",
+    "activation": "relu",
+    "dropout": 0.1,
+    "root_weight": true,
+    "normalize": false,
+    "project": false,
+    "input_features": 8,
+    "head": "One binary logit per User root; linear head after two hidden GraphSAGE layers",
+    "initialization": "Fresh seeded PyTorch/PyG initialization for every independent local trial; no imported/global/pretrained weights"
+  },
+  "candidates": [
+    {
+      "id": "hidden16",
+      "hidden_dim": 16
+    },
+    {
+      "id": "hidden32",
+      "hidden_dim": 32
+    }
+  ],
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001
+  },
+  "training": {
+    "max_epochs": 12,
+    "early_stopping_patience": 3,
+    "min_ap_improvement": 1e-06,
+    "class_weight": "TRAIN eligible negative count / TRAIN eligible positive count; used only in training BCEWithLogitsLoss",
+    "gradient_clip_norm": 5.0,
+    "initial_seed_base": 63030,
+    "torch_threads": 2,
+    "torch_interop_threads": 1,
+    "deterministic_algorithms": true,
+    "device": "cpu"
+  },
+  "selection": {
+    "split": "VAL",
+    "primary": "Average precision (noninterpolated precision-recall area with tied scores grouped)",
+    "epoch_tie": "Earlier epoch retained unless AP exceeds min_ap_improvement",
+    "candidate_tie": "Greater VAL AP, then lower unweighted VAL BCE, then lexicographic candidate ID",
+    "same_rule_for_all_organizations": true
+  },
+  "metrics": {
+    "loss": "Weighted TRAIN BCE and unweighted VAL BCE; aggregate over eligible examples",
+    "diagnostics": "Precision, recall and F1 at the fixed nominal 0.5 probability only; not calibrated alert thresholds or fixed-FPR results",
+    "test": "No TEST files opened or scores produced"
+  },
+  "inductivity": {
+    "unseen_user": "Local User absent from the union of all TRAIN graph views",
+    "unseen_ip": "User's sampled root neighborhood includes an IP absent from all TRAIN graph views",
+    "report": "VAL subgroup metrics and counts; IP nodes remain context, not classification targets"
+  },
+  "reproducibility": {
+    "repeat": "Repeat full selected-hyperparameter training/early stopping for each organization with identical initialization seed and cached inputs; verify exact selected state digest and VAL scores",
+    "variation": "Campaign seeds are dataset variation, not initialization repeats; exact replay does not measure initialization uncertainty"
+  },
+  "limitations": "Repeated backgrounds and three temporal blocks per split remain dependent. No model-performance claim is inferred from successful software tests. Protocol and acceptance evidence are immutable; final TEST evaluation still requires the frozen protocol in version control."
+}

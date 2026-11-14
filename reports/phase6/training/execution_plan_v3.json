@@ -1,0 +1,16 @@
+{
+  "version":"phase6-training-execution-plan-v3",
+  "scope":"Execution scheduling only; no scientific protocol or accepted pipeline amendment",
+  "reason":"Measured available RAM was 2347 MiB with three active jobs after buffer release. All five isolated organization jobs can use the 12-core CPU at two Torch threads each.",
+  "resources":{"maximum_active_organization_jobs":5,"torch_threads_per_job":2,"host_logical_cpus":12,"device":"cpu"},
+  "components":{
+    "Org1":"reports/phase6/training/full_v2/organizations/Org1",
+    "Org2":"reports/phase6/training/full_v2/organizations/Org2",
+    "Org3":"reports/phase6/training/full_org3_v1",
+    "Org4":"reports/phase6/training/full_org4_v1",
+    "Org5":"reports/phase6/training/full_org5_v1"
+  },
+  "supervisor":"Stop the queued supervisor only after its Org1 and Org2 completion exit events. Standalone Org3-Org5 jobs supply the remaining components. Stop any newly queued duplicate job without changing completed outputs.",
+  "verification":"All five full TRAIN/VAL inventories, checkpoints, source/config hashes, exact repeats and artifact manifests must pass the final component-aware gate",
+  "data_and_model_policy":"Every component uses the identical frozen local_training_v1 configuration, accepted sampler, split/grid/unit and 1% FPR protocol. There is no graph, data or weight aggregation."
+}

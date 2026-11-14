@@ -1,0 +1,9 @@
+{
+  "version": "phase6-split-protocol-v1",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "recorded_at_source_host": "2026-11-14T00:22:12.810311",
+  "event": "Protocol bytes pinned before audit including TEST descriptive counts",
+  "subphase0_acceptance": "User explicitly accepted Subphase 0 and authorized Subphase 1",
+  "test_predictions_or_model_selection": false,
+  "git_commit": "Pending protocol review; required before later final TEST evaluation"
+}

@@ -1,0 +1,80 @@
+{
+  "version": "phase6-training-cache-v1",
+  "organization": "Org4",
+  "split": "TRAIN",
+  "scope": "REPRESENTATIVE_INTEGRATION",
+  "variants": 1,
+  "grids": 6,
+  "positive": 75,
+  "negative": 418,
+  "masked_recent_roots": 40,
+  "older_context_only_roots_not_forwarded": 243208,
+  "seen_graph_users": 40855,
+  "seen_graph_ips": 37178,
+  "warmup_prototypes": 1,
+  "isolated_forks": 1,
+  "sampler_config_sha256": "d4d1223a517de4f66201ec7f5938f4c3b6cadc31551edcd3fb74ca5984bd7bed",
+  "feature_schema_sha256": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+  "files": [
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_TRAIN_grid0.pt",
+      "sha256": "287eb2d099f8c4f8fe4bca401972649a7040f34253d85d19f8058857853dec78",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_TRAIN",
+      "asof": "2020-03-01T13:00:00",
+      "split": "TRAIN",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 68
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_TRAIN_grid1.pt",
+      "sha256": "cc3dda082e4c369cd0e316526827e6e630a88dfb3d502fbc7b13ae57e2b1a9ed",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_TRAIN",
+      "asof": "2020-03-01T13:10:00",
+      "split": "TRAIN",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 88
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_TRAIN_grid2.pt",
+      "sha256": "359d061d2953d003d2a88d2b9c211b46da327248d80375c5a30c7ff0cffd867a",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_TRAIN",
+      "asof": "2020-03-01T13:20:00",
+      "split": "TRAIN",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 92
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_TRAIN_grid3.pt",
+      "sha256": "87ac7631e973dff7e5025d91fe76a83047e1d8cac79fa9cb2c0da643c0bc279e",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_TRAIN",
+      "asof": "2020-03-01T13:30:00",
+      "split": "TRAIN",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 104
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_TRAIN_grid4.pt",
+      "sha256": "d05d2b0460dcb2c55417dd2f02f3649c6a928e4babe1a428de5a71410a59510a",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_TRAIN",
+      "asof": "2020-03-01T13:40:00",
+      "split": "TRAIN",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 100
+    },
+    {
+      "path": "CFV1_SO_CS_027_SEED1001_TRAIN_grid5.pt",
+      "sha256": "6753a7dd953d6ceddb92b21e2429a5ed5c4a1b99a1d9b7a12a28449935319c16",
+      "variant_id": "CFV1_SO_CS_027_SEED1001_TRAIN",
+      "asof": "2020-03-01T13:50:00",
+      "split": "TRAIN",
+      "organization": "Org4",
+      "batches": 1,
+      "recent_user_roots": 81
+    }
+  ]
+}

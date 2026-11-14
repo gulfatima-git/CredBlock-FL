@@ -1,0 +1,24 @@
+{
+  "status":"PASS_FINAL_AUTOMATED_TESTS",
+  "phase6_regression":{
+    "command":".venv/Scripts/python.exe -B -m pytest tests/phase6 -q -p no:cacheprovider -k 'not real_test_branch_cannot_be_opened_for_fitting'",
+    "passed":96,"deselected":1,"warnings":142,"duration_seconds":106.72,
+    "deselection_reason":"The existing real_test_branch_cannot_be_opened_for_fitting test opens a TEST manifest. It was deliberately excluded to honor this subphase's no-TEST-access requirement; TEST rejection is tested before file access in the new trainer.",
+    "warning_types":["Existing PyTorch TorchScript/Python 3.14 compatibility warning","PyG typing._eval_type deprecation warning"],
+    "execution":"Permitted outside-sandbox test execution supplied working pytest temporary-directory access"
+  },
+  "accepted_rolling_runtime":{
+    "command":".venv/Scripts/python.exe -B validate_phase5_graph_retention_v1.py --self-test",
+    "passed":20,"duration_seconds":40.748,"status":"OK",
+    "data_scope":"Synthetic self-tests only; no TEST branch files or regenerated Phase 5 outputs"
+  },
+  "total_distinct_tests_passed":116,
+  "additional_focused_recheck":{
+    "command":".venv/Scripts/python.exe -B -m pytest tests/phase6/test_local_training.py -q -p no:cacheprovider -k 'warmup_forks'",
+    "passed":2,"duration_seconds":85.41,"counted_again_in_total":false,
+    "purpose":"Real TRAIN/VAL equivalence after closing unused warm-up query buffers"
+  },
+  "initial_attempt":{"passed":92,"setup_errors":3,"reason":"Sandbox pytest temporary-directory creation failed; no numerical/model tests failed"},
+  "representative_training":"reports/phase6/training/integration_v1/summary.json",
+  "full_training":"Requires all five component gate checks; automated tests alone are not full training evidence"
+}

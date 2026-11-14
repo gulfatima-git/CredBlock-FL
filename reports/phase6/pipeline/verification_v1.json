@@ -1,0 +1,38 @@
+{
+  "status": "PASS_FINAL_SUBPHASE2_VERIFICATION",
+  "phase6_tests": {
+    "passed": 85,
+    "warnings": 1,
+    "duration_seconds": 42.73,
+    "command": ".venv/Scripts/python.exe -B -m pytest tests/phase6 -q -p no:cacheprovider"
+  },
+  "accepted_evidence_files_preserved": 29,
+  "benchmark_outputs_verified": 24,
+  "final_source_hashes_match_benchmark": true,
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "subphase1_status": "USER_ACCEPTED",
+  "subphase2_status": "TECHNICAL_GATE_PASS_AWAITING_USER_ACCEPTANCE",
+  "workbook": {
+    "xlsx_integrity": "PASS",
+    "formula_error_cells": 0,
+    "cached_summary_values_checked": 25,
+    "recalculation_evidence": "reports/phase6/pipeline/workbook_recalculation_v1.json",
+    "visual_review": "PASS",
+    "exporter_process_exit_code": 1,
+    "original_phase5_workbook_sha256": "ffcc1a493894110679f5890955707b91da263c0dbf4ce8ec84d608c60462d8cc"
+  },
+  "created_file_sha256": {
+    "configs/phase6/feature_allowlist_v1.json": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+    "configs/phase6/neighbor_sampling_v1.json": "d4d1223a517de4f66201ec7f5938f4c3b6cadc31551edcd3fb74ca5984bd7bed",
+    "src/phase6/input_pipeline.py": "59eee43209f81560e0883f032ef253cb490969133ccaaf1d4e810ad4b22e5740",
+    "src/phase6/validate_input_pipeline.py": "b9ae5586a4797320fc2b6c1bc80ba4fe0a828d4134db2fce982ece33d186a0b6",
+    "src/phase6/INPUT_PIPELINE_v1.md": "769d9cda438109ef21d84e33d7da64dc93593a5b6be731add3411ecc004f22be",
+    "tests/phase6/test_input_pipeline.py": "306f38bf1c379a4c47385b77fa7a6b59c1890742bf731494edbd0dee2a2b35ea",
+    "reports/phase6/splits/acceptance_v1.json": "80f837aed3a91808f1fba146a1e5a6397b2c7bc5f14a6e5111bebc575be3c5fd",
+    "reports/phase6/progress_v3.json": "008d83031e8e5261a6f66d9d9633949728c87c097d37d6d0e33729041342e1af",
+    "reports/phase6/pipeline/SUBPHASE2_REPORT_v1.md": "01a7cf3e50a3953dd09a69cec323eafab724307a4a809a57eb3837965a55abd6",
+    "outputs/phase6_subphase2_v1/CredBlock_FL_Phase6_Input_Pipeline_v1.xlsx": "d4b8c37dc8bf66c800dbda3382067e254aa28c9065baa93d21693257ac2d90c7"
+  },
+  "model_training_performed": false,
+  "protocol_version_control_before_final_test": "REQUIRED_PENDING"
+}

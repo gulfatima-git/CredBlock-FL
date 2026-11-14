@@ -1,0 +1,7 @@
+{
+  "src/phase6/local_graphsage.py": "d438f3c57d2539a3760b5ffc1d3fae85ab5ad292fc30d76b595b616d93bf6e55",
+  "src/phase6/training_data.py": "0769df8aae00f6ac0768e86fc36d830b50970edd57f820dce9783e47d30736c2",
+  "src/phase6/local_training.py": "1eadc2eaf9e7305676759b611f728f334475cce2b1abc2110648ae87ba14427c",
+  "src/phase6/run_local_training.py": "ce95669985438c124a2f7e71d09266bb678e7f8775d11be153bfe87ea853c5f8",
+  "configs/phase6/local_training_v1.json": "40fc3d2a6729b7a53799a9986d8c401b1666bdac339ee8bf0b69b67e304f790e"
+}
