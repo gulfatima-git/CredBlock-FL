@@ -1,0 +1,278 @@
+{
+  "source": "C:/Users/Gulso/Documents/Gul/CredBlock-FL/outputs/all_phases_20261114_v2/CredBlock_FL_All_Phases_Research_Results_v2.xlsx",
+  "source_sha256": "00a510444bc0b0fc6847b7dbcb151efacd2ba73ae728846fb70d6d245c8e0298",
+  "destination": "C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/excel_all_phases_v1/outputs/all_phases_20261114_v3/CredBlock_FL_All_Phases_Research_Results_v3.xlsx",
+  "allowed_cells": [
+    {
+      "sheet": "Overview",
+      "cell": "A3"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "D11"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "E11"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "C27"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "D27"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "E27"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "C28"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "D28"
+    },
+    {
+      "sheet": "Overview",
+      "cell": "E28"
+    },
+    {
+      "sheet": "P6 Inference",
+      "cell": "A3"
+    },
+    {
+      "sheet": "P6 Inference",
+      "cell": "A29"
+    },
+    {
+      "sheet": "Methods and provenance",
+      "cell": "B16"
+    }
+  ],
+  "new_sheet": "P6 Indicators",
+  "source_additions": [
+    [
+      "S094",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/configs/phase6/indicator_sharing_v1.json",
+      "dcca57cd901fdba0cdaaf2fa63d28d74fedabf789dd9ea07cf2b726907e1a908"
+    ],
+    [
+      "S095",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/preregistration_v1.json",
+      "5c2ad79bc28e7c6872951742b295ee38d0f18366f8847efbde4dd37e6fd8282e"
+    ],
+    [
+      "S096",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/final_v1/summary.json",
+      "ada33ed7a81563fc6f7844434e04a0e134499f37fc9080fc9c2caae29f53e013"
+    ],
+    [
+      "S097",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/testing_results_v1.json",
+      "f72437791dd780cccf070502a0785ed1ee808b53e52272f8fb49d46c3b503159"
+    ],
+    [
+      "S098",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/inference/acceptance_v1.json",
+      "0dea28549f804a9ca1d5f1ffd48ab29e53ef4bbfb44c38e43ee94cba499fd275"
+    ],
+    [
+      "S099",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/progress_v9.json",
+      "104fd95d2e3b17da28f1f4fd5a63fe024120d2f0d7632e24bb96b1994d8b5f2b"
+    ],
+    [
+      "S100",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/local_v1/Org1/summary.json",
+      "162890e2be9e414e1c01ca75cc0553b3fe82b84d7c8ecdf00c0609c7b18894b0"
+    ],
+    [
+      "S101",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/local_v1/Org2/summary.json",
+      "2c85d1324b2737708c951e6a48e667dbeea79f77008737fcb364a2670700e280"
+    ],
+    [
+      "S102",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/local_v1/Org3/summary.json",
+      "c62e44f2aca9745309839a5969bafdcf836cdbe7adcc9ddd7c7dd349b36c3637"
+    ],
+    [
+      "S103",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/local_v1/Org4/summary.json",
+      "83b1270caa7f781f8a533b515d90a69bbd137d7ceb387d9542bebd776e4df107"
+    ],
+    [
+      "S104",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/local_v1/Org5/summary.json",
+      "c35a498dd7b4a327eb2f9d665b4a4a8ca050d0ae4046d83da886abd4e5e5a020"
+    ],
+    [
+      "S105",
+      "C:/Users/Gulso/Documents/Gul/CredBlock-FL/reports/phase6/indicator_baseline/delivery_audit_v1.json",
+      "bd55c097e22f709260940ae9d2ba2c1f8dedd707e75e0805d3f2653296815e80"
+    ]
+  ],
+  "operational_rows": [
+    [
+      "Org1",
+      578,
+      4438,
+      122,
+      124,
+      2,
+      4314,
+      49,
+      229,
+      6,
+      229,
+      74,
+      0,
+      0,
+      109,
+      859,
+      0.009940360003383822,
+      true,
+      "S096"
+    ],
+    [
+      "Org2",
+      567,
+      4859,
+      468,
+      477,
+      9,
+      4382,
+      56,
+      222,
+      13,
+      222,
+      69,
+      0,
+      0,
+      84,
+      781,
+      0.011857189996590028,
+      true,
+      "S096"
+    ],
+    [
+      "Org3",
+      617,
+      5749,
+      482,
+      484,
+      2,
+      5265,
+      62,
+      216,
+      8,
+      216,
+      106,
+      0,
+      0,
+      104,
+      1246,
+      0.0127417850013444,
+      true,
+      "S096"
+    ],
+    [
+      "Org4",
+      626,
+      5862,
+      379,
+      381,
+      2,
+      5481,
+      61,
+      217,
+      6,
+      217,
+      110,
+      0,
+      0,
+      112,
+      1153,
+      0.012145020000752993,
+      true,
+      "S096"
+    ],
+    [
+      "Org5",
+      669,
+      5474,
+      615,
+      620,
+      5,
+      4854,
+      50,
+      228,
+      8,
+      228,
+      69,
+      0,
+      0,
+      123,
+      1046,
+      0.011067374998674495,
+      true,
+      "S096"
+    ]
+  ],
+  "resource_rows": [
+    [
+      "Org1",
+      1157.2954754999955,
+      1151.234375,
+      2.3285122400018734,
+      0.17337441999989095,
+      471.5078125,
+      true,
+      "S100"
+    ],
+    [
+      "Org2",
+      1207.6926040000035,
+      1196.578125,
+      2.4709893950021073,
+      0.1770112800004427,
+      474.953125,
+      true,
+      "S101"
+    ],
+    [
+      "Org3",
+      1398.0511123999968,
+      1391.125,
+      2.604856220003785,
+      0.1898142199999711,
+      481.3359375,
+      true,
+      "S102"
+    ],
+    [
+      "Org4",
+      1481.5448900000047,
+      1474.3125,
+      2.719414240003971,
+      0.19189623999700414,
+      483.34765625,
+      true,
+      "S103"
+    ],
+    [
+      "Org5",
+      1621.461130399999,
+      1619.609375,
+      2.82533762499952,
+      0.20154874999752792,
+      486.98828125,
+      true,
+      "S104"
+    ]
+  ],
+  "recalculation_test": "PASS; modified combined count and restored"
+}

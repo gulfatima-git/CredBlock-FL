@@ -1,0 +1,56 @@
+{
+  "version": "phase6-progress-v8",
+  "recorded_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "subphases": {
+    "0": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/readiness/acceptance_v1.json"
+    },
+    "1": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/splits/acceptance_v1.json",
+      "successful_audit": "reports/phase6/splits/v2/summary.json"
+    },
+    "2": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/pipeline/acceptance_v1.json"
+    },
+    "3": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/training/acceptance_v1.json"
+    },
+    "4": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/comparator/acceptance_v1.json"
+    },
+    "5": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/calibration/acceptance_v1.json"
+    },
+    "6": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/inference/acceptance_v1.json"
+    },
+    "7": {
+      "status": "IN_PROGRESS_POLICY_FREEZE_PENDING"
+    },
+    "8": {
+      "status": "NOT_STARTED"
+    },
+    "9": {
+      "status": "NOT_STARTED"
+    }
+  },
+  "frozen_protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "protocol_amendment_policy": "Explicitly versioned amendment required for splits, scoring grid, 1% FPR or evaluation-unit changes",
+  "version_control_before_final_test": {
+    "status": "REQUIRED_PENDING",
+    "final_test_evaluation_authorized": false
+  },
+  "accepted_outputs_preserved": true,
+  "model_training_performed": true,
+  "test_predictions_performed": false,
+  "federation_dp_blockchain_implemented": false,
+  "next_exact_action": "Freeze and test Subphase 7 policy; no Subphase 8."
+}

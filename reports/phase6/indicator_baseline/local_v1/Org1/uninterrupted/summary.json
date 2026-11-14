@@ -1,0 +1,93 @@
+{
+  "status": "PASS_REPRESENTATIVE_REAL_FULL_HOUR_OPERATIONAL_REPLAY",
+  "organization": "Org1",
+  "run": "indicator_baseline_local_materialization",
+  "scope": "One frozen VAL branch; no TEST or ground-truth evaluation",
+  "events": 578,
+  "timestamp_commands": 585,
+  "user_scores": 4438,
+  "alerts": 122,
+  "no_alerts": 4316,
+  "processing_failures": 0,
+  "final_ten_minutes": {
+    "events": 109,
+    "user_scores": 859,
+    "last_flush": "2020-10-06T07:59:59.999999",
+    "covered": true
+  },
+  "decision_digest": "0c157d1052c310d093973c2dd2d221ddf2152111ea0b254b84a57d63b849d810",
+  "final_graph_checkpoint_sha256": "3b047b1efcd3bedd4b7a3b732666a7f4af7bb76601a41a8d3437cca576bb602c",
+  "unchanged_model_state_digest": "6ebc70d240f63cff47c582c24967fc9d44c7af9947db3309949ea2474950de8a",
+  "bundle_fingerprint": "f9c54b534ad297e02c605eedd794e54ea61039976ba16a6a4bba0cc36b1e3ce4",
+  "restart": null,
+  "latency_seconds": {
+    "timestamp_end_to_end": {
+      "mean": 1.977868398119602,
+      "p50": 2.0756694999945466,
+      "p95": 2.3285122400018734,
+      "p99": 3.411820364001891,
+      "maximum": 4.150193600005878
+    },
+    "graph_update": {
+      "mean": 0.00436505777797409,
+      "p50": 0.004247299999406096,
+      "p95": 0.005941740004345774,
+      "p99": 0.008311144002946082,
+      "maximum": 0.014477499993517995
+    },
+    "feature_and_sampler": {
+      "mean": 1.6493612538463098,
+      "p50": 1.7472141999969608,
+      "p95": 1.9622888599958968,
+      "p99": 2.1140673199994477,
+      "maximum": 2.9394956000032835
+    },
+    "model_scoring": {
+      "mean": 0.13987269247839781,
+      "p50": 0.14704879999771947,
+      "p95": 0.17337441999989095,
+      "p99": 0.21705429200199391,
+      "maximum": 0.3091437999974005
+    },
+    "amortized_processing_per_input_event": 2.001821821626241
+  },
+  "resources": {
+    "elapsed_seconds": 1157.2954754999955,
+    "process_cpu_seconds": 1151.234375,
+    "observed_rss_peak_bytes": 494411776,
+    "process_peak_rss_bytes": 514351104,
+    "retained_node_peak": 69088,
+    "replay_events_per_wall_second": 0.4994403004559247,
+    "serial_simulated_max_finish_lag_seconds": 7.748496000009709,
+    "backlog_definition": "Hypothetical single serial server with source timestamp arrivals and observed processing costs; not a real deployment backlog",
+    "torch_threads": 2,
+    "device": "cpu"
+  },
+  "first_alert_offset_seconds_from_replay_start": 534.824031,
+  "first_alert_interpretation": "Local alert chronology only; not ground-truth time-to-detection",
+  "examples": {
+    "ALERT": {
+      "asof": "2020-10-06T07:08:54.824031",
+      "trigger": "event",
+      "logit_hex": "0x1.39efee0000000p+2",
+      "threshold_hex": "0x1.2b94040000001p+2",
+      "decision": "ALERT",
+      "model_sha256": "a325eff38f6ebdb3324e940436f4c34452c54a67d6a5cc60fb84117cc89aef66",
+      "threshold_sha256": "a003c8b3fec3cc0d078c5d34539243302920e82b08b2a7df71ed7533063d7742"
+    },
+    "NO_ALERT": {
+      "asof": "2020-10-06T07:00:00",
+      "trigger": "heartbeat",
+      "logit_hex": "-0x1.05aa860000000p+4",
+      "threshold_hex": "0x1.2b94040000001p+2",
+      "decision": "NO_ALERT",
+      "model_sha256": "a325eff38f6ebdb3324e940436f4c34452c54a67d6a5cc60fb84117cc89aef66",
+      "threshold_sha256": "a003c8b3fec3cc0d078c5d34539243302920e82b08b2a7df71ed7533063d7742"
+    }
+  },
+  "evaluation_unit": "Operational triggered local User score; not primary eligible fixed-grid User-window",
+  "event_driven_fpr": null,
+  "event_driven_recall": null,
+  "privacy": "Private store contains local User IDs, raw journal and graph. Aggregate report omits identifiers.",
+  "private_store": "reports\\phase6\\indicator_baseline\\local_v1\\Org1\\uninterrupted\\private\\inference.sqlite"
+}

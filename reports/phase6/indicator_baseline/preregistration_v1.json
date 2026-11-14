@@ -1,0 +1,57 @@
+{
+  "status": "FROZEN_BEFORE_COMPARISON_OUTCOMES",
+  "configuration_sha256": "dcca57cd901fdba0cdaaf2fa63d28d74fedabf789dd9ea07cf2b726907e1a908",
+  "policy": {
+    "version": "phase6-immediate-indicator-baseline-v1",
+    "scope": "Separate non-oracle research comparator only; not CredBlock-FL architecture",
+    "organizations": [
+      "Org1",
+      "Org2",
+      "Org3",
+      "Org4",
+      "Org5"
+    ],
+    "split": "VAL",
+    "variant_id": "CFV1_SO_CS_027_SEED1001_VAL",
+    "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+    "attribution_window_seconds": 600,
+    "ttl_seconds": 600,
+    "attribution": "All distinct exact observed IP strings used by an actual locally alerted User in (t-600 seconds,t], any authentication outcome. No minimum failure count, attacker-IP list, campaign membership, ranking or learned policy. If no recent evidence, no indicator.",
+    "status": "suspicious_unverified",
+    "duplicates": "At most one live indicator per issuing organization and exact IP. Repeated local alerts while live are suppressed and do not extend expiry. At expiry a new actual local alert may issue a new episode. Identical duplicate deliveries are idempotent; conflicting payloads reject.",
+    "lifetime": "[issued_at,issued_at+600 seconds); available_at equals issued_at. Expire before processing events at exact expiry. No manual revocation/correction oracle; false indicators expire normally.",
+    "timestamp_barrier": "At t expire due records; all organizations with a local command at t update/score independently; derive indicators from those original local alerts; sort and broadcast to all other organizations at t; then apply received indicators to authentication evidence at t. Organization iteration order must not change outcomes. No cascade: indicator-assisted alerts never issue indicators.",
+    "recipient_rule": "On the unchanged local scoring rows, local_plus = local_alert OR a current authentication at t by that same local User with an IP matching a received live indicator. No rescore or modification of previous decisions; no retrospective matching of older authentication records on receipt. Heartbeat rows without current authentication can only be local alerts.",
+    "additional_event_users": "Record indicator matches for current authentication Users not scored by the accepted local policy separately with local_status=NOT_SCORED. Do not silently count them as local no-alerts or include them in paired scored-row comparisons.",
+    "wire_fields": [
+      "indicator_id",
+      "ip",
+      "issuer",
+      "issued_at",
+      "available_at",
+      "expires_at",
+      "policy_version",
+      "status"
+    ],
+    "private_provenance": "Source alert references, local User IDs, recent observations, model scores and graph state remain solely in organization-local private stores. Public payload contains no alert/User identifier, campaign identity, raw record or feature.",
+    "selection": "Single transparent policy fixed before any new comparison outcomes; no hyperparameter sweep or use of TEST. Ten-minute evidence and TTL align to the accepted recency clock, not a tuned optimum.",
+    "evidence": "Fresh actual full-hour local inference in each org must exactly reproduce the accepted local-only score/alert digest and graph. Global sharing replay then interleaves those immutable causal local journals with zero simulated delay; repeat in reverse organization order. No indicator feedback changes local model, graph or targets.",
+    "evaluation": "Paired operational User-score decisions on the same accepted rows, separate additional event-only decisions; no ground-truth join, FPR/recall/TTD claim or primary fixed-grid amendment. 1% fixed-grid calibration is not an operational event-driven guarantee.",
+    "future": "No final TEST evaluation, detectability-boundary classification, federation, DP, robust aggregation or Fabric"
+  },
+  "source_sha256": {
+    "src/phase6/indicator_sharing.py": "1430a47eb6f29d68f7702dc59a068368fedb2c6bd58f88897ae9cf7817eb6605",
+    "src/phase6/run_indicator_baseline.py": "0ef7c4be20c6b56aff622f02ab7ca7694bfd2b224bf7b2cd1b4ff87a61ce0492",
+    "tests/phase6/test_indicator_sharing.py": "91f9007ace50c85a1c3a0ea2636322cac59bf0bd84a94fba597991d01869a921"
+  },
+  "accepted_local_preregistration_sha256": "331becdd66172317518c977034eead47df0700d5f96b4ba29b82eb558d18708c",
+  "accepted_inference_delivery_manifest_sha256": "cf2a2e730bcbc30189af0afe7f6328acca85967df964a55260e46bc7c4c0d69d",
+  "design_document_sha256": {
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_FL_Phase6_Implementation_Roadmap.md": "c86a5f36f4f9a5d68f6207d2b550cd4d8050adc7694e714cc51e2bc9d4a2a5a5",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock_Implementation_Plan.pdf": "9484c67538d609e5c9ddd35efdb9987777603fbe2907436319d9502a7ee7de57",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL_Final_Framework_Explained.pdf": "79bff193055a5d82f000ae5d6e61b87918f38cfa32ab17fb4db316d059486c53",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-detection-mechanism (2).png": "b5a71f089392ea5c076082893a3581ad0b25e8b113dea835ade2ddcc5f724d08",
+    "C:\\Users\\Gulso\\Downloads\\CredBlock-FL-workflow (1).png": "5efa4d2b38e6a356dd78d1aaa5ba4a5c6f4bb0c585e813e47a1ddbf4b5a63b9f"
+  },
+  "decision": "One preregistered descriptive ten-minute TTL/evidence policy; no search, tuning, TEST or accepted protocol amendment."
+}

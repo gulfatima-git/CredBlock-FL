@@ -1,0 +1,31 @@
+{
+  "organization": "Org2",
+  "events": 567,
+  "commands": 574,
+  "paired_rows": 4859,
+  "local_alerts": 468,
+  "local_plus_alerts": 477,
+  "added_alerts": 9,
+  "no_alerts_local_plus": 4382,
+  "matched_paired_rows": 13,
+  "additional_event_users": 0,
+  "additional_indicator_alerts": 0,
+  "final_ten_minutes_events": 84,
+  "final_ten_minutes_paired_rows": 781,
+  "issued": 56,
+  "suppressed_live_duplicates": 69,
+  "alerts_without_recent_evidence": 359,
+  "received": 222,
+  "expired_receipts": 222,
+  "unique_indicators_utilized": 13,
+  "utilization_records": 13,
+  "paired_decision_digest": "47eea0002285bdd786a017d128234b9325d6c0ee183721b6bd7ba953a78ea2c4",
+  "additional_decision_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "final_graph_sha256": "2fe5cf2aa4e87447f35366e3f1334ca72fbef6ea1aef5250abb2bcb2b33c1fdf",
+  "sharing_adapter_seconds": {
+    "mean": 0.004956495818740425,
+    "p95": 0.012241195004389745,
+    "maximum": 0.21113730000070063
+  },
+  "scope": "Adapter cost includes private journal reads, graph replay, attribution, indicator matching and decision buffering; excludes already measured fresh GNN materialization and final file close."
+}

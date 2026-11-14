@@ -1,0 +1,8 @@
+{
+  "policy_snapshot.json": "ee99b7292aa54a1a045327cde7b2163668b4422ce6501762dd289bfc16c849ca",
+  "source_identity.json": "3aedda4c9334bc8f187cd02da535805407f96da8521611913a98b379ea117fdc",
+  "summary.json": "2c85d1324b2737708c951e6a48e667dbeea79f77008737fcb364a2670700e280",
+  "uninterrupted/latency_records.json": "0cf5739acf8f255527c38bfde16244cb67cb56d524ef9e042433f857451fdf4c",
+  "uninterrupted/summary.json": "72bef20c7aaccbcef698cc7557d72782e8502ba62c48908cc8e3558ecf687e83",
+  "uninterrupted/private/inference.sqlite": "b628b415cf35f8447f8afcaa6009d93cf6958aef9db8c12b5641ebf7ba2d40a8"
+}

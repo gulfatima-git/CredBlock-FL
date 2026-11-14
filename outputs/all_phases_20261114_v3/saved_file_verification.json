@@ -1,0 +1,19 @@
+{
+  "status": "PASS_INDEPENDENT_SAVED_XLSX_EDIT_CHECK",
+  "sheets": 24,
+  "original_cells_preserved_checked": 141949,
+  "allowed_updated_cells": 12,
+  "formula_count": 99,
+  "original_formulas_preserved": 89,
+  "native_tables_preserved": 35,
+  "new_tables": 3,
+  "new_source_rows": 12,
+  "original_source_unchanged": true,
+  "all_ten_thresholds_exact": true,
+  "formula_errors": 0,
+  "live_recalculation": "PASS; modified combined count and restored",
+  "xlsx_sha256": "d11cb6c356973b5ef0bed58e36580eac4e22598f78883767287864772a14baf9",
+  "native_excel_application_recalculation": "Not exercised; Artifact Tool live calculation and saved caches verified",
+  "exporter_exit_code": 1,
+  "exporter_note": "Exporter saved the workbook and exited 1 without an error message; independently checked ZIP, values, native features, formulas and caches."
+}

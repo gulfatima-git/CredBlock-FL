@@ -1,0 +1,11 @@
+{
+ "status":"PASS",
+ "recorded_on_local_date":"2026-11-14",
+ "new_policy_preflight":{"command":".venv/Scripts/python.exe -B -m pytest tests/phase6/test_indicator_sharing.py -q -p no:cacheprovider","passed":37,"duration_seconds":0.53,"already_counted_in_regression":true},
+ "phase6_regression":{"command":".venv/Scripts/python.exe -B -m pytest tests/phase6 -q -p no:cacheprovider -k 'not real_test_branch_cannot_be_opened_for_fitting'","passed":233,"deselected":1,"warnings":742,"duration_seconds":95.84,"exclusion":"Existing real_test_branch_cannot_be_opened_for_fitting opens TEST manifest; excluded. Accepted pre-I/O TEST guards passed."},
+ "accepted_runtime_synthetic_selftests":{"command":".venv/Scripts/python.exe -B validate_phase5_graph_retention_v1.py --self-test","passed":20,"duration_seconds":17.866},
+ "total_distinct_tests_passed":253,
+ "coverage":["Original local ALERT plus causal recent evidence required","Allowlisted public envelope, private source-alert provenance","No recent evidence and exact ten-minute attribution boundary","All four other organizations receive at issue time, no self delivery","Tied-timestamp barrier independent of organization order","No future/backdated/retroactive use","Current authentication required for recipient match","Duplicate issue and receipt suppression without TTL renewal","Independent issuer episodes and IP rotation","Exact-exclusive expiry and idle expiry drain","False-alert propagation on shared benign fixture IP","No local alert means no indicator and no assisted alert","No indicator-only cascades","Oracle/private wire fields rejected","Policy/lifetime/identity tampering rejected","Accepted source/protocol hashes unchanged"],
+ "real_integration_gate":"Five fresh actual full-hour VAL GraphSAGE runs must exactly match accepted local-only results, then complete paired sharing comparison and reversed-organization-order repeat. Those are separate real integration evidence, not counted as 253 automated tests.",
+ "warnings":"Existing TorchScript/Python3.14 FutureWarning and PyG typing._eval_type deprecations; no test failures"
+}

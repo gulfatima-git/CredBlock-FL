@@ -1,0 +1,63 @@
+{
+  "status": "PASS_INDEPENDENT_SUBPHASE7_DELIVERY_AUDIT",
+  "records": [
+    {
+      "organization": "Org1",
+      "status": "PASS_INDEPENDENT_LOCAL_CAUSAL_PROVENANCE_AND_PAIR_AUDIT",
+      "paired_rows": 4438,
+      "additional_event_rows": 0,
+      "issued_provenance_verified": 49,
+      "added_alerts_verified": 2,
+      "private_source_unchanged": true
+    },
+    {
+      "organization": "Org2",
+      "status": "PASS_INDEPENDENT_LOCAL_CAUSAL_PROVENANCE_AND_PAIR_AUDIT",
+      "paired_rows": 4859,
+      "additional_event_rows": 0,
+      "issued_provenance_verified": 56,
+      "added_alerts_verified": 9,
+      "private_source_unchanged": true
+    },
+    {
+      "organization": "Org3",
+      "status": "PASS_INDEPENDENT_LOCAL_CAUSAL_PROVENANCE_AND_PAIR_AUDIT",
+      "paired_rows": 5749,
+      "additional_event_rows": 0,
+      "issued_provenance_verified": 62,
+      "added_alerts_verified": 2,
+      "private_source_unchanged": true
+    },
+    {
+      "organization": "Org4",
+      "status": "PASS_INDEPENDENT_LOCAL_CAUSAL_PROVENANCE_AND_PAIR_AUDIT",
+      "paired_rows": 5862,
+      "additional_event_rows": 0,
+      "issued_provenance_verified": 61,
+      "added_alerts_verified": 2,
+      "private_source_unchanged": true
+    },
+    {
+      "organization": "Org5",
+      "status": "PASS_INDEPENDENT_LOCAL_CAUSAL_PROVENANCE_AND_PAIR_AUDIT",
+      "paired_rows": 5474,
+      "additional_event_rows": 0,
+      "issued_provenance_verified": 50,
+      "added_alerts_verified": 5,
+      "private_source_unchanged": true
+    }
+  ],
+  "wire_indicators": 278,
+  "prior_files_preserved": 12050,
+  "timing_scope": "Global comparison wall time includes adapter loading, private-source hashes, graph replay, barriers, attribution/matching, output close and final graph/source verification. Per-org adapter timing spans prepare through finish including same-timestamp barrier/peer work; excludes fresh GNN materialization and final close/hash costs. Model-stage timing includes batch sampling plus forward passes. Simulated propagation is zero by definition, not measured transport.",
+  "source_sha256": {
+    "reports/phase6/indicator_baseline/final_v1/summary.json": "ada33ed7a81563fc6f7844434e04a0e134499f37fc9080fc9c2caae29f53e013",
+    "configs/phase6/indicator_sharing_v1.json": "dcca57cd901fdba0cdaaf2fa63d28d74fedabf789dd9ea07cf2b726907e1a908",
+    "reports/phase6/indicator_baseline/preregistration_v1.json": "5c2ad79bc28e7c6872951742b295ee38d0f18366f8847efbde4dd37e6fd8282e",
+    "reports/phase6/indicator_baseline/testing_results_v1.json": "f72437791dd780cccf070502a0785ed1ee808b53e52272f8fb49d46c3b503159",
+    "reports/phase6/inference/acceptance_v1.json": "0dea28549f804a9ca1d5f1ffd48ab29e53ef4bbfb44c38e43ee94cba499fd275",
+    "reports/phase6/progress_v9.json": "104fd95d2e3b17da28f1f4fd5a63fe024120d2f0d7632e24bb96b1994d8b5f2b",
+    "src/phase6/verify_indicator_baseline.py": "78aa9284637661b5c347654fe5c0e049348a308624106b88c7d3db5292336f06"
+  },
+  "scope": "Read-only per-organization provenance and causal paired-decision recomputation. No labels, TEST, training, threshold/policy changes or future campaign information."
+}

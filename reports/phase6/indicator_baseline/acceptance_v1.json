@@ -1,0 +1,19 @@
+{
+  "version": "phase6-subphase7-user-acceptance-v1",
+  "status": "USER_ACCEPTED",
+  "accepted_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "user_statement": "I accept Phase 6 Subphase 7 (6.5): Immediate Indicator-Sharing Baseline, based on the reported technical validation and independent delivery audit.",
+  "evidence": "reports/phase6/indicator_baseline/TECHNICAL_ACCEPTANCE_REPORT_v1.md",
+  "evidence_sha256": "7ac49f21dc7be472e3f1166205d5899c8bf3cc745d2e741444721a9a07569262",
+  "delivery_manifest": "reports/phase6/indicator_baseline/delivery_manifest_v1.json",
+  "delivery_manifest_sha256": "3f84f14879e306e4f8cc28ac8628f9347d10560342beb034e360e78ef10b4991",
+  "independent_audit_sha256": "bd55c097e22f709260940ae9d2ba2c1f8dedd707e75e0805d3f2653296815e80",
+  "policy_sha256": "dcca57cd901fdba0cdaaf2fa63d28d74fedabf789dd9ea07cf2b726907e1a908",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "preservation_verification": "PASS",
+  "prior_files_preserved": 12050,
+  "delivery_artifacts_preserved": 130,
+  "authorized_next": "Subphase 8 (6.6) only AFTER user says done following supplied git add/commit commands",
+  "subphase8_started": false
+}

@@ -1,0 +1,13 @@
+{
+  "version": "phase6-subphase6-user-acceptance-v1",
+  "status": "USER_ACCEPTED",
+  "accepted_on_local_date": "2026-11-14",
+  "timezone": "Asia/Karachi",
+  "user_statement": "I accept Phase 6 Subphase 6 (6.4): Continuous Local Inference, based on the reported technical validation results and independent-process startup supplement.",
+  "evidence": "reports/phase6/inference/TECHNICAL_ACCEPTANCE_REPORT_v1.md",
+  "evidence_sha256": "8573a1b11b805c18a4122bdaeac8add60b261c3687db8069098f28f2e180f170",
+  "sealed_delivery_manifest_sha256": "cf2a2e730bcbc30189af0afe7f6328acca85967df964a55260e46bc7c4c0d69d",
+  "preservation_manifest": "reports/phase6/indicator_baseline/accepted_inputs_before_subphase7_v1.json",
+  "authorized_next": "Subphase 7 (6.5) only",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b"
+}
