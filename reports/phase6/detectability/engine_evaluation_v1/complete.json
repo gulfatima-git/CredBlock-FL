@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "kind": "representative_evaluator_only",
+  "method_sha256": "f63e0bb73253eea4a8c8d7abc4231f94069aaf15c3eef68eeb3fa1b00d49bc55",
+  "artifact_sha256": {
+    "summary.json": "e2a3f26427cfdd153e848fc34f0c762613ded048d2b1fc2ec3452dfa6fd0f6f0",
+    "Org5/private/attribution.jsonl": "72c8e9885bc2b5788a8a557d7df6d63a0dcde1553a4ee395cb86ada4a06472cb",
+    "Org5/private/target_users.jsonl": "463dc4ed5260566573c39d45999f9726eb1210793fdeb21880f1122a89aff59e",
+    "Org4/private/attribution.jsonl": "0c451a2e7b4fcff83e2679b3315152f58fca24995741c7d8c77eba3803973ba2",
+    "Org4/private/target_users.jsonl": "ae72080d8736fff87dbd4d81976f29fc09059d80a9729dee69b75c8a10118ad9",
+    "Org3/private/attribution.jsonl": "e33334b033ed10ca27432e59d8a3064a454bf93e8cb6623a4baef5c1f8ab5879",
+    "Org3/private/target_users.jsonl": "608c64a762704076ab1afcca9532b85be5368edcb88363af75619f78b3b1c64d",
+    "Org2/private/attribution.jsonl": "61c3836a8d37fba502aea1ba3043d1552933254293d9a8cb3acdc67b06e3e47d",
+    "Org2/private/target_users.jsonl": "ae549fe6ffdd0d8bc0e51b980425edbbded146b8f3758123c7ecb7e3688b9b8f",
+    "Org1/private/attribution.jsonl": "544c38392ec3675dda9e358951ba80c4a95236f262f0ef207f53fd5d207937e8",
+    "Org1/private/target_users.jsonl": "bd0feb1a423aeddeca450a657ca5bfd5fc7e3edb4024e375108f6424c4cd880b"
+  }
+}

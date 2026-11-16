@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "tests_passed": 35,
+  "command": ".venv\\Scripts\\python.exe -B -m pytest -q -p no:cacheprovider tests\\phase6\\test_detectability.py tests\\phase6\\test_detectability_batch.py --basetemp=C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_audit_tests_20261116_v1",
+  "scope": "Existing frozen temporal-attribution, overlap/ambiguity, censoring, split-isolation and resumable-component tests. No expensive inference or TEST outcome query.",
+  "elapsed_seconds": null
+}

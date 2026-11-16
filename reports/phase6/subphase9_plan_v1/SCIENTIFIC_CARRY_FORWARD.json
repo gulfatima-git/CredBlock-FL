@@ -1,0 +1,37 @@
+{
+  "version": "subphase9-scientific-carry-forward-v1",
+  "accepted_subphase8_record": "reports/phase6/detectability/acceptance_v1.json",
+  "acceptance_record_sha256": "d90c5392ccbbd784a468d4abc256c48cce4bae0c388f284fdc503cc45150460b",
+  "verified_finding": {
+    "split": "VAL",
+    "required_campaigns": 171,
+    "independently_validated_campaigns": 171,
+    "organization_replays": 855,
+    "local_only_undetected_all_targeted_organizations": 0,
+    "local_plus_indicator_undetected_all_targeted_organizations": 0,
+    "undetected_denominator": 171,
+    "undetected_percent": 0,
+    "organization_trials_detected_each_policy": 548,
+    "organization_trials_denominator": 549,
+    "all_targeted_organizations_detected_campaigns_each_policy": 170,
+    "local_only_detected_target_user_occurrences": 13733,
+    "indicator_detected_target_user_occurrences": 15111,
+    "target_user_occurrence_denominator": 36000,
+    "indicator_additional_target_user_occurrences": 1378,
+    "indicator_earlier_first_campaign_detections": 0
+  },
+  "limitations": [
+    "No wholly locally-undetected campaign subset exists in the verified VAL inventory; no claim of federated rescue on that empty subset.",
+    "Campaign detection anywhere, all-targeted detection, organization trials, local User occurrences, User-time decisions and detection time are different endpoints.",
+    "VAL was used for model selection and calibration; these are not held-out TEST results.",
+    "The 1% empirical FPR belongs only to the frozen eligible fixed-grid VAL negative denominator, not arbitrary event/campaign false-positive rates.",
+    "Shared backgrounds and three temporal blocks per split induce dependence; no naive IID confidence intervals or cross-organization identity deduplication.",
+    "Temporal alert attribution is association, not causal proof; unattributed alerts are not automatically confirmed false positives.",
+    "Finite horizon and right-censoring remain unchanged; full final-ten-minute operational coverage is preserved.",
+    "Keep Raccount/Sorg controlled design families separate; target coverage, per-User intensity, total volume and organization composition can differ.",
+    "Single-organization Raccount is N/A; RIP measures distinct attacker IPs per attempt, not chronological switching frequency.",
+    "Zero-delay suspicious-IP sharing is a separate comparison baseline, not realistic network latency or the federated architecture.",
+    "No post-hoc dataset, campaign-intensity, model, threshold, label, split or attribution changes to manufacture sub-threshold campaigns.",
+    "The graph/model/sampler remain local and unchanged; future federation must use compatible common architecture without rewriting accepted local checkpoints."
+  ]
+}

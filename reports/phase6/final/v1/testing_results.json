@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "new_reporting_tests": 26,
+  "existing_temporal_tests": 31,
+  "total_passed": 57,
+  "independent_real_prediction_components": 20,
+  "commands": [
+    ".venv\\Scripts\\python.exe -B -m pytest -q -p no:cacheprovider tests/phase6/test_final_reporting.py --basetemp=<new-workspace-temp>",
+    ".venv\\Scripts\\python.exe -B -m pytest -q -p no:cacheprovider tests/phase6/test_temporal_protocol.py --basetemp=<new-workspace-temp>",
+    "C:\\Python314\\python.exe -B <workspace>/subphase9_independent_reconciliation.py"
+  ],
+  "no_training_or_real_inference_tests_run": true,
+  "TEST_payloads_opened": 0,
+  "scope": "New reporting semantics/pre-I/O guards plus existing synthetic temporal contract tests; real saved-score reconciliation covers all 20 TRAIN/VAL detector/org components. Not model training or campaign re-evaluation."
+}

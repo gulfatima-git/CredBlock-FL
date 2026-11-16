@@ -1,0 +1,11 @@
+{
+  "status": "PASS_DOCUMENTATION_INPUT_VERIFICATION",
+  "reviewed_delivery_artifacts_unchanged": 54,
+  "delivery_manifest_sha256": "e7aff76a570b9dd6e25d0c63d0141b941abf319a01a413da75e5067cf647bbbc",
+  "accepted_subphase8_record_sha256": "d90c5392ccbbd784a468d4abc256c48cce4bae0c388f284fdc503cc45150460b",
+  "primary_protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "detectability_protocol_sha256": "f63e0bb73253eea4a8c8d7abc4231f94069aaf15c3eef68eeb3fa1b00d49bc55",
+  "evaluations_repeated": false,
+  "test_outcomes_accessed": false,
+  "subphase9_implementation_started": false
+}

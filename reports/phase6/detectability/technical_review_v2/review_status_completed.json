@@ -1,0 +1,13 @@
+{
+  "technical_status": "PASS",
+  "subphase8_status": "TECHNICAL_PASS_AWAITING_USER_ACCEPTANCE",
+  "independently_validated": 171,
+  "organization_replays": 855,
+  "user_accepted": false,
+  "subphase9_started": false,
+  "report": "reports/phase6/detectability/technical_review_v2/final_v1/FINAL_TECHNICAL_ACCEPTANCE_REPORT.md",
+  "prior_files_preserved": 12182,
+  "sidecars_preserved": 1710,
+  "nonempty_wals": 0,
+  "workbook_sha256": "ab862e09133aa204dbdcf447cc1444bd065ca37862b25055b27fbccbb5179cd8"
+}

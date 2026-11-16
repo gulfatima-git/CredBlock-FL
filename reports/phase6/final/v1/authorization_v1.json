@@ -1,0 +1,14 @@
+{
+  "status": "AUTHORIZED_OPTION_A",
+  "stages": [
+    "A",
+    "B"
+  ],
+  "stage_c": false,
+  "test": false,
+  "models_retrained": false,
+  "thresholds_recalibrated": false,
+  "repeat_completed_evaluations": false,
+  "phase7": false,
+  "user_acceptance": false
+}

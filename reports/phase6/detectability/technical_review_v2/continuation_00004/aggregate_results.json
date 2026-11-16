@@ -1,0 +1,34 @@
+[
+  {
+    "detector_family": "local_only",
+    "campaigns": 171,
+    "detected_campaigns": 171,
+    "undetected_campaigns": 0,
+    "all_orgs_detected": 170,
+    "partially_detected": 1,
+    "targeted_org_trials": 549,
+    "detected_org_trials": 548,
+    "exposed_user_occurrences": 36000,
+    "detected_user_occurrences": 13733,
+    "qualifying_alert_rows": 59121,
+    "censored_user_occurrences": 22267,
+    "censored_org_trials": 1,
+    "censored_campaigns": 0
+  },
+  {
+    "detector_family": "local_plus_indicator",
+    "campaigns": 171,
+    "detected_campaigns": 171,
+    "undetected_campaigns": 0,
+    "all_orgs_detected": 170,
+    "partially_detected": 1,
+    "targeted_org_trials": 549,
+    "detected_org_trials": 548,
+    "exposed_user_occurrences": 36000,
+    "detected_user_occurrences": 15111,
+    "qualifying_alert_rows": 61297,
+    "censored_user_occurrences": 20889,
+    "censored_org_trials": 1,
+    "censored_campaigns": 0
+  }
+]

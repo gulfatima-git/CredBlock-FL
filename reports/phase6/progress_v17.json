@@ -1,0 +1,98 @@
+{
+  "version": "phase6-progress-v17",
+  "recorded_on_local_date": "2026-11-17",
+  "timezone": "Asia/Karachi",
+  "subphases": {
+    "0": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/readiness/acceptance_v1.json"
+    },
+    "1": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/splits/acceptance_v1.json",
+      "successful_audit": "reports/phase6/splits/v2/summary.json"
+    },
+    "2": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/pipeline/acceptance_v1.json"
+    },
+    "3": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/training/acceptance_v1.json"
+    },
+    "4": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/comparator/acceptance_v1.json"
+    },
+    "5": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/calibration/acceptance_v1.json"
+    },
+    "6": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/inference/acceptance_v1.json"
+    },
+    "7": {
+      "status": "USER_ACCEPTED",
+      "evidence": "reports/phase6/indicator_baseline/acceptance_v1.json"
+    },
+    "8": {
+      "status": "USER_ACCEPTED",
+      "required_val_instances": 171,
+      "validated_val_instances": 171,
+      "pending_val_instances": 0,
+      "protocol": "configs/phase6/detectability_protocol_v1.json",
+      "review_report": "reports/phase6/detectability/REVIEW_REPORT_v1.md",
+      "full_run_launched": true,
+      "technical_report": "reports/phase6/detectability/technical_review_v2/final_v1/FINAL_TECHNICAL_ACCEPTANCE_REPORT.md",
+      "independent_completion_manifests": 1362,
+      "verified_artifact_hash_entries": 15302,
+      "evidence": "reports/phase6/detectability/acceptance_v1.json",
+      "verified_zero_undetected_campaigns": {
+        "split": "VAL",
+        "required_campaigns": 171,
+        "independently_validated_campaigns": 171,
+        "organization_replays": 855,
+        "local_only_undetected_all_targeted_organizations": 0,
+        "local_plus_indicator_undetected_all_targeted_organizations": 0,
+        "undetected_denominator": 171,
+        "undetected_percent": 0,
+        "organization_trials_detected_each_policy": 548,
+        "organization_trials_denominator": 549,
+        "all_targeted_organizations_detected_campaigns_each_policy": 170,
+        "local_only_detected_target_user_occurrences": 13733,
+        "indicator_detected_target_user_occurrences": 15111,
+        "target_user_occurrence_denominator": 36000,
+        "indicator_additional_target_user_occurrences": 1378,
+        "indicator_earlier_first_campaign_detections": 0
+      }
+    },
+    "9": {
+      "status": "IN_PROGRESS",
+      "implementation_authorized": true,
+      "plan_status": "AWAITING_USER_REVIEW",
+      "plan": "reports/phase6/subphase9_plan_v1/IMPLEMENTATION_PLAN.md",
+      "test_outcome_access_authorized": false,
+      "execution_scope": "OPTION_A_TRAIN_VAL_REPORTING_ONLY",
+      "stage_c": "DEFERRED_UNAUTHORIZED"
+    }
+  },
+  "frozen_protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "protocol_amendment_policy": "Explicitly versioned amendment required for splits, scoring grid, 1% FPR or evaluation-unit changes",
+  "version_control_before_final_test": {
+    "status": "FROZEN_PROTOCOL_VERIFIED_IN_COMMIT",
+    "commit": "5de030316176a27889054d0e782cb1ad92171cb5",
+    "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+    "final_test_evaluation_authorized": false
+  },
+  "accepted_outputs_preserved": true,
+  "model_training_performed": true,
+  "test_predictions_performed": false,
+  "federation_dp_blockchain_implemented": false,
+  "next_exact_action": "Implement and validate saved TRAIN/VAL reporting; TEST and full Phase 6 completion remain pending.",
+  "subphase8_start_gate": {
+    "status": "USER_DONE_RECEIVED",
+    "verified_commit": "5de030316176a27889054d0e782cb1ad92171cb5"
+  },
+  "phase6_complete": false
+}

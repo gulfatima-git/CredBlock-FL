@@ -1,0 +1,13 @@
+{
+  "status": "PASS_SAVED_WORKBOOK_INDEPENDENT_VERIFICATION",
+  "worksheets": 19,
+  "native_tables": 21,
+  "source_cells_verified": 58578,
+  "formulas": 12,
+  "formula_errors": [],
+  "all_four_RQs_and_six_contributions_preserved": true,
+  "summary_metrics_exact": true,
+  "sha256": "4def699afc562501c42d3a227c5f1e48cc1bc06dbb2d384e2d2697f819c9e71a",
+  "exporter_exit_code": -1073740791,
+  "export_note": "Exporter terminated after saving; ZIP, all source cells, formula caches and native tables independently verified. Formatting draft v1 preserved; v2 is the final workbook."
+}

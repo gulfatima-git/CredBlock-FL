@@ -1,0 +1,33 @@
+{
+  "status": "EXPORTED",
+  "worksheets": 6,
+  "formulas": 14,
+  "expected_source_rows": [
+    {
+      "sheet": "Campaigns",
+      "rows": 342,
+      "columns": 21
+    },
+    {
+      "sheet": "Organizations",
+      "rows": 1098,
+      "columns": 20
+    },
+    {
+      "sheet": "Factors",
+      "rows": 46,
+      "columns": 14
+    },
+    {
+      "sheet": "Operational",
+      "rows": 855,
+      "columns": 13
+    },
+    {
+      "sheet": "Sidecars",
+      "rows": 1710,
+      "columns": 6
+    }
+  ],
+  "formula_recalculation": "PASS"
+}

@@ -1,0 +1,7 @@
+detector_family,seed,campaigns,detected_campaigns,undetected_campaigns,undetected_percent,all_targeted_organizations_detected,partially_detected_campaigns,organization_trials,detected_organization_trials,exposed_user_occurrences,detected_user_occurrences,detected_user_percent,qualifying_alert_rows
+local_only,1001,57,57,0,0.0,57,0,183,183,12000,4345,36.208333333333336,19133
+local_only,1002,57,57,0,0.0,56,1,183,182,12000,4558,37.983333333333334,19766
+local_only,1003,57,57,0,0.0,57,0,183,183,12000,4830,40.25,20222
+local_plus_indicator,1001,57,57,0,0.0,57,0,183,183,12000,4821,40.175,19879
+local_plus_indicator,1002,57,57,0,0.0,56,1,183,182,12000,4999,41.65833333333333,20469
+local_plus_indicator,1003,57,57,0,0.0,57,0,183,183,12000,5291,44.09166666666667,20949

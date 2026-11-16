@@ -1,0 +1,63 @@
+{
+  "status": "PASS_FROZEN_CONFIGURATION_AND_SEED_COVERAGE",
+  "campaigns": 171,
+  "family_seed_counts": [
+    {
+      "family": "Raccount_fixed_per_org_attempts",
+      "seed": 1001,
+      "campaigns": 27
+    },
+    {
+      "family": "Raccount_fixed_per_org_attempts",
+      "seed": 1002,
+      "campaigns": 27
+    },
+    {
+      "family": "Raccount_fixed_per_org_attempts",
+      "seed": 1003,
+      "campaigns": 27
+    },
+    {
+      "family": "Sorg1_descriptive_reference",
+      "seed": 1001,
+      "campaigns": 3
+    },
+    {
+      "family": "Sorg1_descriptive_reference",
+      "seed": 1002,
+      "campaigns": 3
+    },
+    {
+      "family": "Sorg1_descriptive_reference",
+      "seed": 1003,
+      "campaigns": 3
+    },
+    {
+      "family": "Sorg_fixed_per_org_attempts",
+      "seed": 1001,
+      "campaigns": 27
+    },
+    {
+      "family": "Sorg_fixed_per_org_attempts",
+      "seed": 1002,
+      "campaigns": 27
+    },
+    {
+      "family": "Sorg_fixed_per_org_attempts",
+      "seed": 1003,
+      "campaigns": 27
+    }
+  ],
+  "targeted_org_count_matches_Sorg": true,
+  "RIP_levels": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "Sorg_levels": [
+    1,
+    2,
+    3,
+    5
+  ]
+}

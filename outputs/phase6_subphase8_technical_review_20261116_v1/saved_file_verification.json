@@ -1,0 +1,21 @@
+{
+  "status": "PASS_SAVED_WORKBOOK_VERIFICATION",
+  "sheets": [
+    "Summary",
+    "Campaigns",
+    "Organizations",
+    "Factors",
+    "Operational",
+    "Sidecars"
+  ],
+  "source_cells_verified": 51235,
+  "formulas": 14,
+  "formula_errors": [],
+  "canonical_campaign_rows": 342,
+  "canonical_organization_rows": 1098,
+  "sidecars": 1710,
+  "source_summary_metrics_exact": true,
+  "sha256": "ab862e09133aa204dbdcf447cc1444bd065ca37862b25055b27fbccbb5179cd8",
+  "exporter_exit_code": -1073740791,
+  "export_note": "The exporter saved the workbook and then terminated with Windows exit code -1073740791. The delivered ZIP, every source data cell, formula caches, native tables and error cells were independently checked; this runtime anomaly is retained explicitly."
+}

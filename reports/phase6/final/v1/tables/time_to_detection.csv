@@ -1,0 +1,7 @@
+policy,unit,denominator,detected,right_censored,median_detected_delay_seconds,min_detected_delay_seconds,max_detected_delay_seconds,time_origin,note
+local_only,campaign,171,171,0,152.672165,0.0,848.503123,actual_global_campaign_onset,Detected-only descriptive delays; censored observations never receive finite detection time; no IID CI
+local_only,targeted_organization_trial,549,548,1,440.920191,0.0,2823.953838,actual_global_campaign_onset,Detected-only descriptive delays; censored observations never receive finite detection time; no IID CI
+local_only,local_target_User_occurrence,36000,13733,22267,313.009918,0.0,3578.623025,first_local_User_positive_exposure,Detected-only descriptive delays; censored observations never receive finite detection time; no IID CI
+local_plus_indicator,campaign,171,171,0,152.672165,0.0,848.503123,actual_global_campaign_onset,Detected-only descriptive delays; censored observations never receive finite detection time; no IID CI
+local_plus_indicator,targeted_organization_trial,549,548,1,401.136626,0.0,2823.953838,actual_global_campaign_onset,Detected-only descriptive delays; censored observations never receive finite detection time; no IID CI
+local_plus_indicator,local_target_User_occurrence,36000,15111,20889,105.819666,0.0,3578.623025,first_local_User_positive_exposure,Detected-only descriptive delays; censored observations never receive finite detection time; no IID CI

@@ -1,0 +1,19 @@
+{
+  "status": "FAIL",
+  "verified_instances": 0,
+  "failures": [
+    {
+      "error_type": "AssertionError",
+      "message": "Paired/graph seals",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review_v2.py\", line 269, in <module>\n    instances.append(audit_instance(row))\n                     ~~~~~~~~~~~~~~^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review_v2.py\", line 224, in audit_instance\n    require(record['paired_decision_digest']==sha(share/o/'private/paired_decisions.jsonl') and record['final_graph_sha256']==loc['final_graph_checkpoint_sha256'],'Paired/graph seals')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review_v2.py\", line 23, in require\n    if not x:raise AssertionError(msg)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Paired/graph seals\n"
+    }
+  ],
+  "checks": {
+    "assertions": 41213,
+    "self_contained_database_preflight": 855,
+    "completion_manifests": 9,
+    "artifact_hash_entries": 91,
+    "indicators": 130
+  },
+  "elapsed_seconds": 9.291071400017245
+}

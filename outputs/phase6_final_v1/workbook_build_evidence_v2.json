@@ -1,0 +1,97 @@
+{
+  "sheets": 19,
+  "formulas": 12,
+  "recalculation": "PASS",
+  "sources": [
+    {
+      "sheet": "RQ and contributions",
+      "rows": 10,
+      "columns": 11
+    },
+    {
+      "sheet": "Fixed grid",
+      "rows": 20,
+      "columns": 21
+    },
+    {
+      "sheet": "Aggregation",
+      "rows": 8,
+      "columns": 21
+    },
+    {
+      "sheet": "Calibration",
+      "rows": 10,
+      "columns": 12
+    },
+    {
+      "sheet": "Prevalence",
+      "rows": 10,
+      "columns": 11
+    },
+    {
+      "sheet": "Inductive",
+      "rows": 30,
+      "columns": 20
+    },
+    {
+      "sheet": "Seeds",
+      "rows": 30,
+      "columns": 18
+    },
+    {
+      "sheet": "Grid factors",
+      "rows": 230,
+      "columns": 20
+    },
+    {
+      "sheet": "Histories",
+      "rows": 151,
+      "columns": 9
+    },
+    {
+      "sheet": "Training resources",
+      "rows": 10,
+      "columns": 7
+    },
+    {
+      "sheet": "Campaign context",
+      "rows": 171,
+      "columns": 15
+    },
+    {
+      "sheet": "Detection times",
+      "rows": 6,
+      "columns": 10
+    },
+    {
+      "sheet": "Campaigns",
+      "rows": 342,
+      "columns": 26
+    },
+    {
+      "sheet": "Organization trials",
+      "rows": 1098,
+      "columns": 30
+    },
+    {
+      "sheet": "Operational factors",
+      "rows": 46,
+      "columns": 16
+    },
+    {
+      "sheet": "Factor seed coverage",
+      "rows": 342,
+      "columns": 13
+    },
+    {
+      "sheet": "Inference resources",
+      "rows": 5,
+      "columns": 10
+    },
+    {
+      "sheet": "Sources",
+      "rows": 260,
+      "columns": 2
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "kind": "full_171_validation",
+  "method_sha256": "f63e0bb73253eea4a8c8d7abc4231f94069aaf15c3eef68eeb3fa1b00d49bc55",
+  "artifact_sha256": {
+    "summary.json": "bd27bad41e6dee0181d2791f315b029813304745fef5d26e6cc520192d4b0bb8"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "FAIL",
+  "verified_instances": 0,
+  "failures": [
+    {
+      "error_type": "AssertionError",
+      "message": "Missing/unlisted sealed artifacts C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\detectability\\full_v1\\instances\\CFV1_RA_CS_004_SEED1001_VAL\\local\\Org1\\attempt_00001",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review.py\", line 233, in <module>\n    instances.append(audit_instance(row))\n                     ~~~~~~~~~~~~~~^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review.py\", line 105, in audit_instance\n    share=component(path/'sharing','sharing');reverse=component(path/'reverse_sharing','reverse_sharing');localpaths={o:component(path/'local'/o,'local_runtime') for o in ORGS};evaluation=ev\n                                                                                                                        ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review.py\", line 48, in component\n    if (p/'complete.json').exists():sealed(p,kind);valid.append(p)\n                                    ~~~~~~^^^^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review.py\", line 40, in sealed\n    require(actual==claimed,'Missing/unlisted sealed artifacts '+str(folder))\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review.py\", line 23, in require\n    if not x:raise AssertionError(msg)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Missing/unlisted sealed artifacts C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\detectability\\full_v1\\instances\\CFV1_RA_CS_004_SEED1001_VAL\\local\\Org1\\attempt_00001\n"
+    }
+  ],
+  "checks": {
+    "assertions": 189,
+    "completion_manifests": 4,
+    "artifact_hash_entries": 66
+  },
+  "elapsed_seconds": 0.24794589998782612
+}

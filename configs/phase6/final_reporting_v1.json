@@ -1,0 +1,220 @@
+{
+  "version": "phase6-final-reporting-v1",
+  "approval": "OPTION_A_TRAIN_VAL_ONLY",
+  "approved_on_local_date": "2026-11-17",
+  "allowed_splits": [
+    "TRAIN",
+    "VAL"
+  ],
+  "test_access": false,
+  "stage_c_implemented": false,
+  "phase6_complete": false,
+  "phase7_started": false,
+  "primary_protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "predictions": [
+    {
+      "organization": "Org1",
+      "detector": "graphsage",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_v2\\organizations\\Org1\\models\\Org1\\selected_train_predictions.csv",
+      "sha256": "99292f48227531f8f9ed20063ca663d2a0eb415755e926fe658e8fbfb83fe78c",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org1_graphsage.json"
+    },
+    {
+      "organization": "Org1",
+      "detector": "graphsage",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_v2\\organizations\\Org1\\models\\Org1\\hidden16\\validation_predictions.csv",
+      "sha256": "37b3486e38a10c0554a173a45d194e2a024622d490a4c2daa38031208d854cae",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org1_graphsage.json"
+    },
+    {
+      "organization": "Org1",
+      "detector": "tabular_mlp",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org1\\models\\selected_train_predictions.csv",
+      "sha256": "814a3473ffdb844e1f5f66b7a2e8e3a7169f45d609bfae5fb5fc09c7f3e08444",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org1_tabular_mlp.json"
+    },
+    {
+      "organization": "Org1",
+      "detector": "tabular_mlp",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org1\\validation_predictions.csv",
+      "sha256": "e9836fcd984f884a816accc795afd5ef32d484eef1105d1c2238a673e9441acf",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org1_tabular_mlp.json"
+    },
+    {
+      "organization": "Org2",
+      "detector": "graphsage",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_v2\\organizations\\Org2\\models\\Org2\\selected_train_predictions.csv",
+      "sha256": "0b23d395936ebf0f46afa6a4d2ed319788c3a45b03c546d8d50be33d0c2d5974",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org2_graphsage.json"
+    },
+    {
+      "organization": "Org2",
+      "detector": "graphsage",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_v2\\organizations\\Org2\\models\\Org2\\hidden32\\validation_predictions.csv",
+      "sha256": "786c22027e252e0909f13801bcad2d6fb2b0d4f9d53a10dec519445a15158c85",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org2_graphsage.json"
+    },
+    {
+      "organization": "Org2",
+      "detector": "tabular_mlp",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org2\\models\\selected_train_predictions.csv",
+      "sha256": "761956dec5ef50967f02280a481c1e59a84d040b991792258eeabb06110bf667",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org2_tabular_mlp.json"
+    },
+    {
+      "organization": "Org2",
+      "detector": "tabular_mlp",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org2\\validation_predictions.csv",
+      "sha256": "ca2e2a40825eaa7de070b1f263d4248410e7e47517714984516bf45b83fc8351",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org2_tabular_mlp.json"
+    },
+    {
+      "organization": "Org3",
+      "detector": "graphsage",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_org3_v1\\models\\Org3\\selected_train_predictions.csv",
+      "sha256": "1a30e71c0b56cc35b44a66c9a927394afbe1f37ca8ef8715ba068897450d3a6d",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org3_graphsage.json"
+    },
+    {
+      "organization": "Org3",
+      "detector": "graphsage",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_org3_v1\\models\\Org3\\hidden32\\validation_predictions.csv",
+      "sha256": "e0be48413b757004d1102fd998ef542ce54289ca70d418c5709d5d3645bdd30e",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org3_graphsage.json"
+    },
+    {
+      "organization": "Org3",
+      "detector": "tabular_mlp",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org3\\models\\selected_train_predictions.csv",
+      "sha256": "54eb688ebb75470b710134658103c2ff7898413bc92db167f604f56ab8059fb6",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org3_tabular_mlp.json"
+    },
+    {
+      "organization": "Org3",
+      "detector": "tabular_mlp",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org3\\validation_predictions.csv",
+      "sha256": "0f61dfc4b6dbf26db0a18413fed821124a4ebe78d1edc0523c34d8c70cc791e7",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org3_tabular_mlp.json"
+    },
+    {
+      "organization": "Org4",
+      "detector": "graphsage",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_org4_v1\\models\\Org4\\selected_train_predictions.csv",
+      "sha256": "30d6f24aff2be333820991979e541794f407ada5814fb3b32d1707b53bf23f7a",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org4_graphsage.json"
+    },
+    {
+      "organization": "Org4",
+      "detector": "graphsage",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_org4_v1\\models\\Org4\\hidden32\\validation_predictions.csv",
+      "sha256": "744719ffdc86944c7abeec410bffcb381c45d20dae231c1ae1f04c24eee75ea1",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org4_graphsage.json"
+    },
+    {
+      "organization": "Org4",
+      "detector": "tabular_mlp",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org4\\models\\selected_train_predictions.csv",
+      "sha256": "06508139dd062d984f8ab99b22e325dfc9020c89123085768b8372909e6ab61e",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org4_tabular_mlp.json"
+    },
+    {
+      "organization": "Org4",
+      "detector": "tabular_mlp",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org4\\validation_predictions.csv",
+      "sha256": "8141dc698b2b8c5ef550dfeb9c9c53a66ebbf7e54f1598b3ce89362484ddd4f7",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org4_tabular_mlp.json"
+    },
+    {
+      "organization": "Org5",
+      "detector": "graphsage",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_org5_v1\\models\\Org5\\selected_train_predictions.csv",
+      "sha256": "0eb368a3f7710e7d6a0efcd5c77839d5fcc72b191416f69845a5c3ad4dc571a4",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org5_graphsage.json"
+    },
+    {
+      "organization": "Org5",
+      "detector": "graphsage",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\training\\full_org5_v1\\models\\Org5\\hidden16\\validation_predictions.csv",
+      "sha256": "26424ef3c6040649bf8332f51ac8a1670656ab3b1bcd86542da8028f0aac1f39",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org5_graphsage.json"
+    },
+    {
+      "organization": "Org5",
+      "detector": "tabular_mlp",
+      "split": "TRAIN",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org5\\models\\selected_train_predictions.csv",
+      "sha256": "d284f59d1df83e61bcbed11dbb8cd082b3ca9f460c6fc69047d86877842fc0fc",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org5_tabular_mlp.json"
+    },
+    {
+      "organization": "Org5",
+      "detector": "tabular_mlp",
+      "split": "VAL",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\comparator\\full_v1\\Org5\\validation_predictions.csv",
+      "sha256": "8ed80eb0adb3378f09d7ae0c0575f3e114cac2f705f7c3424f6fd3761b0adcf9",
+      "threshold_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\calibration\\v1\\thresholds\\Org5_tabular_mlp.json"
+    }
+  ],
+  "saved_inputs": {
+    "reports/phase6/training/final_v1/summary.json": "c0f2b7add2f27d0317d9546f015dcea96cf816afe326fad6048b0c301b356c07",
+    "reports/phase6/comparator/final_v1/summary.json": "bdfec3572dd7af57b4a33843dded79fbb588b4b6e7ecc598e3e397b1fa88eaa1",
+    "reports/phase6/calibration/v1/summary.json": "bbc9e94d92c16e03e40dab54e0b88ee93266554901169e2a53d2f73c65b58de6",
+    "reports/phase6/detectability/technical_review_v2/final_v1/summary.json": "fda8a1aa51b182bba6c8cc9990e5e10a5b482cb9f721eaefc410547bf05416d0",
+    "reports/phase6/detectability/technical_review_v2/final_v1/per_organization_results.csv": "b889f00e6ebad1492bf3783cc53981fde18e1839af7306822347c73387bb52d3",
+    "reports/phase6/detectability/technical_review_v2/final_v1/factor_results.csv": "87f326d5ebbb450b9ddef9e4538b3e6cd0cf354f77fba1af95c6db7b5aad041e",
+    "reports/phase6/detectability/technical_review_v2/final_v1/paired_campaign_changes.csv": "6dc49a33fd443deadd2b59e4e5dcc50fb1c3a86309a8e28ba49f2267850d461c",
+    "reports/phase6/detectability/technical_review_v2/final_v1/resource_summary.csv": "5168b3097d36bd25c9299f97353a2d21330c05757685844db0b14611a7760b55",
+    "reports/phase6/detectability/technical_review_v2/final_v1/undetected_organization_trials.csv": "b13a298ae6e32d23e7e0b8c13a64217f525fdca0fa3aa626df078153cffb0483",
+    "reports/phase6/detectability/technical_review_v2/continuation_00004/campaign_results.csv": "b7122baecd7d2a08716fbe1ca4e3dc765c933b0a592cd626fa47a6a98fedac27",
+    "reports/phase6/detectability/technical_review_v2/continuation_00004/organization_results.csv": "70bdab4bd569890bba8faf90ae2bed3dcc63d0f20fdd339c0dbfd7e7fcbb8483",
+    "reports/phase6/detectability/technical_review_v2/continuation_00004/factor_seed_results.csv": "9288d90e8e6e7292145bb15563cbadf1aef98375d93b89274a23f7ebf38efcc8",
+    "reports/phase6/detectability/technical_review_v2/continuation_00004/resource_measurements.json": "21a4076fce73b9120ca82b0f78306ece7cf8590843f896340f062a481228c243",
+    "reports/phase6/detectability/technical_review_v2/continuation_00004/user_occurrence_statistics_no_ids.json": "fc314d7ed9a4c33933bc314b580429f914c3ad1805d5a8d0c3ac90660e1b7a46",
+    "reports/phase6/subphase9_plan_v1/SCIENTIFIC_CARRY_FORWARD.json": "4e3d75e074f8a33e9659e512bd523f3c6d122bf172dccbddcd3904c3d32ef833",
+    "configs/phase6/split_protocol_v1.json": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b"
+  },
+  "metric_contract": {
+    "primary_unit": "eligible fixed-grid organization/variant/User/time",
+    "mask": "eligible_mask must exactly equal node_label != -1",
+    "threshold": "original binary64 logits >= original binary64 hex threshold",
+    "average_precision": "Tied-score grouped noninterpolated AP; not trapezoidal PR-AUC",
+    "roc_auc": "Tied-score trapezoidal ROC, descriptive reporting only",
+    "aggregation": "Equal-weight per-organization macro primary; pooled confusion counts secondary",
+    "undefined": "null, never zero-fill; list undefined organizations",
+    "training": "Restored selected model in-sample diagnostic, thresholds selected on later VAL",
+    "seed": "Campaign seed extracted from frozen variant identity, distinct from initialization seed",
+    "inductive": "Use accepted TRAIN-unseen flags; do not refit or redefine",
+    "uncertainty": "Descriptive seed/block variability only; no new IID CI or significance claim"
+  },
+  "additional_descriptive_analysis": "PR/ROC curves, subgroup and factor summaries from saved predictions; no new operating points or selection; figures display existing frozen thresholds only",
+  "prohibited_calls": [
+    "training",
+    "calibration",
+    "GNN forward inference",
+    "campaign evaluation runner",
+    "TEST adapter"
+  ],
+  "output": "reports/phase6/final/v1",
+  "warnings_expected": [
+    "TRAIN threshold diagnostics use thresholds calibrated on later VAL and are not deployment estimates",
+    "Subgroup-mask totals in prior calibration summaries may include out-of-subgroup rows; report subgroup exclusion and original masks separately"
+  ]
+}

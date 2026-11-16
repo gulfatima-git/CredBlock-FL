@@ -1,0 +1,28 @@
+{
+  "status": "FAIL",
+  "verified_instances": 0,
+  "failures": [
+    {
+      "error_type": "AssertionError",
+      "message": "Independent organization outcome differs",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review_v3.py\", line 269, in <module>\n    instances.append(audit_instance(row))\n                     ~~~~~~~~~~~~~~^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review_v3.py\", line 235, in audit_instance\n    compare(result['organization_results'],saved['organization_results'],'Independent organization outcome')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review_v3.py\", line 86, in compare\n    def compare(a,b,label):require(a==b,label+' differs')\n                           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\subphase8_independent_review_v3.py\", line 23, in require\n    if not x:raise AssertionError(msg)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Independent organization outcome differs\n"
+    }
+  ],
+  "checks": {
+    "assertions": 250820,
+    "self_contained_database_preflight": 855,
+    "completion_manifests": 9,
+    "artifact_hash_entries": 91,
+    "indicators": 130,
+    "organization_replays": 5,
+    "local_scores": 25962,
+    "event_only_rows": 0,
+    "raw_events": 2737,
+    "commands": 2772,
+    "receipts": 520,
+    "issuance_provenance": 130,
+    "attribution_UNATTRIBUTED": 3031,
+    "attribution_UNIQUE": 799
+  },
+  "elapsed_seconds": 14.090094299986959
+}

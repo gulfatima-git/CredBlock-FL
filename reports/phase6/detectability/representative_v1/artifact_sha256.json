@@ -1,0 +1,16 @@
+{
+  "campaign_results.csv": "3bf8c0a0047eb2bf5bb45ba8570742965549150b7576f7e895d10de4ffca43e8",
+  "factor_seed_coverage.json": "e34a4255a38fbfcb6eb1db9d6ac463c6d3b9e3d72370be62065b783dea22f2c2",
+  "organization_results.csv": "4adb2342d029a3bf42f2d37f70c0281a9f7335d79ca6cd0ac030f7a3c046b967",
+  "summary.json": "8e9b70809d50c8dd147e098836bb32f2be2447ff8b0b1b2bb0a08ccddadc45d4",
+  "Org5/private/alert_attribution.jsonl": "72c8e9885bc2b5788a8a557d7df6d63a0dcde1553a4ee395cb86ada4a06472cb",
+  "Org5/private/target_user_results.jsonl": "463dc4ed5260566573c39d45999f9726eb1210793fdeb21880f1122a89aff59e",
+  "Org4/private/alert_attribution.jsonl": "0c451a2e7b4fcff83e2679b3315152f58fca24995741c7d8c77eba3803973ba2",
+  "Org4/private/target_user_results.jsonl": "ae72080d8736fff87dbd4d81976f29fc09059d80a9729dee69b75c8a10118ad9",
+  "Org3/private/alert_attribution.jsonl": "e33334b033ed10ca27432e59d8a3064a454bf93e8cb6623a4baef5c1f8ab5879",
+  "Org3/private/target_user_results.jsonl": "608c64a762704076ab1afcca9532b85be5368edcb88363af75619f78b3b1c64d",
+  "Org2/private/alert_attribution.jsonl": "61c3836a8d37fba502aea1ba3043d1552933254293d9a8cb3acdc67b06e3e47d",
+  "Org2/private/target_user_results.jsonl": "ae549fe6ffdd0d8bc0e51b980425edbbded146b8f3758123c7ecb7e3688b9b8f",
+  "Org1/private/alert_attribution.jsonl": "544c38392ec3675dda9e358951ba80c4a95236f262f0ef207f53fd5d207937e8",
+  "Org1/private/target_user_results.jsonl": "bd0feb1a423aeddeca450a657ca5bfd5fc7e3edb4024e375108f6424c4cd880b"
+}

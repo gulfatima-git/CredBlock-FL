@@ -1,0 +1,39 @@
+{
+  "version": "phase6-subphase9-option-a-user-acceptance-v1",
+  "status": "USER_ACCEPTED",
+  "accepted_on_local_date": "2026-11-17",
+  "timezone": "Asia/Karachi",
+  "scope": "OPTION_A_STAGES_A_B_TRAIN_VAL_REPORTING_ONLY",
+  "approval_progress_event": "reports/phase6/progress_events/subphase9_option_a_user_approval_v1.json",
+  "approval_progress_event_sha256": "fa03af44338303ddc7e8b83ebbea89f315913f9143dcd1628eaeadc1af559a86",
+  "technical_report": "reports/phase6/final/v1/TECHNICAL_ACCEPTANCE_REPORT.md",
+  "technical_report_sha256": "acf3ecef8c27e246b37c3a92393e406d4cc36024f4536ca4e2b1d8e43a88d1c9",
+  "technical_delivery_manifest_sha256": "dea51558c34d653332a114b1a9beac087e1d4ecb719c5a02a85dd546a2374c34",
+  "sealed_reporting_artifacts_verified": 86,
+  "saved_numerical_input_hashes_verified": 248,
+  "alignment": {
+    "research_questions": 4,
+    "contributions": 6,
+    "design_implementation_supported_unsupported_separated": true
+  },
+  "figures": {
+    "accepted_sets": 11,
+    "publication_files": 22,
+    "captions_and_sources_preserved": true,
+    "manifest_sha256": "3ac21f6549341e69e6054b56def062cf4bf19dd5582829b8cd46251bd6bf1427"
+  },
+  "tests_passed": 57,
+  "independent_prediction_components": 20,
+  "frozen_primary_protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "verified_protocol_git_commit": "5de030316176a27889054d0e782cb1ad92171cb5",
+  "VAL_wholly_undetected_campaigns": 0,
+  "VAL_campaign_denominator": 171,
+  "no_federated_recovery_claim": true,
+  "stage_c": "DEFERRED_UNAUTHORIZED",
+  "TEST_execution_authorized": false,
+  "TEST_payloads_accessed": false,
+  "phase6_status": "PENDING_HELD_OUT_TEST_EVALUATION",
+  "phase6_complete": false,
+  "phase7_started": false,
+  "preservation": "All accepted evidence remains immutable; this record supersedes historical pending-user-acceptance metadata without editing it."
+}

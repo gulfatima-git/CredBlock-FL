@@ -1,0 +1,32 @@
+[
+  {
+    "attempt": "technical_review_v1",
+    "disposition": "PRESERVED_INITIAL_REVIEW_REQUIRED",
+    "issue": "Strict equality of sealed and actual file sets rejected SQLite auxiliary sidecars."
+  },
+  {
+    "attempt": "technical_review_v2 initial attempt",
+    "disposition": "PRESERVED_CHECKER_FAILURE",
+    "issue": "Logical LF decision digest incorrectly compared with CRLF file-byte digest."
+  },
+  {
+    "attempt": "continuation_00002",
+    "disposition": "PRESERVED_CHECKER_FAILURE",
+    "issue": "Independent organization serialization omitted existing coverage/status/local-onset fields; campaign outcome had matched."
+  },
+  {
+    "attempt": "continuation_00003",
+    "disposition": "PRESERVED_SUPERSEDED_CHECKER_STOPPED",
+    "issue": "Stopped after recognizing missing exact UNDETECTED_WITHIN_HORIZON serialization; no detector evaluation was stopped."
+  },
+  {
+    "attempt": "continuation_00004",
+    "disposition": "PASS_ALL_171",
+    "issue": null
+  },
+  {
+    "attempt": "issuance_and_observation_audit_v1",
+    "disposition": "PASS_ALL_855_ORGANIZATION_REPLAYS",
+    "issue": null
+  }
+]

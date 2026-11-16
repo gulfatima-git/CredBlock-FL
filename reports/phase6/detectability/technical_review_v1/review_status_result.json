@@ -1,0 +1,21 @@
+{
+  "version": "phase6-subphase8-independent-review-result-v1",
+  "recorded_on_local_date": "2026-11-16",
+  "technical_acceptance_status": "REVIEW_REQUIRED",
+  "subphase8_status": "TECHNICAL_REVIEW_PENDING",
+  "required_instances": 171,
+  "fully_independently_validated_instances": 0,
+  "completion_manifests_verified_before_stop": 4,
+  "artifact_hash_entries_verified_before_stop": 66,
+  "finding": "Two SQLite sidecars absent from first local component manifest; all five listed authoritative files match their hashes; no files missing. Exhaustive file-set diagnostic is stricter than the frozen runner verifier.",
+  "wal_bytes": 0,
+  "shm_bytes": 32768,
+  "evaluation_rerun": false,
+  "inference_repeated": false,
+  "accepted_artifacts_modified": false,
+  "full_preservation_verified": false,
+  "test_outcomes_queried": false,
+  "user_accepted": false,
+  "subphase9_started": false,
+  "next_action": "Review proposed append-only, non-writing sidecar classification and continue independent saved-evidence validation in a new directory; do not rerun inference or alter frozen manifests."
+}

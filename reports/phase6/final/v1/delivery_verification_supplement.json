@@ -1,0 +1,12 @@
+{
+  "status": "PASS_FINAL_DELIVERY_RECHECK",
+  "sealed_artifacts_verified": 86,
+  "preserved_prior_paths": 12254,
+  "current_progress": "reports/phase6/progress_v19.json",
+  "current_progress_sha256": "0aa60c9abd5722ba87339e2789b85d48f4c5e1e6880f6dd65a322bd884992a12",
+  "delivery_manifest_sha256": "dea51558c34d653332a114b1a9beac087e1d4ecb719c5a02a85dd546a2374c34",
+  "TEST_authorized": false,
+  "phase6_complete": false,
+  "phase7_started": false,
+  "user_accepted_subphase9": false
+}

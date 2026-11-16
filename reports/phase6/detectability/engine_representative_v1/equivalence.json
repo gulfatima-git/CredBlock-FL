@@ -1,0 +1,7 @@
+{
+  "status": "PASS_EXACT_GENERALIZED_BRIDGE_AND_CAMPAIGN_ATTRIBUTION",
+  "network_digest": "67b1b78f8b9befc7568f93dc6d525cd3608179957c1bb75ada1c8df063c0770a",
+  "campaign_attribution_digest": "f955e05c6c9d19fefe50718f46de918e62c1de331894bd11f421ec2984c8bfef",
+  "source_sha256": "9df6dcbf3e9ac84e1e9b83276e34d81fedb230cb18742be866f944633748d04e",
+  "full_run_launched": false
+}

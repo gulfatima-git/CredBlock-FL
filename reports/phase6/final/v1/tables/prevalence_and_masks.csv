@@ -1,0 +1,11 @@
+organization,split,eligible,positive,negative,masked_recent_roots,prediction_rows,positive_fraction,variants,grids,context_only
+Org1,TRAIN,75438,9546,65892,3534,78972,0.12654100055674858,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org1,VAL,55386,9615,45771,2451,57837,0.17359982667099988,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org2,TRAIN,77268,6474,70794,3021,80289,0.08378630222084174,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org2,VAL,51267,6465,44802,3363,54630,0.12610451167417638,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org3,TRAIN,82914,6477,76437,4275,87189,0.07811708517258846,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org3,VAL,58005,6420,51585,4275,62280,0.11068011378329454,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org4,TRAIN,87441,9579,77862,4902,92343,0.10954815246852163,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org4,VAL,57615,9621,47994,2850,60465,0.16698776360322834,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org5,TRAIN,91512,8121,83391,4845,96357,0.08874246000524522,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives
+Org5,VAL,63645,8133,55512,3420,67065,0.12778694320056563,171,1026,Older graph context omitted from saved supervised roots; not counted as eligible negatives

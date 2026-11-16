@@ -1,0 +1,13 @@
+{
+ "status":"PASS_METHOD_AND_PILOT_CHECKS_ONLY",
+ "subphase8_status":"IN_PROGRESS",
+ "method_preflight":{"passed":28,"duration_seconds":30.64,"warnings":1,"command":".venv/Scripts/python.exe -B -m pytest tests/phase6/test_detectability.py -q -p no:cacheprovider"},
+ "execution_preflight":{"passed":7,"duration_seconds":19.86,"warnings":1,"command":".venv/Scripts/python.exe -B -m pytest tests/phase6/test_detectability_batch.py -q -p no:cacheprovider"},
+ "phase6_regression":{"passed":268,"deselected":1,"warnings":742,"duration_seconds":64.99,"command":".venv/Scripts/python.exe -B -m pytest tests/phase6 -q -p no:cacheprovider -k 'not real_test_branch_cannot_be_opened_for_fitting'","exclusion":"Existing real_test_branch_cannot_be_opened_for_fitting opens a TEST manifest. Pre-access TEST guards passed."},
+ "accepted_runtime_selftests":{"passed":20,"duration_seconds":11.375,"command":".venv/Scripts/python.exe -B validate_phase5_graph_retention_v1.py --self-test"},
+ "total_distinct_current_tests":288,
+ "new_tests_included_in_regression":35,
+ "scope":"Onset, open/closed temporal boundaries, delayed/no alerts, unrelated/false alerts, distinct units, multi-org all-undetected rule, overlapping campaign ambiguity, repeated User IDs across orgs/variants, missing family/organization coverage, censoring, TEST/traversal guards, append-only attempts, tampered completion, lock release and pre-review launch rejection. Synthetic tests and representative exact-reuse/bridge verification are distinct evidence.",
+ "limits":"171-instance full sweep not launched. New reference worker is a wrapper around accepted replay/inference; fresh execution of the other 170 campaign instances and full-resource benchmarking remain pending. No OS-kill/power-loss completion-recovery test is claimed.",
+ "warnings":"Existing TorchScript/Python3.14 FutureWarning and PyG typing._eval_type deprecations; no test failures"
+}

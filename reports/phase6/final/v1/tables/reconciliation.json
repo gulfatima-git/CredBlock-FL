@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "components": [
+    {
+      "organization": "Org1",
+      "split": "TRAIN",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "99292f48227531f8f9ed20063ca663d2a0eb415755e926fe658e8fbfb83fe78c"
+    },
+    {
+      "organization": "Org1",
+      "split": "VAL",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "37b3486e38a10c0554a173a45d194e2a024622d490a4c2daa38031208d854cae"
+    },
+    {
+      "organization": "Org1",
+      "split": "TRAIN",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "814a3473ffdb844e1f5f66b7a2e8e3a7169f45d609bfae5fb5fc09c7f3e08444"
+    },
+    {
+      "organization": "Org1",
+      "split": "VAL",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "e9836fcd984f884a816accc795afd5ef32d484eef1105d1c2238a673e9441acf"
+    },
+    {
+      "organization": "Org2",
+      "split": "TRAIN",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "0b23d395936ebf0f46afa6a4d2ed319788c3a45b03c546d8d50be33d0c2d5974"
+    },
+    {
+      "organization": "Org2",
+      "split": "VAL",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "786c22027e252e0909f13801bcad2d6fb2b0d4f9d53a10dec519445a15158c85"
+    },
+    {
+      "organization": "Org2",
+      "split": "TRAIN",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "761956dec5ef50967f02280a481c1e59a84d040b991792258eeabb06110bf667"
+    },
+    {
+      "organization": "Org2",
+      "split": "VAL",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "ca2e2a40825eaa7de070b1f263d4248410e7e47517714984516bf45b83fc8351"
+    },
+    {
+      "organization": "Org3",
+      "split": "TRAIN",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "1a30e71c0b56cc35b44a66c9a927394afbe1f37ca8ef8715ba068897450d3a6d"
+    },
+    {
+      "organization": "Org3",
+      "split": "VAL",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "e0be48413b757004d1102fd998ef542ce54289ca70d418c5709d5d3645bdd30e"
+    },
+    {
+      "organization": "Org3",
+      "split": "TRAIN",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "54eb688ebb75470b710134658103c2ff7898413bc92db167f604f56ab8059fb6"
+    },
+    {
+      "organization": "Org3",
+      "split": "VAL",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "0f61dfc4b6dbf26db0a18413fed821124a4ebe78d1edc0523c34d8c70cc791e7"
+    },
+    {
+      "organization": "Org4",
+      "split": "TRAIN",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "30d6f24aff2be333820991979e541794f407ada5814fb3b32d1707b53bf23f7a"
+    },
+    {
+      "organization": "Org4",
+      "split": "VAL",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "744719ffdc86944c7abeec410bffcb381c45d20dae231c1ae1f04c24eee75ea1"
+    },
+    {
+      "organization": "Org4",
+      "split": "TRAIN",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "06508139dd062d984f8ab99b22e325dfc9020c89123085768b8372909e6ab61e"
+    },
+    {
+      "organization": "Org4",
+      "split": "VAL",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "8141dc698b2b8c5ef550dfeb9c9c53a66ebbf7e54f1598b3ce89362484ddd4f7"
+    },
+    {
+      "organization": "Org5",
+      "split": "TRAIN",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "0eb368a3f7710e7d6a0efcd5c77839d5fcc72b191416f69845a5c3ad4dc571a4"
+    },
+    {
+      "organization": "Org5",
+      "split": "VAL",
+      "detector": "graphsage",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "26424ef3c6040649bf8332f51ac8a1670656ab3b1bcd86542da8028f0aac1f39"
+    },
+    {
+      "organization": "Org5",
+      "split": "TRAIN",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "d284f59d1df83e61bcbed11dbb8cd082b3ca9f460c6fc69047d86877842fc0fc"
+    },
+    {
+      "organization": "Org5",
+      "split": "VAL",
+      "detector": "tabular_mlp",
+      "status": "PASS_EXACT_ACCEPTED_METRIC_RECONCILIATION",
+      "prediction_sha256": "8ed80eb0adb3378f09d7ae0c0575f3e114cac2f705f7c3424f6fd3761b0adcf9"
+    }
+  ],
+  "paired_organization_splits": 10,
+  "fp_budgets_verified": 10
+}

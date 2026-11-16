@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ACCEPTANCE_DOCUMENTATION",
+  "scope": "USER_ACCEPTED_OPTION_A_STAGES_A_B",
+  "sealed_reporting_artifacts_unchanged": 86,
+  "original_numerical_input_hashes_unchanged": 248,
+  "four_research_questions_and_six_contributions_verified": true,
+  "eleven_final_figures_and_captions_preserved": true,
+  "frozen_protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "verified_git_commit": "5de030316176a27889054d0e782cb1ad92171cb5",
+  "current_progress": "reports/phase6/progress_v20.json",
+  "TEST_access": false,
+  "phase6_status": "PENDING_HELD_OUT_TEST_EVALUATION",
+  "phase7_started": false,
+  "git_staging_performed": false,
+  "git_commit_performed": false,
+  "curated_commit_file_count": 206,
+  "curated_commit_bytes": 30015960,
+  "acceptance_record_sha256": "cabd182032e1a548b07286dcb3d6363e4776e9ff67b2f61ebd27c5be687b2c49",
+  "approval_event_sha256": "fa03af44338303ddc7e8b83ebbea89f315913f9143dcd1628eaeadc1af559a86",
+  "current_progress_sha256": "6ca2ad6cbae53b09d05209ec9df1c927f1b4d189e46b13958b09f9602182d51f",
+  "commit_pathspec_sha256": "140aea4d88572b437c295c4ac3c3a86027557f95ae3ad0eb8e849e27db4c77e8"
+}

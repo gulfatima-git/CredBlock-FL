@@ -1,0 +1,42 @@
+[
+  {
+    "id": "D1",
+    "kind": "reporting_setup_error_resolved",
+    "detail": "Initial preparation assumed Org3\u2013Org5 training files lived under full_v2. Existing sealed prediction provenance points to full_org3/4/5_v1. Preparation now derives the TRAIN file from its accepted VAL source directory; first failed attempt wrote only the preserved metadata snapshot."
+  },
+  {
+    "id": "D2",
+    "kind": "reporting_setup_error_resolved",
+    "detail": "Best-local selection is stored as the string graphsage, not a dictionary. Corrected only the new reporting reader; accepted selections unchanged."
+  },
+  {
+    "id": "D3",
+    "kind": "historical_reporting_ambiguity_retained",
+    "detail": "Older calibration subgroup masked counts include outside-subgroup rows. New tables separately report original masked-inside-population and outside-population. Detection counts and accepted summaries are unchanged."
+  },
+  {
+    "id": "D4",
+    "kind": "draft_figure_presentation_corrected",
+    "detail": "Initial PR/ROC rendering used a staircase convention inconsistent with AP/trapezoidal ROC depiction. Final PR uses pre-step endpoint precision, ROC linear interpolation. Source numeric curves/metrics unchanged; draft images retained and figure_manifest_v2 identifies final figures."
+  },
+  {
+    "id": "D5",
+    "kind": "export_runtime_warning",
+    "detail": "Artifact exporter saved both workbook drafts then exited -1073740791. Final v2 independently verified: ZIP, all 58,578 source cells, 12 cached formulas and 21 native tables pass. Initial formatting draft v1 preserved."
+  },
+  {
+    "id": "D6",
+    "kind": "research_draft_wording_discrepancy",
+    "detail": "Draft every observed attacking address is not an oracle authorization. Accepted baseline shares suspicious IPs only after actual local alerts using observed recent evidence; paper must describe this non-oracle rule."
+  },
+  {
+    "id": "D7",
+    "kind": "research_claim_limitation",
+    "detail": "VAL contains zero wholly locally-undetected campaigns; cannot demonstrate federated rescue of that empty subset. Formal DP, federation, poisoning robustness, integrated ledger costs and held-out performance remain untested."
+  },
+  {
+    "id": "D8",
+    "kind": "external_validity_and_latency_limit",
+    "detail": "Five simulated partitions of synthesized web authentication data are not independent real owners or cyber-physical deployment evidence. Measured CPU end-to-end latency does not establish a production sub-50/100-ms SLA."
+  }
+]

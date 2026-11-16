@@ -1,0 +1,36 @@
+{
+  "status": "PASS_INDEPENDENT_SAVED_XLSX_PILOT_EDIT_CHECK",
+  "sheets": 25,
+  "subphase8_status": "IN_PROGRESS",
+  "required_instances": 171,
+  "evaluated_instances": 1,
+  "pending_instances": 170,
+  "original_cells_preserved_checked": 142190,
+  "allowed_updated_cells": 13,
+  "formula_count": 441,
+  "original_formulas_preserved": 99,
+  "native_tables_preserved": 38,
+  "new_tables": 4,
+  "new_source_rows": 12,
+  "coverage_cells": 342,
+  "coverage_totals": {
+    "local_only": [
+      171,
+      1,
+      170
+    ],
+    "local_plus_indicator": [
+      171,
+      1,
+      170
+    ]
+  },
+  "all_ten_thresholds_exact": true,
+  "formula_errors": 0,
+  "live_recalculation": "PASS; changed undetected count and restored",
+  "xlsx_sha256": "c9c5387f7693ecbe5312a41c3f8b9c36a8cca897358af47f8362efdcdf7c1423",
+  "native_excel_application_recalculation": "Not exercised; Artifact Tool live calculation and saved caches verified",
+  "exporter_exit_code": 1,
+  "exporter_note": "Exporter saved the workbook and exited 1 without an error message; independently verified ZIP, data, formulas, caches and native features.",
+  "draft_correction": "First unaccepted draft incorrectly converted single-org Raccount N/A to NaN (18 cells). Failed draft preserved separately. Corrected export retains literal N/A and is independently verified."
+}

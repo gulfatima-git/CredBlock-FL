@@ -1,0 +1,19 @@
+{
+  "status": "PASS_TRAIN_VAL_REPORTING_RECONCILIATION",
+  "reporting_scope": "OPTION_A",
+  "fixed_grid_rows": 20,
+  "thresholds_unchanged": true,
+  "paired_eligible_train": 414573,
+  "paired_eligible_val": 285918,
+  "warnings": [
+    "TRAIN metrics are in-sample; applying a later VAL threshold is retrospective diagnostic only.",
+    "Subgroup excluded rows are split into original masked-inside-population and outside-population; prior calibration subgroup masked counts conflate those categories.",
+    "AP is tied-score grouped; ROC-AUC is descriptive and not the primary operating metric.",
+    "Confidence intervals omitted because alternate branches share background and only three temporal blocks exist."
+  ],
+  "test_outcomes_accessed": false,
+  "stage_c_implemented": false,
+  "phase6_complete": false,
+  "user_accepted": false,
+  "phase7_started": false
+}

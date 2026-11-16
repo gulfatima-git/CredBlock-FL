@@ -1,0 +1,11 @@
+organization,detector,selected_trial_seconds,all_trials_and_repeat_seconds,observed_training_rss_mib,preparation_seconds,scope
+Org1,graphsage,548.2039883001707,1351.4068148003425,377.82421875,2939.579461300047,Original concurrent CPU run; preparation separate
+Org1,tabular_mlp,107.76726540000163,303.798722800002,407.1484375,42.838422199998604,Original CPU run; input-array overhead included
+Org2,graphsage,619.8200974999927,1310.0156231999863,358.01171875,3111.4351283998694,Original concurrent CPU run; preparation separate
+Org2,tabular_mlp,62.121977900000275,104.36070479999944,407.45703125,46.86398290000034,Original CPU run; input-array overhead included
+Org3,graphsage,170.90513430000283,364.35760879982263,372.08984375,2803.07818880002,Original concurrent CPU run; preparation separate
+Org3,tabular_mlp,87.09893549999833,198.1460442999978,410.9609375,32.08427429999938,Original CPU run; input-array overhead included
+Org4,graphsage,54.85538939991966,239.70048639993183,379.7421875,2870.0889353998937,Original concurrent CPU run; preparation separate
+Org4,tabular_mlp,84.17243550000057,219.48892440000236,412.62890625,48.779100099998686,Original CPU run; input-array overhead included
+Org5,graphsage,251.16651379992254,484.106216999935,378.54296875,3630.918373099994,Original concurrent CPU run; preparation separate
+Org5,tabular_mlp,178.02049249999982,481.42174479999994,413.93359375,46.32874089999859,Original CPU run; input-array overhead included
