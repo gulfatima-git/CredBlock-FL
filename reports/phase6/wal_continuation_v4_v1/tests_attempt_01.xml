@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="65.351" timestamp="2026-11-18T01:31:53.823224+05:00" hostname="Gul"><testcase classname="tests.phase6.test_continuation_wal_v4" name="test_five_org_crash_recovery_no_repeated_committed_inference[after_local:Org3]" time="40.751"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_validation\\attempt_01\\test_five_org_crash_recovery_n0\\wal_v4_case\\metadata\\s\\wal_captures_v4\\SYNTHETIC_SEED1001_TEST\\Org1\\oracle_d40eb8f88454446b9e45d3b6f0a6ed3d\\local.sqlite.writing.f6a60ff30a7a411094a56f2075e99e21'">tmp_path = WindowsPath('C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/wal_v4_validation/attempt_01/test_five_org_crash_recovery_n0')
+reference = (WindowsPath('C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/wal_v4_validation/attempt_01/wal_v4_reference0'), Cat...search/wal_v4_validation/attempt_01/wal_v4_reference0/meta/s/outputs/SYNTHETIC_SEED1001_TEST'), 50, 12.662141199980397)
+stage = 'after_local:Org3'
+
+    @pytest.mark.parametrize('stage',STAGES)
+    def test_five_org_crash_recovery_no_repeated_committed_inference(tmp_path,reference,stage):
+        _,catalog,row,ref,reference_calls,_=reference
+        root=tmp_path/'wal_v4_case';exit=crashed(root,stage);source=Path(exit['source']);original=physical_files(source)
+        _,old,bundles=make_world(root/'parent_metadata');assert old.catalog==catalog
+        permit=CapturePermit.synthetic(source,catalog);certpath=root/'certificate_v4.json'
+&gt;       cert=build_certificate(permit,catalog,row,certpath)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\phase6\test_continuation_wal_v4.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\phase6\continuation_reader_v4.py:163: in build_certificate
+    with predecessor_lease(permit,catalog):return _build_certificate(permit,catalog,row,output,register_rows)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\phase6\continuation_reader_v4.py:196: in _build_certificate
+    derivations[org]=project_store(permit,catalog,org,db,derived,physical_inventory(db))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\phase6\continuation_wal_v4.py:132: in project_store
+    for suffix,value in blobs.items():_publish(oracle/('local.sqlite'+suffix),value)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\phase6\continuation_wal_v4.py:89: in _publish
+    with temp.open('xb') as f:f.write(raw);f.flush();os.fsync(f.fileno())
+         ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/wal_v4_validation/attempt_01/test_five_org_crash_recov...ETIC_SEED1001_TEST/Org1/oracle_d40eb8f88454446b9e45d3b6f0a6ed3d/local.sqlite.writing.f6a60ff30a7a411094a56f2075e99e21')
+mode = 'xb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_validation\\attempt_01\\test_five_org_crash_recovery_n0\\wal_v4_case\\metadata\\s\\wal_captures_v4\\SYNTHETIC_SEED1001_TEST\\Org1\\oracle_d40eb8f88454446b9e45d3b6f0a6ed3d\\local.sqlite.writing.f6a60ff30a7a411094a56f2075e99e21'
+
+C:\Python314\Lib\pathlib\__init__.py:771: FileNotFoundError</failure></testcase></testsuite></testsuites>

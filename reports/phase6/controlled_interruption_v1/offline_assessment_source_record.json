@@ -1,0 +1,7 @@
+{
+  "source": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\controlled_interruption_v1\\offline_assessment.py",
+  "sha256": "8e2bbe424b629a0487b8d580d10705fb93c609d26eb0239ae5b268f51538dfe1",
+  "scope": "Verification only on sealed forensic copies; original model archives hashed but not deserialized; no model.forward/evaluator call",
+  "prior_completed_auditor": "src/phase6/independent_test_validation_v1.py",
+  "partial_auditor": "Independent saved SQL/journal/graph/indicator prefix validation"
+}

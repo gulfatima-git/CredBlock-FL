@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="0.218" timestamp="2026-11-18T01:55:14.149833+05:00" hostname="Gul"><testcase classname="tests.phase6.test_continuation_wal_v4_authority" name="test_forbidden_existing_approval_path_denied_before_lookup[capture]" time="0.005"><failure message="AssertionError: Excluded approval path touched">role = 'capture'
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001B3F7199810&gt;
+tmp_path = WindowsPath('C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/wal_v4_authority_a/test_forbidden_existing_approv0')
+
+    @pytest.mark.parametrize('role',['capture','execution'])
+    def test_forbidden_existing_approval_path_denied_before_lookup(role,monkeypatch,tmp_path):
+        catalog=SimpleNamespace(fixture_only=False,identity='synthetic-metadata-only')
+        monkeypatch.setattr(Catalog,'permitted_metadata',classmethod(lambda cls:catalog))
+        def forbidden(*a,**kw):raise AssertionError('Excluded approval path touched')
+        monkeypatch.setattr(Path,'is_file',forbidden);monkeypatch.setattr(Path,'read_bytes',forbidden)
+        path=ROOT/'data2/NEVER_OPEN_SYNTHETIC_DENIAL.json'
+        with pytest.raises(ValueError):
+&gt;           if role=='capture':CapturePermit.production(tmp_path,catalog,path)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\phase6\test_continuation_wal_v4_authority.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\phase6\continuation_contract_v4.py:61: in production
+    p=Path(approval_path);require(p.is_file(),'Separate user-approved quiescent capture is required')
+                                  ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+a = (WindowsPath('C:/Users/Gulso/Documents/Gul/CredBlock-FL/data2/NEVER_OPEN_SYNTHETIC_DENIAL.json'),)
+kw = {}
+
+&gt;   def forbidden(*a,**kw):raise AssertionError('Excluded approval path touched')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Excluded approval path touched
+
+tests\phase6\test_continuation_wal_v4_authority.py:12: AssertionError</failure></testcase><testcase classname="tests.phase6.test_continuation_wal_v4_authority" name="test_forbidden_existing_approval_path_denied_before_lookup[execution]" time="0.004"><failure message="AssertionError: Excluded approval path touched">role = 'execution'
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001B3F7199F30&gt;
+tmp_path = WindowsPath('C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/wal_v4_authority_a/test_forbidden_existing_approv1')
+
+    @pytest.mark.parametrize('role',['capture','execution'])
+    def test_forbidden_existing_approval_path_denied_before_lookup(role,monkeypatch,tmp_path):
+        catalog=SimpleNamespace(fixture_only=False,identity='synthetic-metadata-only')
+        monkeypatch.setattr(Catalog,'permitted_metadata',classmethod(lambda cls:catalog))
+        def forbidden(*a,**kw):raise AssertionError('Excluded approval path touched')
+        monkeypatch.setattr(Path,'is_file',forbidden);monkeypatch.setattr(Path,'read_bytes',forbidden)
+        path=ROOT/'data2/NEVER_OPEN_SYNTHETIC_DENIAL.json'
+        with pytest.raises(ValueError):
+            if role=='capture':CapturePermit.production(tmp_path,catalog,path)
+&gt;           else:ContinuationScope.production(tmp_path,catalog,tmp_path/'no-certificate.json',path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\phase6\test_continuation_wal_v4_authority.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\phase6\continuation_contract_v4.py:99: in production
+    require(Path(approval_path).is_file(),'v3 execution not separately approved')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+a = (WindowsPath('C:/Users/Gulso/Documents/Gul/CredBlock-FL/data2/NEVER_OPEN_SYNTHETIC_DENIAL.json'),)
+kw = {}
+
+&gt;   def forbidden(*a,**kw):raise AssertionError('Excluded approval path touched')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Excluded approval path touched
+
+tests\phase6\test_continuation_wal_v4_authority.py:12: AssertionError</failure></testcase></testsuite></testsuites>

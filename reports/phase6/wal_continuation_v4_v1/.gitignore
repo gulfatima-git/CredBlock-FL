@@ -1,0 +1,2 @@
+# Auxiliary disposable SQL oracle copies; retain locally, exclude curated commits.
+independent_audit_attempt_*/oracles/

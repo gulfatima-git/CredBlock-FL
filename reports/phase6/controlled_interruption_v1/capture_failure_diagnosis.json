@@ -1,0 +1,14 @@
+{
+  "status": "CAPTURE_READER_CONFLICT_DIAGNOSIS",
+  "original_files": 51690,
+  "snapshot_files": 51688,
+  "missing_copies": [
+    "execution.lock",
+    "required_inventory.json"
+  ],
+  "unexpected_snapshot_files": [],
+  "synthetic_owner_read_succeeds": true,
+  "synthetic_secondary_handle_denied": true,
+  "source_payloads_opened": false,
+  "explanation": "Windows byte lease permits owner-handle read but denies a separate handle reading the locked byte. This is a capture-reader issue, not established source corruption."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_BOUNDED_SENDER_SOURCE_REVIEW",
+  "sender_sha256": "74c5e2d4217bb6bb79e577e469ce7769018606e30951719a8c83fd2c2488cd01",
+  "checks": {
+    "one_event_generation_call_site": true,
+    "event_arguments_exact": true,
+    "no_escalation_or_injection_calls": true,
+    "helper_self_protection_after_attach": true,
+    "read_only_process_handles": true,
+    "attempt_marker_exclusive_and_fsynced": true,
+    "exact_recipient_recheck": true,
+    "single_attempt_guard": true,
+    "reviewed_fixture_mechanism_present": true
+  },
+  "scope": "Same console API delivery mechanism as tested fixture; not a guarantee of live cleanup; this record is not a v4 grant"
+}

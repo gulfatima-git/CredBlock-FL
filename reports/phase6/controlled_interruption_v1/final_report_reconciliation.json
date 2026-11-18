@@ -1,0 +1,13 @@
+{
+  "status": "PASS_REPORT_AND_DELIVERY_RECONCILIATION",
+  "hashed_delivery_files": 53,
+  "complete_campaigns": 5,
+  "partial_campaigns": 1,
+  "not_started_campaigns": 165,
+  "partial_commands": 1690,
+  "partial_local_scores": 15309,
+  "partial_grid_bundles": 40,
+  "partial_grid_rows": 3206,
+  "GNN_forwards": 0,
+  "execution_grant_created": false
+}

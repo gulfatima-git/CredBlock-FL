@@ -1,0 +1,217 @@
+{
+  "status": "PASS_ALL_DATABASE_SETS",
+  "nonempty_WAL": 0,
+  "sets": [
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org1/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "b5d4b20c67a390803d6e157be4f13133e4cdf7309fd048bd33e306ba4f531bdd",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org2/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "e5a69b513bdd150c6f1f10c90fce5256a6c8e5fd16ee88cae87dbd63c270c86b",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org3/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "fa9e6550b73e523eb27a1bdaf2c193be6c446d6461875b0e0dd5c65487d52cd7",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org4/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "43cd1fb4a6fd050dfd7065afe920b22e398bd2299457798c7b3ecd306d80aa01",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org5/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "e2cf210d206f17a4b4439f56878c2054b3066db7998cb78dff954bab4f973c41",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org1/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "eaebb51627a56d13f23f5404ac1b464dd4aec7cb1cb1fc52afae5cee1b0f3f26",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org2/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "8b8578fd559ec7f6d0e505caa695409d0cd7699539a2690e0fa71e4cf73c3887",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org3/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "f97206ce41fcd6c06cbc038246039ad9741a4656beb70e294bdaf9b835852ea8",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org4/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "0a518e622952524afec032308cad6eb50a37237c1f7a3069ffd33a82e334fca5",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org5/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "397017c7128a955713eb512d6ebe9fd50f652721d70030b6f36966c8c5187d81",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org1/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "c45e95521bb6d04f46c67af6547d01699b5bff4b88d8e37af4f8824ba43368e5",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org2/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "942c764c8a8c88f2557cedb5ffb7da3054dfd96b7a06164a7d39ccc641ce0acb",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org3/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "9ccf4697aca7e0ad6731cbd0f3a829c5cb83c10650823dea3f52f3feadb30491",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org4/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "edc4444a346b616aa1e04ef6d2d1e26aa7822849ca9426af46fddffb517aaaa9",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org5/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "25cd56de460cbdbbe7094a5bcc22c0e6df00c2bb69b1ad4157884999f96b08e7",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org1/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "47bbdd5c18650acb2b967de79eacca95174c52961e26105bbf3b4b078421f7ae",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org2/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "851fec23c359eeb0a4a4c999dadfba61f8c5565ac79f23b34b0df9590e2d22ae",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org3/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "22fa6991ffdce138bd3ddc6c9b007a93fbc159bf93fc19cb63e263f2ba1ae97f",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org4/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "4089b562cd3a00fe7adb5fb00a6f5286259780451b8f479236aa085072d30800",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org5/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "a588b741d27f222b3281b081e15bf0bf1eb9b23a718297de119b7d9a37408d22",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org1/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "587c60b1c9323dd91a63ed39a185d6d0698603162fe488fa63f3bd3d638e0f6e",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org2/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "0c79591a1b4fb4b0c497ad737ab259b7fc26e3886f413e1d9daf0773e9f76601",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org3/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "d88087ab59809582c7426d46d852242fa6c659a39129c45da7f4d15b096ae5b2",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org4/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "ef807195affd7e92ca5d54a9ef5c036d0a2122619c3feb9b56f849813b580567",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org5/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "5e022a868f511ebd72d432890bbeec4f97df0c302dfc65b9d60264dc03c4df63",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org1/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "9d42615651cd357766b4abb623498a4769166d86298430c692fc9f2236985b83",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org2/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "7dedc16856bb772217e42b65c3d578d61713d69836039f68fd45c203352f1f74",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org3/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "086e0d26e6f6955d6b7366dbbab804741941e01d8e6c55328706aebde2d1792c",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org4/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "6efb88582e775655e665fdbfed4d03482874c5b6d17557ce9204235238e37441",
+      "WAL": null,
+      "SHM": null
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org5/private/local.sqlite",
+      "status": "PASS_SELF_CONTAINED_FORENSIC_DB",
+      "physical_sha256": "c482610f4325edc81df4f052c4b9d427aa38b6418d599efd9288a22633c37d15",
+      "WAL": null,
+      "SHM": null
+    }
+  ],
+  "run": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_EXPLICIT_20_FILE_PRESERVATION",
+  "files_sha256": {
+    "src/phase6/heldout_contract_v2.py": "733a633f3362bb204a2c7d7108ecebf88ffd403ea671ab6dd79ec165a4f90b6e",
+    "src/phase6/heldout_grid_v2.py": "6b9042d5247ee3a4cc10ebe4a56be53648ed642df4884cc60bc5ed62f86353fd",
+    "src/phase6/heldout_barrier_v2.py": "010eba2aadfafea170a4592664d39da9e113582c9b9e4e775641a96ddac7bf65",
+    "src/phase6/heldout_driver_v2.py": "a3e5bc7344166471f2a00518b90a71b58ea399a7fb5a4a46a2606822f09c6be6",
+    "src/phase6/heldout_barrier_indexed_v3.py": "3afb5e340ea980235a0ea8400e50c511de046c96ca1256c7a2ca234740fa6c60",
+    "src/phase6/heldout_local_inference_v1.py": "46a14a2ab54a4df4d25cc2988d70b467e5f232e0c1f4574e81eaa84645f67b19",
+    "src/organization/rolling_graph_v1.py": "b36ce245190ffbfe3322157a325e44485262b8b66450027f4f80a5e6113c1bd3",
+    "src/phase6/input_pipeline.py": "59eee43209f81560e0883f032ef253cb490969133ccaaf1d4e810ad4b22e5740",
+    "configs/phase6/heldout_remediation_v2.json": "09bdc5e991186fde41e4e02b7f03670ba867505cfe07b78f6195be493df01b01",
+    "configs/phase6/split_protocol_v1.json": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+    "configs/phase6/neighbor_sampling_v1.json": "d4d1223a517de4f66201ec7f5938f4c3b6cadc31551edcd3fb74ca5984bd7bed",
+    "configs/phase6/feature_allowlist_v1.json": "8476c5c3dabe1e2d4f3c633099ef9402baa755b1b01324c6d8647692aca1234e",
+    "configs/phase6/indicator_sharing_v1.json": "dcca57cd901fdba0cdaaf2fa63d28d74fedabf789dd9ea07cf2b726907e1a908",
+    "src/phase6/continuation_contract_v3.py": "ff726b033922efa2cc79301aed539c6578dc3ca1f770866f4e0239a87b5faccc",
+    "src/phase6/continuation_reader_v3.py": "a96576414c78ffdb29d194183587c41391854682dd2b101f1a2bb0aaee36977a",
+    "src/phase6/continuation_recovery_v3.py": "f8d4896e51df815842c44f3106b33a6a48b9dd2b61e09ff97ba9f239b9416d7e",
+    "src/phase6/continuation_manifest_v3.py": "96a7799a4392041fb3436de254d9975258a9b6f8c450fba6325ae0abce26199c",
+    "src/phase6/continuation_barrier_v3.py": "47ccf7ff6680cb7837506249bea0c5269643ecae6849293b3fe90badafaf28bb",
+    "src/phase6/continuation_driver_v3.py": "fb9d0e04d17d6be07432b7ee1c018c6072d4594c12c4aa50f4810758efba1c1e",
+    "src/phase6/continuation_lease_v3.py": "6905c9dedfb07d6412387f6b6546088140a1f98d05c1fe01dfbbf29235c25881"
+  },
+  "no_actual_database_or_model_weight_access": true
+}

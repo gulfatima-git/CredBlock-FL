@@ -1,0 +1,6 @@
+{
+  "checked_at": "2026-11-18T13:38:23.3199371+05:00",
+  "matching_evaluators": [],
+  "historical_processes": [],
+  "scope": "Read-only independent process absence check; no database opens"
+}

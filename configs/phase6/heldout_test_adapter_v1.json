@@ -1,0 +1,22 @@
+{
+  "version": "heldout-test-adapter-v1",
+  "execution_state": "PREPARATION_ONLY_REVIEW_REQUIRED",
+  "split": "TEST",
+  "protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "registry_path": "reports/phase6/inference/preregistration_v1.json",
+  "inference_configuration_path": "configs/phase6/continuous_inference_v1.json",
+  "inference_configuration_sha256": "749d8efa9bc8f0c97cf1bd43c0a89e0e0acb61846e66ee73567faaf6b96d338d",
+  "production_approval_path": "reports/phase6/test_adapter_v1/execution_approval.json",
+  "scientific_protocol_amendment": false,
+  "scope": "New execution adapter only. Existing configurations and scientific rules unchanged. No approval record is created by preparation.",
+  "frozen_method_sha256": {
+    "configs/phase6/detectability_protocol_v1.json": "f63e0bb73253eea4a8c8d7abc4231f94069aaf15c3eef68eeb3fa1b00d49bc55",
+    "configs/phase6/indicator_sharing_v1.json": "dcca57cd901fdba0cdaaf2fa63d28d74fedabf789dd9ea07cf2b726907e1a908",
+    "src/phase6/detectability.py": "3f3320ba61eef098aa7dfb19bd97e92b5ca631f99fe08bf1bc839594a6cba806",
+    "src/phase6/indicator_sharing.py": "1430a47eb6f29d68f7702dc59a068368fedb2c6bd58f88897ae9cf7817eb6605",
+    "src/phase6/non_graph_comparator.py": "c8e05eb00b718336962ba2e9d67252786fe9ff0cb3e66d9cc8db28751120505e",
+    "src/phase6/comparator_data.py": "a2cea3f90e285a0feb3aa4c0bfe10c56fffc7eeb8379acdd433f9f9a305bf66f",
+    "reports/phase6/test_adapter_v1/preservation_before.json": "0cd8a6fceda2ae218e0ff4bcf1c2691d0b923ed61ea40d5cff8a3f0cd43bb740"
+  },
+  "operational_rule_scope": "Reuse unchanged split-neutral accepted evaluator and indicator primitives. Original VAL execution configs and runners remain VAL-only. TEST-only execution binding is additive; scientific definitions are not amended."
+}

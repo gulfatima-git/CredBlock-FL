@@ -1,0 +1,55 @@
+{
+  "status": "PASS_CHECKER_ON_EXISTING_DISPOSABLE_FIXTURE",
+  "result": {
+    "status": "PASS_COMMITTED_SHARING_PREFIX",
+    "journal_chain_sha256": "3583edb475295144dad45f8f821d9af38cf24ddf0dfbc330829c6abac2ea7c0a",
+    "completed_barriers": 0,
+    "latest_completed_barrier": null,
+    "pending": [
+      {
+        "at": "2020-12-12T06:00:00",
+        "organizations": [
+          "Org1",
+          "Org2",
+          "Org3",
+          "Org4",
+          "Org5"
+        ],
+        "stages": {
+          "Org1": {
+            "LOCAL": true,
+            "ISSUANCE": true,
+            "PAIRED": false
+          },
+          "Org2": {
+            "LOCAL": true,
+            "ISSUANCE": true,
+            "PAIRED": false
+          },
+          "Org3": {
+            "LOCAL": false,
+            "ISSUANCE": false,
+            "PAIRED": false
+          },
+          "Org4": {
+            "LOCAL": false,
+            "ISSUANCE": false,
+            "PAIRED": false
+          },
+          "Org5": {
+            "LOCAL": false,
+            "ISSUANCE": false,
+            "PAIRED": false
+          }
+        },
+        "PUBLISHED": false
+      }
+    ],
+    "published": 0,
+    "paired_records": 0,
+    "receipts": 0,
+    "indicator_episodes": 0
+  },
+  "actual_TEST_payloads_read": false,
+  "GNN_forwards": 0
+}

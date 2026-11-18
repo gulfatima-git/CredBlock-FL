@@ -1,0 +1,27 @@
+{
+  "source": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_recovery_benchmark_a\\benchmark.json",
+  "source_sha256": "b6954151c57eb4f0d2b9965d1c2ad507577366d72dd3c9de6e6165385c68206c",
+  "evidence": {
+    "status": "PASS_SYNTHETIC_CAPTURE_AND_RESUME_EQUIVALENCE",
+    "cases": [
+      {
+        "version": "v3_selfcontained_logical_reference",
+        "capture_seconds": 0.6130758000072092,
+        "resume_seconds": 19.54277749999892,
+        "end_to_end_seconds": 20.203081799962092,
+        "cpu_seconds": 12.765625,
+        "remaining_model_calls": 47
+      },
+      {
+        "version": "wal_v4_physical_original",
+        "capture_seconds": 1.4821218999568373,
+        "resume_seconds": 13.292039999971166,
+        "end_to_end_seconds": 14.815487099986058,
+        "cpu_seconds": 10.546875,
+        "remaining_model_calls": 47
+      }
+    ],
+    "source_unchanged": true,
+    "scope": "Single sample; v3 uses a separately constructed self-contained logical-reference fixture, not a substituted original certificate; no full-run ETA"
+  }
+}

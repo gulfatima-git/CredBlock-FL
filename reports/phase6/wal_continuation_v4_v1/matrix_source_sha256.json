@@ -1,0 +1,14 @@
+{
+  "release_identity": "19d96f880f4893f09aa46fb9505b0e273a5ab179fc45112b1187f81d26e87f82",
+  "files_sha256": {
+    "src/phase6/continuation_contract_v4.py": "7035d550133d4bdb8d59c3cfb2f198bbb5d8cdafbc6d97b1c45b9e6e88bc76b6",
+    "src/phase6/continuation_reader_v4.py": "d44202706b67c4e9bcee1c2c285f1fdf3f67ce70bf635c39ecf047fa93901799",
+    "src/phase6/continuation_recovery_v4.py": "b151ec5209e1e7afd920f4961875c0fd8fe1311593b67b24315a4cbe05892f1b",
+    "src/phase6/continuation_manifest_v4.py": "083f26882b5b2b2fc71caa70cb34e1237c442fd59ba9fdb1e317052fc9f62e61",
+    "src/phase6/continuation_barrier_v4.py": "5a5aa09e25a06b8a9faec4a1e11f443833b4e489d76468c9cd569eccc6b08df1",
+    "src/phase6/continuation_driver_v4.py": "8340d9fcd25706e500e5a830827058823a24464e6c4ab192959177457c53f216",
+    "src/phase6/continuation_lease_v4.py": "cbea977cebef4def4eb38ef714937d8ccd76394e47556d7efa5fae7f2a8b0c12",
+    "src/phase6/continuation_wal_v4.py": "91bc06d559e469e1c2e43e96248ae9eef3f3a4f2563d9f0a64a4c15cd2ec704e",
+    "configs/phase6/continuation_wal_v4.json": "43bbe9644182b7a1d2c4762db5d05c6ccd82683a83d342c9c15ab13823ad3934"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "phase6-wal-continuation-v4",
+  "certificate_format": "phase6-continuation-wal-certificate-v4",
+  "original_source": "heldout-instance-v2",
+  "source_database_access": "byte_reads_only_after_quiescence_and_lease",
+  "source_sidecars": "preserve_all_physical_bytes_and_absence",
+  "derived_state": "last_checksum_verified_committed_prefix",
+  "uncertain_tail": "review_required_no_automatic_release",
+  "independent_oracle": "SQLite_read_only_WAL_view_on_separate_disposable_copy",
+  "manual_checkpoint": false,
+  "committed_prediction_recomputation": false,
+  "scientific_protocol_amendment": false,
+  "production_authorization": "separate_capture_and_execution_grants_required"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_PRE_COMMIT_ALLOWLIST_REVIEW",
+  "candidate_files": 135,
+  "all_candidates_additive_untracked": true,
+  "tracked_changes": 0,
+  "staged_files": 0,
+  "forensic_payloads_in_candidate_list": 0,
+  "largest_candidate": {
+    "path": "reports/phase6/git_release_preparation_v1/physical_snapshot_manifest.json.gz",
+    "bytes": 2775602,
+    "sha256": "2e109a3e97e82f5e9827a9d59c5d38dace456b39c9fa8eaac9fad3c74a4a9203"
+  },
+  "candidate_bytes": 5524198,
+  "reviewed_release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "source_only_release_identity_verified": true,
+  "original_v4_delivery_hashes_verified": true,
+  "inventory_gzip_matches_original_seal": true,
+  "commit_created": false,
+  "tag_created": false,
+  "requires_user_review_of_concrete_proposal": true
+}

@@ -1,0 +1,6 @@
+{
+  "status": "STOP",
+  "error_type": "PermissionError",
+  "message": "[Errno 13] Permission denied",
+  "no_automatic_retry": true
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS_PHYSICAL_SNAPSHOT_HASH_PRESERVATION",
+  "capture_version": 2,
+  "manifest": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\controlled_interruption_v1\\physical_snapshot_manifest.json",
+  "manifest_sha256": "3968a3a90188e33da2fba7ceb41c9fe3f7e2de7f5f9b84607ceb06f79dffce64",
+  "files": 51690
+}

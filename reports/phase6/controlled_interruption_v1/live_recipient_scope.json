@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-18T13:33:49.083148+05:00",
+  "original_recipients": [
+    12092,
+    12764,
+    22264
+  ],
+  "all_console_members": [
+    8868,
+    12092,
+    12764,
+    22264
+  ],
+  "helper_ignores_CTRL_C": true,
+  "parent_PowerShell_control_flow_may_be_interrupted": true
+}

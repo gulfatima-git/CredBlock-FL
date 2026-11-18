@@ -1,0 +1,14 @@
+{
+  "original_session_id": 5554,
+  "original_session_exit_code": 1,
+  "exception": "KeyboardInterrupt",
+  "observed_stack": [
+    "heldout_driver_v2.run_all",
+    "heldout_driver_v2._run_instance:266 coordinator.process",
+    "heldout_barrier_v2.process:121 ensure_local",
+    "heldout_local_inference_v1._process:165 detection_view / causal-view require"
+  ],
+  "interpretation": "Observed interruption occurred in the local graph/feature-view stage before the subsequent _predict call for that command. This is not a durability attestation; database/journal assessment remains required.",
+  "graceful_shutdown_claim": false,
+  "forced_termination": false
+}

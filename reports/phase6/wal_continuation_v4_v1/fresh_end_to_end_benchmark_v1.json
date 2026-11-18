@@ -1,0 +1,45 @@
+{
+  "source": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_benchmark_a\\benchmark.json",
+  "source_sha256": "5f82dba877d0316b524ec9c38729ff5c98e4e60cc9bc21fcbb15a1a1a1d8aabc",
+  "evidence": {
+    "status": "PASS_SYNTHETIC_END_TO_END_EQUIVALENCE",
+    "cases": [
+      {
+        "version": "v2",
+        "seconds": 74.65552779997233,
+        "cpu_seconds": 28.8125,
+        "model_calls": 550,
+        "peak_rss_bytes": 400674816,
+        "extra_events_per_org": 100,
+        "organizations": 5,
+        "primary_grid_predictions": 60,
+        "root": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_benchmark_a\\v2\\outputs\\SYNTHETIC_SEED1001_TEST"
+      },
+      {
+        "version": "v3",
+        "seconds": 61.795456500025466,
+        "cpu_seconds": 34.609375,
+        "model_calls": 550,
+        "peak_rss_bytes": 400674816,
+        "extra_events_per_org": 100,
+        "organizations": 5,
+        "primary_grid_predictions": 60,
+        "root": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_benchmark_a\\v3\\outputs\\SYNTHETIC_SEED1001_TEST"
+      },
+      {
+        "version": "wal_v4",
+        "seconds": 55.08341800002381,
+        "cpu_seconds": 28.546875,
+        "model_calls": 550,
+        "peak_rss_bytes": 400674816,
+        "extra_events_per_org": 100,
+        "organizations": 5,
+        "primary_grid_predictions": 60,
+        "root": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_benchmark_a\\wal_v4\\outputs\\SYNTHETIC_SEED1001_TEST"
+      }
+    ],
+    "v2_over_v4_ratio": 1.3553176347905656,
+    "v3_over_v4_ratio": 1.1218522514343383,
+    "scope": "One synthetic sample per version, shared host, toy RAM models, full graph/sampler/persistence/grid/indicator/offline-metrics path; not a production ETA"
+  }
+}

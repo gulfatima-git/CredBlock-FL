@@ -1,0 +1,69 @@
+{
+  "status": "PASS_FROZEN_REGISTER_CATALOG_INSTANCE_IDENTITIES",
+  "required": 171,
+  "organization_branches": 855,
+  "original_register_sha256": "d9e2b1a63308e00da05b5dac2afd83f27b259c006e69044f593130db0cc0aaef",
+  "instances": [
+    {
+      "variant": "CFV1_RA_CS_004_SEED1001_TEST",
+      "identity": {
+        "adapter": "9a07390a91815bd0d7ca9e987300452e1518bd1204de31770483dcee223d1f89",
+        "catalog": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+        "register_row_sha256": "5b2310e37774631735aa7f4819b4c31460e8a1fda1449d2ab37008bf999943e0",
+        "variant": "CFV1_RA_CS_004_SEED1001_TEST",
+        "version": "heldout-instance-v2"
+      }
+    },
+    {
+      "variant": "CFV1_RA_CS_004_SEED1002_TEST",
+      "identity": {
+        "adapter": "9a07390a91815bd0d7ca9e987300452e1518bd1204de31770483dcee223d1f89",
+        "catalog": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+        "register_row_sha256": "d00430b40028c7dbf1f514a653e04c39fafc45e9bc3986246d48757648643085",
+        "variant": "CFV1_RA_CS_004_SEED1002_TEST",
+        "version": "heldout-instance-v2"
+      }
+    },
+    {
+      "variant": "CFV1_RA_CS_004_SEED1003_TEST",
+      "identity": {
+        "adapter": "9a07390a91815bd0d7ca9e987300452e1518bd1204de31770483dcee223d1f89",
+        "catalog": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+        "register_row_sha256": "cca555bd34332c73bd0796882dbf2df41155b1bacffc8f10be28060806d2761f",
+        "variant": "CFV1_RA_CS_004_SEED1003_TEST",
+        "version": "heldout-instance-v2"
+      }
+    },
+    {
+      "variant": "CFV1_RA_CS_005_SEED1001_TEST",
+      "identity": {
+        "adapter": "9a07390a91815bd0d7ca9e987300452e1518bd1204de31770483dcee223d1f89",
+        "catalog": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+        "register_row_sha256": "7c9f50d3b2b966fa0fb27a6d6093ad56881e89653baabaafba6cabe692935653",
+        "variant": "CFV1_RA_CS_005_SEED1001_TEST",
+        "version": "heldout-instance-v2"
+      }
+    },
+    {
+      "variant": "CFV1_RA_CS_005_SEED1002_TEST",
+      "identity": {
+        "adapter": "9a07390a91815bd0d7ca9e987300452e1518bd1204de31770483dcee223d1f89",
+        "catalog": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+        "register_row_sha256": "e775dd7fb20670efe2dfb2d0807f2d8dd2bf6b7a8411beb582d4c68d8e8decf2",
+        "variant": "CFV1_RA_CS_005_SEED1002_TEST",
+        "version": "heldout-instance-v2"
+      }
+    },
+    {
+      "variant": "CFV1_RA_CS_005_SEED1003_TEST",
+      "identity": {
+        "adapter": "9a07390a91815bd0d7ca9e987300452e1518bd1204de31770483dcee223d1f89",
+        "catalog": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+        "register_row_sha256": "6850560ce59d7de874ecac318b238337d338a1be0f4e51b30b2531e3f49b14e6",
+        "variant": "CFV1_RA_CS_005_SEED1003_TEST",
+        "version": "heldout-instance-v2"
+      }
+    }
+  ],
+  "reviewed_v4_release": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370"
+}

@@ -1,0 +1,176 @@
+{
+  "status": "WORKER_AND_LAUNCHER_EXIT_OBSERVED",
+  "observations": [
+    {
+      "at": "2026-11-18T13:33:49.094704+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:49.595667+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:50.096354+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:50.596929+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:51.097614+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:51.598237+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:52.098649+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:52.599606+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 3221225786
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:53.100204+05:00",
+      "processes": {
+        "22264": {
+          "exited": false,
+          "exit_code": 3221225786
+        },
+        "12092": {
+          "exited": false,
+          "exit_code": 259
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    },
+    {
+      "at": "2026-11-18T13:33:53.600867+05:00",
+      "processes": {
+        "22264": {
+          "exited": true,
+          "exit_code": 3221225786
+        },
+        "12092": {
+          "exited": true,
+          "exit_code": 3221225786
+        },
+        "12764": {
+          "exited": false,
+          "exit_code": 259
+        }
+      }
+    }
+  ],
+  "no_escalation": true
+}

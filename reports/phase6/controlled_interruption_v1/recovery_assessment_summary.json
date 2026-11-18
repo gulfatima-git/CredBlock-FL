@@ -1,0 +1,158 @@
+{
+  "status": "PASS_POST_INTERRUPTION_RECOVERY_VERIFICATION",
+  "completed_verified": 5,
+  "required": 171,
+  "completed": [
+    {
+      "variant": "CFV1_RA_CS_004_SEED1001_TEST",
+      "status": "PASS_INDEPENDENT_INSTANCE_AUDIT",
+      "organization_branches": 5,
+      "GNN_forwards": 0
+    },
+    {
+      "variant": "CFV1_RA_CS_004_SEED1002_TEST",
+      "status": "PASS_INDEPENDENT_INSTANCE_AUDIT",
+      "organization_branches": 5,
+      "GNN_forwards": 0
+    },
+    {
+      "variant": "CFV1_RA_CS_004_SEED1003_TEST",
+      "status": "PASS_INDEPENDENT_INSTANCE_AUDIT",
+      "organization_branches": 5,
+      "GNN_forwards": 0
+    },
+    {
+      "variant": "CFV1_RA_CS_005_SEED1001_TEST",
+      "status": "PASS_INDEPENDENT_INSTANCE_AUDIT",
+      "organization_branches": 5,
+      "GNN_forwards": 0
+    },
+    {
+      "variant": "CFV1_RA_CS_005_SEED1002_TEST",
+      "status": "PASS_INDEPENDENT_INSTANCE_AUDIT",
+      "organization_branches": 5,
+      "GNN_forwards": 0
+    }
+  ],
+  "incomplete": [
+    {
+      "status": "PASS_RECOVERABLE_INCOMPLETE_INSTANCE",
+      "variant_id": "CFV1_RA_CS_005_SEED1003_TEST",
+      "organizations": [
+        {
+          "organization": "Org1",
+          "status": "PASS_COMMITTED_GRAPH_SQL_GRID_PREFIX",
+          "commands": 271,
+          "input_events": 267,
+          "saved_scores": 2236,
+          "last_committed_time": "2020-12-13T17:33:39.445000",
+          "latest_checkpoint_seq": 200,
+          "checkpoint_rows": 3,
+          "committed_grid_bundles": 8,
+          "saved_grid_rows": 520,
+          "unpublished_committed_SQL": [],
+          "pending_commands": [],
+          "GNN_forwards": 0
+        },
+        {
+          "organization": "Org2",
+          "status": "PASS_COMMITTED_GRAPH_SQL_GRID_PREFIX",
+          "commands": 270,
+          "input_events": 266,
+          "saved_scores": 2274,
+          "last_committed_time": "2020-12-13T17:33:40.595000",
+          "latest_checkpoint_seq": 200,
+          "checkpoint_rows": 3,
+          "committed_grid_bundles": 8,
+          "saved_grid_rows": 526,
+          "unpublished_committed_SQL": [],
+          "pending_commands": [
+            {
+              "at": "2020-12-13T17:33:41.419000",
+              "SQL_committed": false,
+              "LOCAL_published": false
+            }
+          ],
+          "GNN_forwards": 0
+        },
+        {
+          "organization": "Org3",
+          "status": "PASS_COMMITTED_GRAPH_SQL_GRID_PREFIX",
+          "commands": 395,
+          "input_events": 391,
+          "saved_scores": 3438,
+          "last_committed_time": "2020-12-13T17:33:40.072000",
+          "latest_checkpoint_seq": 300,
+          "checkpoint_rows": 4,
+          "committed_grid_bundles": 8,
+          "saved_grid_rows": 698,
+          "unpublished_committed_SQL": [],
+          "pending_commands": [],
+          "GNN_forwards": 0
+        },
+        {
+          "organization": "Org4",
+          "status": "PASS_COMMITTED_GRAPH_SQL_GRID_PREFIX",
+          "commands": 393,
+          "input_events": 389,
+          "saved_scores": 3723,
+          "last_committed_time": "2020-12-13T17:33:31.688000",
+          "latest_checkpoint_seq": 300,
+          "checkpoint_rows": 4,
+          "committed_grid_bundles": 8,
+          "saved_grid_rows": 768,
+          "unpublished_committed_SQL": [],
+          "pending_commands": [],
+          "GNN_forwards": 0
+        },
+        {
+          "organization": "Org5",
+          "status": "PASS_COMMITTED_GRAPH_SQL_GRID_PREFIX",
+          "commands": 361,
+          "input_events": 357,
+          "saved_scores": 3638,
+          "last_committed_time": "2020-12-13T17:33:40.735000",
+          "latest_checkpoint_seq": 300,
+          "checkpoint_rows": 4,
+          "committed_grid_bundles": 8,
+          "saved_grid_rows": 694,
+          "unpublished_committed_SQL": [],
+          "pending_commands": [],
+          "GNN_forwards": 0
+        }
+      ],
+      "sharing": {
+        "status": "PASS_COMMITTED_SHARING_PREFIX",
+        "journal_chain_sha256": "13857f6ed6a88a8bd5bcc2f9f2126953c16bb4bb986ca949e87bf98a573aee05",
+        "completed_barriers": 1674,
+        "latest_completed_barrier": "2020-12-13T17:33:40.735000",
+        "pending": [
+          {
+            "at": "2020-12-13T17:33:41.419000",
+            "organizations": [
+              "Org2"
+            ],
+            "stages": {
+              "Org2": {
+                "LOCAL": false,
+                "ISSUANCE": false,
+                "PAIRED": false
+              }
+            },
+            "PUBLISHED": false
+          }
+        ],
+        "published": 1674,
+        "paired_records": 1690,
+        "receipts": 248,
+        "indicator_episodes": 62
+      },
+      "complete": false,
+      "remaining_future_work": "Continue only after separate approval; no final operational flush or full grid/completion claimed",
+      "GNN_forwards": 0
+    }
+  ],
+  "GNN_forwards": 0,
+  "production_v4_launch": false,
+  "production_pilot_authorized": false
+}

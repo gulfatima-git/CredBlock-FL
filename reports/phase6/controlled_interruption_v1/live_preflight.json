@@ -1,0 +1,65 @@
+{
+  "status": "PASS_METADATA_SOURCE_AND_IDENTITY_PRECHECK",
+  "checked_at": "2026-11-18T13:33:49.080396+05:00",
+  "processes": [
+    {
+      "ProcessId": 22264,
+      "ParentProcessId": 12092,
+      "Name": "python.exe",
+      "CreationDate": "2026-11-17T14:48:06.459723+05:00",
+      "CommandLine": "\"C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\.venv\\Scripts\\python.exe\" -B -u -m src.phase6.heldout_driver_v2 --output reports/phase6/heldout_test_v2/final_v1",
+      "ExecutablePath": "C:\\Python314\\python.exe"
+    },
+    {
+      "ProcessId": 12092,
+      "ParentProcessId": 12764,
+      "Name": "python.exe",
+      "CreationDate": "2026-11-17T14:48:06.435396+05:00",
+      "CommandLine": "\"C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\.venv\\Scripts\\python.exe\" -B -u -m src.phase6.heldout_driver_v2 --output reports/phase6/heldout_test_v2/final_v1",
+      "ExecutablePath": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\.venv\\Scripts\\python.exe"
+    },
+    {
+      "ProcessId": 12764,
+      "ParentProcessId": 30188,
+      "Name": "pwsh.exe",
+      "CreationDate": "2026-11-17T14:48:05.791782+05:00",
+      "CommandLine": "\"C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\native\\powershell\\pwsh.exe\" -Command \"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\n# PowerShell/PowerShell#27899: a denied ancestor can leave $PWD unset and the\r\n# filesystem drive at its root. Use the process cwd without resolving it again.\r\n# A successful startup or a profile that changed location has already set $PWD.\r\n& {\r\n    if ($ExecutionContext.SessionState.LanguageMode -ne 'FullLanguage') { return }\r\n    if ($null -ne $ExecutionContext.SessionState.PSVariable.GetValue('global:PWD')) { return }\r\n    $drive = $ExecutionContext.SessionState.Drive.Current\r\n    $cwd = [Environment]::CurrentDirectory\r\n    if ($drive.Provider.Name -eq 'FileSystem' -and !$drive.CurrentLocation -and\r\n        $drive.Root -eq [IO.Path]::GetPathRoot($cwd) -and $cwd.Length -gt $drive.Root.Length) {\r\n        $drive.CurrentLocation = $cwd.Substring($drive.Root.Length)\r\n        Microsoft.PowerShell.Utility\\Set-Variable -Name PWD -Scope Global -Value $ExecutionContext.SessionState.Path.CurrentLocation -Force\r\n    }\r\n}\r\n@'\nimport json,hashlib\nfrom datetime import datetime,timezone\nfrom pathlib import Path\nroot=Path('.')\npre=root/'reports/phase6/test_execution_preflight_v1';cfg=json.loads((pre/'execution_configuration.json').read_text());auth=json.loads((pre/'user_authorization.json').read_text());summary=json.loads((pre/'summary.json').read_text())\nassert summary['status']=='PASS_PRE_OBSERVATION_PREFLIGHT'\nrecord=dict(status='USER_APPROVED_TEST_EXECUTION_V2',explicit_user_decision=auth['text'],user_authorization_source=auth['source'],user_authorization_sha256=auth['sha256'],\n catalog_identity=cfg['catalog_identity'],source_sha256=cfg['source_sha256'],configuration_sha256=cfg['configuration_sha256'],\n shared_parquet_isolation='EXPLICITLY_REVIEWED_LOGICAL_ROWS_NOT_PHYSICAL_BYTES',\n recorded_utc=datetime.now(timezone.utc).isoformat(),preflight='reports/phase6/test_execution_preflight_v1/summary.json',preflight_sha256=hashlib.sha256((pre/'summary.json').read_bytes()).hexdigest(),\n output=cfg['output'],required_instances=171,required_organization_branches=855,training=False,recalibration=False,phase7_authorized=False,final_USER_ACCEPTED=False)\np=root/'reports/phase6/test_adapter_remediation_v2/execution_approval.json'\nwith p.open('x',encoding='utf-8') as f:json.dump(record,f,indent=2);f.write('\\n')\nprogress=json.loads((root/'reports/phase6/progress_v27.json').read_text());progress['version']='phase6-progress-v28';progress['previous_record']='reports/phase6/progress_v27.json';progress['held_out_test'].update(status='AUTHORIZED_PREFLIGHT_PASS_EXECUTION_STARTING',execution_approval_record_created=True,execution_approval='reports/phase6/test_adapter_remediation_v2/execution_approval.json',preflight_checks_passed=4886,output=cfg['output'],TEST_predictions_generated=False)\nprogress['next_exact_action']='Execute the one approved frozen TEST runner, then independently validate all 171 completions; do not start Phase7 or record final USER_ACCEPTED.'\nwith (root/'reports/phase6/progress_v28.json').open('x',encoding='utf-8') as f:json.dump(progress,f,indent=2);f.write('\\n')\nprint('Recorded explicit authorization; no protocol/source/model changes.')\n'@ | .venv\\Scripts\\python.exe -B -; .venv\\Scripts\\python.exe -B -u -m src.phase6.heldout_driver_v2 --output reports/phase6/heldout_test_v2/final_v1\"",
+      "ExecutablePath": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\native\\powershell\\pwsh.exe"
+    }
+  ],
+  "reviewed_hash_checks": 69,
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "progress": {
+    "checked_at": "2026-11-18T13:33:49.079734+05:00",
+    "completed": [
+      "CFV1_RA_CS_004_SEED1001_TEST",
+      "CFV1_RA_CS_004_SEED1002_TEST",
+      "CFV1_RA_CS_004_SEED1003_TEST",
+      "CFV1_RA_CS_005_SEED1001_TEST",
+      "CFV1_RA_CS_005_SEED1002_TEST"
+    ],
+    "active": [
+      {
+        "variant": "CFV1_RA_CS_005_SEED1003_TEST",
+        "counts": {
+          "IDENTITY": 1,
+          "BEGIN": 1675,
+          "LOCAL": 1690,
+          "ISSUANCE": 1690,
+          "RECEIPT": 248,
+          "PUBLICATION_PREPARED": 1674,
+          "PUBLISHED": 1674,
+          "PAIRED": 1690,
+          "COMPLETE": 1674
+        },
+        "last": {
+          "event": "BEGIN",
+          "at": "2020-12-13T17:33:41.419000",
+          "organization": null
+        },
+        "last_completed_barrier": "2020-12-13T17:33:40.735000"
+      }
+    ]
+  },
+  "helper_pid": 8868
+}

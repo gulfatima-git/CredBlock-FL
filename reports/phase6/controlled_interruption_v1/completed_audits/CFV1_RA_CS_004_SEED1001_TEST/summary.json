@@ -1,0 +1,403 @@
+{
+  "status": "PASS_INDEPENDENT_INSTANCE_AUDIT",
+  "variant_id": "CFV1_RA_CS_004_SEED1001_TEST",
+  "organization_branches": 5,
+  "fixed_grid": {
+    "Org1": {
+      "graphsage": {
+        "tp": 23,
+        "fp": 0,
+        "tn": 133,
+        "fn": 52,
+        "eligible": 208,
+        "positive": 75,
+        "negative": 133,
+        "precision": 1.0,
+        "recall": 0.30666666666666664,
+        "fpr": 0.0,
+        "f1": 0.46938775510204084,
+        "average_precision": 0.9364072146244966,
+        "bce": 0.27200394384151977
+      },
+      "tabular_mlp": {
+        "tp": 19,
+        "fp": 2,
+        "tn": 131,
+        "fn": 56,
+        "eligible": 208,
+        "positive": 75,
+        "negative": 133,
+        "precision": 0.9047619047619048,
+        "recall": 0.25333333333333335,
+        "fpr": 0.015037593984962405,
+        "f1": 0.3958333333333333,
+        "average_precision": 0.7297062548253866,
+        "bce": 0.517407909461404
+      }
+    },
+    "Org2": {
+      "graphsage": {
+        "tp": 25,
+        "fp": 2,
+        "tn": 135,
+        "fn": 39,
+        "eligible": 201,
+        "positive": 64,
+        "negative": 137,
+        "precision": 0.9259259259259259,
+        "recall": 0.390625,
+        "fpr": 0.014598540145985401,
+        "f1": 0.5494505494505495,
+        "average_precision": 0.8698201674272902,
+        "bce": 0.45294728870538925
+      },
+      "tabular_mlp": {
+        "tp": 14,
+        "fp": 3,
+        "tn": 134,
+        "fn": 50,
+        "eligible": 201,
+        "positive": 64,
+        "negative": 137,
+        "precision": 0.8235294117647058,
+        "recall": 0.21875,
+        "fpr": 0.021897810218978103,
+        "f1": 0.345679012345679,
+        "average_precision": 0.6436972885960092,
+        "bce": 0.8030594424438094
+      }
+    },
+    "Org3": {
+      "graphsage": {
+        "tp": 0,
+        "fp": 4,
+        "tn": 152,
+        "fn": 0,
+        "eligible": 156,
+        "positive": 0,
+        "negative": 156,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.02564102564102564,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.6142136076916836
+      },
+      "tabular_mlp": {
+        "tp": 0,
+        "fp": 4,
+        "tn": 152,
+        "fn": 0,
+        "eligible": 156,
+        "positive": 0,
+        "negative": 156,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.02564102564102564,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 1.0766529977802533
+      }
+    },
+    "Org4": {
+      "graphsage": {
+        "tp": 0,
+        "fp": 1,
+        "tn": 159,
+        "fn": 0,
+        "eligible": 160,
+        "positive": 0,
+        "negative": 160,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.00625,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.4438385338126377
+      },
+      "tabular_mlp": {
+        "tp": 0,
+        "fp": 4,
+        "tn": 156,
+        "fn": 0,
+        "eligible": 160,
+        "positive": 0,
+        "negative": 160,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.025,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.8312715084251421
+      }
+    },
+    "Org5": {
+      "graphsage": {
+        "tp": 0,
+        "fp": 5,
+        "tn": 141,
+        "fn": 0,
+        "eligible": 146,
+        "positive": 0,
+        "negative": 146,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.03424657534246575,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 1.0622255108384788
+      },
+      "tabular_mlp": {
+        "tp": 0,
+        "fp": 10,
+        "tn": 136,
+        "fn": 0,
+        "eligible": 146,
+        "positive": 0,
+        "negative": 146,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.0684931506849315,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 1.2670630843559385
+      }
+    }
+  },
+  "sharing": {
+    "indicators": 98,
+    "receipts": 392,
+    "timestamp_barriers": 1387,
+    "operational_decisions": 36272
+  },
+  "campaign_results": [
+    {
+      "variant_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "campaign_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "detector_family": "local_only",
+      "detected_organizations": 2,
+      "any_organization_detected": true,
+      "all_organizations_detected": true,
+      "primary_all_targeted_undetected": false,
+      "event_time_seconds": 328.968045,
+      "right_censored": false,
+      "censor_time_seconds": 3577.285673,
+      "unique_exposed_target_users_summed_local": 120,
+      "unique_detected_target_users_summed_local": 59,
+      "family": "Raccount_fixed_per_org_attempts",
+      "RIP_target": "0.2",
+      "Raccount_target": "0.2",
+      "Sorg_target": "2",
+      "RIP_actual": "0.2",
+      "Raccount_actual": "0.2",
+      "Sorg_actual": "2",
+      "seed": 1001
+    },
+    {
+      "variant_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "campaign_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "detector_family": "local_plus_indicator",
+      "detected_organizations": 2,
+      "any_organization_detected": true,
+      "all_organizations_detected": true,
+      "primary_all_targeted_undetected": false,
+      "event_time_seconds": 328.968045,
+      "right_censored": false,
+      "censor_time_seconds": 3577.285673,
+      "unique_exposed_target_users_summed_local": 120,
+      "unique_detected_target_users_summed_local": 63,
+      "family": "Raccount_fixed_per_org_attempts",
+      "RIP_target": "0.2",
+      "Raccount_target": "0.2",
+      "Sorg_target": "2",
+      "RIP_actual": "0.2",
+      "Raccount_actual": "0.2",
+      "Sorg_actual": "2",
+      "seed": 1001
+    }
+  ],
+  "organization_results": [
+    {
+      "variant_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "campaign_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "organization": "Org1",
+      "detector_family": "local_only",
+      "detected": true,
+      "unique_exposed_target_users": 60,
+      "unique_detected_target_users": 29,
+      "first_qualifying_alert": "2020-12-12T06:17:08.024888",
+      "event_time_seconds": 1005.310561,
+      "right_censored": false,
+      "censor_time_seconds": 3577.285673
+    },
+    {
+      "variant_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "campaign_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "organization": "Org2",
+      "detector_family": "local_only",
+      "detected": true,
+      "unique_exposed_target_users": 60,
+      "unique_detected_target_users": 30,
+      "first_qualifying_alert": "2020-12-12T06:05:51.682372",
+      "event_time_seconds": 328.968045,
+      "right_censored": false,
+      "censor_time_seconds": 3577.285673
+    },
+    {
+      "variant_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "campaign_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "organization": "Org1",
+      "detector_family": "local_plus_indicator",
+      "detected": true,
+      "unique_exposed_target_users": 60,
+      "unique_detected_target_users": 30,
+      "first_qualifying_alert": "2020-12-12T06:17:08.024888",
+      "event_time_seconds": 1005.310561,
+      "right_censored": false,
+      "censor_time_seconds": 3577.285673
+    },
+    {
+      "variant_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "campaign_id": "CFV1_RA_CS_004_SEED1001_TEST",
+      "organization": "Org2",
+      "detector_family": "local_plus_indicator",
+      "detected": true,
+      "unique_exposed_target_users": 60,
+      "unique_detected_target_users": 33,
+      "first_qualifying_alert": "2020-12-12T06:05:51.682372",
+      "event_time_seconds": 328.968045,
+      "right_censored": false,
+      "censor_time_seconds": 3577.285673
+    }
+  ],
+  "targeted_User_occurrences": 240,
+  "attribution": {
+    "UNATTRIBUTED": 2909,
+    "UNIQUE": 617
+  },
+  "local_graph_audit": [
+    {
+      "organization": "Org1",
+      "commands": 289,
+      "scores": 3319,
+      "alerts": 195,
+      "events": 282,
+      "sqlite_and_sidecars": {
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org1\\private\\local.sqlite": {
+          "exists": true,
+          "size": 6746112,
+          "sha256": "b5d4b20c67a390803d6e157be4f13133e4cdf7309fd048bd33e306ba4f531bdd"
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org1\\private\\local.sqlite-wal": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org1\\private\\local.sqlite-shm": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "organization": "Org2",
+      "commands": 334,
+      "scores": 3889,
+      "alerts": 565,
+      "events": 327,
+      "sqlite_and_sidecars": {
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org2\\private\\local.sqlite": {
+          "exists": true,
+          "size": 8622080,
+          "sha256": "e5a69b513bdd150c6f1f10c90fce5256a6c8e5fd16ee88cae87dbd63c270c86b"
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org2\\private\\local.sqlite-wal": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org2\\private\\local.sqlite-shm": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "organization": "Org3",
+      "commands": 265,
+      "scores": 3133,
+      "alerts": 280,
+      "events": 258,
+      "sqlite_and_sidecars": {
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org3\\private\\local.sqlite": {
+          "exists": true,
+          "size": 7299072,
+          "sha256": "fa9e6550b73e523eb27a1bdaf2c193be6c446d6461875b0e0dd5c65487d52cd7"
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org3\\private\\local.sqlite-wal": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org3\\private\\local.sqlite-shm": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "organization": "Org4",
+      "commands": 275,
+      "scores": 4105,
+      "alerts": 155,
+      "events": 268,
+      "sqlite_and_sidecars": {
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org4\\private\\local.sqlite": {
+          "exists": true,
+          "size": 7847936,
+          "sha256": "43cd1fb4a6fd050dfd7065afe920b22e398bd2299457798c7b3ecd306d80aa01"
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org4\\private\\local.sqlite-wal": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org4\\private\\local.sqlite-shm": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "organization": "Org5",
+      "commands": 252,
+      "scores": 3690,
+      "alerts": 561,
+      "events": 245,
+      "sqlite_and_sidecars": {
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org5\\private\\local.sqlite": {
+          "exists": true,
+          "size": 7987200,
+          "sha256": "e2cf210d206f17a4b4439f56878c2054b3066db7998cb78dff954bab4f973c41"
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org5\\private\\local.sqlite-wal": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        },
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v2_forensic_v1\\physical\\CFV1_RA_CS_004_SEED1001_TEST\\Org5\\private\\local.sqlite-shm": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        }
+      }
+    }
+  ],
+  "completion_sha256": "571bcffccfb7206232710a39265e0703a64aa503bbe783d3ea46086a51b3430b",
+  "elapsed_seconds": 177.0125075999531,
+  "GNN_forwards": 0
+}

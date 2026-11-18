@@ -1,0 +1,144 @@
+{
+  "status": "PASS_FINAL_SOURCE_CERTIFICATE_RECHECK",
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "cases": [
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n0\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "c3fd61eb4f053d9388c3d6749ceaf26397dfbc4c187f803083d84e600b02301f",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n1\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "f739b1972d6aacb08287208f175e8cc333728c1b2e0dae34947a702f13d96875",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n10\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "45c3d3272d68c6112d9d73d0128726b5abc7ee31da3335566e75ebb47ec50d04",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n11\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "3b9bcfad9af3170859e97fb18b55c34cf1807195f8bad98857da2aaea94f8531",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n12\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "c597223cc563141c2574775943b7ddb206a41375414d3d809ae5a8e6478d583b",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n13\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "21926e6baa4e9e17e97ffe77a7fa63c489f9675f70f8368b5f71951960f395b5",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n14\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "dab439fc7f4c0085c737eafc5dbf47f9a7071dae9a9b4519cbc263ea4c52d5a6",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n15\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "6b7bd5f581b771bde41b2bd493193102881c71d91e6dbb7ca48b2d9e4d7a85a3",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n16\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "71c0d7b3518dad469e548d3c90e5e9882a2a21c35eedeb41cb829282f173f8ec",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n17\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "53322268be0d29302517ca1dd75a8dd049ef431efbc46f1a7163537bae1a433e",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n18\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "350cb62d09dea580d49220fe2bf5b9978c675c6c7ca3e2f5b2964b81668bf335",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n19\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "c40c59f3b9ed62cf03bcb2b9c38df4f2ad7bade3bcd3c7e66cc985550411bacf",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n2\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "30d49a3e4518d4ea1210d1f9b8eb353bd9a88f149dc8d0d04065cc1e6f6fefb9",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n20\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "e4de0356fc6fd164b36c3e86097560ad228a693522ffc87a1c6c36d5753c86ee",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n21\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "9c39f4bb4321793ac95c589890cabef76d297f48f180c7c4a32967041ae2d403",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n22\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "e82d8ef6c6cfd4db777b24e5a3f51e7feaf9f90e9635657b6d05f253ff1da509",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n23\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "4a422cf7aa9acf9bec78f9850d282b1db51cf1722fd6bb4e48ecd4db72ea3748",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n24\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "7cebc7890c5b387cb288cdf4a38a0207601107bfea64d896f48bc1c1b574cdfa",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n25\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "52a96c57a07212121061e1b4de8aacf75e5ebebc7ed6aa32a650483040767eab",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n26\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "4d32e154c6a68216e5c17aca9bc534d3e5e9df692e94362394cd55e7ecb235af",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n3\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "4d53e9eaaba8fca12921d7628738cb34d4a4d7a1e47078d6276a6cdef532fbb8",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n4\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "ec6fdae612b993c0af911a99260b2479c0845a878b6fab256e635e0f80e345b5",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n5\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "05eeed19dc132014a25dc73a398e3493c2e8fef29fa59f2aa8b855afd73827ff",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n6\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "7f917d6ad337fbb1074a85fd20b2dd67051832c246549385a023f0f43bbb4858",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n7\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "8891e2016e7ea97dd100a7b771af5844e2472bb70bcd8a1335971e79abb48d45",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n8\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "0e77e58c0632e504e8efadd2c138432a171e19f6cc72bf989eda4d4d9af3bd9b",
+      "status": "PASS_FINAL_READER"
+    },
+    {
+      "certificate": "C:\\Users\\Gulso\\OneDrive\\Documents\\ChatGPT\\research\\wal_v4_c\\test_five_org_crash_recovery_n9\\wal_v4_case\\certificate_v4.json",
+      "certificate_id": "a572c4eaf015333e0f3a5f40de260885a143c10a1183bb0559c08c89e0698001",
+      "status": "PASS_FINAL_READER"
+    }
+  ],
+  "negative_grid_view_join_rejected": true,
+  "GNN_forwards": 0,
+  "scope": "Saved disposable synthetic evidence only; original files untouched; graph replay permitted"
+}

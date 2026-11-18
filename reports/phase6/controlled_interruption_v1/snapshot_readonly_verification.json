@@ -1,0 +1,6 @@
+{
+  "status": "PASS_ALL_SNAPSHOT_FILES_READ_ONLY",
+  "files_checked": 51690,
+  "nonreadonly": [],
+  "limitation": "DOS read-only attributes plus recorded hashes; not hardware WORM"
+}

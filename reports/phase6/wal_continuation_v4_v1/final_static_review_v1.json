@@ -1,0 +1,79 @@
+{
+  "status": "PASS_FINAL_SOURCE_STATIC_REVIEW",
+  "checks": [
+    {
+      "check": "ProductionBackend unchanged inventory",
+      "PASS": true
+    },
+    {
+      "check": "ProductionBackend unchanged prepare",
+      "PASS": true
+    },
+    {
+      "check": "ProductionBackend unchanged labels",
+      "PASS": true
+    },
+    {
+      "check": "ProductionBackend unchanged truth",
+      "PASS": true
+    },
+    {
+      "check": "ProductionBackend unchanged verify_register_row",
+      "PASS": true
+    },
+    {
+      "check": "Indexed barrier scientific process unchanged",
+      "PASS": true
+    },
+    {
+      "check": "Scientific reporting unchanged metrics",
+      "PASS": true
+    },
+    {
+      "check": "Scientific reporting unchanged independently_reconcile",
+      "PASS": true
+    },
+    {
+      "check": "Scientific reporting unchanged independent_campaign_reconciliation",
+      "PASS": true
+    },
+    {
+      "check": "Scientific reporting unchanged independent_sharing_reconciliation",
+      "PASS": true
+    },
+    {
+      "check": "Scientific reporting unchanged factor_cells",
+      "PASS": true
+    },
+    {
+      "check": "Only three reviewed guard-bearing runtime files changed since full matrix",
+      "PASS": true
+    },
+    {
+      "check": "Sidecar guard present before initial restore seal",
+      "PASS": true
+    },
+    {
+      "check": "Approval metadata namespace enforced",
+      "PASS": true
+    }
+  ],
+  "changed_since_matrix": [
+    "src/phase6/continuation_contract_v4.py",
+    "src/phase6/continuation_reader_v4.py",
+    "src/phase6/continuation_recovery_v4.py"
+  ],
+  "final_release": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "final_source_sha256": {
+    "src/phase6/continuation_contract_v4.py": "3b335952f2518b66fca6077b280de527cec432e6bd548277bb01d9cf120f82df",
+    "src/phase6/continuation_reader_v4.py": "b042d9bfc05eced60331444976ba45f5e577997196a7af228b1df5417dcd4c7b",
+    "src/phase6/continuation_recovery_v4.py": "12059a45170ed5695b5165ca2e5e7aedd8054894565cace5f1b9141534567525",
+    "src/phase6/continuation_manifest_v4.py": "083f26882b5b2b2fc71caa70cb34e1237c442fd59ba9fdb1e317052fc9f62e61",
+    "src/phase6/continuation_barrier_v4.py": "5a5aa09e25a06b8a9faec4a1e11f443833b4e489d76468c9cd569eccc6b08df1",
+    "src/phase6/continuation_driver_v4.py": "8340d9fcd25706e500e5a830827058823a24464e6c4ab192959177457c53f216",
+    "src/phase6/continuation_lease_v4.py": "cbea977cebef4def4eb38ef714937d8ccd76394e47556d7efa5fae7f2a8b0c12",
+    "src/phase6/continuation_wal_v4.py": "91bc06d559e469e1c2e43e96248ae9eef3f3a4f2563d9f0a64a4c15cd2ec704e",
+    "configs/phase6/continuation_wal_v4.json": "43bbe9644182b7a1d2c4762db5d05c6ccd82683a83d342c9c15ab13823ad3934"
+  },
+  "limitation": "Full 27-stage matrix and five-receiver matrix precede three final guard-only changes; final focused tests exercise initial/working recovery, all WAL units, inventory and authorization guards. No claim that the full matrix was rerun on the final source vector."
+}

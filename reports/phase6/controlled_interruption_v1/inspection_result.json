@@ -1,0 +1,20 @@
+{
+  "status": "PASS_NO_EVENT_SENT",
+  "scope": {
+    "checked_at": "2026-11-18T13:33:11.194505+05:00",
+    "original_recipients": [
+      12092,
+      12764,
+      22264
+    ],
+    "all_console_members": [
+      12092,
+      12764,
+      22264,
+      23868
+    ],
+    "helper_ignores_CTRL_C": true,
+    "parent_PowerShell_control_flow_may_be_interrupted": true
+  },
+  "signal_attempts": 0
+}

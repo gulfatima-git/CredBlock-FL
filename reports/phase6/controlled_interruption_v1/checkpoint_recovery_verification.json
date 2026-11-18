@@ -1,0 +1,276 @@
+{
+  "status": "PASS_ALL_CHECKPOINTS_AND_GRAPH_RECOVERY",
+  "sets": [
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org1/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 289,
+      "committed_commands": 289,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org2/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 5,
+      "last_checkpoint_seq": 334,
+      "committed_commands": 334,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org3/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 265,
+      "committed_commands": 265,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org4/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 275,
+      "committed_commands": 275,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org5/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 252,
+      "committed_commands": 252,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org1/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 207,
+      "committed_commands": 207,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org2/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 224,
+      "committed_commands": 224,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org3/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 298,
+      "committed_commands": 298,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org4/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 5,
+      "last_checkpoint_seq": 339,
+      "committed_commands": 339,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org5/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 5,
+      "last_checkpoint_seq": 378,
+      "committed_commands": 378,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org1/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 6,
+      "last_checkpoint_seq": 481,
+      "committed_commands": 481,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org2/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 6,
+      "last_checkpoint_seq": 480,
+      "committed_commands": 480,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org3/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 8,
+      "last_checkpoint_seq": 658,
+      "committed_commands": 658,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org4/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 8,
+      "last_checkpoint_seq": 656,
+      "committed_commands": 656,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org5/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 8,
+      "last_checkpoint_seq": 601,
+      "committed_commands": 601,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org1/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 289,
+      "committed_commands": 289,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org2/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 5,
+      "last_checkpoint_seq": 334,
+      "committed_commands": 334,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org3/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 265,
+      "committed_commands": 265,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org4/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 275,
+      "committed_commands": 275,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org5/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 252,
+      "committed_commands": 252,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org1/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 207,
+      "committed_commands": 207,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org2/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 224,
+      "committed_commands": 224,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org3/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 298,
+      "committed_commands": 298,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org4/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 5,
+      "last_checkpoint_seq": 339,
+      "committed_commands": 339,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org5/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 5,
+      "last_checkpoint_seq": 378,
+      "committed_commands": 378,
+      "graph_commands_replayed": 0,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org1/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 3,
+      "last_checkpoint_seq": 200,
+      "committed_commands": 271,
+      "graph_commands_replayed": 71,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org2/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 3,
+      "last_checkpoint_seq": 200,
+      "committed_commands": 270,
+      "graph_commands_replayed": 70,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org3/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 300,
+      "committed_commands": 395,
+      "graph_commands_replayed": 95,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org4/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 300,
+      "committed_commands": 393,
+      "graph_commands_replayed": 93,
+      "GNN_forwards": 0
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org5/private/local.sqlite",
+      "status": "PASS_ALL_CHECKPOINTS_AND_LATEST_RECOVERY",
+      "checkpoints": 4,
+      "last_checkpoint_seq": 300,
+      "committed_commands": 361,
+      "graph_commands_replayed": 61,
+      "GNN_forwards": 0
+    }
+  ],
+  "GNN_forwards": 0
+}

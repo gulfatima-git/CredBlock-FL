@@ -1,0 +1,30 @@
+{
+  "version": "heldout-remediation-v2",
+  "state": "PREPARATION_ONLY_PENDING_INDEPENDENT_REVIEW",
+  "split": "TEST",
+  "organizations": ["Org1", "Org2", "Org3", "Org4", "Org5"],
+  "required_instances": 171,
+  "required_seeds": [1001, 1002, 1003],
+  "configurations_per_seed": 57,
+  "primary_protocol_sha256": "9e44c7a8a66f553af79e4e3a834a2a01bb1300cb3fdfe5c993c5146c695a806b",
+  "indicator_policy_sha256": "dcca57cd901fdba0cdaaf2fa63d28d74fedabf789dd9ea07cf2b726907e1a908",
+  "frozen_register_path": "reports/phase5_final_acceptance_v2/campaign_register_v2.csv",
+  "frozen_register_sha256": "d9e2b1a63308e00da05b5dac2afd83f27b259c006e69044f593130db0cc0aaef",
+  "primary_grid_offsets_minutes": [0, 10, 20, 30, 40, 50],
+  "final_operational_flush": "end_exclusive minus one microsecond; never an additional primary grid",
+  "primary_target": "Original separately calibrated 1% empirical VAL FPR thresholds; no TEST calibration",
+  "source_modules": ["src/phase6/heldout_contract_v2.py", "src/phase6/heldout_grid_v2.py", "src/phase6/heldout_barrier_v2.py", "src/phase6/heldout_driver_v2.py"],
+  "approval_path": "reports/phase6/test_adapter_remediation_v2/execution_approval.json",
+  "approval_created": false,
+  "shared_parquet": {
+    "physical_isolation": false,
+    "logical_isolation": "Original seven-day warm-up query bounded entirely inside TEST calendar; original source file hashes retained",
+    "limitation": "Whole-file checksums and Parquet storage pages can touch bytes from other dates. Logical filtering does not establish physical byte isolation.",
+    "future_approval_binding": "EXPLICITLY_REVIEWED_LOGICAL_ROWS_NOT_PHYSICAL_BYTES",
+    "if_byte_isolation_is_required": "Stop for separately reviewed staging design. Do not rewrite accepted data, skip existing hashes or claim byte isolation."
+  },
+  "permitted_additional_metadata": "Global Phase 5 dataset-freeze path/size/hash inventory pinned by primary protocol; never follow its TEST campaign paths during preparation",
+  "methodology_changed": false,
+  "training_or_calibration": false,
+  "phase7_started": false
+}

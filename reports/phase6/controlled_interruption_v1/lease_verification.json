@@ -1,0 +1,7 @@
+{
+  "status": "PASS_ORIGINAL_READ_ONLY_LEASE_ACQUIRED",
+  "at": "2026-11-18T13:38:24.493494+05:00",
+  "lock": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\final_v1\\execution.lock",
+  "sha256_before": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "no_lock_write": true
+}

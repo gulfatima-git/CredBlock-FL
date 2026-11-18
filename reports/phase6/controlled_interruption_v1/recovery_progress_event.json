@@ -1,0 +1,14 @@
+{
+  "status": "PASS_SAVED_STATE_RECOVERY_VERIFICATION",
+  "report": "reports/phase6/controlled_interruption_v1/TECHNICAL_RECOVERY_REPORT.md",
+  "original_v2_stopped": true,
+  "interrupt_events_sent": 1,
+  "complete_verified": 5,
+  "required": 171,
+  "partial_variant": "CFV1_RA_CS_005_SEED1003_TEST",
+  "partial_committed_local_scores": 15309,
+  "GNN_forwards": 0,
+  "v4_launched": false,
+  "v4_execution_authorized": false,
+  "phase7_started": false
+}

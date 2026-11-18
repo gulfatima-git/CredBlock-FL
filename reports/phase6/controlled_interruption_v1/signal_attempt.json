@@ -1,0 +1,26 @@
+{
+  "status": "ONE_AUTHORIZED_SEND_ATTEMPT_ARMED",
+  "at": "2026-11-18T13:33:49.086027+05:00",
+  "event": "CTRL_C_EVENT",
+  "event_value": 0,
+  "process_group": 0,
+  "scope": {
+    "checked_at": "2026-11-18T13:33:49.083148+05:00",
+    "original_recipients": [
+      12092,
+      12764,
+      22264
+    ],
+    "all_console_members": [
+      8868,
+      12092,
+      12764,
+      22264
+    ],
+    "helper_ignores_CTRL_C": true,
+    "parent_PowerShell_control_flow_may_be_interrupted": true
+  },
+  "authorization_sha256": "6e5c0728287cd41f7255c2633c799c3b9d03bc669c94729cdb72f9a751f51630",
+  "sender_sha256": "74c5e2d4217bb6bb79e577e469ce7769018606e30951719a8c83fd2c2488cd01",
+  "retry_allowed": false
+}

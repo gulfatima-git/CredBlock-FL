@@ -1,0 +1,11 @@
+{
+  "status": "RESOLVED_CAPTURE_READER_CONFLICT",
+  "original_failure": "capture_failure_135408228705.json",
+  "diagnosis": "capture_failure_diagnosis.json",
+  "correction": "forensic_capture_v2.py",
+  "verification": "physical_snapshot_manifest.json",
+  "failed_evidence_preserved": true,
+  "original_files_overwritten": false,
+  "original_database_connections": false,
+  "explanation": "Read the leased byte through the owning read-only handle; preserve and reverify previous copied files; append only two missing files."
+}

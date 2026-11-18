@@ -1,0 +1,217 @@
+{
+  "status": "PASS_ALL_30_SCORE_STORES",
+  "sets": [
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org1/private/local.sqlite",
+      "organization": "Org1",
+      "saved_scores": 3319,
+      "threshold_hex": "0x1.2b94040000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org2/private/local.sqlite",
+      "organization": "Org2",
+      "saved_scores": 3889,
+      "threshold_hex": "0x1.24d71e0000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org3/private/local.sqlite",
+      "organization": "Org3",
+      "saved_scores": 3133,
+      "threshold_hex": "0x1.2e94900000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org4/private/local.sqlite",
+      "organization": "Org4",
+      "saved_scores": 4105,
+      "threshold_hex": "0x1.9b36740000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1001_TEST/Org5/private/local.sqlite",
+      "organization": "Org5",
+      "saved_scores": 3690,
+      "threshold_hex": "0x1.d626f40000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org1/private/local.sqlite",
+      "organization": "Org1",
+      "saved_scores": 1715,
+      "threshold_hex": "0x1.2b94040000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org2/private/local.sqlite",
+      "organization": "Org2",
+      "saved_scores": 1256,
+      "threshold_hex": "0x1.24d71e0000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org3/private/local.sqlite",
+      "organization": "Org3",
+      "saved_scores": 1518,
+      "threshold_hex": "0x1.2e94900000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org4/private/local.sqlite",
+      "organization": "Org4",
+      "saved_scores": 2380,
+      "threshold_hex": "0x1.9b36740000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1002_TEST/Org5/private/local.sqlite",
+      "organization": "Org5",
+      "saved_scores": 2672,
+      "threshold_hex": "0x1.d626f40000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org1/private/local.sqlite",
+      "organization": "Org1",
+      "saved_scores": 4296,
+      "threshold_hex": "0x1.2b94040000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org2/private/local.sqlite",
+      "organization": "Org2",
+      "saved_scores": 3793,
+      "threshold_hex": "0x1.24d71e0000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org3/private/local.sqlite",
+      "organization": "Org3",
+      "saved_scores": 6094,
+      "threshold_hex": "0x1.2e94900000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org4/private/local.sqlite",
+      "organization": "Org4",
+      "saved_scores": 6032,
+      "threshold_hex": "0x1.9b36740000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_004_SEED1003_TEST/Org5/private/local.sqlite",
+      "organization": "Org5",
+      "saved_scores": 5917,
+      "threshold_hex": "0x1.d626f40000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org1/private/local.sqlite",
+      "organization": "Org1",
+      "saved_scores": 3119,
+      "threshold_hex": "0x1.2b94040000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org2/private/local.sqlite",
+      "organization": "Org2",
+      "saved_scores": 3688,
+      "threshold_hex": "0x1.24d71e0000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org3/private/local.sqlite",
+      "organization": "Org3",
+      "saved_scores": 3133,
+      "threshold_hex": "0x1.2e94900000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org4/private/local.sqlite",
+      "organization": "Org4",
+      "saved_scores": 4105,
+      "threshold_hex": "0x1.9b36740000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1001_TEST/Org5/private/local.sqlite",
+      "organization": "Org5",
+      "saved_scores": 3690,
+      "threshold_hex": "0x1.d626f40000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org1/private/local.sqlite",
+      "organization": "Org1",
+      "saved_scores": 1715,
+      "threshold_hex": "0x1.2b94040000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org2/private/local.sqlite",
+      "organization": "Org2",
+      "saved_scores": 1256,
+      "threshold_hex": "0x1.24d71e0000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org3/private/local.sqlite",
+      "organization": "Org3",
+      "saved_scores": 1518,
+      "threshold_hex": "0x1.2e94900000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org4/private/local.sqlite",
+      "organization": "Org4",
+      "saved_scores": 2126,
+      "threshold_hex": "0x1.9b36740000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1002_TEST/Org5/private/local.sqlite",
+      "organization": "Org5",
+      "saved_scores": 2342,
+      "threshold_hex": "0x1.d626f40000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org1/private/local.sqlite",
+      "organization": "Org1",
+      "saved_scores": 2236,
+      "threshold_hex": "0x1.2b94040000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org2/private/local.sqlite",
+      "organization": "Org2",
+      "saved_scores": 2274,
+      "threshold_hex": "0x1.24d71e0000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org3/private/local.sqlite",
+      "organization": "Org3",
+      "saved_scores": 3438,
+      "threshold_hex": "0x1.2e94900000001p+2",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org4/private/local.sqlite",
+      "organization": "Org4",
+      "saved_scores": 3723,
+      "threshold_hex": "0x1.9b36740000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    },
+    {
+      "database": "CFV1_RA_CS_005_SEED1003_TEST/Org5/private/local.sqlite",
+      "organization": "Org5",
+      "saved_scores": 3638,
+      "threshold_hex": "0x1.d626f40000001p+1",
+      "status": "PASS_EXACT_FROZEN_BINARY64_SAVED_PREDICTIONS"
+    }
+  ],
+  "total_scores": 95810,
+  "GNN_forwards": 0
+}

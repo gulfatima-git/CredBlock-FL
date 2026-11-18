@@ -1,0 +1,6 @@
+{
+  "status": "PASS_SOURCE_AND_SNAPSHOT_CENSUS_METADATA_AND_READONLY",
+  "files": 51690,
+  "additional_SQLite_files_created": false,
+  "scope": "Metadata only; per-file content preservation is sealed separately"
+}

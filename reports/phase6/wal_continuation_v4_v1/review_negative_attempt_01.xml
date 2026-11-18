@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="27.226" timestamp="2026-11-18T01:44:21.475260+05:00" hostname="Gul"><testcase classname="tests.phase6.test_continuation_wal_v4_review" name="test_unexpected_working_sidecars_cannot_poison_initial_restore" time="18.259"><failure message="Failed: DID NOT RAISE ValueError">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/wal_v4_review_a'), _tr...ath('C:/Users/Gulso/OneDrive/Documents/ChatGPT/research/wal_v4_review_a'), _retention_count=3, _retention_policy='all')
+
+    def test_unexpected_working_sidecars_cannot_poison_initial_restore(tmp_path_factory):
+        root=tmp_path_factory.mktemp('wal_v4_guard');first,source,old,bundles,row,cert=prepare(root)
+        new=ContinuationScope.synthetic(root/'n',old.catalog,cert)
+        target=new.output_root/row['variant_id']/'Org1/private/local.sqlite-shm';target.parent.mkdir(parents=True);target.write_bytes(b'UNEXPECTED_SYNTHETIC_SIDECAR')
+        with run_lease(new.output_root):
+            workspace=Workspace(new)
+&gt;           with pytest.raises(ValueError,match='sidecar'):workspace.prepare()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE ValueError
+
+tests\phase6\test_continuation_wal_v4_review.py:24: Failed</failure></testcase></testsuite></testsuites>
