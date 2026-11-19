@@ -1,0 +1,61 @@
+{
+  "status": "PASS_PREPARATION_ONLY_INDEPENDENT_RECONCILIATION",
+  "certificate_id": "67ebdf7a895995729235091d85c40d68c2a0659576d74494b7e9e8b3331c116d",
+  "organizations": [
+    {
+      "organization": "Org1",
+      "status": "PASS_DERIVED_BYTES_AND_SAVED_SCORES",
+      "commands": 271,
+      "saved_scores": 2236,
+      "derived_sha256": "9d42615651cd357766b4abb623498a4769166d86298430c692fc9f2236985b83",
+      "original_SQLite_opens": 0
+    },
+    {
+      "organization": "Org2",
+      "status": "PASS_DERIVED_BYTES_AND_SAVED_SCORES",
+      "commands": 270,
+      "saved_scores": 2274,
+      "derived_sha256": "7dedc16856bb772217e42b65c3d578d61713d69836039f68fd45c203352f1f74",
+      "original_SQLite_opens": 0
+    },
+    {
+      "organization": "Org3",
+      "status": "PASS_DERIVED_BYTES_AND_SAVED_SCORES",
+      "commands": 395,
+      "saved_scores": 3438,
+      "derived_sha256": "086e0d26e6f6955d6b7366dbbab804741941e01d8e6c55328706aebde2d1792c",
+      "original_SQLite_opens": 0
+    },
+    {
+      "organization": "Org4",
+      "status": "PASS_DERIVED_BYTES_AND_SAVED_SCORES",
+      "commands": 393,
+      "saved_scores": 3723,
+      "derived_sha256": "6efb88582e775655e665fdbfed4d03482874c5b6d17557ce9204235238e37441",
+      "original_SQLite_opens": 0
+    },
+    {
+      "organization": "Org5",
+      "status": "PASS_DERIVED_BYTES_AND_SAVED_SCORES",
+      "commands": 361,
+      "saved_scores": 3638,
+      "derived_sha256": "c482610f4325edc81df4f052c4b9d427aa38b6418d599efd9288a22633c37d15",
+      "original_SQLite_opens": 0
+    }
+  ],
+  "saved_local_scores": 15309,
+  "grid_commits": 40,
+  "completed_barriers": 1674,
+  "pending_barriers": 1,
+  "completed_origins": 5,
+  "execution_authorized": false,
+  "production_draft_rejected": true,
+  "continuation_output_created": false,
+  "GNN_forwards": 0,
+  "source_SQLite_opens": 0,
+  "limitations": [
+    "No actual nonempty production WAL: all five WALs absent",
+    "No pilot execution or production runtime measurement",
+    "Fresh host/quiescence/resource and identity checks remain mandatory before separately approved execution"
+  ]
+}

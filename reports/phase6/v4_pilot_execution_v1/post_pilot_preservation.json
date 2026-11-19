@@ -1,0 +1,65 @@
+{
+  "status": "PASS_POST_PILOT_PRESERVATION",
+  "reviewed_file_hash_checks": 69,
+  "unchanged_prepared_artifacts": 4,
+  "original_partial_database_sets": 5,
+  "original_completed_provenances": 5,
+  "forensic_database_anchors": 5,
+  "unchanged_model_archives": [
+    [
+      "Org1",
+      "graphsage",
+      "a325eff38f6ebdb3324e940436f4c34452c54a67d6a5cc60fb84117cc89aef66"
+    ],
+    [
+      "Org1",
+      "tabular_mlp",
+      "9844d988912de0595c3739ced7809f8f7b609e0f0fb59e3de7c411776ab5d2b7"
+    ],
+    [
+      "Org2",
+      "graphsage",
+      "54c28689cc4237f38238e6ce69ef2e24ab0030f1fa3291dd83dfd04c2d5ac351"
+    ],
+    [
+      "Org2",
+      "tabular_mlp",
+      "7805f647887380b8599a26cfb525363d31a5e18bfaa124f30294f3deeb5da383"
+    ],
+    [
+      "Org3",
+      "graphsage",
+      "9e8da418e8061663a057619e01424a7feecffc2af8269f550c8fc6648ce25a7e"
+    ],
+    [
+      "Org3",
+      "tabular_mlp",
+      "976656782d34588ab93cd8419e1bd35ed46e7dce3f221b3322f962646768b920"
+    ],
+    [
+      "Org4",
+      "graphsage",
+      "d0ae07a8f2d32dda72288a659ae1f305cc5a2091eb516fc14ab3ebae40c1e309"
+    ],
+    [
+      "Org4",
+      "tabular_mlp",
+      "a1aef0bd9e7422809c8af5d2fe44a44632b47b72080368e8834e4b90f16e8048"
+    ],
+    [
+      "Org5",
+      "graphsage",
+      "dc3763b8688dfb0cea4daaa0f3a1bcf0d4cffc21cdeedb0acd01297bad420ed3"
+    ],
+    [
+      "Org5",
+      "tabular_mlp",
+      "9d379c017f963a59867726c2620c03f9ac5c23e37d1f33bb6d3524a9af509ef6"
+    ]
+  ],
+  "tracked_changes": 0,
+  "staged_changes": 0,
+  "source_lease_available": true,
+  "original_SQLite_opens": 0,
+  "full_repository_hash_sweep": false
+}

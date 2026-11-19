@@ -1,0 +1,34 @@
+{
+  "status": "PREPARATION_ONLY_CURATED_METADATA_AND_CODE_INDEX",
+  "files_sha256": {
+    "reports/phase6/v4_pilot_preparation_v1/audit_prepared_artifacts.py": "68876a150331cc91eaa3fb38cfeeab3b366f24affa8938baf10dfc74237bb9a5",
+    "reports/phase6/v4_pilot_preparation_v1/gate1_git_and_scope.json": "09f173e92a81889cedfaf7750670df950a814e2720aa77478674d31e3c9db7a4",
+    "reports/phase6/v4_pilot_preparation_v1/gate2_preservation.json": "c343f04083cb1a703d8e38d8143872f097495341e98f1281fcd5e50322bb6686",
+    "reports/phase6/v4_pilot_preparation_v1/gate2_quiescence.json": "f677a909cbef168a8b933bcd225f2e6ecb53bba374499dff655cede0ef35234b",
+    "reports/phase6/v4_pilot_preparation_v1/gate3_science_and_model_identities.json": "837c8964d5561de93d434b60cd8bcd3fa1c6a76af129cc9ac0f2477df7cb47c6",
+    "reports/phase6/v4_pilot_preparation_v1/gate4_certificate_and_reuse.json": "f8f16385fe8483f5a2ed1288c58fdd01af839d7bb4c6c48a30c5f64374142787",
+    "reports/phase6/v4_pilot_preparation_v1/gate5_draft_execution_denial.json": "212f1a8b775fe1ab4fd2feef9aa96eda6c02c8bc3ffff7b7aca62b535e72c703",
+    "reports/phase6/v4_pilot_preparation_v1/host_pre_capture_inspection.json": "427a35abbf6a0302e22a3beb00eb35cf3225ede694739e24a5ba2fb69ffc69e3",
+    "reports/phase6/v4_pilot_preparation_v1/host_process_inspection.json": "375a7c02cbfb8e8055b5167c5f1292ffd594324da16c2c1ff5d0b7ead070f1eb",
+    "reports/phase6/v4_pilot_preparation_v1/independent_preparation_audit.json": "d573974ae31dca94a11bc819bd29a33cc899b879348be8d048d28bcb075264cb",
+    "reports/phase6/v4_pilot_preparation_v1/post_preparation_host.json": "ede76db279261f081509478bd21957ab2089d3c6604358f440683cfa13d0fd58",
+    "reports/phase6/v4_pilot_preparation_v1/post_preparation_preservation.json": "6cc13598766be379eacaeffb8996f2e46c626b21aa5252e11df0d9660ae5ecf5",
+    "reports/phase6/v4_pilot_preparation_v1/prepared_artifact_index.json": "9de58368225285f2a064d1336f618ded3cece4a62f42f71c71ba6fd2c6b754a9",
+    "reports/phase6/v4_pilot_preparation_v1/prepare_capture_and_draft.py": "50b88e85ea45b9100f91aa317ec002ab8c798707ef0c6ca4de0f088f7e8e1aab",
+    "reports/phase6/v4_pilot_preparation_v1/progress_event_v1.json": "de07978cb59c50bc92402730fd72a3dcac9720fcf8b56a4898edca379da68ec4",
+    "reports/phase6/v4_pilot_preparation_v1/TECHNICAL_PREPARATION_REPORT.md": "960e34753584e8def59f6492dd36b53f3b617a5f03c29c69c4c12abd951eb630",
+    "reports/phase6/v4_pilot_preparation_v1/user_preparation_authorization.json": "0d8a09bc4d661db5468b4e4a5b5d720eede50b472caf8d2b3ab321abb285eb2f",
+    "reports/phase6/v4_pilot_preparation_v1/verify_quiescence_and_preservation.py": "60099485742a8be5aa9df199a7ac0d7182e7770c38dd53ab2804fe29271bdb0e",
+    "reports/phase6/heldout_test_v2/wal_v4_authorizations/source_quiescence_preparation_v1.json": "c23401d3ed0474f11150eeb167eec332fc1d647338edbcf589d5651e1c7d8f32",
+    "reports/phase6/heldout_test_v2/wal_v4_authorizations/capture_preparation_only_v1.json": "829b036465824176347244a7e611fa63b29e7e579c7067f7ca0ad7f5a965d8ea",
+    "reports/phase6/heldout_test_v2/wal_v4_captures/pilot_preparation_v1/CFV1_RA_CS_005_SEED1003_TEST/predecessor_certificate.json": "dc4a59bf2c917425dba4c9a24b164ad88f370844f55a0e4ceb5176e31505bd72",
+    "reports/phase6/heldout_test_v2/wal_v4_authorizations/pilot_campaign6_execution_DRAFT_v1.json": "2be53cf37ea0616dafddb3b31850de1ebe3aa2f123d538e44af035f181d8670a",
+    "reports/phase6/progress_v36.json": "1f0703105d3ba19586e4ac442406dee96b5a79859660ddc7210f1519f2d49c1a"
+  },
+  "excluded": [
+    "All derived/oracle SQLite images and sidecars",
+    "Original v2 run and forensic payloads",
+    "Local untracked-path inventory"
+  ],
+  "execution_authorized": false
+}

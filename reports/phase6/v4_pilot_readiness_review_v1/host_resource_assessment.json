@@ -1,0 +1,65 @@
+{
+  "at": "2026-11-18T23:51:01.5452828+05:00",
+  "total_physical_bytes": 16858472448,
+  "os_free_physical_bytes": 1047384064,
+  "memory_samples": [
+    {
+      "at": "2026-11-18T23:50:57.7613341+05:00",
+      "available_bytes": 897097728,
+      "committed_bytes": 30507593728,
+      "commit_limit_bytes": 43702018048,
+      "percent_commit_in_use": 69,
+      "pages_per_second": 1431,
+      "page_reads_per_second": 119,
+      "page_writes_per_second": 0
+    },
+    {
+      "at": "2026-11-18T23:50:59.1870564+05:00",
+      "available_bytes": 898605056,
+      "committed_bytes": 30487531520,
+      "commit_limit_bytes": 43702018048,
+      "percent_commit_in_use": 69,
+      "pages_per_second": 26,
+      "page_reads_per_second": 7,
+      "page_writes_per_second": 0
+    },
+    {
+      "at": "2026-11-18T23:51:00.5138705+05:00",
+      "available_bytes": 862420992,
+      "committed_bytes": 30536630272,
+      "commit_limit_bytes": 43702018048,
+      "percent_commit_in_use": 69,
+      "pages_per_second": 7968,
+      "page_reads_per_second": 852,
+      "page_writes_per_second": 0
+    }
+  ],
+  "pagefile_usage": [
+    {
+      "Name": "C:\\pagefile.sys",
+      "AllocatedBaseSize": 25600,
+      "CurrentUsage": 3577,
+      "PeakUsage": 3965
+    }
+  ],
+  "disk": {
+    "device": "C:",
+    "size_bytes": 510863077376,
+    "free_bytes": 213206392832
+  },
+  "python_processes": [
+    {
+      "ProcessId": 8208,
+      "ParentProcessId": 18464,
+      "Name": "python.exe",
+      "CreationDate": "2026-11-14T08:35:01.544185+05:00",
+      "CommandLine": "c:\\Users\\Gulso\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe c:\\Users\\Gulso\\.vscode\\extensions\\ms-python.autopep8-2026.6.0\\bundled\\tool\\lsp_server.py",
+      "WorkingSetSize": 7827456,
+      "PeakWorkingSetSize": 57672,
+      "PrivatePageCount": 46448640
+    }
+  ],
+  "matching_evaluators": [],
+  "read_only": true,
+  "execution_authorized": false
+}

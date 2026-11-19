@@ -1,0 +1,17 @@
+{
+  "status": "PASS_PREPARATION_ONLY_EXECUTION_NOT_AUTHORIZED",
+  "report": "reports/phase6/v4_pilot_preparation_v1/TECHNICAL_PREPARATION_REPORT.md",
+  "artifact_index": "reports/phase6/v4_pilot_preparation_v1/prepared_artifact_index.json",
+  "certificate_id": "67ebdf7a895995729235091d85c40d68c2a0659576d74494b7e9e8b3331c116d",
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "authorized_variant_for_future_review": "CFV1_RA_CS_005_SEED1003_TEST",
+  "maximum_newly_completed_instances": 1,
+  "completed_original_instances_reused_as_provenance": 5,
+  "execution_authorized": false,
+  "pilot_executed": false,
+  "GNN_forwards": 0,
+  "newly_completed_instances": 0,
+  "free_memory_GiB_final_sample": 0.7044677734375,
+  "execution_capacity_status": "REVIEW_REQUIRED",
+  "phase7_started": false
+}

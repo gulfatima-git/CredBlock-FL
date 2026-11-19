@@ -1,0 +1,14 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "recommendation": "REVIEW_REQUIRED_DO_NOT_EXECUTE",
+  "integrity_gates": "PASS_WITH_DECLARED_FRESH_VERIFICATION_SCOPE",
+  "capacity_gate": "REVIEW_REQUIRED_LOW_RAM_PAGING_AND_UNMEASURED_V4_PEAK",
+  "execution_authorized": false,
+  "draft_modified": false,
+  "pilot_executed": false,
+  "GNN_forwards": 0,
+  "original_SQLite_opens": 0,
+  "certificate_id": "67ebdf7a895995729235091d85c40d68c2a0659576d74494b7e9e8b3331c116d",
+  "commit": "a7adf15f0f9b97d062b9e91d784483457bdf67d0",
+  "phase7_started": false
+}

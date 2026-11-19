@@ -1,0 +1,69 @@
+{
+  "status": "PASS_METADATA_REGISTER_AND_10_MODEL_ARCHIVES",
+  "catalog_identity": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "register_sha256": "d9e2b1a63308e00da05b5dac2afd83f27b259c006e69044f593130db0cc0aaef",
+  "bundles": [
+    {
+      "organization": "Org1",
+      "detector": "graphsage",
+      "model_sha256": "a325eff38f6ebdb3324e940436f4c34452c54a67d6a5cc60fb84117cc89aef66",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org1",
+      "detector": "tabular_mlp",
+      "model_sha256": "9844d988912de0595c3739ced7809f8f7b609e0f0fb59e3de7c411776ab5d2b7",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org2",
+      "detector": "graphsage",
+      "model_sha256": "54c28689cc4237f38238e6ce69ef2e24ab0030f1fa3291dd83dfd04c2d5ac351",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org2",
+      "detector": "tabular_mlp",
+      "model_sha256": "7805f647887380b8599a26cfb525363d31a5e18bfaa124f30294f3deeb5da383",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org3",
+      "detector": "graphsage",
+      "model_sha256": "9e8da418e8061663a057619e01424a7feecffc2af8269f550c8fc6648ce25a7e",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org3",
+      "detector": "tabular_mlp",
+      "model_sha256": "976656782d34588ab93cd8419e1bd35ed46e7dce3f221b3322f962646768b920",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org4",
+      "detector": "graphsage",
+      "model_sha256": "d0ae07a8f2d32dda72288a659ae1f305cc5a2091eb516fc14ab3ebae40c1e309",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org4",
+      "detector": "tabular_mlp",
+      "model_sha256": "a1aef0bd9e7422809c8af5d2fe44a44632b47b72080368e8834e4b90f16e8048",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org5",
+      "detector": "graphsage",
+      "model_sha256": "dc3763b8688dfb0cea4daaa0f3a1bcf0d4cffc21cdeedb0acd01297bad420ed3",
+      "model_deserialized": false
+    },
+    {
+      "organization": "Org5",
+      "detector": "tabular_mlp",
+      "model_sha256": "9d379c017f963a59867726c2620c03f9ac5c23e37d1f33bb6d3524a9af509ef6",
+      "model_deserialized": false
+    }
+  ],
+  "GNN_forwards": 0
+}

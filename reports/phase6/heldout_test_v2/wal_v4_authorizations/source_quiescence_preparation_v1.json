@@ -1,0 +1,17 @@
+{
+  "status": "SOURCE_QUIESCENCE_ATTESTED_FOR_PREPARATION_ONLY",
+  "at": "2026-11-18T23:05:59.428089+05:00",
+  "source_root": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\final_v1\\CFV1_RA_CS_005_SEED1003_TEST",
+  "source_quiescent": true,
+  "original_worker_exited": true,
+  "original_lease_released": true,
+  "read_only_lease_acquired": true,
+  "lock_bytes_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "lock_written": false,
+  "host_inspection": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v4_pilot_preparation_v1\\host_pre_capture_inspection.json",
+  "host_inspection_sha256": "427a35abbf6a0302e22a3beb00eb35cf3225ede694739e24a5ba2fb69ffc69e3",
+  "preservation_gate": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v4_pilot_preparation_v1\\gate2_preservation.json",
+  "preservation_gate_sha256": "c343f04083cb1a703d8e38d8143872f097495341e98f1281fcd5e50322bb6686",
+  "execution_authorized": false,
+  "requires_fresh_revalidation_before_future_execution": true
+}

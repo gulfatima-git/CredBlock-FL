@@ -1,0 +1,128 @@
+{
+  "status": "PASS_NARROW_INTEGRITY_AND_NONEXECUTABLE_AUTHORIZATION_CHECKS",
+  "artifacts": [
+    {
+      "role": "source_quiescence_attestation",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\source_quiescence_preparation_v1.json",
+      "sha256": "c23401d3ed0474f11150eeb167eec332fc1d647338edbcf589d5651e1c7d8f32",
+      "bytes": 1094
+    },
+    {
+      "role": "capture_preparation_approval",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\capture_preparation_only_v1.json",
+      "sha256": "829b036465824176347244a7e611fa63b29e7e579c7067f7ca0ad7f5a965d8ea",
+      "bytes": 1387
+    },
+    {
+      "role": "predecessor_certificate",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_captures\\pilot_preparation_v1\\CFV1_RA_CS_005_SEED1003_TEST\\predecessor_certificate.json",
+      "sha256": "dc4a59bf2c917425dba4c9a24b164ad88f370844f55a0e4ceb5176e31505bd72",
+      "bytes": 1227225
+    },
+    {
+      "role": "NONEXECUTABLE_PILOT_ONLY_grant_DRAFT",
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\pilot_campaign6_execution_DRAFT_v1.json",
+      "sha256": "2be53cf37ea0616dafddb3b31850de1ebe3aa2f123d538e44af035f181d8670a",
+      "bytes": 2642
+    }
+  ],
+  "certificate_id": "67ebdf7a895995729235091d85c40d68c2a0659576d74494b7e9e8b3331c116d",
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "model_checks": [
+    {
+      "organization": "Org1",
+      "detector": "graphsage",
+      "model_sha256": "a325eff38f6ebdb3324e940436f4c34452c54a67d6a5cc60fb84117cc89aef66",
+      "deserialized": false
+    },
+    {
+      "organization": "Org1",
+      "detector": "tabular_mlp",
+      "model_sha256": "9844d988912de0595c3739ced7809f8f7b609e0f0fb59e3de7c411776ab5d2b7",
+      "deserialized": false
+    },
+    {
+      "organization": "Org2",
+      "detector": "graphsage",
+      "model_sha256": "54c28689cc4237f38238e6ce69ef2e24ab0030f1fa3291dd83dfd04c2d5ac351",
+      "deserialized": false
+    },
+    {
+      "organization": "Org2",
+      "detector": "tabular_mlp",
+      "model_sha256": "7805f647887380b8599a26cfb525363d31a5e18bfaa124f30294f3deeb5da383",
+      "deserialized": false
+    },
+    {
+      "organization": "Org3",
+      "detector": "graphsage",
+      "model_sha256": "9e8da418e8061663a057619e01424a7feecffc2af8269f550c8fc6648ce25a7e",
+      "deserialized": false
+    },
+    {
+      "organization": "Org3",
+      "detector": "tabular_mlp",
+      "model_sha256": "976656782d34588ab93cd8419e1bd35ed46e7dce3f221b3322f962646768b920",
+      "deserialized": false
+    },
+    {
+      "organization": "Org4",
+      "detector": "graphsage",
+      "model_sha256": "d0ae07a8f2d32dda72288a659ae1f305cc5a2091eb516fc14ab3ebae40c1e309",
+      "deserialized": false
+    },
+    {
+      "organization": "Org4",
+      "detector": "tabular_mlp",
+      "model_sha256": "a1aef0bd9e7422809c8af5d2fe44a44632b47b72080368e8834e4b90f16e8048",
+      "deserialized": false
+    },
+    {
+      "organization": "Org5",
+      "detector": "graphsage",
+      "model_sha256": "dc3763b8688dfb0cea4daaa0f3a1bcf0d4cffc21cdeedb0acd01297bad420ed3",
+      "deserialized": false
+    },
+    {
+      "organization": "Org5",
+      "detector": "tabular_mlp",
+      "model_sha256": "9d379c017f963a59867726c2620c03f9ac5c23e37d1f33bb6d3524a9af509ef6",
+      "deserialized": false
+    }
+  ],
+  "draft_guard_rejection": "Unapproved/stale v3 execution",
+  "draft_modified": false,
+  "execution_authorized": false,
+  "pilot_executed": false,
+  "GNN_forwards": 0,
+  "original_SQLite_opens": 0,
+  "source_lease_available": true,
+  "source_stability": true,
+  "original_and_forensic_entries_metadata_checked": 51690,
+  "full_content_audit_repeated": false,
+  "completed_provenances_unchanged": 5,
+  "committed_commands": 1690,
+  "committed_local_scores": 15309,
+  "grid_bundles": 40,
+  "proposed_variant": "CFV1_RA_CS_005_SEED1003_TEST",
+  "maximum_newly_completed_instances": 1,
+  "output_directory_exists": false,
+  "capacity_not_certified": true,
+  "reused_audit_files": [
+    "independent_preparation_audit.json",
+    "gate4_certificate_and_reuse.json",
+    "gate2_preservation.json",
+    "post_preparation_preservation.json"
+  ],
+  "disk_evidence": {
+    "original_complete_instance_bytes": {
+      "CFV1_RA_CS_004_SEED1001_TEST": 64400675,
+      "CFV1_RA_CS_004_SEED1002_TEST": 59805682,
+      "CFV1_RA_CS_004_SEED1003_TEST": 121708822,
+      "CFV1_RA_CS_005_SEED1001_TEST": 63671598,
+      "CFV1_RA_CS_005_SEED1002_TEST": 58569403
+    },
+    "known_partial_restore_payload_bytes": 97010650,
+    "full_v4_peak_not_measured": true
+  }
+}

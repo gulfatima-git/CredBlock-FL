@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ONE_PILOT_INDEPENDENT_VALIDATION",
+  "variant": "CFV1_RA_CS_005_SEED1003_TEST",
+  "completion_sha256": "523e864e79250fa6230f3d1aab91c4113e0401b40d232e5bdef48d22a47df29d",
+  "certificate_id": "67ebdf7a895995729235091d85c40d68c2a0659576d74494b7e9e8b3331c116d",
+  "summary": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v4_pilot_execution_v1\\independent_campaign6_audit\\summary.json",
+  "GNN_forwards": 0,
+  "newly_completed_instances": 1,
+  "remaining_instances": 165
+}

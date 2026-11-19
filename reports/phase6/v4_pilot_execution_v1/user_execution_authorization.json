@@ -1,0 +1,14 @@
+{
+  "status": "USER_EXPLICITLY_AUTHORIZED_BOUNDED_V4_PILOT_EXECUTION",
+  "at": "2026-11-19T00:13:11.320087+05:00",
+  "variant": "CFV1_RA_CS_005_SEED1003_TEST",
+  "maximum_newly_completed_campaign_instances": 1,
+  "execution_authorized": true,
+  "scope": "PILOT_ONLY",
+  "reuse_completed_v2_campaigns": 5,
+  "reuse_committed_local_scores": 15309,
+  "repeat_committed_GNN_inference": false,
+  "full_run_authorized": false,
+  "phase7_authorized": false,
+  "stop_after_pilot_and_independent_validation": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "USER_APPROVED_QUIESCENT_WAL_V4_CAPTURE",
+  "explicit_user_decision": true,
+  "authorization_scope": "PREPARATION_ONLY_NO_EXECUTION",
+  "execution_authorized": false,
+  "source_root": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\final_v1\\CFV1_RA_CS_005_SEED1003_TEST",
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "catalog_identity": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+  "derived_root": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_captures\\pilot_preparation_v1\\CFV1_RA_CS_005_SEED1003_TEST",
+  "host_exit_attestation": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\source_quiescence_preparation_v1.json",
+  "host_exit_attestation_sha256": "c23401d3ed0474f11150eeb167eec332fc1d647338edbcf589d5651e1c7d8f32",
+  "user_preparation_record": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\v4_pilot_preparation_v1\\user_preparation_authorization.json",
+  "user_preparation_record_sha256": "0d8a09bc4d661db5468b4e4a5b5d720eede50b472caf8d2b3ab321abb285eb2f",
+  "authorized_variants": [
+    "CFV1_RA_CS_005_SEED1003_TEST"
+  ],
+  "maximum_newly_completed_campaign_instances": 1,
+  "other_campaigns_authorized": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ESSENTIAL_GUARDS_APPROVED_SINGLE_PILOT",
+  "at": "2026-11-19T00:13:11.320087+05:00",
+  "available_bytes": 6822850560,
+  "total_bytes": 16858472448,
+  "disk_free_bytes": 213346828288,
+  "approval_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\pilot_campaign6_execution_APPROVED_v1.json",
+  "approval_sha256": "0a8c77967fc3ae7a482619fb42ac32c9f667e3368ac0e04627491376ca317560",
+  "certificate_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_captures\\pilot_preparation_v1\\CFV1_RA_CS_005_SEED1003_TEST\\predecessor_certificate.json",
+  "certificate_sha256": "dc4a59bf2c917425dba4c9a24b164ad88f370844f55a0e4ceb5176e31505bd72",
+  "output_root": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_transition\\pilot_campaign6_v1",
+  "draft_unchanged": true,
+  "existing_evaluators": [],
+  "source_lease_available": true,
+  "execution_launches": 0
+}

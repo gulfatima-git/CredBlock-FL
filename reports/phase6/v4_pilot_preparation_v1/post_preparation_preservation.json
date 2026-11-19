@@ -1,0 +1,11 @@
+{
+  "status": "PASS_POST_PREPARATION_PRESERVATION",
+  "reviewed_hash_checks": 69,
+  "original_and_forensic_metadata_entries": 51690,
+  "database_sets_rehashed": 30,
+  "tracked_changes": 0,
+  "staged_changes": 0,
+  "original_lock_unchanged": true,
+  "original_SQLite_opens": 0,
+  "forensic_files_modified": false
+}

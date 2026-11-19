@@ -1,0 +1,20 @@
+{
+  "status": "USER_EXPLICITLY_AUTHORIZED_REMAINING_165_MANUAL_EXECUTION",
+  "explicit_user_decision": true,
+  "typed_confirmation": "RUN165",
+  "at": "2026-11-19T02:45:40.929916+05:00",
+  "execution_scope": "ALL_171",
+  "remaining_instances_to_execute": 165,
+  "maximum_newly_completed_campaign_instances": 165,
+  "reuse_only_completed_variants": [
+    "CFV1_RA_CS_004_SEED1001_TEST",
+    "CFV1_RA_CS_004_SEED1002_TEST",
+    "CFV1_RA_CS_004_SEED1003_TEST",
+    "CFV1_RA_CS_005_SEED1001_TEST",
+    "CFV1_RA_CS_005_SEED1002_TEST",
+    "CFV1_RA_CS_005_SEED1003_TEST"
+  ],
+  "repeat_completed_inference": false,
+  "phase7_authorized": false,
+  "stop_after_remaining_TEST_and_final_validation": true
+}

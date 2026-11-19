@@ -1,0 +1,10 @@
+{
+  "status": "PASS_FINAL_REPORT_ARTIFACT_AND_PROGRESS_RECONCILIATION",
+  "manifest_files_verified": 23,
+  "execution_authorized": false,
+  "pilot_output_exists": false,
+  "tracked_changes": 0,
+  "staged_changes": 0,
+  "maximum_newly_completed_instances": 1,
+  "preparation_complete": true
+}

@@ -1,0 +1,9 @@
+{
+  "files_sha256": {
+    "reports/phase6/v4_pilot_capacity_reassessment_v1/capacity_decision.json": "57d72c2bc43b05dff636b26c091a56b9ce9eda54174e0a683ed5e38ed0699d83",
+    "reports/phase6/v4_pilot_capacity_reassessment_v1/RESOURCE_REASSESSMENT_REPORT.md": "5708ec3217d64c015070a8bbd9aae68156afffa972e62c52c661d4b7e2082a72",
+    "reports/phase6/v4_pilot_capacity_reassessment_v1/resource_samples.json": "36f6e408dedb0018a38a1b37e65d67ce73039f31c99ade9c2bbe2c257a43e038",
+    "reports/phase6/progress_v38.json": "0057d0b9bb7301da8eb6211dbb5e94a397605243c197ac609b8289fd4b20abfa"
+  },
+  "execution_authorized": false
+}

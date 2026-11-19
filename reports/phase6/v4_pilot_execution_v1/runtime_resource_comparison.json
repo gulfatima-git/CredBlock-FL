@@ -1,0 +1,124 @@
+{
+  "status": "MEASURED_PILOT_RESOURCES_WITH_EXPLICIT_COMPARISON_LIMITS",
+  "total_wall_seconds": 4271.672191199963,
+  "native_campaign_attempt_seconds": 2507.354481700051,
+  "pre_attempt_setup_seconds": 1764.3177094999119,
+  "worker_cpu_seconds": 4188.203125,
+  "worker_kernel_seconds": 1386.5,
+  "worker_user_seconds": 2801.703125,
+  "worker_kernel_peak_working_set_bytes": 896274432,
+  "sampled_tree_RSS_peak_bytes": 902512640,
+  "minimum_available_RAM_bytes": 2257674240,
+  "maximum_sample_gap_seconds": 5.025289400015026,
+  "paging_samples": [
+    {
+      "at": "2026-11-19T00:15:24.5913726+05:00",
+      "available_bytes": 6623305728,
+      "pages_per_second": 264,
+      "page_reads_per_second": 19,
+      "percent_commit_in_use": 38
+    },
+    {
+      "at": "2026-11-19T00:19:35.0672929+05:00",
+      "available_bytes": 6572220416,
+      "pages_per_second": 4709,
+      "page_reads_per_second": 413,
+      "percent_commit_in_use": 39
+    },
+    {
+      "at": "2026-11-19T00:26:32.8179547+05:00",
+      "available_bytes": 5972598784,
+      "pages_per_second": 0,
+      "page_reads_per_second": 0,
+      "percent_commit_in_use": 39
+    },
+    {
+      "at": "2026-11-19T00:34:16.6012688+05:00",
+      "available_bytes": 6150717440,
+      "pages_per_second": 98,
+      "page_reads_per_second": 98,
+      "percent_commit_in_use": 39
+    },
+    {
+      "at": "2026-11-19T00:38:29.5869486+05:00",
+      "available_bytes": 5980176384,
+      "pages_per_second": 0,
+      "page_reads_per_second": 0,
+      "percent_commit_in_use": 39
+    },
+    {
+      "at": "2026-11-19T00:41:58.8239755+05:00",
+      "available_bytes": 5667684352,
+      "pages_per_second": 1125,
+      "page_reads_per_second": 92,
+      "percent_commit_in_use": 40
+    },
+    {
+      "at": "2026-11-19T00:46:18.8506296+05:00",
+      "available_bytes": 5274013696,
+      "pages_per_second": 0,
+      "page_reads_per_second": 0,
+      "percent_commit_in_use": 41
+    },
+    {
+      "at": "2026-11-19T00:49:26.7026486+05:00",
+      "available_bytes": 5227593728,
+      "pages_per_second": 0,
+      "page_reads_per_second": 0,
+      "percent_commit_in_use": 41
+    },
+    {
+      "at": "2026-11-19T00:55:58.6374697+05:00",
+      "available_bytes": 4960518144,
+      "pages_per_second": 0,
+      "page_reads_per_second": 0,
+      "percent_commit_in_use": 41
+    },
+    {
+      "at": "2026-11-19T01:05:32.5461885+05:00",
+      "available_bytes": 4738183168,
+      "pages_per_second": 0,
+      "page_reads_per_second": 0,
+      "percent_commit_in_use": 42
+    },
+    {
+      "at": "2026-11-19T01:10:58.7795829+05:00",
+      "available_bytes": 4933419008,
+      "pages_per_second": 0,
+      "page_reads_per_second": 0,
+      "percent_commit_in_use": 41
+    },
+    {
+      "at": "2026-11-19T01:15:42.4097846+05:00",
+      "available_bytes": 4672430080,
+      "pages_per_second": 3,
+      "page_reads_per_second": 3,
+      "percent_commit_in_use": 42
+    },
+    {
+      "at": "2026-11-19T01:19:44.2120497+05:00",
+      "available_bytes": 4989235200,
+      "pages_per_second": 0,
+      "page_reads_per_second": 0,
+      "percent_commit_in_use": 41
+    }
+  ],
+  "publication_to_final_flush_seconds": 1909.6658976078033,
+  "publication_interval_definition": "Filesystem last-write interval from first new LOCAL artifact publication to final COMPLETE journal write; not an injected timer; excludes first new forward before publication and later sealing/evaluation.",
+  "new_global_barriers": 1174,
+  "new_local_commands": 1186,
+  "new_local_scores": 10253,
+  "new_GNN_batch_forwards_from_records": 1196,
+  "new_MLP_batch_forwards_from_records": 10,
+  "v2_original_partial_wall_seconds": 41586.70474553108,
+  "v2_partial_wall_limitation": "Known laptop sleep occurred during original v2 run. This wall interval is not a comparable compute benchmark; it also covers a different time slice.",
+  "v2_saved_prefix_precommit_mean_seconds": 0.6002102275734448,
+  "v4_new_tail_precommit_mean_seconds": 1.1496227537931125,
+  "precommit_comparison_limitation": "Unequal graph/time/root workloads and host conditions; excludes final SQL commit and coordinator/journal overhead. Do not infer causal speedup or regression.",
+  "independent_validation_seconds": 77.30206930002896,
+  "remaining_instances": 165,
+  "remaining_events_metadata": 330916,
+  "remaining_global_barrier_count_upper_bound": 332071,
+  "counts_scaled_event_phase_scenario_hours": 150.04369304479482,
+  "forecast_limitation": "Single-tail throughput applied to an input-count timestamp upper bound, not an end-to-end ETA or confidence interval. Excludes unmeasured new-case warm-up/setup, sealing/offline evaluation, audits, full-run reporting and future contention; workload-specific root/graph costs may differ. No full-run speedup is established."
+}

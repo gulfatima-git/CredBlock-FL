@@ -1,0 +1,41 @@
+{
+  "status": "READY_FOR_SEPARATE_ONE_CAMPAIGN_EXECUTION_APPROVAL",
+  "capacity_assessment": "READY_CREDIBLE_HEADROOM_FOR_MONITORED_PILOT_NOT_PEAK_GUARANTEE",
+  "available_GiB_range": [
+    6.4398956298828125,
+    6.450229644775391
+  ],
+  "previous_available_GiB_range": [
+    0.803192138671875,
+    0.8368911743164062
+  ],
+  "commit_percent_before": 69,
+  "commit_percent_after": 37,
+  "page_reads_per_second_before": [
+    119,
+    7,
+    852
+  ],
+  "page_reads_per_second_after": [
+    0,
+    7,
+    3,
+    0,
+    3
+  ],
+  "disk_free_GiB": 198.6984748840332,
+  "historical_v2_private_GiB_approximately": 1.1,
+  "remaining_limitation": "Production-v4 peak remains unmeasured. About 6.44 GiB available, low sampled paging and several-fold headroom over observed real v2 allocation support a bounded monitored attempt; they do not guarantee no paging or failure.",
+  "proposed_variant": "CFV1_RA_CS_005_SEED1003_TEST",
+  "maximum_newly_completed_instances": 1,
+  "completed_provenances_reuse_only": 5,
+  "committed_local_scores_preserved": 15309,
+  "execution_authorized": false,
+  "approval_file_created": false,
+  "draft_modified": false,
+  "evaluator_launched": false,
+  "recovery_audits_repeated": false,
+  "scientific_reviews_repeated": false,
+  "phase7_started": false,
+  "proposed_command_after_separate_approval": ".venv\\Scripts\\python.exe -B -u -m src.phase6.continuation_driver_v4 --output reports/phase6/heldout_test_v2/wal_v4_transition/pilot_campaign6_v1 --certificate reports/phase6/heldout_test_v2/wal_v4_captures/pilot_preparation_v1/CFV1_RA_CS_005_SEED1003_TEST/predecessor_certificate.json --approval reports/phase6/heldout_test_v2/wal_v4_authorizations/pilot_campaign6_execution_APPROVED_v1.json"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "USER_AUTHORIZED_PREPARATION_ONLY",
+  "recorded_at": "2026-11-18T22:57:08.589234+05:00",
+  "variant": "CFV1_RA_CS_005_SEED1003_TEST",
+  "maximum_newly_completed_campaign_instances": 1,
+  "allowed_preparation": [
+    "production_capture_approval",
+    "source_quiescence_attestation",
+    "WAL_aware_predecessor_certificate",
+    "non_executable_certificate_bound_PILOT_ONLY_grant_draft"
+  ],
+  "execution_authorized": false,
+  "TEST_inference_authorized": false,
+  "other_campaigns_authorized": false,
+  "completed_campaigns_reuse_only": 5,
+  "committed_GNN_repetition_authorized": false,
+  "git_clean_definition": "No staged changes and no modified tracked files; inventoried untracked research artifacts remain local and excluded",
+  "original_user_decision": "I approve preparation only. Execution authorization: NOT GRANTED. Stop and present artifacts for independent review and separate execution approval."
+}

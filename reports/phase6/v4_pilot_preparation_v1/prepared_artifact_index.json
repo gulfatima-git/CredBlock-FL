@@ -1,0 +1,32 @@
+{
+  "status": "PREPARATION_COMPLETE_EXECUTION_NOT_AUTHORIZED",
+  "certificate_id": "67ebdf7a895995729235091d85c40d68c2a0659576d74494b7e9e8b3331c116d",
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "artifacts": {
+    "source_quiescence_attestation": {
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\source_quiescence_preparation_v1.json",
+      "sha256": "c23401d3ed0474f11150eeb167eec332fc1d647338edbcf589d5651e1c7d8f32",
+      "bytes": 1094
+    },
+    "capture_preparation_approval": {
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\capture_preparation_only_v1.json",
+      "sha256": "829b036465824176347244a7e611fa63b29e7e579c7067f7ca0ad7f5a965d8ea",
+      "bytes": 1387
+    },
+    "predecessor_certificate": {
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_captures\\pilot_preparation_v1\\CFV1_RA_CS_005_SEED1003_TEST\\predecessor_certificate.json",
+      "sha256": "dc4a59bf2c917425dba4c9a24b164ad88f370844f55a0e4ceb5176e31505bd72",
+      "bytes": 1227225
+    },
+    "NONEXECUTABLE_PILOT_ONLY_grant_DRAFT": {
+      "path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\pilot_campaign6_execution_DRAFT_v1.json",
+      "sha256": "2be53cf37ea0616dafddb3b31850de1ebe3aa2f123d538e44af035f181d8670a",
+      "bytes": 2642
+    }
+  },
+  "authorized_variant": "CFV1_RA_CS_005_SEED1003_TEST",
+  "maximum_newly_completed_campaign_instances": 1,
+  "execution_authorized": false,
+  "private_capture_databases_excluded_from_commits": true,
+  "untracked_inventory_excluded_from_commits": true
+}

@@ -1,0 +1,85 @@
+{
+  "status": "EVALUATOR_EXITED_SUCCESS",
+  "returncode": 0,
+  "started_at": "2026-11-19T00:14:15.749251+05:00",
+  "ended_at": "2026-11-19T01:25:27.421075+05:00",
+  "wall_seconds": 4271.672191199963,
+  "processes": {
+    "12916": {
+      "pid": 12916,
+      "created": 1795029255.7535253,
+      "command": [
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-m",
+        "src.phase6.continuation_driver_v4",
+        "--output",
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_transition\\pilot_campaign6_v1",
+        "--certificate",
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_captures\\pilot_preparation_v1\\CFV1_RA_CS_005_SEED1003_TEST\\predecessor_certificate.json",
+        "--approval",
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\pilot_campaign6_execution_APPROVED_v1.json"
+      ],
+      "observed_rss_peak": 4923392,
+      "observed_kernel_peak_working_set": 5013504
+    },
+    "29944": {
+      "pid": 29944,
+      "created": 1795029255.7783744,
+      "command": [
+        "\\??\\C:\\windows\\system32\\conhost.exe",
+        "0xffffffff",
+        "-ForceV1"
+      ],
+      "observed_rss_peak": 8822784,
+      "observed_kernel_peak_working_set": 8900608
+    },
+    "7000": {
+      "pid": 7000,
+      "created": 1795029255.8457236,
+      "command": [
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-m",
+        "src.phase6.continuation_driver_v4",
+        "--output",
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_transition\\pilot_campaign6_v1",
+        "--certificate",
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_captures\\pilot_preparation_v1\\CFV1_RA_CS_005_SEED1003_TEST\\predecessor_certificate.json",
+        "--approval",
+        "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\pilot_campaign6_execution_APPROVED_v1.json"
+      ],
+      "observed_rss_peak": 889507840,
+      "observed_kernel_peak_working_set": 896274432
+    }
+  },
+  "process_CPU_times_from_readonly_handles": {
+    "12916": {
+      "kernel_seconds": 0.015625,
+      "user_seconds": 0.015625,
+      "creation_ticks": 134395028557535252,
+      "exit_ticks": 134395071274167499
+    },
+    "29944": {
+      "kernel_seconds": 0.078125,
+      "user_seconds": 0.0,
+      "creation_ticks": 134395028557783743,
+      "exit_ticks": 0
+    },
+    "7000": {
+      "kernel_seconds": 1386.5,
+      "user_seconds": 2801.703125,
+      "creation_ticks": 134395028558457236,
+      "exit_ticks": 134395071273405480
+    }
+  },
+  "observed_tree_RSS_peak_bytes": 902512640,
+  "memory_sampling_seconds": 5,
+  "memory_peak_scope": "Windows-reported cumulative peak working sets through last successful sample; tree RSS sampled, shared pages may be double-counted",
+  "evaluator_launch_attempts": 1,
+  "automatic_retry": false,
+  "signals_sent": 0,
+  "phase7_started": false
+}

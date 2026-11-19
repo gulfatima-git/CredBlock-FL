@@ -1,0 +1,55 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "total_physical_GiB": 15.700675964355469,
+  "os_free_physical_GiB": 0.9754524230957031,
+  "sampled_available_GiB": [
+    0.8354873657226562,
+    0.8368911743164062,
+    0.803192138671875
+  ],
+  "sample_window": [
+    "2026-11-18T23:50:57.7613341+05:00",
+    "2026-11-18T23:51:00.5138705+05:00"
+  ],
+  "percent_commit_in_use": [
+    69,
+    69,
+    69
+  ],
+  "page_reads_per_second": [
+    119,
+    7,
+    852
+  ],
+  "pages_per_second": [
+    1431,
+    26,
+    7968
+  ],
+  "disk_free_GiB": 198.56392669677734,
+  "historical_v2_RSS_GiB": [
+    0.6167526245117188,
+    0.6186103820800781
+  ],
+  "historical_v2_private_GiB": [
+    1.0931854248046875,
+    1.0949630737304688
+  ],
+  "historical_resource_evidence": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\transition_preparation_v1\\original_process_readonly_investigation_v1.json",
+  "historical_resource_evidence_sha256": "faa541a4c25ecc15ade750499b3d36151b0c137fc1a3a2198d721e58ac27ebd5",
+  "memory_requirement_certified": false,
+  "v4_production_peak_measured": false,
+  "excessive_paging_risk_excluded": false,
+  "disk_status": "PASS_KNOWN_STORAGE_BASELINE_NOT_A_FUTURE_PEAK_BOUND",
+  "partial_restore_logical_MiB": 92.51656532287598,
+  "prior_complete_instance_logical_MiB_range": [
+    55.85613536834717,
+    116.07057762145996
+  ],
+  "limitations": [
+    "Three short samples cannot establish sustained paging severity or guarantee the pilot peak.",
+    "V2 working set and private allocation are different measures, not RAM requirements or v4 peak upper bounds.",
+    "Indexed journal retention, five-org recovery/model residency and transient graph/batch allocations have no measured real production-v4 peak in accepted evidence.",
+    "Disk observations cover existing bytes and restoration payload, not future staging/output/pagefile maximum."
+  ]
+}

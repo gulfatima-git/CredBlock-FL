@@ -1,0 +1,10 @@
+{
+  "status": "PASS_AUTHORIZATION_CROSS_LINKS_AND_FROZEN_INVENTORY",
+  "certificate_id": "67ebdf7a895995729235091d85c40d68c2a0659576d74494b7e9e8b3331c116d",
+  "capture_authority_pinned": true,
+  "source_attestation_pinned": true,
+  "source_configuration_hashes_match": true,
+  "register_instances": 171,
+  "execution_authorized": false,
+  "draft_modified": false
+}

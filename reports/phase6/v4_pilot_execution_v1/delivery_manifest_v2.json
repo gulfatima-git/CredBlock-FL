@@ -1,0 +1,9 @@
+{
+  "previous_manifest": "delivery_manifest_v1.json",
+  "previous_manifest_sha256": "1a37ca87934dd1204a876878233abaca4e58bdde2a9736a326bafd17713d4880",
+  "additional_files_sha256": {
+    "reports/phase6/progress_v41.json": "ea61c9fb1d8ccf4b3d549e56ebbebe8f1ce410f26fdb5dcfbbb449f04732a289",
+    "reports/phase6/v4_pilot_execution_v1/final_delivery_reconciliation.json": "c4f1862ef7890b490a32148a3f0f44d0ca1c03e1c29f17fd793415e4de68a8d8"
+  },
+  "full_run_authorized": false
+}

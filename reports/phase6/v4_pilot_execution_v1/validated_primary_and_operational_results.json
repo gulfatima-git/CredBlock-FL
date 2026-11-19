@@ -1,0 +1,291 @@
+{
+  "per_org": {
+    "Org1": {
+      "graphsage": {
+        "tp": 0,
+        "fp": 3,
+        "tn": 367,
+        "fn": 0,
+        "eligible": 370,
+        "positive": 0,
+        "negative": 370,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.008108108108108109,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.34609327588938177
+      },
+      "tabular_mlp": {
+        "tp": 0,
+        "fp": 8,
+        "tn": 362,
+        "fn": 0,
+        "eligible": 370,
+        "positive": 0,
+        "negative": 370,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.021621621621621623,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.4755873760222891
+      }
+    },
+    "Org2": {
+      "graphsage": {
+        "tp": 0,
+        "fp": 8,
+        "tn": 370,
+        "fn": 0,
+        "eligible": 378,
+        "positive": 0,
+        "negative": 378,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.021164021164021163,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.6336875665039268
+      },
+      "tabular_mlp": {
+        "tp": 0,
+        "fp": 5,
+        "tn": 373,
+        "fn": 0,
+        "eligible": 378,
+        "positive": 0,
+        "negative": 378,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.013227513227513227,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.8694689465901316
+      }
+    },
+    "Org3": {
+      "graphsage": {
+        "tp": 21,
+        "fp": 9,
+        "tn": 413,
+        "fn": 47,
+        "eligible": 490,
+        "positive": 68,
+        "negative": 422,
+        "precision": 0.7,
+        "recall": 0.3088235294117647,
+        "fpr": 0.02132701421800948,
+        "f1": 0.42857142857142855,
+        "average_precision": 0.629625892691303,
+        "bce": 0.5033951956158295
+      },
+      "tabular_mlp": {
+        "tp": 8,
+        "fp": 4,
+        "tn": 418,
+        "fn": 60,
+        "eligible": 490,
+        "positive": 68,
+        "negative": 422,
+        "precision": 0.6666666666666666,
+        "recall": 0.11764705882352941,
+        "fpr": 0.009478672985781991,
+        "f1": 0.2,
+        "average_precision": 0.5059343097673655,
+        "bce": 0.6368909549647882
+      }
+    },
+    "Org4": {
+      "graphsage": {
+        "tp": 32,
+        "fp": 5,
+        "tn": 435,
+        "fn": 41,
+        "eligible": 513,
+        "positive": 73,
+        "negative": 440,
+        "precision": 0.8648648648648649,
+        "recall": 0.4383561643835616,
+        "fpr": 0.011363636363636364,
+        "f1": 0.5818181818181818,
+        "average_precision": 0.7185076562018886,
+        "bce": 0.40183506623533377
+      },
+      "tabular_mlp": {
+        "tp": 9,
+        "fp": 9,
+        "tn": 431,
+        "fn": 64,
+        "eligible": 513,
+        "positive": 73,
+        "negative": 440,
+        "precision": 0.5,
+        "recall": 0.1232876712328767,
+        "fpr": 0.020454545454545454,
+        "f1": 0.1978021978021978,
+        "average_precision": 0.5025463143219662,
+        "bce": 0.5252017633098984
+      }
+    },
+    "Org5": {
+      "graphsage": {
+        "tp": 0,
+        "fp": 8,
+        "tn": 446,
+        "fn": 0,
+        "eligible": 454,
+        "positive": 0,
+        "negative": 454,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.01762114537444934,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.7721583889819068
+      },
+      "tabular_mlp": {
+        "tp": 0,
+        "fp": 4,
+        "tn": 450,
+        "fn": 0,
+        "eligible": 454,
+        "positive": 0,
+        "negative": 454,
+        "precision": 0.0,
+        "recall": null,
+        "fpr": 0.00881057268722467,
+        "f1": 0.0,
+        "average_precision": null,
+        "bce": 0.8504232889935889
+      }
+    }
+  },
+  "pooled": {
+    "graphsage": {
+      "tp": 53,
+      "fp": 33,
+      "tn": 2031,
+      "fn": 88,
+      "eligible": 2205,
+      "positive": 141,
+      "negative": 2064,
+      "precision": 0.6162790697674418,
+      "recall": 0.375886524822695,
+      "fpr": 0.015988372093023256,
+      "f1": 0.4669603524229075,
+      "average_precision": 0.5217282679858283,
+      "bce": 0.5310446057350646
+    },
+    "tabular_mlp": {
+      "tp": 17,
+      "fp": 30,
+      "tn": 2034,
+      "fn": 124,
+      "eligible": 2205,
+      "positive": 141,
+      "negative": 2064,
+      "precision": 0.3617021276595745,
+      "recall": 0.12056737588652482,
+      "fpr": 0.014534883720930232,
+      "f1": 0.18085106382978725,
+      "average_precision": 0.4106489675869846,
+      "bce": 0.6676752093665033
+    }
+  },
+  "macro": {
+    "graphsage": {
+      "fpr": {
+        "value": 0.01591678504564489,
+        "organizations": 5
+      },
+      "recall": {
+        "value": 0.37358984689766317,
+        "organizations": 2
+      },
+      "precision": {
+        "value": 0.312972972972973,
+        "organizations": 5
+      },
+      "average_precision": {
+        "value": 0.6740667744465958,
+        "organizations": 2
+      }
+    },
+    "tabular_mlp": {
+      "fpr": {
+        "value": 0.014718585195337393,
+        "organizations": 5
+      },
+      "recall": {
+        "value": 0.12046736502820306,
+        "organizations": 2
+      },
+      "precision": {
+        "value": 0.23333333333333334,
+        "organizations": 5
+      },
+      "average_precision": {
+        "value": 0.5042403120446659,
+        "organizations": 2
+      }
+    }
+  },
+  "campaign_results": [
+    {
+      "variant_id": "CFV1_RA_CS_005_SEED1003_TEST",
+      "campaign_id": "CFV1_RA_CS_005_SEED1003_TEST",
+      "detector_family": "local_only",
+      "detected_organizations": 2,
+      "any_organization_detected": true,
+      "all_organizations_detected": true,
+      "primary_all_targeted_undetected": false,
+      "event_time_seconds": 96.992786,
+      "right_censored": false,
+      "censor_time_seconds": 3591.620814,
+      "unique_exposed_target_users_summed_local": 150,
+      "unique_detected_target_users_summed_local": 64,
+      "family": "Raccount_fixed_per_org_attempts",
+      "RIP_target": "0.5",
+      "Raccount_target": "0.5",
+      "Sorg_target": "2",
+      "RIP_actual": "0.5",
+      "Raccount_actual": "0.5",
+      "Sorg_actual": "2",
+      "seed": 1003
+    },
+    {
+      "variant_id": "CFV1_RA_CS_005_SEED1003_TEST",
+      "campaign_id": "CFV1_RA_CS_005_SEED1003_TEST",
+      "detector_family": "local_plus_indicator",
+      "detected_organizations": 2,
+      "any_organization_detected": true,
+      "all_organizations_detected": true,
+      "primary_all_targeted_undetected": false,
+      "event_time_seconds": 96.992786,
+      "right_censored": false,
+      "censor_time_seconds": 3591.620814,
+      "unique_exposed_target_users_summed_local": 150,
+      "unique_detected_target_users_summed_local": 65,
+      "family": "Raccount_fixed_per_org_attempts",
+      "RIP_target": "0.5",
+      "Raccount_target": "0.5",
+      "Sorg_target": "2",
+      "RIP_actual": "0.5",
+      "Raccount_actual": "0.5",
+      "Sorg_actual": "2",
+      "seed": 1003
+    }
+  ],
+  "sharing": {
+    "indicators": 121,
+    "receipts": 484,
+    "timestamp_barriers": 2848,
+    "operational_decisions": 51124
+  },
+  "primary_unit": "eligible fixed-grid User-time",
+  "operational_unit": "event-driven scored User decision; separate from primary grid",
+  "newly_completed_instances": 1,
+  "total_complete": 6,
+  "remaining": 165
+}

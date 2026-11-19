@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-19T00:14:15.749251+05:00",
+  "launcher_pid": 12916,
+  "supervisor_pid": 32952,
+  "command": [
+    "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "-m",
+    "src.phase6.continuation_driver_v4",
+    "--output",
+    "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_transition\\pilot_campaign6_v1",
+    "--certificate",
+    "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_captures\\pilot_preparation_v1\\CFV1_RA_CS_005_SEED1003_TEST\\predecessor_certificate.json",
+    "--approval",
+    "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\pilot_campaign6_execution_APPROVED_v1.json"
+  ],
+  "creation_time": 1795029255.7535253
+}

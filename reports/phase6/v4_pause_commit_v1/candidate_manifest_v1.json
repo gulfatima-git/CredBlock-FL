@@ -1,0 +1,406 @@
+{
+  "status": "CURATED_PAUSED_30_METADATA_ONLY",
+  "files": [
+    {
+      "path": "reports/phase6/heldout_test_v2/wal_v4_authorizations/capture_preparation_only_v1.json",
+      "bytes": 1387,
+      "sha256": "829b036465824176347244a7e611fa63b29e7e579c7067f7ca0ad7f5a965d8ea"
+    },
+    {
+      "path": "reports/phase6/heldout_test_v2/wal_v4_authorizations/pilot_campaign6_execution_APPROVED_v1.json",
+      "bytes": 2944,
+      "sha256": "0a8c77967fc3ae7a482619fb42ac32c9f667e3368ac0e04627491376ca317560"
+    },
+    {
+      "path": "reports/phase6/heldout_test_v2/wal_v4_authorizations/pilot_campaign6_execution_DRAFT_v1.json",
+      "bytes": 2642,
+      "sha256": "2be53cf37ea0616dafddb3b31850de1ebe3aa2f123d538e44af035f181d8670a"
+    },
+    {
+      "path": "reports/phase6/heldout_test_v2/wal_v4_authorizations/remaining165_execution_APPROVED_v1.json",
+      "bytes": 9069,
+      "sha256": "9326d556568182a219a2d75a2acfacd3240f6a382500a3c177a30b2d4efcaad8"
+    },
+    {
+      "path": "reports/phase6/heldout_test_v2/wal_v4_authorizations/source_quiescence_preparation_v1.json",
+      "bytes": 1094,
+      "sha256": "c23401d3ed0474f11150eeb167eec332fc1d647338edbcf589d5651e1c7d8f32"
+    },
+    {
+      "path": "reports/phase6/heldout_test_v2/wal_v4_captures/pilot_preparation_v1/CFV1_RA_CS_005_SEED1003_TEST/predecessor_certificate.json",
+      "bytes": 1227225,
+      "sha256": "dc4a59bf2c917425dba4c9a24b164ad88f370844f55a0e4ceb5176e31505bd72"
+    },
+    {
+      "path": "reports/phase6/progress_v35.json",
+      "bytes": 16586,
+      "sha256": "09e511de52917f258f2967959d3fbec32525a83568eb1c54e6be39fddefecb26"
+    },
+    {
+      "path": "reports/phase6/progress_v36.json",
+      "bytes": 17577,
+      "sha256": "1f0703105d3ba19586e4ac442406dee96b5a79859660ddc7210f1519f2d49c1a"
+    },
+    {
+      "path": "reports/phase6/progress_v37.json",
+      "bytes": 18390,
+      "sha256": "c836425f725ca3c1c4ff61b93d8c60b1e70de5fa00f4c9716170b9c114dd22a1"
+    },
+    {
+      "path": "reports/phase6/progress_v38.json",
+      "bytes": 20367,
+      "sha256": "0057d0b9bb7301da8eb6211dbb5e94a397605243c197ac609b8289fd4b20abfa"
+    },
+    {
+      "path": "reports/phase6/progress_v39.json",
+      "bytes": 21232,
+      "sha256": "a65919ad4438b687c17bf7bd113f30bbace8dd6f4bfb79c739d6d15ccbb83557"
+    },
+    {
+      "path": "reports/phase6/progress_v40.json",
+      "bytes": 21714,
+      "sha256": "527c825d44a9149d6ac1da29680655831d3c4c3553e254d5af841a2ec635fc2e"
+    },
+    {
+      "path": "reports/phase6/progress_v41.json",
+      "bytes": 21823,
+      "sha256": "ea61c9fb1d8ccf4b3d549e56ebbebe8f1ce410f26fdb5dcfbbb449f04732a289"
+    },
+    {
+      "path": "reports/phase6/progress_v42.json",
+      "bytes": 22291,
+      "sha256": "38beae0a5dc4593d1974af0ee36b75b38c0c0b26e6b5278ea61f426d243a3064"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_capacity_reassessment_v1/RESOURCE_REASSESSMENT_REPORT.md",
+      "bytes": 2880,
+      "sha256": "5708ec3217d64c015070a8bbd9aae68156afffa972e62c52c661d4b7e2082a72"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_capacity_reassessment_v1/capacity_decision.json",
+      "bytes": 1761,
+      "sha256": "57d72c2bc43b05dff636b26c091a56b9ce9eda54174e0a683ed5e38ed0699d83"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_capacity_reassessment_v1/delivery_manifest_v1.json",
+      "bytes": 626,
+      "sha256": "0cde1f02f13ddbfc9cc0d8407aa02eec2a4becd86f5aed7a17478fc4627ac407"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_capacity_reassessment_v1/resource_samples.json",
+      "bytes": 1948,
+      "sha256": "36f6e408dedb0018a38a1b37e65d67ce73039f31c99ade9c2bbe2c257a43e038"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/ONE_EVALUATOR_LAUNCH_ATTEMPT.json",
+      "bytes": 822,
+      "sha256": "efd9fa06a8ef8fd0cfe991641768aed027757dc99618516191b95bad496ff9a1"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/TECHNICAL_PILOT_ACCEPTANCE_REPORT.md",
+      "bytes": 11357,
+      "sha256": "503df69b5cd4762e6b17cf66961b92a44e98ce6e134ad4db8305af47ff7bf251"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/delivery_manifest_v1.json",
+      "bytes": 3447,
+      "sha256": "1a37ca87934dd1204a876878233abaca4e58bdde2a9736a326bafd17713d4880"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/delivery_manifest_v2.json",
+      "bytes": 482,
+      "sha256": "35f064685d66d214c90c0ffb77eb137275603febf6c40b6e0e5c4ad2c3442774"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/exact_reuse_and_execution_counts.json",
+      "bytes": 3069,
+      "sha256": "1073dab659f08e1f0067ad7b0cd466793c8387e17db890992833e286c2a281a3"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/execution_result.json",
+      "bytes": 3307,
+      "sha256": "f552f08e3f9380d4dc9356c5a62b50de84b069dc17a096f51507cca4c22e4956"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/final_delivery_reconciliation.json",
+      "bytes": 602,
+      "sha256": "c4f1862ef7890b490a32148a3f0f44d0ca1c03e1c29f17fd793415e4de68a8d8"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/fixed_grid_metrics.csv",
+      "bytes": 1207,
+      "sha256": "23ac9e49501ad9c2e8b8c4550f369c5c041b6903ed632fc1abb0ed001ae5a18b"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/independent_campaign6_audit/summary.json",
+      "bytes": 13674,
+      "sha256": "3b9481af7e7d381226040c23020839389b9baefafdc9961cddb06b7bbf7b6f6f"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/independent_validation_result.json",
+      "bytes": 521,
+      "sha256": "e6f7853fd09200fca3cd317070fa04ad1d1d0731cc1be34214e4e1de6a07ad36"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/launch_preflight.json",
+      "bytes": 1033,
+      "sha256": "b60101df30915f02928e1d5bc46d5fa5d4995eb523d277290d2fbc0e886b6276"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/launched_process.json",
+      "bytes": 853,
+      "sha256": "2ce26280322c3e8234a2e0f651f61af7bfba26801128d05009115ece555d526e"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/observe_progress.py",
+      "bytes": 2475,
+      "sha256": "fcc9af51003dfc58c6b15f60a5f16fe66e622747ddc747f89a6bbba0a02d5dd9"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/operational_observations.jsonl",
+      "bytes": 31017,
+      "sha256": "0992e752731ba4dd3297cbef82882257147d1d0eb83f69278d42074c3b5ba78f"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/paging_samples.jsonl",
+      "bytes": 1925,
+      "sha256": "10d4f5dd1c3a2ab0510cf497d3ad8c5134020ecbc08d048cc8dae5bc949c635b"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/post_pilot_host.json",
+      "bytes": 607,
+      "sha256": "6466ae318f71db40991030ef44149022f2a790cc3e211a7fe5b83dcfc0462d49"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/post_pilot_preservation.json",
+      "bytes": 1680,
+      "sha256": "9fe0eb24f0273d733b09be8048551ed008cffc09970aa012e80806ddf6bd074f"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/resource_samples.jsonl",
+      "bytes": 559701,
+      "sha256": "99b2a9d7c344656ace6ff7ae8a61ca2478223027fa2537655e6eef90e4fa0a85"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/runtime_resource_comparison.json",
+      "bytes": 4887,
+      "sha256": "95006360de5904f398b65693523fe7540e4fe7abf9c3801681064212528ebc22"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/supervise_single_pilot.py",
+      "bytes": 5134,
+      "sha256": "7aa5cee8b5f501bcdc0422baa266a45e9355fa84c3ac5e1cd3683ecd97a1b0b8"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/user_execution_authorization.json",
+      "bytes": 521,
+      "sha256": "e4a2eaa40214ab99629568c211c811f0af8c426309dbbd521468eca3cf06eb73"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/validate_completed_pilot.py",
+      "bytes": 6965,
+      "sha256": "605aabf8fa72beaf1c8b8c35168c95f884eea8fd090ea800367eaa2087061af0"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_execution_v1/validated_primary_and_operational_results.json",
+      "bytes": 7668,
+      "sha256": "70e8f0e81ca6231064a69ce5c0434df41746b1fd12a73477975819f1f764ec26"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preflight_v1/TECHNICAL_PREFLIGHT_REPORT.md",
+      "bytes": 6276,
+      "sha256": "ea5bc79b6c6d1ad3bd23617998f8197cb44e74eaf0f70208b470b4efce0d0fec"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preflight_v1/committed_allowlist_verification.json",
+      "bytes": 27561,
+      "sha256": "c969d60fd0c24b3eb3cb30844c323b963866077b16d26fea7ed9cc3328e4b621"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preflight_v1/preflight_verification.json",
+      "bytes": 1200,
+      "sha256": "c34aabe8dcc4ec9d9ef727cf4ffc7650e872e0abba0c28b0e67862b729908d43"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/TECHNICAL_PREPARATION_REPORT.md",
+      "bytes": 9815,
+      "sha256": "960e34753584e8def59f6492dd36b53f3b617a5f03c29c69c4c12abd951eb630"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/audit_prepared_artifacts.py",
+      "bytes": 7149,
+      "sha256": "68876a150331cc91eaa3fb38cfeeab3b366f24affa8938baf10dfc74237bb9a5"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/delivery_manifest_v1.json",
+      "bytes": 3722,
+      "sha256": "4e6d012b9f25748563ab7fdb87d34fe13033dfc6b4d9853bae59292c75c8ad85"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/final_delivery_reconciliation.json",
+      "bytes": 300,
+      "sha256": "9c6c4a28ecd0006e50c8c1bcbe764d0b28621208c67194e0f77b8a06563d6ecb"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/gate1_git_and_scope.json",
+      "bytes": 24229,
+      "sha256": "09f173e92a81889cedfaf7750670df950a814e2720aa77478674d31e3c9db7a4"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/gate2_preservation.json",
+      "bytes": 272,
+      "sha256": "c343f04083cb1a703d8e38d8143872f097495341e98f1281fcd5e50322bb6686"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/gate2_quiescence.json",
+      "bytes": 394,
+      "sha256": "f677a909cbef168a8b933bcd225f2e6ecb53bba374499dff655cede0ef35234b"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/gate3_science_and_model_identities.json",
+      "bytes": 2431,
+      "sha256": "837c8964d5561de93d434b60cd8bcd3fa1c6a76af129cc9ac0f2477df7cb47c6"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/gate4_certificate_and_reuse.json",
+      "bytes": 19023,
+      "sha256": "f8f16385fe8483f5a2ed1288c58fdd01af839d7bb4c6c48a30c5f64374142787"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/gate5_draft_execution_denial.json",
+      "bytes": 595,
+      "sha256": "212f1a8b775fe1ab4fd2feef9aa96eda6c02c8bc3ffff7b7aca62b535e72c703"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/host_pre_capture_inspection.json",
+      "bytes": 4227,
+      "sha256": "427a35abbf6a0302e22a3beb00eb35cf3225ede694739e24a5ba2fb69ffc69e3"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/host_process_inspection.json",
+      "bytes": 3862,
+      "sha256": "375a7c02cbfb8e8055b5167c5f1292ffd594324da16c2c1ff5d0b7ead070f1eb"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/independent_preparation_audit.json",
+      "bytes": 2162,
+      "sha256": "d573974ae31dca94a11bc819bd29a33cc899b879348be8d048d28bcb075264cb"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/post_preparation_host.json",
+      "bytes": 601,
+      "sha256": "ede76db279261f081509478bd21957ab2089d3c6604358f440683cfa13d0fd58"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/post_preparation_preservation.json",
+      "bytes": 323,
+      "sha256": "6cc13598766be379eacaeffb8996f2e46c626b21aa5252e11df0d9660ae5ecf5"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/prepare_capture_and_draft.py",
+      "bytes": 8796,
+      "sha256": "50b88e85ea45b9100f91aa317ec002ab8c798707ef0c6ca4de0f088f7e8e1aab"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/prepared_artifact_index.json",
+      "bytes": 1824,
+      "sha256": "9de58368225285f2a064d1336f618ded3cece4a62f42f71c71ba6fd2c6b754a9"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/progress_event_v1.json",
+      "bytes": 854,
+      "sha256": "de07978cb59c50bc92402730fd72a3dcac9720fcf8b56a4898edca379da68ec4"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/user_preparation_authorization.json",
+      "bytes": 948,
+      "sha256": "0d8a09bc4d661db5468b4e4a5b5d720eede50b472caf8d2b3ab321abb285eb2f"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_preparation_v1/verify_quiescence_and_preservation.py",
+      "bytes": 4985,
+      "sha256": "60099485742a8be5aa9df199a7ac0d7182e7770c38dd53ab2804fe29271bdb0e"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_readiness_review_v1/TECHNICAL_READINESS_REPORT.md",
+      "bytes": 9848,
+      "sha256": "b1a1d9bf2b3b83fc6ede1e2bc59f8274ce23c4b0fdb5b5b88575df063204c241"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_readiness_review_v1/artifact_crosslinks.json",
+      "bytes": 373,
+      "sha256": "a2f22288108e74166bcaa251fedfe37e15d02333398ef6a2263d425b637bcc7c"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_readiness_review_v1/delivery_manifest_v1.json",
+      "bytes": 1280,
+      "sha256": "34958c7596c46827f2569e853dfb92a7d5a9784e069b06c4cd0a11cae98fb92e"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_readiness_review_v1/host_resource_assessment.json",
+      "bytes": 1979,
+      "sha256": "a346a036e1bdf5570f517189d7ff93c0a707146b78d8d8ba3ea84816b0598695"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_readiness_review_v1/integrity_authorization_scope_review.json",
+      "bytes": 4936,
+      "sha256": "9ca4a254c143ba85fd12fbfdcdfb73307833dc6cfc181f67024602b68a40277c"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_readiness_review_v1/readiness_verdict.json",
+      "bytes": 555,
+      "sha256": "bc1d67b2a58bd042201c2bc68ee41bfcf80c65e12c882de50503a8dcc2698bce"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_readiness_review_v1/resource_capacity_decision.json",
+      "bytes": 1921,
+      "sha256": "66f78d7d8e41222aa6e34d5c1057cbc39f54071f6dccb7e106dcbb249ae5af9e"
+    },
+    {
+      "path": "reports/phase6/v4_pilot_readiness_review_v1/verify_readiness.py",
+      "bytes": 8670,
+      "sha256": "8f182fe9bd556122c58c11037552dbd2ebe6a8268d760f8a79ac90127b6fecbb"
+    },
+    {
+      "path": "reports/phase6/v4_remaining165_manual_v1/pause_milestone_v1.json",
+      "bytes": 1044,
+      "sha256": "9672f4cd148034141569e5256a4bc14591f23fa246292da8486ac5ccaa4cf223"
+    },
+    {
+      "path": "reports/phase6/v4_remaining165_manual_v1/prepare_execution_grant.py",
+      "bytes": 6581,
+      "sha256": "d6b73a2969d9704259b8ff9d5ad901fb4a83405e79eaa5a8b816225923ea4d2e"
+    },
+    {
+      "path": "reports/phase6/v4_remaining165_manual_v1/user_execution_authorization.json",
+      "bytes": 698,
+      "sha256": "8491e24bd3b2da57f3aa1922aca46ac5c016267836ac8094662a7f7b5a4ee84f"
+    }
+  ],
+  "existing_delivery_manifests": [
+    "reports/phase6/v4_pilot_capacity_reassessment_v1/delivery_manifest_v1.json",
+    "reports/phase6/v4_pilot_execution_v1/delivery_manifest_v1.json",
+    "reports/phase6/v4_pilot_execution_v1/delivery_manifest_v2.json",
+    "reports/phase6/v4_pilot_preparation_v1/delivery_manifest_v1.json",
+    "reports/phase6/v4_pilot_readiness_review_v1/delivery_manifest_v1.json"
+  ],
+  "packaging_controls": [
+    "reports/phase6/v4_pause_commit_v1/stage_curated.py",
+    "reports/phase6/v4_pause_commit_v1/candidate_manifest_v1.json",
+    "reports/phase6/v4_pause_commit_v1/curated_paths_v1.txt"
+  ],
+  "scientific_results_modified": false,
+  "original_and_forensic_payloads_included": false,
+  "exclusions": [
+    "Untracked-path inventory",
+    "Raw logs",
+    "Actual TEST observations, labels, row-level prediction archives, graphs and database/sidecar files",
+    "Forensic snapshot",
+    "Older unrelated progress v21-v32"
+  ],
+  "gitattributes_change": "Append exact-byte -text rules for allowlisted new files only; preserve existing rules",
+  "runner_recorded_complete": 30,
+  "external_independent_validation_complete": 6,
+  "additional_external_validation_pending": 24,
+  "remaining": 141
+}

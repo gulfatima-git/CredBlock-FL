@@ -1,0 +1,32 @@
+{
+  "status": "PILOT_METADATA_CODE_AGGREGATE_EVIDENCE_ONLY",
+  "files_sha256": {
+    "reports/phase6/v4_pilot_execution_v1/exact_reuse_and_execution_counts.json": "1073dab659f08e1f0067ad7b0cd466793c8387e17db890992833e286c2a281a3",
+    "reports/phase6/v4_pilot_execution_v1/execution_result.json": "f552f08e3f9380d4dc9356c5a62b50de84b069dc17a096f51507cca4c22e4956",
+    "reports/phase6/v4_pilot_execution_v1/fixed_grid_metrics.csv": "23ac9e49501ad9c2e8b8c4550f369c5c041b6903ed632fc1abb0ed001ae5a18b",
+    "reports/phase6/v4_pilot_execution_v1/independent_validation_result.json": "e6f7853fd09200fca3cd317070fa04ad1d1d0731cc1be34214e4e1de6a07ad36",
+    "reports/phase6/v4_pilot_execution_v1/launched_process.json": "2ce26280322c3e8234a2e0f651f61af7bfba26801128d05009115ece555d526e",
+    "reports/phase6/v4_pilot_execution_v1/launch_preflight.json": "b60101df30915f02928e1d5bc46d5fa5d4995eb523d277290d2fbc0e886b6276",
+    "reports/phase6/v4_pilot_execution_v1/observe_progress.py": "fcc9af51003dfc58c6b15f60a5f16fe66e622747ddc747f89a6bbba0a02d5dd9",
+    "reports/phase6/v4_pilot_execution_v1/ONE_EVALUATOR_LAUNCH_ATTEMPT.json": "efd9fa06a8ef8fd0cfe991641768aed027757dc99618516191b95bad496ff9a1",
+    "reports/phase6/v4_pilot_execution_v1/operational_observations.jsonl": "0992e752731ba4dd3297cbef82882257147d1d0eb83f69278d42074c3b5ba78f",
+    "reports/phase6/v4_pilot_execution_v1/paging_samples.jsonl": "10d4f5dd1c3a2ab0510cf497d3ad8c5134020ecbc08d048cc8dae5bc949c635b",
+    "reports/phase6/v4_pilot_execution_v1/post_pilot_host.json": "6466ae318f71db40991030ef44149022f2a790cc3e211a7fe5b83dcfc0462d49",
+    "reports/phase6/v4_pilot_execution_v1/post_pilot_preservation.json": "9fe0eb24f0273d733b09be8048551ed008cffc09970aa012e80806ddf6bd074f",
+    "reports/phase6/v4_pilot_execution_v1/resource_samples.jsonl": "99b2a9d7c344656ace6ff7ae8a61ca2478223027fa2537655e6eef90e4fa0a85",
+    "reports/phase6/v4_pilot_execution_v1/runtime_resource_comparison.json": "95006360de5904f398b65693523fe7540e4fe7abf9c3801681064212528ebc22",
+    "reports/phase6/v4_pilot_execution_v1/supervise_single_pilot.py": "7aa5cee8b5f501bcdc0422baa266a45e9355fa84c3ac5e1cd3683ecd97a1b0b8",
+    "reports/phase6/v4_pilot_execution_v1/TECHNICAL_PILOT_ACCEPTANCE_REPORT.md": "503df69b5cd4762e6b17cf66961b92a44e98ce6e134ad4db8305af47ff7bf251",
+    "reports/phase6/v4_pilot_execution_v1/user_execution_authorization.json": "e4a2eaa40214ab99629568c211c811f0af8c426309dbbd521468eca3cf06eb73",
+    "reports/phase6/v4_pilot_execution_v1/validated_primary_and_operational_results.json": "70e8f0e81ca6231064a69ce5c0434df41746b1fd12a73477975819f1f764ec26",
+    "reports/phase6/v4_pilot_execution_v1/validate_completed_pilot.py": "605aabf8fa72beaf1c8b8c35168c95f884eea8fd090ea800367eaa2087061af0",
+    "reports/phase6/v4_pilot_execution_v1/independent_campaign6_audit/summary.json": "3b9481af7e7d381226040c23020839389b9baefafdc9961cddb06b7bbf7b6f6f",
+    "reports/phase6/progress_v40.json": "527c825d44a9149d6ac1da29680655831d3c4c3553e254d5af841a2ec635fc2e",
+    "reports/phase6/heldout_test_v2/wal_v4_authorizations/pilot_campaign6_execution_APPROVED_v1.json": "0a8c77967fc3ae7a482619fb42ac32c9f667e3368ac0e04627491376ca317560"
+  },
+  "excluded": [
+    "All original/forensic/private continuation SQL, graph, observation, label and prediction archives",
+    "Execution stdout/stderr remain local logs; not auto-staged"
+  ],
+  "full_run_authorized": false
+}

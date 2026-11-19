@@ -1,0 +1,40 @@
+{
+  "status": "DRAFT_PILOT_ONLY_EXECUTION_NOT_AUTHORIZED",
+  "explicit_user_decision": false,
+  "execution_authorized": false,
+  "requires_separate_explicit_execution_approval": true,
+  "execution_scope": "PILOT_ONLY",
+  "authorized_variants": [
+    "CFV1_RA_CS_005_SEED1003_TEST"
+  ],
+  "maximum_newly_completed_campaign_instances": 1,
+  "required_instances_total": 171,
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "source_sha256": {
+    "src/phase6/continuation_contract_v4.py": "3b335952f2518b66fca6077b280de527cec432e6bd548277bb01d9cf120f82df",
+    "src/phase6/continuation_reader_v4.py": "b042d9bfc05eced60331444976ba45f5e577997196a7af228b1df5417dcd4c7b",
+    "src/phase6/continuation_recovery_v4.py": "12059a45170ed5695b5165ca2e5e7aedd8054894565cace5f1b9141534567525",
+    "src/phase6/continuation_manifest_v4.py": "083f26882b5b2b2fc71caa70cb34e1237c442fd59ba9fdb1e317052fc9f62e61",
+    "src/phase6/continuation_barrier_v4.py": "5a5aa09e25a06b8a9faec4a1e11f443833b4e489d76468c9cd569eccc6b08df1",
+    "src/phase6/continuation_driver_v4.py": "8340d9fcd25706e500e5a830827058823a24464e6c4ab192959177457c53f216",
+    "src/phase6/continuation_lease_v4.py": "cbea977cebef4def4eb38ef714937d8ccd76394e47556d7efa5fae7f2a8b0c12",
+    "src/phase6/continuation_wal_v4.py": "91bc06d559e469e1c2e43e96248ae9eef3f3a4f2563d9f0a64a4c15cd2ec704e",
+    "configs/phase6/continuation_wal_v4.json": "43bbe9644182b7a1d2c4762db5d05c6ccd82683a83d342c9c15ab13823ad3934"
+  },
+  "catalog_identity": "2d0846a880bed6938bde419a507cb7c5da8f3e1a136ddeab2b212ce978b09680",
+  "register_sha256": "d9e2b1a63308e00da05b5dac2afd83f27b259c006e69044f593130db0cc0aaef",
+  "output_root": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_transition\\pilot_campaign6_v1",
+  "certificate_id": "67ebdf7a895995729235091d85c40d68c2a0659576d74494b7e9e8b3331c116d",
+  "certificate_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_captures\\pilot_preparation_v1\\CFV1_RA_CS_005_SEED1003_TEST\\predecessor_certificate.json",
+  "certificate_file_sha256": "dc4a59bf2c917425dba4c9a24b164ad88f370844f55a0e4ceb5176e31505bd72",
+  "reuse_completed_variants": [
+    "CFV1_RA_CS_004_SEED1001_TEST",
+    "CFV1_RA_CS_004_SEED1002_TEST",
+    "CFV1_RA_CS_004_SEED1003_TEST",
+    "CFV1_RA_CS_005_SEED1001_TEST",
+    "CFV1_RA_CS_005_SEED1002_TEST"
+  ],
+  "repeat_committed_GNN_inference": false,
+  "phase7_authorized": false,
+  "preparation_authority_sha256": "0d8a09bc4d661db5468b4e4a5b5d720eede50b472caf8d2b3ab321abb285eb2f"
+}

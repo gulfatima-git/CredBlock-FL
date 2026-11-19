@@ -1,0 +1,14 @@
+{
+  "status": "READ_ONLY_REVIEW_OUTPUTS_NO_EXECUTION_AUTHORITY",
+  "files_sha256": {
+    "reports/phase6/v4_pilot_readiness_review_v1/artifact_crosslinks.json": "a2f22288108e74166bcaa251fedfe37e15d02333398ef6a2263d425b637bcc7c",
+    "reports/phase6/v4_pilot_readiness_review_v1/host_resource_assessment.json": "a346a036e1bdf5570f517189d7ff93c0a707146b78d8d8ba3ea84816b0598695",
+    "reports/phase6/v4_pilot_readiness_review_v1/integrity_authorization_scope_review.json": "9ca4a254c143ba85fd12fbfdcdfb73307833dc6cfc181f67024602b68a40277c",
+    "reports/phase6/v4_pilot_readiness_review_v1/readiness_verdict.json": "bc1d67b2a58bd042201c2bc68ee41bfcf80c65e12c882de50503a8dcc2698bce",
+    "reports/phase6/v4_pilot_readiness_review_v1/resource_capacity_decision.json": "66f78d7d8e41222aa6e34d5c1057cbc39f54071f6dccb7e106dcbb249ae5af9e",
+    "reports/phase6/v4_pilot_readiness_review_v1/TECHNICAL_READINESS_REPORT.md": "b1a1d9bf2b3b83fc6ede1e2bc59f8274ce23c4b0fdb5b5b88575df063204c241",
+    "reports/phase6/v4_pilot_readiness_review_v1/verify_readiness.py": "8f182fe9bd556122c58c11037552dbd2ebe6a8268d760f8a79ac90127b6fecbb",
+    "reports/phase6/progress_v37.json": "c836425f725ca3c1c4ff61b93d8c60b1e70de5fa00f4c9716170b9c114dd22a1"
+  },
+  "execution_authorized": false
+}

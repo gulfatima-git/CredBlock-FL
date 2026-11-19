@@ -1,0 +1,30 @@
+{
+  "status": "STOP_REQUIRED_V4_PRODUCTION_AUTHORIZATION_AND_CERTIFICATE_MISSING",
+  "commit": "a7adf15f0f9b97d062b9e91d784483457bdf67d0",
+  "tag": "phase6-v4-4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "release_identity": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+  "committed_candidates_verified": 135,
+  "tracked_changes": 0,
+  "staged_changes": 0,
+  "untracked_entries": 10720,
+  "working_tree_fully_clean": false,
+  "missing_namespaces": {
+    "reports/phase6/heldout_test_v2/wal_v4_authorizations": true,
+    "reports/phase6/heldout_test_v2/wal_v4_captures": true,
+    "reports/phase6/heldout_test_v2/wal_v4_transition": true
+  },
+  "original_v2_approval": {
+    "exists": true,
+    "status": "USER_APPROVED_TEST_EXECUTION_V2",
+    "sha256": "4a3678f96e48691b62b107e72961cbe4a67bb19b868499c6bfe45e88b926b744",
+    "authorizes_v4": false
+  },
+  "source_only_verification": true,
+  "model_weights_opened": false,
+  "TEST_payloads_opened": false,
+  "databases_opened": false,
+  "GNN_forwards": 0,
+  "pilot_executed": false,
+  "production_grants_created": false,
+  "fresh_full_recovery_validation_performed": false
+}

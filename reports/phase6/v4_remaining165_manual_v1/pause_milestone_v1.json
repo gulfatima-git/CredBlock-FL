@@ -1,0 +1,24 @@
+{
+  "status": "PAUSED_AT_CAMPAIGN_BOUNDARY",
+  "recorded_at": "2026-11-19T23:52:13.428246+05:00",
+  "source_pause_record": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_transition\\pilot_campaign6_v1\\execution_pauses\\00000031_PAUSED_AT_CAMPAIGN_BOUNDARY.json",
+  "source_sha256": "611a69a83f7381c747f83a463f0866c8bf12fd6f14be2bf2a9d8a89aaa1c49b7",
+  "native_pause": {
+    "USER_ACCEPTED": false,
+    "completed": 30,
+    "executor": "4759df8a2b488c7cfd9395eba1914847e77a1323db1a33fd4e9a290dcf12a370",
+    "ledger_chain_sha256": "fd263a77ffd7924a9f43f38c42616c6ea487bb28f2159001412f6d07cba5d7a7",
+    "pending": 141,
+    "phase7_started": false,
+    "required": 171,
+    "status": "PAUSED_AT_CAMPAIGN_BOUNDARY"
+  },
+  "runner_recorded_complete": 30,
+  "previously_independently_validated": 6,
+  "additional_instances_pending_external_validation": 24,
+  "remaining_instances": 141,
+  "pause_request_preserved": true,
+  "resume_performed": false,
+  "USER_ACCEPTED": false,
+  "phase7_started": false
+}

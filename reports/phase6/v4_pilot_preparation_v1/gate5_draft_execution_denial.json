@@ -1,0 +1,13 @@
+{
+  "status": "PASS_DRAFT_REJECTED_BY_UNCHANGED_PRODUCTION_GUARD",
+  "draft_path": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\wal_v4_authorizations\\pilot_campaign6_execution_DRAFT_v1.json",
+  "draft_sha256": "2be53cf37ea0616dafddb3b31850de1ebe3aa2f123d538e44af035f181d8670a",
+  "guard_message": "Unapproved/stale v3 execution",
+  "execution_authorized": false,
+  "continuation_output_created": false,
+  "GNN_forwards": 0,
+  "authorized_variants": [
+    "CFV1_RA_CS_005_SEED1003_TEST"
+  ],
+  "maximum_newly_completed_campaign_instances": 1
+}

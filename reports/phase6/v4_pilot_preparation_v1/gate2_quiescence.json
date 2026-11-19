@@ -1,0 +1,10 @@
+{
+  "status": "PASS_READONLY_LEASE_AND_STABILITY",
+  "at": "2026-11-18T22:58:46.275487+05:00",
+  "original_worker_exited": true,
+  "original_lease_released": true,
+  "source_quiescent": true,
+  "source_root": "C:\\Users\\Gulso\\Documents\\Gul\\CredBlock-FL\\reports\\phase6\\heldout_test_v2\\final_v1\\CFV1_RA_CS_005_SEED1003_TEST",
+  "source_files": 51690,
+  "lock_written": false
+}

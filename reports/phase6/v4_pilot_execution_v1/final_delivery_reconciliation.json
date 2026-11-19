@@ -1,0 +1,15 @@
+{
+  "status": "PASS_FINAL_DELIVERY_RECONCILIATION",
+  "pilot_technical_status": "PASS",
+  "previous_delivery_manifest_sha256": "1a37ca87934dd1204a876878233abaca4e58bdde2a9736a326bafd17713d4880",
+  "latest_progress": "reports/phase6/progress_v41.json",
+  "latest_progress_sha256": "ea61c9fb1d8ccf4b3d549e56ebbebe8f1ce410f26fdb5dcfbbb449f04732a289",
+  "prior_progress_records_untouched": true,
+  "complete_instances": 6,
+  "pending_instances": 165,
+  "full_run_authorized": false,
+  "phase7_started": false,
+  "USER_ACCEPTED_recorded": false,
+  "tracked_changes": 0,
+  "staged_changes": 0
+}

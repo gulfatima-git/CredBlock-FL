@@ -1,0 +1,16 @@
+{
+  "status": "PASS_NO_EVALUATOR_AFTER_PREPARATION",
+  "checked_at": "2026-11-18T23:19:52.7730481+05:00",
+  "python_processes": [
+    {
+      "ProcessId": 8208,
+      "ParentProcessId": 18464,
+      "CreationDate": "2026-11-14T08:35:01.544185+05:00",
+      "CommandLine": "c:\\Users\\Gulso\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe c:\\Users\\Gulso\\.vscode\\extensions\\ms-python.autopep8-2026.6.0\\bundled\\tool\\lsp_server.py"
+    }
+  ],
+  "matching_evaluators": [],
+  "free_memory_KiB": 738688,
+  "drive_C_free_bytes": 213267259392,
+  "execution_authorized": false
+}

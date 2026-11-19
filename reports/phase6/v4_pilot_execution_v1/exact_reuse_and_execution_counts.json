@@ -1,0 +1,83 @@
+{
+  "status": "PASS_EXACT_REUSE_NO_ORIGINAL_PREDICTION_RECOMPUTATION_PATH",
+  "original_local_scores": 15309,
+  "original_commands": 1690,
+  "original_grid_bundles": 40,
+  "organizations": [
+    {
+      "organization": "Org1",
+      "status": "PASS_EXACT_ORIGINAL_SQL_PREFIX",
+      "old_commands": 271,
+      "old_scores": 2236,
+      "new_commands": 210,
+      "new_local_scores": 2060,
+      "local_model_batch_forwards_from_records": 210,
+      "old_precommit_seconds": 140.39886679971823,
+      "new_precommit_seconds": 220.08370019996073,
+      "old_model_seconds": 10.555451899766922,
+      "new_model_seconds": 17.56168340012664
+    },
+    {
+      "organization": "Org2",
+      "status": "PASS_EXACT_ORIGINAL_SQL_PREFIX",
+      "old_commands": 270,
+      "old_scores": 2274,
+      "new_commands": 210,
+      "new_local_scores": 1519,
+      "local_model_batch_forwards_from_records": 210,
+      "old_precommit_seconds": 151.14578569988953,
+      "new_precommit_seconds": 235.0566903994768,
+      "old_model_seconds": 11.512321000220254,
+      "new_model_seconds": 18.893264099839143
+    },
+    {
+      "organization": "Org3",
+      "status": "PASS_EXACT_ORIGINAL_SQL_PREFIX",
+      "old_commands": 395,
+      "old_scores": 3438,
+      "new_commands": 263,
+      "new_local_scores": 2325,
+      "local_model_batch_forwards_from_records": 263,
+      "old_precommit_seconds": 241.31771430018125,
+      "new_precommit_seconds": 299.60835359961493,
+      "old_model_seconds": 18.994843199674506,
+      "new_model_seconds": 23.927875200402923
+    },
+    {
+      "organization": "Org4",
+      "status": "PASS_EXACT_ORIGINAL_SQL_PREFIX",
+      "old_commands": 393,
+      "old_scores": 3723,
+      "new_commands": 263,
+      "new_local_scores": 2070,
+      "local_model_batch_forwards_from_records": 263,
+      "old_precommit_seconds": 246.66987989959307,
+      "new_precommit_seconds": 308.9196475999779,
+      "old_model_seconds": 18.794688599242363,
+      "new_model_seconds": 24.077440699969884
+    },
+    {
+      "organization": "Org5",
+      "status": "PASS_EXACT_ORIGINAL_SQL_PREFIX",
+      "old_commands": 361,
+      "old_scores": 3638,
+      "new_commands": 240,
+      "new_local_scores": 2279,
+      "local_model_batch_forwards_from_records": 240,
+      "old_precommit_seconds": 234.82303789973957,
+      "new_precommit_seconds": 299.7841941996012,
+      "old_model_seconds": 17.897120399749838,
+      "new_model_seconds": 22.822322500054725
+    }
+  ],
+  "new_grid_batch_forwards_from_records": {
+    "graphsage": 10,
+    "tabular_mlp": 10
+  },
+  "inference_count_definition": "Deterministic batch-forward counts derived from new committed command scored_users and new raw-grid root counts under unchanged batch_size; not an injected live forward counter. Completed original journal/grid paths bypass scoring.",
+  "batch_size": 256,
+  "completed_originals_reused": 5,
+  "newly_completed_instances": 1,
+  "unexpected_campaign_outputs": 0,
+  "independent_audit_GNN_forwards": 0
+}

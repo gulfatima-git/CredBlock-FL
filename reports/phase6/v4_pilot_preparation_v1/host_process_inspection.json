@@ -1,0 +1,50 @@
+{
+  "status": "PASS_NO_EVALUATOR_IDENTIFIED",
+  "checked_at": "2026-11-18T22:57:18.3578782+05:00",
+  "processes": [
+    {
+      "ProcessId": 21328,
+      "ParentProcessId": 19088,
+      "Name": "pwsh.exe",
+      "CreationDate": "2026-11-14T08:34:08.96624+05:00",
+      "CommandLine": "C:\\Users\\Gulso\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe -noexit -command \"try { . \\\"c:\\Users\\Gulso\\AppData\\Local\\Programs\\Microsoft VS Code\\2c33b50b16\\resources\\app\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1\\\" } catch {}\""
+    },
+    {
+      "ProcessId": 8208,
+      "ParentProcessId": 18464,
+      "Name": "python.exe",
+      "CreationDate": "2026-11-14T08:35:01.544185+05:00",
+      "CommandLine": "c:\\Users\\Gulso\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe c:\\Users\\Gulso\\.vscode\\extensions\\ms-python.autopep8-2026.6.0\\bundled\\tool\\lsp_server.py"
+    },
+    {
+      "ProcessId": 30752,
+      "ParentProcessId": 19088,
+      "Name": "pwsh.exe",
+      "CreationDate": "2026-11-17T02:05:08.203582+05:00",
+      "CommandLine": "C:\\Users\\Gulso\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe -noexit -command \"try { . \\\"c:\\Users\\Gulso\\AppData\\Local\\Programs\\Microsoft VS Code\\2c33b50b16\\resources\\app\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1\\\" } catch {}\""
+    },
+    {
+      "ProcessId": 16880,
+      "ParentProcessId": 19088,
+      "Name": "pwsh.exe",
+      "CreationDate": "2026-11-17T18:04:26.520881+05:00",
+      "CommandLine": "C:\\Users\\Gulso\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe -noexit -command \"try { . \\\"c:\\Users\\Gulso\\AppData\\Local\\Programs\\Microsoft VS Code\\2c33b50b16\\resources\\app\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1\\\" } catch {}\""
+    },
+    {
+      "ProcessId": 31040,
+      "ParentProcessId": 19088,
+      "Name": "pwsh.exe",
+      "CreationDate": "2026-11-18T22:40:37.218058+05:00",
+      "CommandLine": "C:\\Users\\Gulso\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe -noexit -command \"try { . \\\"c:\\Users\\Gulso\\AppData\\Local\\Programs\\Microsoft VS Code\\2c33b50b16\\resources\\app\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1\\\" } catch {}\""
+    },
+    {
+      "ProcessId": 11772,
+      "ParentProcessId": 29368,
+      "Name": "pwsh.exe",
+      "CreationDate": "2026-11-18T22:57:17.512017+05:00",
+      "CommandLine": "\"C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\native\\powershell\\pwsh.exe\" -Command \"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\n$rows=@(Get-CimInstance Win32_Process | Where-Object {$_.Name -match '^(python|pythonw|pwsh|powershell)\\.exe$'} | Select-Object ProcessId,ParentProcessId,Name,CreationDate,CommandLine); $evaluators=@($rows | Where-Object {$_.Name -match '^python' -and $_.CommandLine -match 'heldout_driver|continuation_driver|detectability_batch'}); $record=[ordered]@{status= $(if($evaluators.Count){'FAIL_EVALUATOR_PRESENT'}else{'PASS_NO_EVALUATOR_IDENTIFIED'});checked_at=(Get-Date).ToString('o');processes=$rows;matching_evaluators=$evaluators;read_only_inspection=$true}; $path='reports/phase6/v4_pilot_preparation_v1/host_process_inspection.json'; if(Test-Path -LiteralPath $path){throw 'No overwrite'}; $record | ConvertTo-Json -Depth 6 | Out-File -LiteralPath $path -Encoding utf8; if($evaluators.Count){throw 'STOP: evaluator present'}; Write-Output 'PASS_NO_EVALUATOR_IDENTIFIED'\""
+    }
+  ],
+  "matching_evaluators": [],
+  "read_only_inspection": true
+}

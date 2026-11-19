@@ -1,0 +1,63 @@
+{
+  "total_physical_bytes": 16858472448,
+  "samples": [
+    {
+      "at": "2026-11-19T00:07:27.9975672+05:00",
+      "available_bytes": 6914785280,
+      "committed_bytes": 16390754304,
+      "commit_limit_bytes": 43702018048,
+      "percent_commit_in_use": 37,
+      "page_reads_per_second": 0,
+      "pages_per_second": 0,
+      "page_writes_per_second": 0
+    },
+    {
+      "at": "2026-11-19T00:07:30.4132885+05:00",
+      "available_bytes": 6920765440,
+      "committed_bytes": 16386867200,
+      "commit_limit_bytes": 43702018048,
+      "percent_commit_in_use": 37,
+      "page_reads_per_second": 7,
+      "pages_per_second": 54,
+      "page_writes_per_second": 0
+    },
+    {
+      "at": "2026-11-19T00:07:32.7418860+05:00",
+      "available_bytes": 6918094848,
+      "committed_bytes": 16390934528,
+      "commit_limit_bytes": 43702018048,
+      "percent_commit_in_use": 37,
+      "page_reads_per_second": 3,
+      "pages_per_second": 31,
+      "page_writes_per_second": 0
+    },
+    {
+      "at": "2026-11-19T00:07:35.0885022+05:00",
+      "available_bytes": 6921498624,
+      "committed_bytes": 16384475136,
+      "commit_limit_bytes": 43702018048,
+      "percent_commit_in_use": 37,
+      "page_reads_per_second": 0,
+      "pages_per_second": 0,
+      "page_writes_per_second": 0
+    },
+    {
+      "at": "2026-11-19T00:07:37.4489293+05:00",
+      "available_bytes": 6925881344,
+      "committed_bytes": 16387174400,
+      "commit_limit_bytes": 43702018048,
+      "percent_commit_in_use": 37,
+      "page_reads_per_second": 3,
+      "pages_per_second": 60,
+      "page_writes_per_second": 0
+    }
+  ],
+  "pagefile": {
+    "AllocatedBaseSize": 25600,
+    "CurrentUsage": 1406,
+    "PeakUsage": 3965
+  },
+  "disk_free_bytes": 213350862848,
+  "read_only_system_assessment": true,
+  "source": "Read-only CIM/PowerShell resource query; five samples, approximately ten seconds"
+}
